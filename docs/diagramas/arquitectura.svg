@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+  </defs>
+  <rect width="1400" height="760" fill="#ffffff"/>
+  <!-- usuario / UI -->
+  <rect x="40" y="40" width="250" height="60" rx="30" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="165" y="76" text-anchor="middle" font-size="17" fill="#0c4a6e">Usuario (gerente / analista)</text>
+  <rect x="40" y="150" width="250" height="60" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="165" y="186" text-anchor="middle" font-size="17" fill="#0c4a6e">Streamlit · CLI</text>
+  <line x1="165" y1="100" x2="165" y2="146" stroke="#334155" stroke-width="2" marker-end="url(#a)"/>
+  <!-- agente -->
+  <rect x="340" y="20" width="700" height="500" rx="14" fill="#fefce8" stroke="#a16207" stroke-width="2"/>
+  <text x="690" y="50" text-anchor="middle" font-size="19" font-weight="bold" fill="#713f12">AgenteAnalitico (objeto persistente) · coordina el flujo</text>
+  <g font-size="15" fill="#1e293b">
+    <rect x="370" y="75" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="520" y="99" text-anchor="middle" font-weight="bold">1 · Recepción · RV01</text><text x="520" y="120" text-anchor="middle">bloquea escritura, DDL, credenciales</text>
+    <rect x="370" y="150" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="520" y="174" text-anchor="middle" font-weight="bold">2 · Intérprete (Strategy)</text><text x="520" y="195" text-anchor="middle">LLM OpenRouter ⇄ reglas → JSON</text>
+    <rect x="370" y="225" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="520" y="249" text-anchor="middle" font-weight="bold">Intencion + RV02–RV06</text><text x="520" y="270" text-anchor="middle">alcance · dimensión · ambigüedad · periodo</text>
+    <rect x="710" y="75" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="860" y="99" text-anchor="middle" font-weight="bold">3 · Catálogo ConsultaAnalitica</text><text x="860" y="120" text-anchor="middle">aplica_a() · construir_sql() · RV07</text>
+    <rect x="710" y="150" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="860" y="174" text-anchor="middle" font-weight="bold">4 · Ejecución parametrizada</text><text x="860" y="195" text-anchor="middle">valores como parámetros, sin concatenar</text>
+    <rect x="710" y="225" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="860" y="249" text-anchor="middle" font-weight="bold">5 · Validación RV08–RV10</text><text x="860" y="270" text-anchor="middle">vacío · desconocidos · totales de control</text>
+    <rect x="710" y="300" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="860" y="324" text-anchor="middle" font-weight="bold">6 · Respuesta con evidencia</text><text x="860" y="345" text-anchor="middle">plantilla · narrativa LLM validada (RV11)</text>
+    <rect x="370" y="300" width="300" height="56" rx="8" fill="#fff" stroke="#a16207"/><text x="520" y="324" text-anchor="middle" font-weight="bold">7 · Registro en la BDOO</text><text x="520" y="345" text-anchor="middle">commit de la transacción ZODB</text>
+  </g>
+  <g stroke="#334155" stroke-width="2" fill="none">
+    <line x1="520" y1="131" x2="520" y2="146" marker-end="url(#a)"/>
+    <line x1="520" y1="206" x2="520" y2="221" marker-end="url(#a)"/>
+    <path d="M670,253 L690,253 L690,103 L706,103" marker-end="url(#a)"/>
+    <line x1="860" y1="131" x2="860" y2="146" marker-end="url(#a)"/>
+    <line x1="860" y1="206" x2="860" y2="221" marker-end="url(#a)"/>
+    <line x1="860" y1="281" x2="860" y2="296" marker-end="url(#a)"/>
+    <line x1="710" y1="328" x2="674" y2="328" marker-end="url(#a)"/>
+    <path d="M290,180 L366,103" marker-end="url(#a)"/>
+    <path d="M370,345 L310,345 L310,200 L294,200" marker-end="url(#a)"/>
+  </g>
+  <text x="300" y="380" font-size="13" fill="#475569">respuesta</text>
+  <text x="380" y="400" font-size="14" fill="#713f12">Servicios inyectados (no persistentes): DataMart · Intérprete · Narrador LLM</text>
+  <text x="380" y="425" font-size="14" fill="#713f12">Reglas: cadena de 11 ReglaValidacion (Chain of Responsibility, polimorfismo de validar())</text>
+  <text x="380" y="450" font-size="14" fill="#713f12">Consultas: 5 subclases de ConsultaAnalitica (Template Method en ejecutar())</text>
+  <text x="380" y="475" font-size="14" fill="#713f12">Respuestas: RESPUESTA · SIN_DATOS · ACLARACION · RECHAZO · ERROR</text>
+  <!-- data mart -->
+  <path d="M1110,90 a120,22 0 0 1 240,0 v130 a120,22 0 0 1 -240,0 z" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <ellipse cx="1230" cy="90" rx="120" ry="22" fill="#bbf7d0" stroke="#15803d" stroke-width="2"/>
+  <text x="1230" y="140" text-anchor="middle" font-size="17" font-weight="bold" fill="#14532d">PostgreSQL · dm.*</text>
+  <text x="1230" y="163" text-anchor="middle" font-size="14" fill="#14532d">Data Mart de Ventas</text>
+  <text x="1230" y="184" text-anchor="middle" font-size="14" fill="#14532d">estrella · SCD2 · -1/-2</text>
+  <text x="1230" y="205" text-anchor="middle" font-size="14" fill="#14532d">"verdad analítica"</text>
+  <line x1="1010" y1="178" x2="1106" y2="160" stroke="#15803d" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="1115" y="282" font-size="13" fill="#14532d">SELECT · rol agente_lector</text>
+  <text x="1115" y="299" font-size="13" fill="#14532d">READ ONLY · timeout 5 s</text>
+  <!-- fuente -->
+  <path d="M1110,430 a120,22 0 0 1 240,0 v100 a120,22 0 0 1 -240,0 z" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  <ellipse cx="1230" cy="430" rx="120" ry="22" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="1230" y="478" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e293b">Fuente operacional</text>
+  <text x="1230" y="500" text-anchor="middle" font-size="14" fill="#1e293b">CSV → esquema oltp.*</text>
+  <line x1="1230" y1="404" x2="1230" y2="250" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="1240" y="345" font-size="13" fill="#1e293b">ETL SQL + rechazos</text>
+  <text x="1240" y="363" font-size="13" fill="#1e293b">+ conciliación (7 controles)</text>
+  <!-- zodb -->
+  <path d="M300,600 a390,24 0 0 1 780,0 v90 a390,24 0 0 1 -780,0 z" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <ellipse cx="690" cy="600" rx="390" ry="24" fill="#ddd6fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="690" y="648" text-anchor="middle" font-size="17" font-weight="bold" fill="#3b0764">ZODB · Base de datos orientada a objetos</text>
+  <text x="690" y="672" text-anchor="middle" font-size="14" fill="#3b0764">Sesion → Pregunta → Intencion → RespuestaAgente → ResultadoConsulta (+ Blob LOB) → ConsultaAnalitica, FuenteDato</text>
+  <text x="690" y="694" text-anchor="middle" font-size="14" fill="#3b0764">IDO · apuntadores suaves · B-Trees · versionamiento · transacciones ACID</text>
+  <line x1="520" y1="520" x2="520" y2="572" stroke="#6d28d9" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="530" y="552" font-size="13" fill="#3b0764">objetos y trazabilidad</text>
+</svg>

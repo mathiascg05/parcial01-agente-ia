@@ -1,0 +1,114 @@
+classDiagram
+    direction TB
+    class ObjetoAgente {
+        <<abstract>>
+        +ido : OID
+        +creado_en
+        +describir()*
+        +a_dict()
+    }
+    class AgenteAnalitico {
+        -catalogo : List~ConsultaAnalitica~
+        -reglas : List~ReglaValidacion~
+        -fuentes : Map~FuenteDato~
+        +responder(sesion, texto, servicios)
+        -_validar(momento, ctx)
+        -_seleccionar_consulta(intencion)
+    }
+    class Usuario {
+        <<abstract>>
+        -nombre
+        -documento : DocumentoIdentidad
+        +nivel_detalle()*
+        +muestra_sql()*
+    }
+    class Gerente
+    class Analista
+    class Sesion {
+        -codigo
+        -preguntas : List~Pregunta~
+        -contexto : memoria operativa
+        +nueva_pregunta(texto)
+        +recordar(intencion)
+        +cerrar()
+    }
+    class Pregunta {
+        -texto
+        -fecha
+        -estado
+        +asignar_intencion()
+        +asignar_respuesta()
+        +cambiar_estado()
+    }
+    class Intencion {
+        -tipo, metrica, dimension
+        -periodo : Periodo
+        -filtros : List~Filtro~
+        -operacion, orden, limite
+        +es_ejecutable()
+    }
+    class ConsultaAnalitica {
+        <<abstract>>
+        -codigo, plantilla, version
+        +aplica_a(intencion)*
+        +construir_sql(intencion)*
+        +ejecutar(datamart, intencion)
+        +nueva_version(nota)
+    }
+    class ConsultaTotal
+    class ConsultaRanking
+    class ConsultaTendencia
+    class ConsultaComparativaPeriodos
+    class ConsultaComparativaMiembros
+    class ResultadoConsulta {
+        -sql, parametros
+        -columnas, filas
+        -csv : Blob LOB
+        +esta_vacio()
+        +leer_csv()
+    }
+    class RespuestaAgente {
+        -tipo, resumen, interpretacion
+        -advertencias, validaciones
+        +registrar_validacion()
+        +agregar_fuente()
+    }
+    class FuenteDato {
+        -tabla, tipo, campos
+        +registrar_uso()
+    }
+    class ReglaValidacion {
+        <<abstract>>
+        -codigo, momento, severidad
+        +aplicar(ctx)
+        +validar(ctx)*
+    }
+    class RV01_RV11["11 reglas concretas RV01…RV11"]
+    ObjetoAgente <|-- AgenteAnalitico
+    ObjetoAgente <|-- Usuario
+    ObjetoAgente <|-- Sesion
+    ObjetoAgente <|-- Pregunta
+    ObjetoAgente <|-- Intencion
+    ObjetoAgente <|-- ConsultaAnalitica
+    ObjetoAgente <|-- ResultadoConsulta
+    ObjetoAgente <|-- RespuestaAgente
+    ObjetoAgente <|-- FuenteDato
+    ObjetoAgente <|-- ReglaValidacion
+    Usuario <|-- Gerente
+    Usuario <|-- Analista
+    ConsultaAnalitica <|-- ConsultaTotal
+    ConsultaAnalitica <|-- ConsultaRanking
+    ConsultaAnalitica <|-- ConsultaTendencia
+    ConsultaAnalitica <|-- ConsultaComparativaPeriodos
+    ConsultaAnalitica <|-- ConsultaComparativaMiembros
+    ReglaValidacion <|-- RV01_RV11
+    AgenteAnalitico o-- "5" ConsultaAnalitica : catálogo
+    AgenteAnalitico o-- "11" ReglaValidacion : cadena
+    AgenteAnalitico o-- "6" FuenteDato
+    Sesion --> "1" Usuario
+    Sesion *-- "0..*" Pregunta
+    Pregunta *-- "0..1" Intencion
+    Pregunta *-- "0..1" RespuestaAgente
+    RespuestaAgente *-- "0..1" ResultadoConsulta
+    RespuestaAgente --> "0..*" FuenteDato : compartidas
+    ResultadoConsulta --> "1" ConsultaAnalitica

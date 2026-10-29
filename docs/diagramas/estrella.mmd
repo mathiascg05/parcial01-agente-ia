@@ -1,0 +1,62 @@
+erDiagram
+    DIM_FECHA ||--o{ FACT_VENTAS : "fecha_sk"
+    DIM_PRODUCTO ||--o{ FACT_VENTAS : "producto_sk"
+    DIM_CLIENTE ||--o{ FACT_VENTAS : "cliente_sk"
+    DIM_SUCURSAL ||--o{ FACT_VENTAS : "sucursal_sk"
+    DIM_CANAL ||--o{ FACT_VENTAS : "canal_sk"
+    FACT_VENTAS {
+        varchar numero_ticket PK "dimension degenerada"
+        smallint linea_ticket PK
+        int fecha_sk FK
+        int producto_sk FK
+        int cliente_sk FK
+        int sucursal_sk FK
+        int canal_sk FK
+        int cantidad "aditiva"
+        numeric precio_unitario "no aditiva"
+        numeric monto_bruto "aditiva"
+        numeric descuento "aditiva"
+        numeric ingreso_neto "aditiva"
+        numeric costo_total "aditiva"
+        numeric margen_bruto "aditiva"
+    }
+    DIM_FECHA {
+        int fecha_sk PK "AAAAMMDD"
+        date fecha
+        char anio_mes "mes"
+        char anio_trimestre "trimestre"
+        smallint anio "año"
+        varchar nombre_dia
+    }
+    DIM_PRODUCTO {
+        int producto_sk PK "SCD1"
+        varchar producto_id "clave natural"
+        varchar nombre
+        varchar subcategoria
+        varchar categoria
+        varchar marca
+    }
+    DIM_CLIENTE {
+        int cliente_sk PK "SCD2"
+        varchar cliente_id "clave natural"
+        varchar nombre
+        varchar segmento "historico"
+        varchar tipo_cliente
+        date fecha_inicio
+        date fecha_fin
+        bool es_actual
+    }
+    DIM_SUCURSAL {
+        int sucursal_sk PK
+        varchar sucursal_id
+        varchar nombre
+        varchar ciudad
+        varchar estado
+        varchar region
+    }
+    DIM_CANAL {
+        int canal_sk PK
+        varchar canal_id
+        varchar nombre
+        varchar tipo_canal
+    }
