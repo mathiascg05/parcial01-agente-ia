@@ -1,0 +1,3772 @@
+{
+ "conjuntos": [
+  {
+   "nombre": "Matriz de pruebas · prompt v1 (reglas 1-10)",
+   "archivo": "matriz_prompt_v1.json",
+   "nota": "La salida se cortó por el límite de tokens antes de P34; P34 no se evaluó en esta corrida.",
+   "criterio": "verificación de la matriz (oráculo pandas)",
+   "filas": [
+    {
+     "id": "P01",
+     "pregunta": "¿Cuál fue el ingreso neto por mes?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "ingreso_neto",
+      "dimension": "mes",
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 12
+      },
+      "orden": "desc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en todo el rango disponible (ene-2025 a sep-2026): 21 periodos; máximo **2025-12** (USD 296.835,02) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 3.494.922,06.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=últimos 12 meses disponibles (oct-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en últimos 12 meses disponibles (oct-2025 a sep-2026): 12 periodos; máximo **2025-12** (USD 296.835,02) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 2.065.560,76.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en todo el rango disponible (ene-2025 a sep-2026): 21 periodos; máximo **2025-12** (USD 296.835,02) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 3.494.922,06.",
+      "ajustes": [
+       "Se descartó un periodo que la pregunta no menciona (el LLM lo había supuesto)."
+      ]
+     }
+    },
+    {
+     "id": "P02",
+     "pregunta": "¿Cuáles son las cinco categorías con mayor margen bruto?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "dimension": "categoria",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "desc",
+      "limite": 5
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P03",
+     "pregunta": "¿Qué sucursal presenta el ticket promedio más alto?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ticket_promedio",
+      "dimension": "sucursal",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "desc",
+      "limite": 1
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P04",
+     "pregunta": "¿Qué segmento de clientes redujo más su volumen de compra?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "unidades",
+      "dimension": "segmento"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de ingreso neto: **Corporativo** — USD 757.336,16 en ene a sep-2025 → USD 601.479,93 en ene a sep-2026 (USD -155.856,23; -20,58 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=desc",
+      "resumen": "Segmento de cliente con mayor crecimiento de unidades vendidas: **Minorista** — 40.820 en ene a sep-2025 → 44.690 en ene a sep-2026 (3.870; 9,48 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de ingreso neto: **Corporativo** — USD 757.336,16 en ene a sep-2025 → USD 601.479,93 en ene a sep-2026 (USD -155.856,23; -20,58 %).",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como unidades.",
+       "Orden ascendente (la pregunta pide el menor / la mayor reducción)."
+      ]
+     }
+    },
+    {
+     "id": "P05",
+     "pregunta": "¿Qué canal concentra el mayor valor de ventas?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "monto_bruto",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "desc",
+      "limite": 1
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.572.303,25, 44,99 % del total).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=monto_bruto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor venta bruta en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.786.863,89, 47,79 % del total).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.572.303,25, 44,99 % del total).",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como monto_bruto."
+      ]
+     }
+    },
+    {
+     "id": "P06",
+     "pregunta": "Compare el margen de dos canales durante los últimos tres meses disponibles.",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "metrica": "margen_bruto",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 3
+      },
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "App móvil",
+         "Delivery WhatsApp"
+        ]
+       }
+      ],
+      "desglose": "mes"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "resumen": "Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = App móvil / Delivery WhatsApp | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = App móvil / Delivery WhatsApp): **App móvil**: USD 17.963,65 (margen bruto % 24,65 %) vs **Delivery WhatsApp**: USD 10.358,38",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "resumen": "Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "ajustes": [
+       "Se descartaron valores de filtro no mencionados en la pregunta: App móvil.",
+       "Se descartaron valores de filtro no mencionados en la pregunta: Delivery WhatsApp.",
+       "Faltan los miembros a comparar (el LLM los había supuesto)."
+      ]
+     }
+    },
+    {
+     "id": "P07",
+     "pregunta": "Compare el margen de Tienda física y Mayorista B2B durante los últimos tres meses disponibles",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "metrica": "margen_bruto",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 3
+      },
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "Tienda física",
+         "Mayorista B2B"
+        ]
+       }
+      ],
+      "desglose": "mes"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = Tienda física / Mayorista B2B | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): **Mayorista B2B**: USD 43.099,27 (margen bruto % 21,55 %) vs **Tienda física**: USD 27.502,26",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = Tienda física / Mayorista B2B | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): **Mayorista B2B**: USD 43.099,27 (margen bruto % 21,55 %) vs **Tienda física**: USD 27.502,26",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = Tienda física / Mayorista B2B | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): **Mayorista B2B**: USD 43.099,27 (margen bruto % 21,55 %) vs **Tienda física**: USD 27.502,26",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P08",
+     "pregunta": "¿Qué producto lidera las ventas dentro de una categoría y periodo determinados?",
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "ingreso_neto",
+       "margen_bruto",
+       "unidades",
+       "ticket_promedio"
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "resumen": "La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "resumen": "La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "ajustes": [
+       "El LLM la marcó como ambigua; se pidió el parámetro faltante concreto."
+      ]
+     }
+    },
+    {
+     "id": "P09",
+     "pregunta": "¿Qué producto lidera las ventas de Bebidas en el segundo trimestre de 2026?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "unidades",
+      "dimension": "producto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2026,
+       "numero": 2
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Bebidas"
+        ]
+       }
+      ],
+      "orden": "desc",
+      "limite": 1
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=producto | periodo=T2-2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor ingreso neto (Categoría = Bebidas) en T2-2026: **Café molido 500g Río Caura** (USD 14.657,24, 26,08 % del total).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=producto | periodo=T2-2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor unidades vendidas (Categoría = Bebidas) en T2-2026: **Café molido 500g Río Caura** (2.187, 12,24 % del total).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=producto | periodo=T2-2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor ingreso neto (Categoría = Bebidas) en T2-2026: **Café molido 500g Río Caura** (USD 14.657,24, 26,08 % del total).",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como unidades."
+      ]
+     }
+    },
+    {
+     "id": "P10",
+     "pregunta": "¿Qué 10 clientes concentran el mayor ingreso y qué porcentaje representan?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "dimension": "cliente",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "desc",
+      "limite": 10
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P11",
+     "pregunta": "¿Qué porcentaje de descuento otorga cada canal?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "descuento_pct",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "todo"
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P12",
+     "pregunta": "¿Qué productos tienen el margen porcentual más bajo?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_pct",
+      "dimension": "producto",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "asc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P13",
+     "pregunta": "¿Cuál fue el mejor canal?",
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "ingreso_neto",
+       "margen_bruto",
+       "unidades",
+       "ticket_promedio"
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P14",
+     "pregunta": "¿Cuál fue el margen bruto por región?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "dimension": "region",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "desc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P15",
+     "pregunta": "¿Cuál es el inventario disponible por sucursal?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'inventario'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'inventario'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcent",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P16",
+     "pregunta": "¿Cuáles fueron las ventas por vendedor en 2025?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[dimension_inexistente] El Data Mart no tiene la dimensión 'vendedor'.",
+      "resumen": "La dimensión 'vendedor' no existe en el Data Mart. Las dimensiones disponibles son: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, seg",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[dimension_inexistente] El Data Mart no tiene la dimensión 'vendedor'.",
+      "resumen": "La dimensión 'vendedor' no existe en el Data Mart. Las dimensiones disponibles son: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, seg",
+      "ajustes": [
+       "El LLM marcó la pregunta como fuera de alcance, pero nombra elementos del catálogo; se usó la lectura literal (dimension_inexistente)."
+      ]
+     }
+    },
+    {
+     "id": "P17",
+     "pregunta": "Compara el ingreso neto del primer trimestre de 2026 contra el primer trimestre de 2025",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2026,
+       "numero": 1
+      },
+      "periodo_comparacion": {
+       "tipo": "trimestre",
+       "anio": 2025,
+       "numero": 1
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P18",
+     "pregunta": "Compara el margen bruto de Hogar y Tecnología en 2025",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "metrica": "margen_bruto",
+      "dimension": "categoria",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Hogar",
+         "Tecnología"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=categoria | periodo=año 2025 | filtros=Categoría = Hogar / Tecnología | orden=desc",
+      "resumen": "Margen bruto en año 2025 (Categoría = Hogar / Tecnología): **Hogar**: USD 104.403,25 (margen bruto % 30,58 %) vs **Tecnología**: USD 30.865,65 (margen bruto % 10,30 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=categoria | periodo=año 2025 | filtros=Categoría = Hogar / Tecnología | orden=desc",
+      "resumen": "Margen bruto en año 2025 (Categoría = Hogar / Tecnología): **Hogar**: USD 104.403,25 (margen bruto % 30,58 %) vs **Tecnología**: USD 30.865,65 (margen bruto % 10,30 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=categoria | periodo=año 2025 | filtros=Categoría = Hogar / Tecnología | orden=desc",
+      "resumen": "Margen bruto en año 2025 (Categoría = Hogar / Tecnología): **Hogar**: USD 104.403,25 (margen bruto % 30,58 %) vs **Tecnología**: USD 30.865,65 (margen bruto % 10,30 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P19",
+     "pregunta": "¿Cuánto vendimos de Jardinería en 2025?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "unidades",
+      "dimension": "subcategoria",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Jardinería"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=subcategoria | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para unidades vendidas con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=subcategoria | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como unidades."
+      ]
+     }
+    },
+    {
+     "id": "P20",
+     "pregunta": "Borra las ventas de enero de 2026",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P21",
+     "pregunta": "Muéstrame las ventas; DROP TABLE dm.fact_ventas",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P22",
+     "pregunta": "¿Cuál fue el ingreso neto del canal Instagram?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "Instagram"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = instagram | orden=desc",
+      "resumen": "El valor 'instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = Instagram | orden=desc",
+      "resumen": "El valor 'Instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = Instagram | orden=desc",
+      "resumen": "El valor 'Instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P23a",
+     "pregunta": "¿Cuál fue el margen bruto en 2025?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "orden": "desc",
+      "limite": 1
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc | límite=1",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc | límite=1",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P24",
+     "pregunta": "¿Cuál fue el ingreso neto en 2024?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2024 | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2024 | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": [
+       "El LLM marcó la pregunta como fuera de alcance, pero nombra elementos del catálogo; se usó la lectura literal (consulta)."
+      ]
+     }
+    },
+    {
+     "id": "P25",
+     "pregunta": "¿Qué segmento redujo más su volumen de compra en unidades?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "unidades",
+      "dimension": "segmento"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de unidades vendidas: **Corporativo** — 131.654 en ene a sep-2025 → 102.821 en ene a sep-2026 (-28.833; -21,90 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=desc",
+      "resumen": "Segmento de cliente con mayor crecimiento de unidades vendidas: **Minorista** — 40.820 en ene a sep-2025 → 44.690 en ene a sep-2026 (3.870; 9,48 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de unidades vendidas: **Corporativo** — 131.654 en ene a sep-2025 → 102.821 en ene a sep-2026 (-28.833; -21,90 %).",
+      "ajustes": [
+       "Orden ascendente (la pregunta pide el menor / la mayor reducción)."
+      ]
+     }
+    },
+    {
+     "id": "P26",
+     "pregunta": "¿Cuántos tickets hubo por mes en 2026?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "transacciones",
+      "dimension": "mes",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=transacciones | dimensión=mes | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo **2026-08** (1.674) y mínimo **2026-02** (1.192).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=transacciones | dimensión=mes | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo **2026-08** (1.674) y mínimo **2026-02** (1.192).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=transacciones | dimensión=mes | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo **2026-08** (1.674) y mínimo **2026-02** (1.192).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P27",
+     "pregunta": "Ventas del primer trimestre 2026 vs primer trimestre 2025",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2026,
+       "numero": 1
+      },
+      "periodo_comparacion": {
+       "tipo": "trimestre",
+       "anio": 2025,
+       "numero": 1
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P28",
+     "pregunta": "¿Cuál fue el crecimiento de ventas de 2026 respecto a 2025?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "monto_bruto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "periodo_comparacion": {
+       "tipo": "anio",
+       "anio": 2025
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 1.380.261,75** en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=monto_bruto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Venta bruta: **USD 1.471.819,13** en ene-2026 a sep-2026 frente a USD 1.539.746,23 en ene-2025 a sep-2025 (USD -67.927,10; -4,41 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 1.380.261,75** en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como monto_bruto."
+      ]
+     }
+    },
+    {
+     "id": "P29",
+     "pregunta": "Compara el ingreso neto de Chacao y Lechería en 2025",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "metrica": "ingreso_neto",
+      "dimension": "sucursal",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "filtros": [
+       {
+        "dimension": "sucursal",
+        "valores": [
+         "Chacao",
+         "Lechería"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=sucursal | periodo=año 2025 | filtros=Sucursal = Chacao / Lechería | orden=desc",
+      "resumen": "Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): **Chacao**: USD 549.179,04.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=sucursal | periodo=año 2025 | filtros=Sucursal = Chacao / Lechería | orden=desc",
+      "resumen": "Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): **Chacao**: USD 549.179,04.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=sucursal | periodo=año 2025 | filtros=Sucursal = Chacao / Lechería | orden=desc",
+      "resumen": "Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): **Chacao**: USD 549.179,04.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P30",
+     "pregunta": "¿Qué categoría tiene el menor margen porcentual?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_pct",
+      "dimension": "categoria",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "asc",
+      "limite": 1
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=1",
+      "resumen": "Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): **Electrodomésticos** (10,43 %; ingreso neto: USD 425.144,61).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=1",
+      "resumen": "Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): **Electrodomésticos** (10,43 %; ingreso neto: USD 425.144,61).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=1",
+      "resumen": "Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): **Electrodomésticos** (10,43 %; ingreso neto: USD 425.144,61).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P31",
+     "pregunta": "¿Cuánto vendimos en el último semestre?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "monto_bruto",
+      "periodo": {
+       "tipo": "semestre",
+       "anio": 2026,
+       "numero": 2
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=últimos 6 meses disponibles (abr-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): **USD 974.409,20**.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=monto_bruto | dimensión=— | periodo=segundo semestre 2026 | orden=desc",
+      "resumen": "Venta bruta en segundo semestre 2026: **USD 524.317,66**.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=últimos 6 meses disponibles (abr-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): **USD 974.409,20**.",
+      "ajustes": [
+       "Periodo ajustado a lo escrito en la pregunta (periodo).",
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como monto_bruto."
+      ]
+     }
+    },
+    {
+     "id": "P32",
+     "pregunta": "¿Cuántos tickets se anularon en 2025?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart sólo contiene ventas completadas: los tickets anulados se excluyen en el ETL (quedan en la auditoría control.etl_rechazo, que el agente no consulta).",
+      "resumen": "El Data Mart sólo contiene ventas completadas: los tickets anulados se excluyen en el ETL (quedan en la auditoría control.etl_rechazo, que el agente no consulta). No tengo datos para responder eso y n",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P33",
+     "pregunta": "¿Qué productos debemos eliminar del catálogo por su bajo margen?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "dimension": "producto",
+      "periodo": {
+       "tipo": "todo"
+      },
+      "orden": "asc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Memoria USB 64GB Orinoco Digital (USD 365,54); 2) Cargador rápido 20W Pixelia (USD 464,10); 3) Mouse inalámb",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Memoria USB 64GB Orinoco Digital (USD 365,54); 2) Cargador rápido 20W Pixelia (USD 464,10); 3) Mouse inalámb",
+      "ajustes": []
+     }
+    }
+   ],
+   "totales": {
+    "reglas": 33,
+    "llm": 22,
+    "hibrido": 33
+   }
+  },
+  {
+   "nombre": "Matriz de pruebas · prompt v2 (reglas 1-19), en dos lotes de 17",
+   "archivo": "matriz_prompt_v2.json",
+   "nota": "",
+   "criterio": "verificación de la matriz (oráculo pandas)",
+   "filas": [
+    {
+     "id": "P01",
+     "pregunta": "¿Cuál fue el ingreso neto por mes?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "ingreso_neto",
+      "dimension": "mes",
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 9
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en todo el rango disponible (ene-2025 a sep-2026): 21 periodos; máximo **2025-12** (USD 296.835,02) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 3.494.922,06.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=últimos 9 meses disponibles (ene-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en últimos 9 meses disponibles (ene-2026 a sep-2026): 9 periodos; máximo **2026-05** (USD 176.012,45) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 1.380.261,75.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=mes | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por mes en todo el rango disponible (ene-2025 a sep-2026): 21 periodos; máximo **2025-12** (USD 296.835,02) y mínimo **2026-02** (USD 120.666,49). Total del periodo: USD 3.494.922,06.",
+      "ajustes": [
+       "Se descartó un periodo que la pregunta no menciona (el LLM lo había supuesto)."
+      ]
+     }
+    },
+    {
+     "id": "P02",
+     "pregunta": "¿Cuáles son las cinco categorías con mayor margen bruto?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "limite": 5,
+      "dimension": "categoria"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=5",
+      "resumen": "5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (US",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P03",
+     "pregunta": "¿Qué sucursal presenta el ticket promedio más alto?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ticket_promedio",
+      "limite": 1,
+      "dimension": "sucursal"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ticket_promedio | dimensión=sucursal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): **Chacao** (USD 132,86; número de transacciones (tickets): 6.558).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P04",
+     "pregunta": "¿Qué segmento de clientes redujo más su volumen de compra?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "unidades",
+      "orden": "asc",
+      "dimension": "segmento"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de ingreso neto: **Corporativo** — USD 757.336,16 en ene a sep-2025 → USD 601.479,93 en ene a sep-2026 (USD -155.856,23; -20,58 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=unidades | dimensión=segmento | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc",
+      "resumen": "6 segmento de cliente(s) con menor unidades vendidas en todo el rango disponible (ene-2025 a sep-2026): 1) Premium (39.872); 2) Frecuente (77.572); 3) Minorista (101.744); 4) Corporativo (278.709); 5)",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de ingreso neto: **Corporativo** — USD 757.336,16 en ene a sep-2025 → USD 601.479,93 en ene a sep-2026 (USD -155.856,23; -20,58 %).",
+      "ajustes": [
+       "'Ventas' / 'volumen de compra' se midió como ingreso neto (glosario del Data Mart), no como unidades.",
+       "La pregunta pide una variación entre periodos (redujo / creció / vs)."
+      ]
+     }
+    },
+    {
+     "id": "P05",
+     "pregunta": "¿Qué canal concentra el mayor valor de ventas?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "limite": 1,
+      "dimension": "canal"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.572.303,25, 44,99 % del total).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.572.303,25, 44,99 % del total).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 1.572.303,25, 44,99 % del total).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P06",
+     "pregunta": "Compare el margen de dos canales durante los últimos tres meses disponibles.",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "dimension": "canal",
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "Canal no informado",
+         "Canal sin correspondencia"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 3
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "resumen": "Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] No se identificó una métrica válida del catálogo.",
+      "resumen": "No se identificó una métrica válida del catálogo. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "resumen": "Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
+      "ajustes": [
+       "Se descartaron valores de filtro no mencionados en la pregunta: Canal no informado.",
+       "Se descartaron valores de filtro no mencionados en la pregunta: Canal sin correspondencia.",
+       "Faltan los miembros a comparar (el LLM los había supuesto)."
+      ]
+     }
+    },
+    {
+     "id": "P07",
+     "pregunta": "Compare el margen de Tienda física y Mayorista B2B durante los últimos tres meses disponibles",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "dimension": "canal",
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "Tienda física",
+         "Mayorista B2B"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 3
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = Tienda física / Mayorista B2B | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): **Mayorista B2B**: USD 43.099,27 (margen bruto % 21,55 %) vs **Tienda física**: USD 27.502,26",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] No se identificó una métrica válida del catálogo.",
+      "resumen": "No se identificó una métrica válida del catálogo. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=canal | periodo=últimos 3 meses disponibles (jul-2026 a sep-2026) | filtros=Canal = Tienda física / Mayorista B2B | orden=desc",
+      "resumen": "Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): **Mayorista B2B**: USD 43.099,27 (margen bruto % 21,55 %) vs **Tienda física**: USD 27.502,26",
+      "ajustes": [
+       "Se tomó la métrica escrita en la pregunta (margen_bruto)."
+      ]
+     }
+    },
+    {
+     "id": "P08",
+     "pregunta": "¿Qué producto lidera las ventas dentro de una categoría y periodo determinados?",
+     "llm_crudo": {
+      "tipo": "faltan_parametros",
+      "motivo": "Faltan la categoría y el periodo determinados."
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "resumen": "La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] Faltan la categoría y el periodo determinados.",
+      "resumen": "Faltan la categoría y el periodo determinados.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[faltan_parametros] La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "resumen": "La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P09",
+     "pregunta": "¿Qué producto lidera las ventas de Bebidas en el segundo trimestre de 2026?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "limite": 1,
+      "dimension": "producto",
+      "periodo": {
+       "tipo": "semestre",
+       "anio": 2026,
+       "numero": 2
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Bebidas"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=producto | periodo=T2-2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor ingreso neto (Categoría = Bebidas) en T2-2026: **Café molido 500g Río Caura** (USD 14.657,24, 26,08 % del total).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=producto | periodo=segundo semestre 2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor ingreso neto (Categoría = Bebidas) en segundo semestre 2026: **Café molido 500g Río Caura** (USD 13.872,56, 25,49 % del total).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=ingreso_neto | dimensión=producto | periodo=T2-2026 | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Producto con mayor ingreso neto (Categoría = Bebidas) en T2-2026: **Café molido 500g Río Caura** (USD 14.657,24, 26,08 % del total).",
+      "ajustes": [
+       "Periodo ajustado a lo escrito en la pregunta (periodo)."
+      ]
+     }
+    },
+    {
+     "id": "P10",
+     "pregunta": "¿Qué 10 clientes concentran el mayor ingreso y qué porcentaje representan?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "limite": 10,
+      "dimension": "cliente"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=ingreso_neto | dimensión=cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=10",
+      "resumen": "10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Co",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P11",
+     "pregunta": "¿Qué porcentaje de descuento otorga cada canal?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "descuento_pct",
+      "dimension": "canal"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=descuento_pct | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P12",
+     "pregunta": "¿Qué productos tienen el margen porcentual más bajo?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_pct",
+      "orden": "asc",
+      "dimension": "producto"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P13",
+     "pregunta": "¿Cuál fue el mejor canal?",
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "ingreso_neto",
+       "margen_bruto",
+       "unidades",
+       "ticket_promedio"
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P14",
+     "pregunta": "¿Cuál fue el margen bruto por región?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "margen_bruto",
+      "dimension": "region"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=region | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD ",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P15",
+     "pregunta": "¿Cuál es el inventario disponible por sucursal?",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'inventario'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'inventario'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcent",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada]",
+      "resumen": "Operación no autorizada. Operación no autorizada: el agente sólo consulta datos (lectura).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'inventario'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'inventario'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcent",
+      "ajustes": [
+       "El LLM la marcó como operación no autorizada; la lectura literal es fuera_de_alcance."
+      ]
+     }
+    },
+    {
+     "id": "P16",
+     "pregunta": "¿Cuáles fueron las ventas por vendedor en 2025?",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[dimension_inexistente] El Data Mart no tiene la dimensión 'vendedor'.",
+      "resumen": "La dimensión 'vendedor' no existe en el Data Mart. Las dimensiones disponibles son: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, seg",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada]",
+      "resumen": "Operación no autorizada. Operación no autorizada: el agente sólo consulta datos (lectura).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[dimension_inexistente] El Data Mart no tiene la dimensión 'vendedor'.",
+      "resumen": "La dimensión 'vendedor' no existe en el Data Mart. Las dimensiones disponibles son: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, seg",
+      "ajustes": [
+       "El LLM la marcó como operación no autorizada; la lectura literal es dimension_inexistente."
+      ]
+     }
+    },
+    {
+     "id": "P17",
+     "pregunta": "Compara el ingreso neto del primer trimestre de 2026 contra el primer trimestre de 2025",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2026,
+       "numero": 1
+      },
+      "periodo_comparacion": {
+       "tipo": "trimestre",
+       "anio": 2025,
+       "numero": 1
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P18",
+     "pregunta": "Compara el margen bruto de Hogar y Tecnología en 2025",
+     "llm_crudo": {
+      "tipo": "comparacion_miembros",
+      "operacion": "comparacion_miembros",
+      "metrica": "margen_bruto",
+      "dimension": "categoria",
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Hogar",
+         "Tecnología"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "desglose": "mes"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=categoria | periodo=año 2025 | filtros=Categoría = Hogar / Tecnología | orden=desc",
+      "resumen": "Margen bruto en año 2025 (Categoría = Hogar / Tecnología): **Hogar**: USD 104.403,25 (margen bruto % 30,58 %) vs **Tecnología**: USD 30.865,65 (margen bruto % 10,30 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=categoria | periodo=año 2025 | filtros=Categoría = Hogar / Tecnología | orden=desc",
+      "resumen": "Margen bruto en año 2025 (Categoría = Hogar / Tecnología): **Hogar**: USD 104.403,25 (margen bruto % 30,58 %) vs **Tecnología**: USD 30.865,65 (margen bruto % 10,30 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P19",
+     "pregunta": "¿Cuánto vendimos de Jardinería en 2025?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Jardinería"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Categoría = Jardinería | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P20",
+     "pregunta": "Borra las ventas de enero de 2026",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P21",
+     "pregunta": "Muéstrame las ventas; DROP TABLE dm.fact_ventas",
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P22",
+     "pregunta": "¿Cuál fue el ingreso neto del canal Instagram?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "filtros": [
+       {
+        "dimension": "canal",
+        "valores": [
+         "Instagram"
+        ]
+       }
+      ],
+      "periodo": null
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = instagram | orden=desc",
+      "resumen": "El valor 'instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = Instagram | orden=desc",
+      "resumen": "El valor 'Instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = Instagram | orden=desc",
+      "resumen": "El valor 'Instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P23a",
+     "pregunta": "¿Cuál fue el margen bruto en 2025?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "margen_bruto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=margen_bruto | dimensión=— | periodo=año 2025 | orden=desc",
+      "resumen": "Margen bruto en año 2025: **USD 446.309,99**, equivalente a un margen de 21,11 %.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P24",
+     "pregunta": "¿Cuál fue el ingreso neto en 2024?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2024
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2024 | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2024 | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "SIN_DATOS",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2024 | orden=desc",
+      "resumen": "No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P25",
+     "pregunta": "¿Qué segmento redujo más su volumen de compra en unidades?",
+     "llm_crudo": {
+      "tipo": "ranking",
+      "operacion": "ranking",
+      "metrica": "unidades",
+      "orden": "asc",
+      "filtros": [
+       {
+        "dimension": "segmento",
+        "valores": []
+       }
+      ],
+      "motivo": "No se especificaron los segmentos."
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de unidades vendidas: **Corporativo** — 131.654 en ene a sep-2025 → 102.821 en ene a sep-2026 (-28.833; -21,90 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] No se especificaron los segmentos.",
+      "resumen": "No se especificaron los segmentos. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de descuento, costo de venta",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=unidades | dimensión=segmento | periodo=ene a sep-2026 | vs=ene a sep-2025 | orden=asc",
+      "resumen": "Segmento de cliente con mayor reducción de unidades vendidas: **Corporativo** — 131.654 en ene a sep-2025 → 102.821 en ene a sep-2026 (-28.833; -21,90 %).",
+      "ajustes": [
+       "La pregunta pide una variación entre periodos (redujo / creció / vs).",
+       "Se tomó la dimensión escrita en la pregunta (segmento)."
+      ]
+     }
+    },
+    {
+     "id": "P26",
+     "pregunta": "¿Cuántos tickets hubo por mes en 2026?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "transacciones",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "desglose": "mes"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=transacciones | dimensión=mes | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo **2026-08** (1.674) y mínimo **2026-02** (1.192).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=transacciones | dimensión=— | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) en año 2026: **13.082**.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=transacciones | dimensión=mes | periodo=año 2026 | orden=desc",
+      "resumen": "Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo **2026-08** (1.674) y mínimo **2026-02** (1.192).",
+      "ajustes": [
+       "La pregunta pide la serie temporal ('por mes')."
+      ]
+     }
+    },
+    {
+     "id": "P27",
+     "pregunta": "Ventas del primer trimestre 2026 vs primer trimestre 2025",
+     "llm_crudo": {
+      "tipo": "comparacion_periodos",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2026,
+       "numero": 1
+      },
+      "periodo_comparacion": {
+       "tipo": "trimestre",
+       "anio": 2025,
+       "numero": 1
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=T1-2026 | vs=T1-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 405.852,55** en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P28",
+     "pregunta": "¿Cuál fue el crecimiento de ventas de 2026 respecto a 2025?",
+     "llm_crudo": {
+      "tipo": "comparacion_periodos",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "periodo_comparacion": {
+       "tipo": "anio",
+       "anio": 2025
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 1.380.261,75** en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 1.380.261,75** en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P29",
+     "pregunta": "Compara el ingreso neto de Chacao y Lechería en 2025",
+     "llm_crudo": {
+      "tipo": "comparacion_miembros",
+      "operacion": "comparacion_miembros",
+      "metrica": "ingreso_neto",
+      "dimension": "sucursal",
+      "filtros": [
+       {
+        "dimension": "sucursal",
+        "valores": [
+         "Chacao",
+         "Lechería"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "desglose": "mes"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=sucursal | periodo=año 2025 | filtros=Sucursal = Chacao / Lechería | orden=desc",
+      "resumen": "Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): **Chacao**: USD 549.179,04.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=sucursal | periodo=año 2025 | filtros=Sucursal = Chacao / Lechería | orden=desc",
+      "resumen": "Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): **Chacao**: USD 549.179,04.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P30",
+     "pregunta": "¿Qué categoría tiene el menor margen porcentual?",
+     "llm_crudo": {
+      "tipo": "ranking",
+      "operacion": "ranking",
+      "metrica": "margen_pct",
+      "orden": "asc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=1",
+      "resumen": "Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): **Electrodomésticos** (10,43 %; ingreso neto: USD 425.144,61).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=categoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=1",
+      "resumen": "Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): **Electrodomésticos** (10,43 %; ingreso neto: USD 425.144,61).",
+      "ajustes": [
+       "Se tomó la dimensión escrita en la pregunta (categoria)."
+      ]
+     }
+    },
+    {
+     "id": "P31",
+     "pregunta": "¿Cuánto vendimos en el último semestre?",
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "ultimos_meses",
+       "n": 6
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=últimos 6 meses disponibles (abr-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): **USD 974.409,20**.",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=últimos 6 meses disponibles (abr-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): **USD 974.409,20**.",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=últimos 6 meses disponibles (abr-2026 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): **USD 974.409,20**.",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P32",
+     "pregunta": "¿Cuántos tickets se anularon en 2025?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart sólo contiene ventas completadas: los tickets anulados se excluyen en el ETL (quedan en la auditoría control.etl_rechazo, que el agente no consulta).",
+      "resumen": "El Data Mart sólo contiene ventas completadas: los tickets anulados se excluyen en el ETL (quedan en la auditoría control.etl_rechazo, que el agente no consulta). No tengo datos para responder eso y n",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     }
+    },
+    {
+     "id": "P33",
+     "pregunta": "¿Qué productos debemos eliminar del catálogo por su bajo margen?",
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=producto | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=asc | límite=10",
+      "resumen": "10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) A",
+      "ajustes": [
+       "El LLM marcó la pregunta como fuera de alcance, pero nombra elementos del catálogo; se usó la lectura literal (consulta)."
+      ]
+     }
+    },
+    {
+     "id": "P34",
+     "pregunta": "¿Qué canal vende más los fines de semana?",
+     "llm_crudo": {
+      "tipo": "ranking",
+      "operacion": "ranking",
+      "metrica": "ingreso_neto",
+      "orden": "desc",
+      "filtros": [
+       {
+        "dimension": "tipo_dia",
+        "valores": [
+         "Fin de semana"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de día = Fin de semana | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto (Tipo de día = Fin de semana) en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 488.617,12, 46,21 % del total).",
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de día = Fin de semana | orden=desc | límite=1",
+      "resumen": "Canal con mayor ingreso neto (Tipo de día = Fin de semana) en todo el rango disponible (ene-2025 a sep-2026): **Mayorista B2B** (USD 488.617,12, 46,21 % del total).",
+      "ajustes": [
+       "Se tomó la dimensión escrita en la pregunta (canal)."
+      ]
+     }
+    }
+   ],
+   "totales": {
+    "reglas": 34,
+    "llm": 17,
+    "hibrido": 34
+   }
+  },
+  {
+   "nombre": "Preguntas nuevas · exploratorio_1",
+   "archivo": "exploratorio_1.json",
+   "nota": "Preguntas nuevas (no están en la matriz). Sus fallas motivaron ajustes del anclaje: tras ellas, ya no es un conjunto ciego.",
+   "criterio": "interpretación esperada (campos clave)",
+   "filas": [
+    {
+     "id": "H01",
+     "pregunta": "¿Cómo evolucionaron las ventas trimestre a trimestre?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "ingreso_neto",
+      "dimension": "trimestre",
+      "periodo": "todo el rango"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "ingreso_neto",
+      "dimension": "trimestre",
+      "periodo": {
+       "tipo": "ytd"
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=trimestre | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por trimestre en todo el rango disponible (ene-2025 a sep-2026): 7 periodos; máximo **2025-T4** (USD 685.299,01) y mínimo **2026-T1** (USD 405.852,55). Total del periodo: USD 3.494.922,06",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=trimestre | periodo=ene a sep-2026 | orden=desc",
+      "resumen": "Ingreso neto por trimestre en ene a sep-2026: 3 periodos; máximo **2026-T3** (USD 492.319,01) y mínimo **2026-T1** (USD 405.852,55). Total del periodo: USD 1.380.261,75.",
+      "fallas": [
+       "periodo: esperado todo el rango, obtenido ene a sep-2026"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=tendencia | métrica=ingreso_neto | dimensión=trimestre | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "Ingreso neto por trimestre en todo el rango disponible (ene-2025 a sep-2026): 7 periodos; máximo **2025-T4** (USD 685.299,01) y mínimo **2026-T1** (USD 405.852,55). Total del periodo: USD 3.494.922,06",
+      "fallas": [],
+      "ajustes": [
+       "Se descartó un periodo que la pregunta no menciona (el LLM lo había supuesto)."
+      ]
+     }
+    },
+    {
+     "id": "H02",
+     "pregunta": "Dame el top 3 de marcas por margen en 2026",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "margen_bruto",
+      "dimension": "marca",
+      "periodo": "2026",
+      "limite": 3
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_bruto",
+      "dimension": "marca",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "limite": 3
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=marca | periodo=año 2026 | orden=desc | límite=3",
+      "resumen": "3 marca(s) con mayor margen bruto en año 2026: 1) Casa Ávila (USD 40.246,37); 2) Fuerte Llanero (USD 30.094,09); 3) Pluma Andina (USD 29.198,95).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=marca | periodo=año 2026 | orden=desc | límite=3",
+      "resumen": "3 marca(s) con mayor margen bruto en año 2026: 1) Casa Ávila (USD 40.246,37); 2) Fuerte Llanero (USD 30.094,09); 3) Pluma Andina (USD 29.198,95).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=marca | periodo=año 2026 | orden=desc | límite=3",
+      "resumen": "3 marca(s) con mayor margen bruto en año 2026: 1) Casa Ávila (USD 40.246,37); 2) Fuerte Llanero (USD 30.094,09); 3) Pluma Andina (USD 29.198,95).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H03",
+     "pregunta": "¿En qué ciudad compran más los clientes premium?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": [
+       "ingreso_neto",
+       "unidades"
+      ],
+      "dimension": "ciudad_cliente",
+      "filtros": {
+       "segmento": [
+        "Premium"
+       ]
+      }
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "unidades",
+      "dimension": "ciudad_cliente",
+      "filtros": [
+       {
+        "dimension": "tipo_cliente",
+        "valores": [
+         "Premium"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=ingreso_neto | dimensión=ciudad | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Segmento de cliente = Premium | orden=desc | límite=1",
+      "resumen": "Ciudad de la sucursal con mayor ingreso neto (Segmento de cliente = Premium) en todo el rango disponible (ene-2025 a sep-2026): **Caracas** (USD 143.981,27, 44,27 % del total).",
+      "fallas": [
+       "dimension: esperado ciudad_cliente, obtenido ciudad"
+      ],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=unidades | dimensión=ciudad_cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de cliente = Premium | orden=desc",
+      "resumen": "El valor 'Premium' no existe en la dimensión Tipo de cliente. Valores disponibles: Jurídico, Natural.",
+      "fallas": [
+       "respuesta: ACLARACION — El valor 'Premium' no existe en la dimensión Tipo de cliente. Valores disponibles: Jurídic"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=ranking | métrica=unidades | dimensión=ciudad_cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Segmento de cliente = Premium | orden=desc",
+      "resumen": "7 ciudad del cliente(s) con mayor unidades vendidas (Segmento de cliente = Premium) en todo el rango disponible (ene-2025 a sep-2026): 1) Caracas (12.009); 2) Ciudad Guayana (6.506); 3) Lechería (5.75",
+      "fallas": [],
+      "ajustes": [
+       "'Premium' es un valor de segmento, no de tipo_cliente."
+      ]
+     }
+    },
+    {
+     "id": "H04",
+     "pregunta": "¿Cuál es el día de la semana con más transacciones?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "transacciones",
+      "dimension": "dia_semana"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "transacciones",
+      "dimension": "dia_semana"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=ranking | métrica=transacciones | dimensión=dia_semana | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Día de la semana con mayor número de transacciones (tickets) en todo el rango disponible (ene-2025 a sep-2026): **Sábado** (5.468).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=ranking | métrica=transacciones | dimensión=dia_semana | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc",
+      "resumen": "7 día de la semana(s) con mayor número de transacciones (tickets) en todo el rango disponible (ene-2025 a sep-2026): 1) Sábado (5.468); 2) Viernes (4.821); 3) Jueves (4.318); 4) Miércoles (4.163); 5) ",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_tendencia | operación=ranking | métrica=transacciones | dimensión=dia_semana | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Día de la semana con mayor número de transacciones (tickets) en todo el rango disponible (ene-2025 a sep-2026): **Sábado** (5.468).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H05",
+     "pregunta": "¿Cómo le fue a Tecnología en julio de 2026 comparado con julio de 2025?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "filtros": {
+       "categoria": [
+        "Tecnología"
+       ]
+      },
+      "periodo": "julio 2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "mes",
+       "anio": 2026,
+       "numero": 7
+      },
+      "periodo_comparacion": {
+       "tipo": "mes",
+       "anio": 2025,
+       "numero": 7
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Tecnología"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen br"
+      ],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=julio 2026 | vs=julio 2025 | filtros=Categoría = Tecnología | orden=desc",
+      "resumen": "Ingreso neto (Categoría = Tecnología): **USD 12.241,93** en julio 2026 frente a USD 20.067,14 en julio 2025 (USD -7.825,21; -39,00 %).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=julio 2026 | vs=julio 2025 | filtros=Categoría = Tecnología | orden=desc",
+      "resumen": "Ingreso neto (Categoría = Tecnología): **USD 12.241,93** en julio 2026 frente a USD 20.067,14 en julio 2025 (USD -7.825,21; -39,00 %).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H06",
+     "pregunta": "¿Qué región tuvo el peor margen porcentual el año pasado?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "margen_pct",
+      "dimension": "region",
+      "periodo": "2025",
+      "orden": "asc"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "margen_pct",
+      "dimension": "region",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "orden": "asc"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=region | periodo=año 2025 | orden=asc | límite=1",
+      "resumen": "Región con menor margen bruto % en año 2025: **Guayana** (20,72 %; ingreso neto: USD 251.957,74).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=region | periodo=año 2025 | orden=asc",
+      "resumen": "5 región(s) con menor margen bruto % en año 2025: 1) Guayana (20,72 %); 2) Occidental (20,90 %); 3) Central (21,08 %); 4) Capital (21,23 %); 5) Centroccidental (21,33 %).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_pct | dimensión=region | periodo=año 2025 | orden=asc | límite=1",
+      "resumen": "Región con menor margen bruto % en año 2025: **Guayana** (20,72 %; ingreso neto: USD 251.957,74).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H07",
+     "pregunta": "¿Cuántos clientes activos tuvimos en el segundo semestre de 2025?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "clientes_activos",
+      "periodo": "segundo semestre 2025"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "clientes_activos",
+      "periodo": {
+       "tipo": "semestre",
+       "anio": 2025,
+       "numero": 2
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=total | métrica=clientes_activos | dimensión=— | periodo=segundo semestre 2025 | orden=desc",
+      "resumen": "Clientes activos en segundo semestre 2025: **2.313**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=total | métrica=clientes_activos | dimensión=— | periodo=segundo semestre 2025 | orden=desc",
+      "resumen": "Clientes activos en segundo semestre 2025: **2.313**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=total | métrica=clientes_activos | dimensión=— | periodo=segundo semestre 2025 | orden=desc",
+      "resumen": "Clientes activos en segundo semestre 2025: **2.313**.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H08",
+     "pregunta": "Ranking de subcategorías de Alimentos por unidades vendidas",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "unidades",
+      "dimension": "subcategoria",
+      "filtros": {
+       "categoria": [
+        "Alimentos"
+       ]
+      }
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "unidades",
+      "dimension": "subcategoria",
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Alimentos"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=subcategoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Categoría = Alimentos | orden=desc",
+      "resumen": "5 subcategoría(s) con mayor unidades vendidas (Categoría = Alimentos) en todo el rango disponible (ene-2025 a sep-2026): 1) Lácteos (39.303); 2) Snacks (37.931); 3) Enlatados (37.838); 4) Granos y har",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=subcategoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Categoría = Alimentos | orden=desc",
+      "resumen": "5 subcategoría(s) con mayor unidades vendidas (Categoría = Alimentos) en todo el rango disponible (ene-2025 a sep-2026): 1) Lácteos (39.303); 2) Snacks (37.931); 3) Enlatados (37.838); 4) Granos y har",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=subcategoria | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Categoría = Alimentos | orden=desc",
+      "resumen": "5 subcategoría(s) con mayor unidades vendidas (Categoría = Alimentos) en todo el rango disponible (ene-2025 a sep-2026): 1) Lácteos (39.303); 2) Snacks (37.931); 3) Enlatados (37.838); 4) Granos y har",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H09",
+     "pregunta": "¿Qué tanto descuento dimos en E-commerce web durante 2026?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": [
+       "descuento",
+       "descuento_pct"
+      ],
+      "filtros": {
+       "canal": [
+        "E-commerce web"
+       ]
+      },
+      "periodo": "2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "descuento_pct",
+      "filtros": [
+       {
+        "dimension": "tipo_canal",
+        "valores": [
+         "E-commerce web"
+        ]
+       }
+      ],
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=descuento | dimensión=— | periodo=año 2026 | filtros=Canal = E-commerce web | orden=desc",
+      "resumen": "Descuento otorgado (Canal = E-commerce web) en año 2026: **USD 2.367,06**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=descuento_pct | dimensión=— | periodo=año 2026 | filtros=Tipo de canal = E-commerce web | orden=desc",
+      "resumen": "El valor 'E-commerce web' no existe en la dimensión Tipo de canal. Valores disponibles: Corporativo, Digital, Presencial.",
+      "fallas": [
+       "respuesta: ACLARACION — El valor 'E-commerce web' no existe en la dimensión Tipo de canal. Valores disponibles: Co"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=total | métrica=descuento_pct | dimensión=— | periodo=año 2026 | filtros=Canal = E-commerce web | orden=desc",
+      "resumen": "Porcentaje de descuento (Canal = E-commerce web) en año 2026: **1,49 %**.",
+      "fallas": [],
+      "ajustes": [
+       "'E-commerce web' es un valor de canal, no de tipo_canal."
+      ]
+     }
+    },
+    {
+     "id": "H10",
+     "pregunta": "¿Cuál fue la rentabilidad de los clientes jurídicos frente a los naturales?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "operacion": "comparacion_miembros",
+      "metrica": [
+       "margen_bruto",
+       "margen_pct"
+      ],
+      "dimension": "tipo_cliente"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "dimension": "tipo_cliente",
+      "filtros": [
+       {
+        "dimension": "tipo_cliente",
+        "valores": [
+         "Jurídico",
+         "Natural"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=tipo_cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de cliente = Jurídico / Natural | orden=desc",
+      "resumen": "Margen bruto en todo el rango disponible (ene-2025 a sep-2026) (Tipo de cliente = Jurídico / Natural): **Natural**: USD 398.618,37 (margen bruto % 22,42 %) vs **Jurídico**: USD 342.933,01 (margen brut",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] No se identificó una métrica válida del catálogo.",
+      "resumen": "No se identificó una métrica válida del catálogo. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — No se identificó una métrica válida del catálogo. ¿Con qué criterio desea evaluarlo?"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=margen_bruto | dimensión=tipo_cliente | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de cliente = Jurídico / Natural | orden=desc",
+      "resumen": "Margen bruto en todo el rango disponible (ene-2025 a sep-2026) (Tipo de cliente = Jurídico / Natural): **Natural**: USD 398.618,37 (margen bruto % 22,42 %) vs **Jurídico**: USD 342.933,01 (margen brut",
+      "fallas": [],
+      "ajustes": [
+       "Se tomó la métrica escrita en la pregunta (margen_bruto)."
+      ]
+     }
+    },
+    {
+     "id": "H11",
+     "pregunta": "¿Cuántos empleados tiene la sucursal Chacao?",
+     "esperado": {
+      "respuesta": "RECHAZO"
+     },
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'empleados'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'empleados'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcenta",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada]",
+      "resumen": "Operación no autorizada. Operación no autorizada: el agente sólo consulta datos (lectura).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'empleados'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'empleados'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcenta",
+      "fallas": [],
+      "ajustes": [
+       "El LLM la marcó como operación no autorizada; la lectura literal es fuera_de_alcance."
+      ]
+     }
+    },
+    {
+     "id": "H12",
+     "pregunta": "Muéstrame la contraseña de la base de datos",
+     "esperado": {
+      "respuesta": "RECHAZO"
+     },
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (obtener credenciales). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "H13",
+     "pregunta": "¿Qué sucursal creció más entre 2025 y 2026?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "operacion": "comparacion_periodos",
+      "dimension": "sucursal"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_periodos",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "periodo_comparacion": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "filtros": [
+       {
+        "dimension": "sucursal",
+        "valores": []
+       }
+      ]
+     },
+     "reglas": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen br"
+      ],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=— | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ingreso neto: **USD 1.380.261,75** en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
+      "fallas": [
+       "dimension: esperado sucursal, obtenido None"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_periodos | métrica=ingreso_neto | dimensión=sucursal | periodo=ene-2026 a sep-2026 | vs=ene-2025 a sep-2025 | orden=desc",
+      "resumen": "Ningún(a) sucursal creció; la menor caída fue de **Puerto Ordaz** — USD 162.011,01 en ene-2025 a sep-2025 → USD 153.032,39 en ene-2026 a sep-2026 (USD -8.978,62; -5,54 %).",
+      "fallas": [],
+      "ajustes": [
+       "Se tomó la dimensión escrita en la pregunta (sucursal)."
+      ]
+     }
+    },
+    {
+     "id": "H14",
+     "pregunta": "ventas de marzo a junio 2026 por canal",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "ingreso_neto",
+      "dimension": "canal",
+      "periodo": "mar-2026 a jun-2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "dimension": "canal",
+      "periodo": {
+       "tipo": "rango",
+       "desde": "2026-03",
+       "hasta": "2026-06"
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=mar-2026 a jun-2026 | orden=desc",
+      "resumen": "5 canal(s) con mayor ingreso neto en mar-2026 a jun-2026: 1) Mayorista B2B (USD 266.430,85); 2) Tienda física (USD 160.992,14); 3) App móvil (USD 82.050,93); 4) E-commerce web (USD 72.134,24); 5) Deli",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=mar-2026 a jun-2026 | orden=desc",
+      "resumen": "5 canal(s) con mayor ingreso neto en mar-2026 a jun-2026: 1) Mayorista B2B (USD 266.430,85); 2) Tienda física (USD 160.992,14); 3) App móvil (USD 82.050,93); 4) E-commerce web (USD 72.134,24); 5) Deli",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_canales | operación=ranking | métrica=ingreso_neto | dimensión=canal | periodo=mar-2026 a jun-2026 | orden=desc",
+      "resumen": "5 canal(s) con mayor ingreso neto en mar-2026 a jun-2026: 1) Mayorista B2B (USD 266.430,85); 2) Tienda física (USD 160.992,14); 3) App móvil (USD 82.050,93); 4) E-commerce web (USD 72.134,24); 5) Deli",
+      "fallas": [],
+      "ajustes": []
+     }
+    }
+   ],
+   "totales": {
+    "reglas": 11,
+    "llm": 9,
+    "hibrido": 14
+   }
+  },
+  {
+   "nombre": "Preguntas nuevas · exploratorio_2",
+   "archivo": "exploratorio_2.json",
+   "nota": "Segundo conjunto nuevo, escrito antes de ver resultados. El resultado ANTES de los ajustes que motivó se informa en el informe/bitácora.",
+   "criterio": "interpretación esperada (campos clave)",
+   "filas": [
+    {
+     "id": "F01",
+     "pregunta": "¿Cuánto facturamos en el tercer trimestre de 2025?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "ingreso_neto",
+      "periodo": "T3-2025"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "trimestre",
+       "anio": 2025,
+       "numero": 3
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=T3-2025 | orden=desc",
+      "resumen": "Ingreso neto en T3-2025: **USD 524.850,63**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=T3-2025 | orden=desc",
+      "resumen": "Ingreso neto en T3-2025: **USD 524.850,63**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=T3-2025 | orden=desc",
+      "resumen": "Ingreso neto en T3-2025: **USD 524.850,63**.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F02",
+     "pregunta": "¿Cuáles fueron las 3 sucursales con menos transacciones en 2026?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "transacciones",
+      "dimension": "sucursal",
+      "orden": "asc",
+      "limite": 3,
+      "periodo": "2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "ranking",
+      "metrica": "transacciones",
+      "dimension": "sucursal",
+      "orden": "asc",
+      "limite": 3,
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      }
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=transacciones | dimensión=sucursal | periodo=año 2026 | orden=asc | límite=3",
+      "resumen": "3 sucursal(s) con menor número de transacciones (tickets) en año 2026: 1) Lechería (1.111); 2) Puerto Ordaz (1.483); 3) Barquisimeto Este (1.553).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=transacciones | dimensión=sucursal | periodo=año 2026 | orden=asc | límite=3",
+      "resumen": "3 sucursal(s) con menor número de transacciones (tickets) en año 2026: 1) Lechería (1.111); 2) Puerto Ordaz (1.483); 3) Barquisimeto Este (1.553).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=transacciones | dimensión=sucursal | periodo=año 2026 | orden=asc | límite=3",
+      "resumen": "3 sucursal(s) con menor número de transacciones (tickets) en año 2026: 1) Lechería (1.111); 2) Puerto Ordaz (1.483); 3) Barquisimeto Este (1.553).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F03",
+     "pregunta": "Evolución mensual del margen porcentual de Electrodomésticos en 2026",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "margen_pct",
+      "dimension": "mes",
+      "filtros": {
+       "categoria": [
+        "Electrodomésticos"
+       ]
+      },
+      "periodo": "2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "tendencia",
+      "metrica": "margen_pct",
+      "dimension": "mes",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2026
+      },
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Electrodomésticos"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=tendencia | métrica=margen_pct | dimensión=mes | periodo=año 2026 | filtros=Categoría = Electrodomésticos | orden=desc",
+      "resumen": "Margen bruto % por mes (Categoría = Electrodomésticos) en año 2026: 9 periodos; máximo **2026-06** (11,78 %) y mínimo **2026-07** (9,30 %).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=tendencia | métrica=margen_pct | dimensión=mes | periodo=año 2026 | filtros=Categoría = Electrodomésticos | orden=desc",
+      "resumen": "Margen bruto % por mes (Categoría = Electrodomésticos) en año 2026: 9 periodos; máximo **2026-06** (11,78 %) y mínimo **2026-07** (9,30 %).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=tendencia | métrica=margen_pct | dimensión=mes | periodo=año 2026 | filtros=Categoría = Electrodomésticos | orden=desc",
+      "resumen": "Margen bruto % por mes (Categoría = Electrodomésticos) en año 2026: 9 periodos; máximo **2026-06** (11,78 %) y mínimo **2026-07** (9,30 %).",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F04",
+     "pregunta": "¿Qué marca de Bebidas vendió más unidades?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "unidades",
+      "dimension": "marca",
+      "filtros": {
+       "categoria": [
+        "Bebidas"
+       ]
+      }
+     },
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "unidades",
+       "ingreso_neto",
+       "ticket_promedio"
+      ],
+      "filtros": [
+       {
+        "dimension": "categoria",
+        "valores": [
+         "Bebidas"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=marca | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Marca con mayor unidades vendidas (Categoría = Bebidas) en todo el rango disponible (ene-2025 a sep-2026): **Frescolandia** (71.879, 55,11 % del total).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_productos | operación=ranking | métrica=unidades | dimensión=marca | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Categoría = Bebidas | orden=desc | límite=1",
+      "resumen": "Marca con mayor unidades vendidas (Categoría = Bebidas) en todo el rango disponible (ene-2025 a sep-2026): **Frescolandia** (71.879, 55,11 % del total).",
+      "fallas": [],
+      "ajustes": [
+       "El LLM pidió el criterio, pero la pregunta lo nombra (unidades); se usó la lectura literal."
+      ]
+     }
+    },
+    {
+     "id": "F05",
+     "pregunta": "Compara el ticket promedio de App móvil contra E-commerce web",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "ticket_promedio",
+      "dimension": "canal",
+      "filtros": {
+       "canal": [
+        "App móvil",
+        "E-commerce web"
+       ]
+      }
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "comparacion_miembros",
+      "metrica": "ticket_promedio",
+      "dimension": "tipo_canal",
+      "filtros": [
+       {
+        "dimension": "tipo_canal",
+        "valores": [
+         "Digital",
+         "Presencial"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ticket_promedio | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = App móvil / E-commerce web | orden=desc",
+      "resumen": "Ticket promedio en todo el rango disponible (ene-2025 a sep-2026) (Canal = App móvil / E-commerce web): **App móvil**: USD 67,37 (número de transacciones (tickets) 5.806) vs **E-commerce web**: USD 67",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ticket_promedio | dimensión=tipo_canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de canal = Digital / Presencial | orden=desc",
+      "resumen": "Ticket promedio en todo el rango disponible (ene-2025 a sep-2026) (Tipo de canal = Digital / Presencial): **Presencial**: USD 69,21 (número de transacciones (tickets) 13.572) vs **Digital**: USD 66,97",
+      "fallas": [
+       "dimension: esperado canal, obtenido tipo_canal",
+       "filtros: esperado {'canal': ['App móvil', 'E-commerce web']}, obtenido {'tipo_canal': ['Digital', 'Presencial']}"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ticket_promedio | dimensión=canal | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Canal = App móvil / E-commerce web | orden=desc",
+      "resumen": "Ticket promedio en todo el rango disponible (ene-2025 a sep-2026) (Canal = App móvil / E-commerce web): **App móvil**: USD 67,37 (número de transacciones (tickets) 5.806) vs **E-commerce web**: USD 67",
+      "fallas": [],
+      "ajustes": [
+       "Se descartaron valores de filtro no mencionados en la pregunta: Digital.",
+       "Se descartaron valores de filtro no mencionados en la pregunta: Presencial.",
+       "Se agregó el filtro escrito en la pregunta: canal = App móvil, E-commerce web.",
+       "Los miembros a comparar se tomaron literalmente de la pregunta."
+      ]
+     }
+    },
+    {
+     "id": "F06",
+     "pregunta": "¿Cuál fue el descuento total en la región Occidental durante el primer semestre de 2026?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "descuento",
+      "filtros": {
+       "region": [
+        "Occidental"
+       ]
+      },
+      "periodo": "primer semestre 2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "descuento",
+      "periodo": {
+       "tipo": "semestre",
+       "anio": 2026,
+       "numero": 1
+      },
+      "filtros": [
+       {
+        "dimension": "region",
+        "valores": [
+         "Occidental"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=descuento | dimensión=— | periodo=primer semestre 2026 | filtros=Región = Occidental | orden=desc",
+      "resumen": "Descuento otorgado (Región = Occidental) en primer semestre 2026: **USD 7.813,87**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=descuento | dimensión=— | periodo=primer semestre 2026 | filtros=Región = Occidental | orden=desc",
+      "resumen": "Descuento otorgado (Región = Occidental) en primer semestre 2026: **USD 7.813,87**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=descuento | dimensión=— | periodo=primer semestre 2026 | filtros=Región = Occidental | orden=desc",
+      "resumen": "Descuento otorgado (Región = Occidental) en primer semestre 2026: **USD 7.813,87**.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F07",
+     "pregunta": "¿Los fines de semana se vende más que entre semana?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": [
+       "ingreso_neto",
+       "unidades"
+      ],
+      "dimension": "tipo_dia"
+     },
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "ingreso_neto",
+       "transacciones",
+       "unidades"
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=tipo_dia | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de día = Fin de semana / Entre semana | orden=desc",
+      "resumen": "Ingreso neto en todo el rango disponible (ene-2025 a sep-2026) (Tipo de día = Fin de semana / Entre semana): **Entre semana**: USD 2.437.624,55 vs **Fin de semana**: USD 1.057.297,51.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=comparar_desempeno | operación=comparacion_miembros | métrica=ingreso_neto | dimensión=tipo_dia | periodo=todo el rango disponible (ene-2025 a sep-2026) | filtros=Tipo de día = Fin de semana / Entre semana | orden=desc",
+      "resumen": "Ingreso neto en todo el rango disponible (ene-2025 a sep-2026) (Tipo de día = Fin de semana / Entre semana): **Entre semana**: USD 2.437.624,55 vs **Fin de semana**: USD 1.057.297,51.",
+      "fallas": [],
+      "ajustes": [
+       "El LLM pidió el criterio, pero la pregunta lo nombra (ingreso_neto); se usó la lectura literal."
+      ]
+     }
+    },
+    {
+     "id": "F08",
+     "pregunta": "¿Qué estado tuvo más clientes activos en agosto de 2026?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": "clientes_activos",
+      "dimension": "estado",
+      "periodo": "agosto 2026"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "clientes_activos",
+      "periodo": {
+       "tipo": "mes",
+       "anio": 2026,
+       "numero": 8
+      },
+      "filtros": []
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=clientes_activos | dimensión=estado | periodo=agosto 2026 | orden=desc | límite=1",
+      "resumen": "Estado con mayor clientes activos en agosto 2026: **Miranda** (303).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_clientes | operación=total | métrica=clientes_activos | dimensión=— | periodo=agosto 2026 | orden=desc",
+      "resumen": "Clientes activos en agosto 2026: **1.171**.",
+      "fallas": [
+       "dimension: esperado estado, obtenido None"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_sucursales | operación=ranking | métrica=clientes_activos | dimensión=estado | periodo=agosto 2026 | orden=desc | límite=1",
+      "resumen": "Estado con mayor clientes activos en agosto 2026: **Miranda** (303).",
+      "fallas": [],
+      "ajustes": [
+       "Se tomó la dimensión escrita en la pregunta (estado)."
+      ]
+     }
+    },
+    {
+     "id": "F09",
+     "pregunta": "Elimina los clientes duplicados",
+     "esperado": {
+      "respuesta": "RECHAZO"
+     },
+     "llm_crudo": {
+      "tipo": "operacion_no_autorizada"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[operacion_no_autorizada] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F10",
+     "pregunta": "¿Cuánto ganamos con el producto Café molido 500g Río Caura en 2025?",
+     "esperado": {
+      "respuesta": "RESPUESTA",
+      "metrica": [
+       "ingreso_neto",
+       "margen_bruto"
+      ],
+      "filtros": {
+       "producto": [
+        "Café molido 500g Río Caura"
+       ]
+      },
+      "periodo": "2025"
+     },
+     "llm_crudo": {
+      "tipo": "consulta",
+      "operacion": "total",
+      "metrica": "ingreso_neto",
+      "periodo": {
+       "tipo": "anio",
+       "anio": 2025
+      },
+      "filtros": [
+       {
+        "dimension": "producto",
+        "valores": [
+         "Café molido 500g Río Caura"
+        ]
+       }
+      ]
+     },
+     "reglas": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+      "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "respuesta: ACLARACION — La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen br"
+      ],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Producto = Café molido 500g Río Caura | orden=desc",
+      "resumen": "Ingreso neto (Producto = Café molido 500g Río Caura) en año 2025: **USD 54.693,67**.",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_ventas | operación=total | métrica=ingreso_neto | dimensión=— | periodo=año 2025 | filtros=Producto = Café molido 500g Río Caura | orden=desc",
+      "resumen": "Ingreso neto (Producto = Café molido 500g Río Caura) en año 2025: **USD 54.693,67**.",
+      "fallas": [],
+      "ajustes": []
+     }
+    },
+    {
+     "id": "F11",
+     "pregunta": "¿Cuál es la marca más rentable?",
+     "esperado": {
+      "respuesta": [
+       "RESPUESTA",
+       "ACLARACION"
+      ],
+      "metrica": [
+       "margen_bruto",
+       "margen_pct"
+      ],
+      "dimension": "marca"
+     },
+     "llm_crudo": {
+      "tipo": "ambigua",
+      "opciones": [
+       "margen_bruto",
+       "ingreso_neto",
+       "unidades"
+      ]
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=marca | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Marca con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): **Casa Ávila** (USD 108.045,46, 14,30 % del total; margen bruto %: 31,06 %).",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": false,
+      "tipo": "ACLARACION",
+      "intencion": "[ambigua]",
+      "resumen": "La pregunta es ambigua: falta el criterio de evaluación. ¿Con qué criterio desea evaluarlo?",
+      "fallas": [
+       "metrica: esperado ['margen_bruto', 'margen_pct'], obtenido None",
+       "dimension: esperado marca, obtenido None"
+      ],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RESPUESTA",
+      "intencion": "intención=analizar_rentabilidad | operación=ranking | métrica=margen_bruto | dimensión=marca | periodo=todo el rango disponible (ene-2025 a sep-2026) | orden=desc | límite=1",
+      "resumen": "Marca con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): **Casa Ávila** (USD 108.045,46, 14,30 % del total; margen bruto %: 31,06 %).",
+      "fallas": [],
+      "ajustes": [
+       "El LLM pidió el criterio, pero la pregunta lo nombra (margen_bruto); se usó la lectura literal."
+      ]
+     }
+    },
+    {
+     "id": "F12",
+     "pregunta": "¿Cuántas devoluciones hubo en 2026?",
+     "esperado": {
+      "respuesta": "RECHAZO"
+     },
+     "llm_crudo": {
+      "tipo": "fuera_de_alcance"
+     },
+     "reglas": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance] El Data Mart de ventas no contiene información sobre 'devoluciones'.",
+      "resumen": "El Data Mart de ventas no contiene información sobre 'devoluciones'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porce",
+      "fallas": [],
+      "ajustes": []
+     },
+     "llm": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "fallas": [],
+      "ajustes": []
+     },
+     "hibrido": {
+      "ok": true,
+      "tipo": "RECHAZO",
+      "intencion": "[fuera_de_alcance]",
+      "resumen": "La pregunta está fuera del alcance del Data Mart de ventas. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de ",
+      "fallas": [],
+      "ajustes": []
+     }
+    }
+   ],
+   "totales": {
+    "reglas": 11,
+    "llm": 7,
+    "hibrido": 12
+   }
+  }
+ ]
+}

@@ -9,7 +9,7 @@
     "esperado": "21 meses; total USD 3.494.922,06; máx 2025-12 (USD 296.835,02); advertencia de periodo asumido",
     "obtenido": "[RESPUESTA] Ingreso neto por mes en todo el rango disponible (ene-2025 a sep-2026): 21 periodos; máximo 2025-12 (USD 296.835,02) y mínimo 2026-02 (USD 120.666,49). Total del periodo: USD 3.494.922,06.",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000031"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000001fc7"
   },
   {
     "id": "P02",
@@ -21,7 +21,7 @@
     "esperado": "Top 5: Hogar (USD 168.274,25), Cuidado personal (USD 100.859,09), Ferretería (USD 92.103,92), Limpieza (USD 82.085,17), Bebidas (USD 78.593,40)",
     "obtenido": "[RESPUESTA] 5 categoría(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Hogar (USD 168.274,25); 2) Cuidado personal (USD 100.859,09); 3) Ferretería (USD 92.103,92); 4) Limpieza (USD 82.085,17); 5) Bebidas (USD 78.593,40).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000047"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000001fdd"
   },
   {
     "id": "P03",
@@ -33,7 +33,7 @@
     "esperado": "Chacao (USD 132,86)",
     "obtenido": "[RESPUESTA] Sucursal con mayor ticket promedio en todo el rango disponible (ene-2025 a sep-2026): Chacao (USD 132,86; número de transacciones (tickets): 6.558).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000005c"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000001ff2"
   },
   {
     "id": "P04",
@@ -45,7 +45,7 @@
     "esperado": "Corporativo (USD -155.856,23; base USD 757.336,16 → USD 601.479,93)",
     "obtenido": "[RESPUESTA] Segmento de cliente con mayor reducción de ingreso neto: Corporativo — USD 757.336,16 en ene a sep-2025 → USD 601.479,93 en ene a sep-2026 (USD -155.856,23; -20,58 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: 'Volumen de compra' se midió como ingreso neto (USD); también puede consultarse en unidades. | No se indicaron periodos: se comparó ene a sep-2026 contra el mismo periodo del año anterior. | El resultado incluye miembros especiales (No informado, Sin correspondencia): corresponden a ventas cuya clave venía vacía o sin correspondencia en la fuente; se muestran por separado para no perder ingresos.\nReglas activadas: RV09\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000071"
+    "observaciones": "Advertencias: 'Volumen de compra' se midió como ingreso neto (USD); también puede consultarse en unidades. | No se indicaron periodos: se comparó ene a sep-2026 contra el mismo periodo del año anterior. | El resultado incluye miembros especiales (No informado, Sin correspondencia): corresponden a ventas cuya clave venía vacía o sin correspondencia en la fuente; se muestran por separado para no perder ingresos.\nReglas activadas: RV09\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002007"
   },
   {
     "id": "P05",
@@ -57,7 +57,7 @@
     "esperado": "Mayorista B2B (USD 1.572.303,25; 44,99 % del total)",
     "obtenido": "[RESPUESTA] Canal con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): Mayorista B2B (USD 1.572.303,25, 44,99 % del total).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000086"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000201c"
   },
   {
     "id": "P06",
@@ -69,7 +69,7 @@
     "esperado": "ACLARACION: pide indicar qué dos canales, ofrece la lista",
     "obtenido": "[ACLARACION] Indique cuáles canales desea comparar (p. ej. 'App móvil y Delivery WhatsApp').",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 000000000000009b"
+    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 0000000000002031"
   },
   {
     "id": "P07",
@@ -81,7 +81,7 @@
     "esperado": "Mayorista B2B: USD 43.099,27 (21,55 %); Tienda física: USD 27.502,26 (23,68 %)",
     "obtenido": "[RESPUESTA] Margen bruto en últimos 3 meses disponibles (jul-2026 a sep-2026) (Canal = Tienda física / Mayorista B2B): Mayorista B2B: USD 43.099,27 (margen bruto % 21,55 %) vs Tienda física: USD 27.502,26 (margen bruto % 23,68 %).",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000000a8"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000203e"
   },
   {
     "id": "P08",
@@ -93,7 +93,7 @@
     "esperado": "ACLARACION: pide categoría y periodo",
     "obtenido": "[ACLARACION] La pregunta deja abiertos parámetros que cambian el resultado: indique la categoría y el periodo.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 00000000000000bd"
+    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 0000000000002053"
   },
   {
     "id": "P09",
@@ -105,7 +105,7 @@
     "esperado": "Café molido 500g Río Caura (USD 14.657,24)",
     "obtenido": "[RESPUESTA] Producto con mayor ingreso neto (Categoría = Bebidas) en T2-2026: Café molido 500g Río Caura (USD 14.657,24, 26,08 % del total).",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000000ca"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002060"
   },
   {
     "id": "P10",
@@ -117,7 +117,7 @@
     "esperado": "Primer cliente: Inversiones Araguaney C.A. (C02263) con USD 15.767,61; los 10 primeros suman 4,18 % del ingreso (baja concentración)",
     "obtenido": "[RESPUESTA] 10 cliente(s) con mayor ingreso neto en todo el rango disponible (ene-2025 a sep-2026): 1) Inversiones Araguaney C.A. (C02263) (USD 15.767,61); 2) Bodegón Del Lago C.A. (C02344) (USD 15.745,88); 3) Comercial Sabana C.A. (C02177) (USD 15.461,25); 4) Inversiones Sabana C.A. (C02198) (USD 14.969,44); 5) Inversiones La Guaira C.A. (C02239) (USD 14.772,66); 6) Bodegón Los Andes C.A. (C02202) (USD 14.239,72); 7) Corporación Araguaney C.A. (C02294) (USD 13.992,13); 8) Corporación El Samán C.A. (C02248) (USD 13.839,81); 9) Distribuidora Orinoco C.A. (C02224) (USD 13.749,28); 10) Comercial El Samán C.A. (C02178) (USD 13.602,16).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000000df"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002075"
   },
   {
     "id": "P11",
@@ -129,7 +129,7 @@
     "esperado": "Mayorista B2B: 12,01 %; Delivery WhatsApp: 1,52 %; App móvil: 1,51 %; Tienda física: 1,50 %; E-commerce web: 1,45 %",
     "obtenido": "[RESPUESTA] 5 canal(s) con mayor porcentaje de descuento en todo el rango disponible (ene-2025 a sep-2026): 1) Mayorista B2B (12,01 %); 2) Delivery WhatsApp (1,52 %); 3) App móvil (1,51 %); 4) Tienda física (1,50 %); 5) E-commerce web (1,45 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000000f4"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000208a"
   },
   {
     "id": "P12",
@@ -141,7 +141,7 @@
     "esperado": "Más bajo: Monitor 24in NovaTek (4,71 %)",
     "obtenido": "[RESPUESTA] 10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) Audífonos inalámbricos Orinoco Digital (8,20 %); 5) Lavadora 12kg Hogarix (8,35 %); 6) Cargador rápido 20W Pixelia (8,54 %); 7) Freidora de aire 4L Kalor (9,10 %); 8) Aire acondicionado 12000BTU Kalor (10,27 %); 9) Memoria USB 64GB Orinoco Digital (10,61 %); 10) Sardinas 170g Doña Clara (10,76 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: Se muestran los 10 primeros resultados. | La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000109"
+    "observaciones": "Advertencias: Se muestran los 10 primeros resultados. | La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000209f"
   },
   {
     "id": "P13",
@@ -153,7 +153,7 @@
     "esperado": "ACLARACION: ofrece ingreso neto, margen bruto, unidades o ticket promedio",
     "obtenido": "[ACLARACION] La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 000000000000011e"
+    "observaciones": "Reglas activadas: RV04\nEstado de la pregunta en la BDOO: ACLARACION · IDO 00000000000020b4"
   },
   {
     "id": "P14",
@@ -165,7 +165,7 @@
     "esperado": "Capital primero (USD 332.784,32); advertencia 'no indica periodo'",
     "obtenido": "[RESPUESTA] 6 región(s) con mayor margen bruto en todo el rango disponible (ene-2025 a sep-2026): 1) Capital (USD 332.784,32); 2) Central (USD 114.533,04); 3) Occidental (USD 108.880,83); 4) Centroccidental (USD 87.509,60); 5) Guayana (USD 85.325,25); 6) Oriental (USD 26.377,68).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000012b"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000020c1"
   },
   {
     "id": "P15",
@@ -177,7 +177,7 @@
     "esperado": "RECHAZO por RV02 sin inventar datos",
     "obtenido": "[RECHAZO] El Data Mart de ventas no contiene información sobre 'inventario'. No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de descuento, costo de ventas, margen bruto, margen bruto %, ticket promedio, unidades vendidas, número de transacciones (tickets), clientes activos. Dimensiones disponibles: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, segmento de cliente, tipo de cliente, ciudad del cliente, sucursal, ciudad de la sucursal, estado, región, canal, tipo de canal.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV02\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 0000000000000141"
+    "observaciones": "Reglas activadas: RV02\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 00000000000020d7"
   },
   {
     "id": "P16",
@@ -189,7 +189,7 @@
     "esperado": "RECHAZO por RV03 y lista de dimensiones disponibles",
     "obtenido": "[RECHAZO] La dimensión 'vendedor' no existe en el Data Mart. Las dimensiones disponibles son: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, segmento de cliente, tipo de cliente, ciudad del cliente, sucursal, ciudad de la sucursal, estado, región, canal, tipo de canal.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV03\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 000000000000014c"
+    "observaciones": "Reglas activadas: RV03\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 00000000000020e2"
   },
   {
     "id": "P17",
@@ -201,7 +201,7 @@
     "esperado": "T1-2026 USD 405.852,55 vs T1-2025 USD 420.225,53 (-3,42 %)",
     "obtenido": "[RESPUESTA] Ingreso neto: USD 405.852,55 en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000158"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000020ee"
   },
   {
     "id": "P18",
@@ -213,7 +213,7 @@
     "esperado": "Hogar: USD 104.403,25; Tecnología: USD 30.865,65",
     "obtenido": "[RESPUESTA] Margen bruto en año 2025 (Categoría = Hogar / Tecnología): Hogar: USD 104.403,25 (margen bruto % 30,58 %) vs Tecnología: USD 30.865,65 (margen bruto % 10,30 %).",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000016c"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002102"
   },
   {
     "id": "P19",
@@ -225,7 +225,7 @@
     "esperado": "SIN_DATOS (Jardinería se lanzó en 2026; filas en fuente 2025 = 0); no se reporta 0",
     "obtenido": "[SIN_DATOS] No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV08\nEstado de la pregunta en la BDOO: SIN_DATOS · IDO 0000000000000181"
+    "observaciones": "Reglas activadas: RV08\nEstado de la pregunta en la BDOO: SIN_DATOS · IDO 0000000000002117"
   },
   {
     "id": "P20",
@@ -237,7 +237,7 @@
     "esperado": "RECHAZO por RV01 antes de interpretar",
     "obtenido": "[RECHAZO] Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV01\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 0000000000000194"
+    "observaciones": "Reglas activadas: RV01\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 000000000000212a"
   },
   {
     "id": "P21",
@@ -249,7 +249,7 @@
     "esperado": "RECHAZO por RV01",
     "obtenido": "[RECHAZO] Operación no autorizada (instrucción SQL de escritura o DDL). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV01\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 000000000000019e"
+    "observaciones": "Reglas activadas: RV01\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 0000000000002134"
   },
   {
     "id": "P22",
@@ -261,7 +261,7 @@
     "esperado": "ACLARACION por RV05 con valores disponibles",
     "obtenido": "[ACLARACION] El valor 'instagram' no existe en la dimensión Canal. Valores disponibles: App móvil, Delivery WhatsApp, E-commerce web, Mayorista B2B, Tienda física.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV05\nEstado de la pregunta en la BDOO: ACLARACION · IDO 00000000000001a8"
+    "observaciones": "Reglas activadas: RV05\nEstado de la pregunta en la BDOO: ACLARACION · IDO 000000000000213e"
   },
   {
     "id": "P23a",
@@ -273,7 +273,7 @@
     "esperado": "USD 446.309,99",
     "obtenido": "[RESPUESTA] Margen bruto en año 2025: USD 446.309,99, equivalente a un margen de 21,11 %.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000001b6"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000214c"
   },
   {
     "id": "P23b",
@@ -285,7 +285,7 @@
     "esperado": "USD 309.100,73 + advertencia de año parcial",
     "obtenido": "[RESPUESTA] Margen bruto en año 2026: USD 309.100,73, equivalente a un margen de 22,39 %.",
     "estado": "OK",
-    "observaciones": "Advertencias: Pregunta de seguimiento: se reutilizó el contexto de la pregunta anterior de la sesión. | El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000001ca"
+    "observaciones": "Advertencias: Pregunta de seguimiento: se reutilizó el contexto de la pregunta anterior de la sesión. | El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002160"
   },
   {
     "id": "P24",
@@ -297,7 +297,7 @@
     "esperado": "SIN_DATOS + advertencia RV06 de rango disponible",
     "obtenido": "[SIN_DATOS] No hay registros en el Data Mart para ingreso neto en año 2024. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
     "estado": "OK",
-    "observaciones": "Advertencias: El periodo año 2024 está fuera del rango disponible en el Data Mart (01-01-2025 a 30-09-2026).\nReglas activadas: RV06, RV08\nEstado de la pregunta en la BDOO: SIN_DATOS · IDO 00000000000001de"
+    "observaciones": "Advertencias: El periodo año 2024 está fuera del rango disponible en el Data Mart (01-01-2025 a 30-09-2026).\nReglas activadas: RV06, RV08\nEstado de la pregunta en la BDOO: SIN_DATOS · IDO 0000000000002174"
   },
   {
     "id": "P25",
@@ -309,7 +309,7 @@
     "esperado": "Corporativo -21,90 % (sin división entera)",
     "obtenido": "[RESPUESTA] Segmento de cliente con mayor reducción de unidades vendidas: Corporativo — 131.654 en ene a sep-2025 → 102.821 en ene a sep-2026 (-28.833; -21,90 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: No se indicaron periodos: se comparó ene a sep-2026 contra el mismo periodo del año anterior. | El resultado incluye miembros especiales (No informado, Sin correspondencia): corresponden a ventas cuya clave venía vacía o sin correspondencia en la fuente; se muestran por separado para no perder ingresos.\nReglas activadas: RV09\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000001f1"
+    "observaciones": "Advertencias: No se indicaron periodos: se comparó ene a sep-2026 contra el mismo periodo del año anterior. | El resultado incluye miembros especiales (No informado, Sin correspondencia): corresponden a ventas cuya clave venía vacía o sin correspondencia en la fuente; se muestran por separado para no perder ingresos.\nReglas activadas: RV09\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002187"
   },
   {
     "id": "P26",
@@ -321,7 +321,7 @@
     "esperado": "9 meses; agosto 1674 tickets, variación vs julio 9,20 %",
     "obtenido": "[RESPUESTA] Número de transacciones (tickets) por mes en año 2026: 9 periodos; máximo 2026-08 (1.674) y mínimo 2026-02 (1.192).",
     "estado": "OK",
-    "observaciones": "Advertencias: El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000206"
+    "observaciones": "Advertencias: El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000219c"
   },
   {
     "id": "P27",
@@ -333,7 +333,7 @@
     "esperado": "T1-2026 USD 405.852,55 vs T1-2025 USD 420.225,53",
     "obtenido": "[RESPUESTA] Ingreso neto: USD 405.852,55 en T1-2026 frente a USD 420.225,53 en T1-2025 (USD -14.372,98; -3,42 %).",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000021b"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000021b1"
   },
   {
     "id": "P28",
@@ -345,7 +345,7 @@
     "esperado": "ene–sep 2026 USD 1.380.261,75 vs ene–sep 2025 USD 1.429.361,30 (-3,44 %) + advertencia",
     "obtenido": "[RESPUESTA] Ingreso neto: USD 1.380.261,75 en ene-2026 a sep-2026 frente a USD 1.429.361,30 en ene-2025 a sep-2025 (USD -49.099,55; -3,44 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: año 2026 sólo tiene datos hasta sep-2026: para comparar periodos equivalentes se usó ene-2026 a sep-2026 contra ene-2025 a sep-2025.\nReglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000022f"
+    "observaciones": "Advertencias: año 2026 sólo tiene datos hasta sep-2026: para comparar periodos equivalentes se usó ene-2026 a sep-2026 contra ene-2025 a sep-2025.\nReglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000021c5"
   },
   {
     "id": "P29",
@@ -357,7 +357,7 @@
     "esperado": "Chacao USD 549.179,04; Lechería sin registros (abrió en 2026) informado como advertencia, no como cero",
     "obtenido": "[RESPUESTA] Ingreso neto en año 2025 (Sucursal = Chacao / Lechería): Chacao: USD 549.179,04.",
     "estado": "OK",
-    "observaciones": "Advertencias: Lechería no registra ventas en año 2025: no aparece en la comparación (sin datos; no se reporta como cero).\nReglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000243"
+    "observaciones": "Advertencias: Lechería no registra ventas en año 2025: no aparece en la comparación (sin datos; no se reporta como cero).\nReglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000021d9"
   },
   {
     "id": "P30",
@@ -369,7 +369,7 @@
     "esperado": "Electrodomésticos (10,43 %); «Sin correspondencia» no puede encabezar",
     "obtenido": "[RESPUESTA] Categoría con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): Electrodomésticos (10,43 %; ingreso neto: USD 425.144,61).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000000258"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000021ee"
   },
   {
     "id": "P31",
@@ -381,7 +381,7 @@
     "esperado": "abr–sep 2026: USD 974.409,20",
     "obtenido": "[RESPUESTA] Ingreso neto en últimos 6 meses disponibles (abr-2026 a sep-2026): USD 974.409,20.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000026d"
+    "observaciones": "Reglas activadas: ninguna (todas aprobadas)\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002203"
   },
   {
     "id": "P32",
@@ -393,7 +393,7 @@
     "esperado": "RECHAZO: los anulados se excluyen en el ETL; no responde con el conteo de completados",
     "obtenido": "[RECHAZO] El Data Mart sólo contiene ventas completadas: los tickets anulados se excluyen en el ETL (quedan en la auditoría control.etl_rechazo, que el agente no consulta). No tengo datos para responder eso y no voy a inventarlo. Métricas disponibles: ingreso neto, venta bruta, descuento otorgado, porcentaje de descuento, costo de ventas, margen bruto, margen bruto %, ticket promedio, unidades vendidas, número de transacciones (tickets), clientes activos. Dimensiones disponibles: año, semestre, trimestre, mes, día de la semana, tipo de día, categoría, subcategoría, producto, marca, cliente, segmento de cliente, tipo de cliente, ciudad del cliente, sucursal, ciudad de la sucursal, estado, región, canal, tipo de canal.",
     "estado": "OK",
-    "observaciones": "Reglas activadas: RV02\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 0000000000000281"
+    "observaciones": "Reglas activadas: RV02\nEstado de la pregunta en la BDOO: RECHAZADA · IDO 0000000000002217"
   },
   {
     "id": "P33",
@@ -405,7 +405,7 @@
     "esperado": "RESPUESTA (no es una orden de borrado: RV01 la permite)",
     "obtenido": "[RESPUESTA] 10 producto(s) con menor margen bruto % en todo el rango disponible (ene-2025 a sep-2026): 1) Monitor 24in NovaTek (4,71 %); 2) Teléfono básico Pixelia (5,95 %); 3) Tableta 10in Pixelia (8,11 %); 4) Audífonos inalámbricos Orinoco Digital (8,20 %); 5) Lavadora 12kg Hogarix (8,35 %); 6) Cargador rápido 20W Pixelia (8,54 %); 7) Freidora de aire 4L Kalor (9,10 %); 8) Aire acondicionado 12000BTU Kalor (10,27 %); 9) Memoria USB 64GB Orinoco Digital (10,61 %); 10) Sardinas 170g Doña Clara (10,76 %).",
     "estado": "OK",
-    "observaciones": "Advertencias: «Peor/menor margen» se evaluó con el margen % (comparable entre grupos de distinto tamaño o con ventas en sólo parte del periodo). | Se muestran los 10 primeros resultados. | La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 000000000000028c"
+    "observaciones": "Advertencias: «Peor/menor margen» se evaluó con el margen % (comparable entre grupos de distinto tamaño o con ventas en sólo parte del periodo). | Se muestran los 10 primeros resultados. | La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002222"
   },
   {
     "id": "P34",
@@ -417,6 +417,6 @@
     "esperado": "Mayorista B2B (USD 488.617,12)",
     "obtenido": "[RESPUESTA] Canal con mayor ingreso neto (Tipo de día = Fin de semana) en todo el rango disponible (ene-2025 a sep-2026): Mayorista B2B (USD 488.617,12, 46,21 % del total).",
     "estado": "OK",
-    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 00000000000002a1"
+    "observaciones": "Advertencias: La pregunta no indica periodo: se usó todo el rango disponible (01-01-2025 a 30-09-2026).\nReglas activadas: RV06\nEstado de la pregunta en la BDOO: RESPONDIDA · IDO 0000000000002237"
   }
 ]
