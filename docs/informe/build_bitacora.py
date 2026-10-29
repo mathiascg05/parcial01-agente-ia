@@ -88,7 +88,7 @@ ENTRADAS = [
                    "JSON inválido (cae a reglas), valor de filtro inexistente, dimensión inexistente, narrativa con cifras inventadas "
                    "(rechazada) y narrativa respaldada (aceptada).",
      "decision": "Aceptar con reserva",
-     "justificacion": "Falta la prueba con la API key real del equipo (ver entrada 14)."},
+     "justificacion": "Faltaba la prueba con el LLM real: se hizo en la entrada 15."},
     {"n": 9, "fecha": "29-10-2026", "componente": "Seguridad",
      "prompt": "(misma sesión) Impedir acceso a tablas no autorizadas, instrucciones destructivas y campos inexistentes.",
      "herramienta": CLAUDE,
@@ -118,11 +118,12 @@ ENTRADAS = [
      "decision": "Aceptar con revisión del equipo",
      "justificacion": "Cada integrante debe leer la sección de su componente antes de la defensa."},
     {"n": 13, "fecha": "29-10-2026", "componente": "Agente en ejecución (uso de IA dentro del producto)",
-     "prompt": "Prompt de sistema en agente/interpretes/llm.py: catálogo de métricas y dimensiones, valores válidos, rango de fechas y 10 "
+     "prompt": "Prompt de sistema en agente/interpretes/llm.py: catálogo de métricas y dimensiones, valores válidos, rango de fechas y 19 "
                "reglas de interpretación; salida JSON obligatoria.",
      "herramienta": "OpenRouter · modelo configurable (por defecto openai/gpt-4o-mini, temperatura 0)",
      "resultado": "Intención estructurada y una interpretación gerencial breve.",
-     "validacion": "Automática en cada pregunta: construir_intencion() + RV02–RV06 sobre la intención y RV11 sobre la narrativa.",
+     "validacion": "Automática en cada pregunta: anclaje a la lectura literal, construir_intencion() + RV02–RV06 sobre la intención "
+                   "y RV11 sobre la narrativa.",
      "decision": "Aceptar", "justificacion": "Si el LLM falla, el intérprete por reglas garantiza el funcionamiento."},
     {"n": 14, "fecha": "29-10-2026", "componente": "Revisión independiente del agente",
      "prompt": "Encargo a un agente revisor de Claude que no participó en la construcción: «Revisa como el profesor más exigente: verifica "
@@ -141,6 +142,25 @@ ENTRADAS = [
      "decision": "Modificar",
      "justificacion": "Los defectos producían respuestas incorrectas con apariencia confiable, que es el peor caso para un agente "
                       "gerencial. La matriz pasó de 25 a 35 casos, todos correctos."},
+    {"n": 15, "fecha": "29-10-2026", "componente": "Intérprete LLM: validación con OpenRouter real y anclaje",
+     "prompt": "Prompt de sistema del agente (agente/interpretes/llm.py) más las preguntas en lote, enviado a openai/gpt-4o-mini en "
+               "el chat de OpenRouter con la cuenta del equipo: la matriz completa (dos versiones del prompt) y dos conjuntos de "
+               "preguntas nuevas (14 y 12) que no están en la matriz.",
+     "herramienta": "OpenRouter · openai/gpt-4o-mini (respuestas reales) + " + CLAUDE + " para el análisis y el código",
+     "resultado": "El LLM solo acertó 22/33 y 17/34 casos de la matriz. Inventó periodos («ingreso neto por mes» → últimos 12 meses), "
+                  "inventó los canales de «compare dos canales», tomó «ventas» como venta bruta o unidades, puso valores en la "
+                  "dimensión equivocada, devolvió la operación en el campo tipo y marcó preguntas inocentes como operación no "
+                  "autorizada. Reforzar el prompt (reglas 11–19) no lo resolvió: en la segunda corrida aparecieron errores nuevos.",
+     "validacion": "Las respuestas reales se grabaron en docs/evidencias/llm_openrouter/ y se reprodujeron con scripts/validar_llm.py "
+                   "contra la misma verificación de la matriz (oráculo pandas) y, para las preguntas nuevas, contra la interpretación "
+                   "esperada escrita de antemano. En el segundo conjunto nuevo, antes de los ajustes: reglas 11/12, LLM solo 7/12, "
+                   "híbrido 8/12. Después: híbrido 33/33, 34/34, 14/14 y 12/12; matriz por reglas 35/35; pytest 41/41.",
+     "decision": "Modificar",
+     "justificacion": "Se agregó el anclaje (anclar()): el LLM aporta la comprensión semántica y la lectura literal fija los hechos "
+                      "escritos en la pregunta (fechas, valores, sentido del orden). Lo inventado se descarta y queda como supuesto "
+                      "visible. Salvedades: las reglas del anclaje se escribieron después de ver las fallas, así que esos 100 % no "
+                      "son una medida ciega, y las preguntas se enviaron en lote, no una por una como hace el agente. También se "
+                      "corrigió un defecto del agente que apareció aquí: un «total» con dimensión mostraba sólo la primera fila."},
 ]
 
 
@@ -172,8 +192,8 @@ def main():
     <div class="caja">La IA se usó como <b>asistente de desarrollo</b> (Claude) y como <b>componente del producto</b> (LLM vía OpenRouter
     dentro del agente). Ningún resultado de la IA se aceptó sin una validación técnica verificable: ejecución en PostgreSQL,
     conciliación independiente con pandas, pruebas unitarias, matriz de pruebas y revisión visual. Las entradas registran también
-    los resultados que se modificaron o rechazaron. Pendiente del equipo: registrar una entrada al probar el modo LLM con la
-    API key real de OpenRouter (python scripts/ejecutar_pruebas.py --modo auto).</div>
+    los resultados que se modificaron o rechazaron. Pendiente del equipo: ejecutar el agente con la API key en su .env
+    (python scripts/ejecutar_pruebas.py --modo auto), que llama al LLM pregunta por pregunta, y registrar el resultado.</div>
     <h2>Resumen de decisiones</h2><table><thead><tr><th style="width:8%">#</th><th>Componente</th><th style="width:26%">Decisión</th></tr></thead>
     <tbody>{resumen}</tbody></table>
     <h2>Entradas</h2>{''.join(filas)}</body></html>"""

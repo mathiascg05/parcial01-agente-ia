@@ -73,6 +73,7 @@ def construir(equipo: str) -> str:
     pruebas = json.loads((EV / "pruebas.json").read_text(encoding="utf-8"))
     n_ok = sum(p["estado"] == "OK" for p in pruebas)
     ev_bdoo = json.loads((EV / "evidencia_bdoo.json").read_text(encoding="utf-8"))
+    val_llm = json.loads((EV / "validacion_llm.json").read_text(encoding="utf-8"))
 
     h = [f"<html><head><meta charset='utf-8'><title>Equipo{equipo}_Informe_Parcial01</title><style>{CSS}</style></head><body>"]
     # ------------------------------------------------------------------ portada
@@ -97,7 +98,9 @@ def construir(equipo: str) -> str:
     mediante un catálogo de consultas parametrizadas y once reglas de validación, y que registra cada interacción como
     objetos persistentes en una BDOO (ZODB). El Data Mart concilia al centavo con la fuente (7/7 controles SQL y 5/5 controles
     independientes con pandas), los 10 controles de integridad dan 0 hallazgos y la matriz de pruebas obtuvo """
-             f"""<b>{n_ok}/{len(pruebas)} casos correctos</b> contra valores esperados calculados de forma independiente.</div>""")
+             f"""<b>{n_ok}/{len(pruebas)} casos correctos</b> contra valores esperados calculados de forma independiente. El intérprete
+    LLM se validó con respuestas reales de gpt-4o-mini vía OpenRouter: solo, inventó periodos y miembros; anclado a la lectura
+    literal de la pregunta, respondió bien todos los casos evaluados (sección 8.1, con sus salvedades).</div>""")
 
     # ------------------------------------------------------------------ 1
     h.append("""<h1>1. Descripción del problema y alcance</h1>
@@ -325,8 +328,10 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     <h2>7.1 Interpretación</h2><p>El intérprete produce un JSON con: tipo, operación, métrica, dimensión, periodo, periodo de
     comparación, filtros, orden, límite y desglose. En modo <b>auto</b> se usa el LLM de OpenRouter con un prompt que contiene sólo el
     catálogo (códigos de métricas y dimensiones, valores válidos y rango de fechas) y reglas de interpretación; su salida se
-    trata como <b>dato no confiable</b> y se valida. Si el LLM falla o no hay API key, se usa el intérprete por reglas (determinista,
-    sin internet), lo que garantiza la demostración en vivo. Ejemplo del enunciado:</p>
+    trata como <b>dato no confiable</b> y se valida. Además, el intérprete híbrido <b>ancla</b> la salida del LLM a la lectura literal de
+    la pregunta: periodos, valores de filtro y sentido del orden que el LLM proponga sin que estén escritos (o en el contexto de la
+    sesión) se descartan, y cada ajuste queda como supuesto visible (sección 8.1). Si el LLM falla o no hay API key, se usa el
+    intérprete por reglas (determinista, sin internet), lo que garantiza la demostración en vivo. Ejemplo del enunciado:</p>
     <pre>«¿Cuál fue la categoría con mayor margen durante el segundo trimestre?»
 → intención: analizar_rentabilidad | métrica: margen_bruto | dimensión: categoria | periodo: T2-2026
   (supuesto explícito: «no se indicó el año, se asumió el más reciente con datos») | operación: ranking desc | límite: 1</pre>
@@ -368,7 +373,7 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     h.append(f"""<h1>8. Resultados de pruebas</h1><p>La matriz completa está en <code>Equipo{e(equipo)}_Pruebas.xlsx</code>. El resultado
     esperado de cada caso numérico se calcula <b>independientemente</b> con pandas sobre los CSV de la fuente (sin PostgreSQL ni
     código del agente); el caso es OK sólo si el agente devuelve exactamente ese valor. Resultado: <b class="ok">{n_ok}/{len(pruebas)} OK</b>.
-    Además, 35 pruebas unitarias (pytest) cubren TDA, máquina de estados, polimorfismo, seguridad SQL e intérprete.</p>
+    Además, 41 pruebas unitarias (pytest) cubren TDA, máquina de estados, polimorfismo, seguridad SQL, intérprete y anclaje del LLM.</p>
     <div class="caja"><b>Revisión independiente.</b> Antes de la entrega, un revisor que no participó en la construcción probó el
     agente con más de 120 preguntas parafraseadas. Encontró defectos que la primera matriz (25 casos) no cubría: el ranking de
     clientes agrupaba por nombre (y el valor esperado de P10 repetía el mismo supuesto), había división entera en las variaciones
@@ -377,6 +382,33 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     encontró otros casos (clientes nombrados por su razón social, que puede repetirse, y preguntas de seguimiento). Todos se
     corrigieron y se agregaron los casos de regresión P25–P34. Si un nombre de cliente es ambiguo, el agente pide el código en vez
     de sumar clientes distintos. La lección: un «valor esperado independiente» debe evitar también los supuestos del código.</div>""")
+    filas_val = []
+    for cj in val_llm["conjuntos"]:
+        n, t = len(cj["filas"]), cj["totales"]
+        filas_val.append([e(cj["nombre"]), str(n), f"{t['reglas']}/{n}", f"{t['llm']}/{n}", f"<b>{t['hibrido']}/{n}</b>"])
+    h.append("""<h2>8.1 Validación del intérprete LLM con OpenRouter (respuestas reales)</h2>
+    <p>La matriz anterior se ejecuta con el intérprete por reglas (reproducible y sin red). Para validar el camino del LLM, el
+    29-10-2026 se enviaron las preguntas a <code>openai/gpt-4o-mini</code> en OpenRouter <b>con el mismo prompt de sistema del
+    agente</b>, en lotes. Las respuestas reales quedaron grabadas en <code>docs/evidencias/llm_openrouter/</code> y
+    <code>scripts/validar_llm.py</code> las reproduce sin red, en tres modos: reglas, LLM solo (con las validaciones RV02–RV11) y
+    híbrido (LLM + anclaje, el modo por defecto).</p>""")
+    h.append(tabla(["Conjunto", "Preguntas", "Reglas", "LLM solo", "Híbrido"], filas_val, ["44%", "12%", "14%", "14%", "16%"]))
+    h.append("""<p><b>Qué se encontró.</b> El LLM solo inventó periodos («ingreso neto por mes» → últimos 12 meses), inventó los dos
+    canales de «compare dos canales» (en otra corrida eligió «Canal no informado» y «Canal sin correspondencia»), tomó «ventas» como
+    venta bruta o unidades, puso valores en la dimensión equivocada («E-commerce web» como tipo de canal, «Premium» como tipo de
+    cliente), devolvió la operación en el campo <code>tipo</code> y marcó como «operación no autorizada» preguntas inocentes. Las
+    validaciones del agente evitaron cifras inventadas en casi todos esos casos (aclaración o rechazo), pero no evitaron respuestas
+    correctas en forma y equivocadas en fondo, como un periodo que nadie pidió. Por eso se agregó el <b>anclaje</b>
+    (<code>anclar()</code> en <code>agente/interpretes/llm.py</code>) y se reforzó el prompt (reglas 11–19).</p>
+    <p><b>Lectura honesta de los números.</b> Las reglas del anclaje se escribieron después de ver estas fallas, así que el 100 %
+    del modo híbrido sobre estos conjuntos no es una medida ciega. La medida más limpia es el segundo conjunto de preguntas nuevas,
+    escrito antes de ver resultados: <b>antes</b> de los ajustes que motivó, el resultado fue reglas 11/12, LLM solo 7/12 e
+    híbrido 8/12. También muestra que los dos intérpretes se complementan: el LLM resolvió frases que las reglas no entendían
+    («¿Cuánto ganamos con el producto…?», «¿Cómo le fue a Tecnología en julio de 2026 comparado con julio de 2025?», «¿Qué
+    sucursal creció más entre 2025 y 2026?») y las reglas corrigieron lo que el LLM inventó. Las preguntas se enviaron en lote y
+    no una por una, como hace el agente; la evaluación con llamadas reales por pregunta (<code>--modo auto</code> con la API key)
+    queda como verificación del equipo.</p>""")
+    h.append("<h2>8.2 Matriz de pruebas</h2>")
     h.append(tabla(["ID", "Tipo de caso", "Pregunta", "Obtenido (resumen)", "Estado"],
                    [[p["id"], e(p["categoria"]), e(p["pregunta"]), e(p["obtenido"][:260]), f"<span class='ok'>{p['estado']}</span>"
                      if p["estado"] == "OK" else f"<span class='falla'>{p['estado']}</span>"] for p in pruebas],
@@ -389,13 +421,16 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     <li>Una consulta agrupa por una sola dimensión (más un desglose temporal en comparaciones); no hay tablas cruzadas de dos dimensiones.</li>
     <li>ZODB FileStorage admite un solo proceso escritor: la app y el CLI no pueden abrir la misma base a la vez.</li>
     <li>El hecho es transaccional: no hay métricas semiaditivas (inventario) ni hecho de devoluciones.</li>
-    <li>La calidad de la interpretación por LLM depende del modelo elegido en OpenRouter; por eso su salida siempre se valida.</li></ul>
+    <li>La calidad de la interpretación por LLM depende del modelo elegido en OpenRouter: gpt-4o-mini inventó periodos y miembros
+    en la validación real. Por eso su salida se valida y se ancla a la lectura literal; ante frases que ni las reglas ni el LLM
+    entienden, el agente pide aclaración en vez de suponer.</li></ul>
     <h2>Mejoras futuras</h2><ul>
     <li>Agregar un hecho de inventario (snapshot periódico) con métricas semiaditivas y dimensiones conformadas.</li>
     <li>Consultas de dos dimensiones (pivot) y drill-down guiado por jerarquías (año → trimestre → mes).</li>
     <li>ZEO (servidor ZODB) para varios procesos concurrentes y autenticación real de usuarios.</li>
     <li>Carga incremental del ETL con detección de cambios (CDC) y SCD2 automatizado desde la bitácora del CRM.</li>
-    <li>Evaluación automática del LLM con la matriz de pruebas en cada cambio de modelo (regresión semántica).</li>
+    <li>Ejecutar <code>validar_llm.py</code> con llamadas en vivo, una por pregunta, en cada cambio de modelo o de prompt
+    (regresión semántica), y ampliar el conjunto de preguntas nuevas.</li>
     <li>Gráficos y exportación de respuestas a PDF desde la interfaz.</li></ul>""")
 
     # ------------------------------------------------------------------ anexos
