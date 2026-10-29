@@ -1,0 +1,15 @@
+# Opcional: PostgreSQL 16 en Docker si no lo tiene instalado.
+#   docker compose up -d     y luego   python scripts/setup_datamart.py
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: parcial01
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${PG_ADMIN_PASSWORD:-postgres}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+data/bdoo/
+data/bdoo_evidencia/
+*.fs
+*.fs.index
+*.fs.lock
+*.fs.tmp
+.venv/
+venv/
+.DS_Store
+entregables/*.zip

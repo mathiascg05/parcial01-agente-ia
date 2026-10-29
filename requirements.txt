@@ -1,0 +1,9 @@
+# Python 3.10+
+ZODB>=5.8              # BDOO (incluye persistent, BTrees, transaction)
+psycopg[binary]>=3.1   # PostgreSQL (Data Mart)
+openai>=1.30           # cliente compatible con OpenRouter
+python-dotenv>=1.0
+pandas>=2.0
+openpyxl>=3.1          # matriz de pruebas en Excel
+streamlit>=1.36        # interfaz web
+pytest>=7              # pruebas unitarias
