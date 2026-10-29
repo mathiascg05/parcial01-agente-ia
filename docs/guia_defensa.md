@@ -104,7 +104,9 @@ Es el mismo caso de Puerta/Ventana con «Cerrar» de la clase.
 
 **¿El LLM escribe SQL?** No. Solo devuelve un JSON con códigos del catálogo. El SQL sale de plantillas con listas blancas y los valores viajan como parámetros.
 
-**¿Y si el LLM se equivoca o inventa?** Su JSON se valida (`construir_intencion` + RV02–RV06). Si menciona una cifra que no está en el resultado, la narrativa se descarta (RV11). Si falla, se usan las reglas.
+**¿Y si el LLM se equivoca o inventa?** Lo comprobamos con el LLM real: enviamos las preguntas a gpt-4o-mini en OpenRouter con el mismo prompt del agente. Solo, acertó 17 de 34 casos de la matriz: inventó periodos («ingreso neto por mes» → últimos 12 meses), inventó los canales de «compare dos canales» y confundió dimensiones («E-commerce web» como tipo de canal). Por eso el intérprete híbrido **ancla** su salida a lo escrito en la pregunta: fechas, valores y sentido del orden que no estén en el texto se descartan y quedan como supuesto visible. Con el anclaje: 34/34, y 12/12 en preguntas nuevas. Además, su JSON se valida (`construir_intencion` + RV02–RV06), la narrativa se descarta si cita una cifra que no está en el resultado (RV11) y, si el LLM falla, se usan las reglas. Evidencia: `docs/evidencias/validacion_llm.md` (se reproduce con `python scripts/validar_llm.py`).
+
+**¿Entonces el 100 % del híbrido es real?** Es real sobre esas preguntas, pero no es una medida ciega: el anclaje se ajustó después de ver las fallas. La medida limpia es el segundo grupo de preguntas nuevas, escrito antes de ver resultados: antes de ajustar, reglas 11/12, LLM solo 7/12 e híbrido 8/12. Lo importante es que se complementan: el LLM entendió frases que las reglas no («¿Cuánto ganamos con el producto…?») y las reglas corrigieron lo que el LLM inventó.
 
 **Las cuatro capas de seguridad:**
 1. RV01 sobre el texto.
@@ -147,5 +149,5 @@ Aunque alguien lograra saltar una capa, la base de datos sigue rechazando escrit
 - Rechazos: 495 tickets anulados, 384 líneas duplicadas y 108 con cantidad inválida.
 - Clientes: 2.360 clientes y 2.736 versiones; 376 con cambio de segmento.
 - Canal con mayor venta: Mayorista B2B (45 %). Sucursal con mayor ticket promedio: Chacao. Segmento que más cayó: Corporativo (−20,6 %).
-- 11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 35/35 unitarias.
+- 11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 41/41 unitarias. LLM real (gpt-4o-mini): solo 17/34; con anclaje 34/34.
 - Los 10 primeros clientes suman ≈4,2 % del ingreso: la dependencia de pocos clientes es baja.
