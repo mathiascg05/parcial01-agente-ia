@@ -1,0 +1,897 @@
+{
+  "sesion": {
+    "clase": "Sesion",
+    "ido": "000000000000002e",
+    "creado_en": "2026-10-29T11:00:03",
+    "codigo": "S-20261029-110003-741",
+    "titulo": "Evidencia BDOO",
+    "usuario_ido": "0000000000000006",
+    "inicio": "2026-10-29T11:00:03",
+    "fin": "2026-10-29T11:00:03",
+    "preguntas_ido": [
+      "0000000000000031",
+      "0000000000000046",
+      "000000000000005b",
+      "0000000000000068",
+      "000000000000007b"
+    ],
+    "contexto": {
+      "ultima_intencion": "0000000000000048"
+    },
+    "resumen": {
+      "preguntas": 5,
+      "por_estado": {
+        "RESPONDIDA": 2,
+        "ACLARACION": 1,
+        "SIN_DATOS": 1,
+        "RECHAZADA": 1
+      }
+    }
+  },
+  "preguntas": [
+    {
+      "pregunta": {
+        "clase": "Pregunta",
+        "ido": "0000000000000031",
+        "creado_en": "2026-10-29T11:00:03",
+        "texto": "¿Qué canal concentra el mayor valor de ventas en 2026?",
+        "fecha": "2026-10-29T11:00:03",
+        "estado": "RESPONDIDA",
+        "historial_estados": [
+          [
+            "RECIBIDA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "INTERPRETADA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "RESPONDIDA",
+            "2026-10-29T11:00:03"
+          ]
+        ],
+        "sesion_ido": "000000000000002e",
+        "intencion_ido": "0000000000000033",
+        "respuesta_ido": "0000000000000034",
+        "es_seguimiento": false
+      },
+      "intencion": {
+        "clase": "Intencion",
+        "ido": "0000000000000033",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "consulta",
+        "intencion": "analizar_canales",
+        "operacion": "ranking",
+        "metrica": "ingreso_neto",
+        "dimension": "canal",
+        "periodo": {
+          "desde": "2026-01-01",
+          "hasta": "2026-12-31",
+          "etiqueta": "año 2026",
+          "explicito": true
+        },
+        "periodo_comparacion": null,
+        "filtros": [],
+        "orden": "desc",
+        "limite": 1,
+        "desglose": null,
+        "origen": "reglas",
+        "dimension_texto": null,
+        "opciones": [],
+        "faltantes": [],
+        "motivo": "",
+        "supuestos": []
+      },
+      "respuesta": {
+        "clase": "RespuestaAgente",
+        "ido": "0000000000000034",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "RESPUESTA",
+        "resumen": "Canal con mayor ingreso neto en año 2026: **Mayorista B2B** (USD 580.518,89, 42,06 % del total).",
+        "interpretacion": "Representa 42,06 % del total del periodo.",
+        "origen_interpretacion": "plantilla",
+        "metrica": "Ingreso neto",
+        "regla_calculo": "SUM(cantidad × precio_unitario − descuento), sin impuestos, sólo tickets completados",
+        "periodo": "año 2026",
+        "filtros": "",
+        "dimension": "Canal",
+        "consulta": "CQ-02 v1 (Ranking por dimensión)",
+        "sql": "SELECT n.nombre AS canal, SUM(v.ingreso_neto) AS ingreso_neto, ROUND(100.0 * SUM(v.ingreso_neto) / NULLIF(SUM(SUM(v.ingreso_neto)) OVER (), 0), 2) AS participacion_pct\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_canal n ON n.canal_sk = v.canal_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\nGROUP BY n.nombre\nORDER BY (n.nombre::TEXT ILIKE '%%sin correspondencia%%' OR n.nombre::TEXT ILIKE '%%no informad%%' OR n.nombre::TEXT ILIKE '%%consumidor final%%'), ingreso_neto DESC NULLS LAST, canal\nLIMIT %(limite)s",
+        "parametros": {
+          "p_desde": "2026-01-01",
+          "p_hasta": "2026-12-31",
+          "limite": 1
+        },
+        "fuentes_ido": [
+          "0000000000000013",
+          "000000000000000f",
+          "000000000000000e"
+        ],
+        "fuentes": [
+          "dm.dim_canal",
+          "dm.dim_fecha",
+          "dm.fact_ventas"
+        ],
+        "resultado_ido": "0000000000000036",
+        "advertencias": [
+          "El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026)."
+        ],
+        "validaciones": [
+          {
+            "regla": "RV01",
+            "nombre": "Operación autorizada (sólo lectura)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "texto",
+            "mensaje": "Solicitud de sólo lectura"
+          },
+          {
+            "regla": "RV02",
+            "nombre": "Alcance del Data Mart",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Pregunta dentro del alcance"
+          },
+          {
+            "regla": "RV03",
+            "nombre": "Dimensión existente",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Dimensiones válidas"
+          },
+          {
+            "regla": "RV04",
+            "nombre": "Criterio explícito (ambigüedad)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Criterio explícito"
+          },
+          {
+            "regla": "RV05",
+            "nombre": "Valores de filtro existentes",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Valores de filtro verificados contra el Data Mart"
+          },
+          {
+            "regla": "RV06",
+            "nombre": "Periodo disponible",
+            "aprobada": false,
+            "severidad": "advertencia",
+            "momento": "intencion",
+            "mensaje": "El periodo año 2026 sólo está cubierto parcialmente (datos disponibles 01-01-2025 a 30-09-2026)."
+          },
+          {
+            "regla": "RV07",
+            "nombre": "SQL seguro de sólo lectura",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "sql",
+            "mensaje": "SELECT sobre tablas autorizadas: dm.dim_canal, dm.dim_fecha, dm.fact_ventas"
+          },
+          {
+            "regla": "RV08",
+            "nombre": "Resultado con registros",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "resultado",
+            "mensaje": "1 fila(s) devueltas"
+          },
+          {
+            "regla": "RV09",
+            "nombre": "Miembros desconocidos",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "resultado",
+            "mensaje": "Sin miembros desconocidos en el resultado"
+          }
+        ],
+        "opciones": []
+      },
+      "resultado": {
+        "clase": "ResultadoConsulta",
+        "ido": "0000000000000036",
+        "creado_en": "2026-10-29T11:00:03",
+        "consulta_ido": "0000000000000022",
+        "sql": "SELECT n.nombre AS canal, SUM(v.ingreso_neto) AS ingreso_neto, ROUND(100.0 * SUM(v.ingreso_neto) / NULLIF(SUM(SUM(v.ingreso_neto)) OVER (), 0), 2) AS participacion_pct\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_canal n ON n.canal_sk = v.canal_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\nGROUP BY n.nombre\nORDER BY (n.nombre::TEXT ILIKE '%%sin correspondencia%%' OR n.nombre::TEXT ILIKE '%%no informad%%' OR n.nombre::TEXT ILIKE '%%consumidor final%%'), ingreso_neto DESC NULLS LAST, canal\nLIMIT %(limite)s",
+        "parametros": {
+          "p_desde": "2026-01-01",
+          "p_hasta": "2026-12-31",
+          "limite": 1
+        },
+        "columnas": [
+          "canal",
+          "ingreso_neto",
+          "participacion_pct"
+        ],
+        "n_filas": 1,
+        "filas_muestra": [
+          [
+            "Mayorista B2B",
+            580518.89,
+            42.06
+          ]
+        ],
+        "duracion_ms": 15.44,
+        "error": null,
+        "lob_csv_bytes": 69
+      },
+      "consulta": {
+        "clase": "ConsultaRanking",
+        "ido": "0000000000000022",
+        "creado_en": "2026-10-29T11:00:03",
+        "codigo": "CQ-02",
+        "nombre": "Ranking por dimensión",
+        "operacion": "ranking",
+        "descripcion": "Métrica agrupada por dimensión, ordenada asc/desc, con límite y participación %",
+        "plantilla": "SELECT dim, métrica, participación ... GROUP BY dim ORDER BY métrica LIMIT n",
+        "version": 2,
+        "historial_versiones": [
+          [
+            1,
+            "2026-10-29T11:00:03",
+            "Versión inicial"
+          ],
+          [
+            2,
+            "2026-10-29T11:00:03",
+            "Se agrega desempate por nombre de miembro en el ORDER BY"
+          ]
+        ],
+        "fuentes_ido": [
+          "000000000000000e",
+          "000000000000000f",
+          "0000000000000010",
+          "0000000000000011",
+          "0000000000000012",
+          "0000000000000013"
+        ],
+        "ejecuciones": 2
+      }
+    },
+    {
+      "pregunta": {
+        "clase": "Pregunta",
+        "ido": "0000000000000046",
+        "creado_en": "2026-10-29T11:00:03",
+        "texto": "¿y en 2025?",
+        "fecha": "2026-10-29T11:00:03",
+        "estado": "RESPONDIDA",
+        "historial_estados": [
+          [
+            "RECIBIDA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "INTERPRETADA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "RESPONDIDA",
+            "2026-10-29T11:00:03"
+          ]
+        ],
+        "sesion_ido": "000000000000002e",
+        "intencion_ido": "0000000000000048",
+        "respuesta_ido": "0000000000000049",
+        "es_seguimiento": true
+      },
+      "intencion": {
+        "clase": "Intencion",
+        "ido": "0000000000000048",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "consulta",
+        "intencion": "analizar_canales",
+        "operacion": "ranking",
+        "metrica": "ingreso_neto",
+        "dimension": "canal",
+        "periodo": {
+          "desde": "2025-01-01",
+          "hasta": "2025-12-31",
+          "etiqueta": "año 2025",
+          "explicito": true
+        },
+        "periodo_comparacion": null,
+        "filtros": [],
+        "orden": "desc",
+        "limite": 1,
+        "desglose": null,
+        "origen": "reglas",
+        "dimension_texto": null,
+        "opciones": [],
+        "faltantes": [],
+        "motivo": "",
+        "supuestos": [
+          "Pregunta de seguimiento: se reutilizó el contexto de la pregunta anterior de la sesión."
+        ]
+      },
+      "respuesta": {
+        "clase": "RespuestaAgente",
+        "ido": "0000000000000049",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "RESPUESTA",
+        "resumen": "Canal con mayor ingreso neto en año 2025: **Mayorista B2B** (USD 991.784,36, 46,90 % del total).",
+        "interpretacion": "Representa 46,90 % del total del periodo.",
+        "origen_interpretacion": "plantilla",
+        "metrica": "Ingreso neto",
+        "regla_calculo": "SUM(cantidad × precio_unitario − descuento), sin impuestos, sólo tickets completados",
+        "periodo": "año 2025",
+        "filtros": "",
+        "dimension": "Canal",
+        "consulta": "CQ-02 v1 (Ranking por dimensión)",
+        "sql": "SELECT n.nombre AS canal, SUM(v.ingreso_neto) AS ingreso_neto, ROUND(100.0 * SUM(v.ingreso_neto) / NULLIF(SUM(SUM(v.ingreso_neto)) OVER (), 0), 2) AS participacion_pct\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_canal n ON n.canal_sk = v.canal_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\nGROUP BY n.nombre\nORDER BY (n.nombre::TEXT ILIKE '%%sin correspondencia%%' OR n.nombre::TEXT ILIKE '%%no informad%%' OR n.nombre::TEXT ILIKE '%%consumidor final%%'), ingreso_neto DESC NULLS LAST, canal\nLIMIT %(limite)s",
+        "parametros": {
+          "p_desde": "2025-01-01",
+          "p_hasta": "2025-12-31",
+          "limite": 1
+        },
+        "fuentes_ido": [
+          "0000000000000013",
+          "000000000000000f",
+          "000000000000000e"
+        ],
+        "fuentes": [
+          "dm.dim_canal",
+          "dm.dim_fecha",
+          "dm.fact_ventas"
+        ],
+        "resultado_ido": "000000000000004b",
+        "advertencias": [
+          "Pregunta de seguimiento: se reutilizó el contexto de la pregunta anterior de la sesión."
+        ],
+        "validaciones": [
+          {
+            "regla": "RV01",
+            "nombre": "Operación autorizada (sólo lectura)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "texto",
+            "mensaje": "Solicitud de sólo lectura"
+          },
+          {
+            "regla": "RV02",
+            "nombre": "Alcance del Data Mart",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Pregunta dentro del alcance"
+          },
+          {
+            "regla": "RV03",
+            "nombre": "Dimensión existente",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Dimensiones válidas"
+          },
+          {
+            "regla": "RV04",
+            "nombre": "Criterio explícito (ambigüedad)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Criterio explícito"
+          },
+          {
+            "regla": "RV05",
+            "nombre": "Valores de filtro existentes",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Valores de filtro verificados contra el Data Mart"
+          },
+          {
+            "regla": "RV06",
+            "nombre": "Periodo disponible",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Periodo dentro del rango disponible (01-01-2025 a 30-09-2026)"
+          },
+          {
+            "regla": "RV07",
+            "nombre": "SQL seguro de sólo lectura",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "sql",
+            "mensaje": "SELECT sobre tablas autorizadas: dm.dim_canal, dm.dim_fecha, dm.fact_ventas"
+          },
+          {
+            "regla": "RV08",
+            "nombre": "Resultado con registros",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "resultado",
+            "mensaje": "1 fila(s) devueltas"
+          },
+          {
+            "regla": "RV09",
+            "nombre": "Miembros desconocidos",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "resultado",
+            "mensaje": "Sin miembros desconocidos en el resultado"
+          }
+        ],
+        "opciones": []
+      },
+      "resultado": {
+        "clase": "ResultadoConsulta",
+        "ido": "000000000000004b",
+        "creado_en": "2026-10-29T11:00:03",
+        "consulta_ido": "0000000000000022",
+        "sql": "SELECT n.nombre AS canal, SUM(v.ingreso_neto) AS ingreso_neto, ROUND(100.0 * SUM(v.ingreso_neto) / NULLIF(SUM(SUM(v.ingreso_neto)) OVER (), 0), 2) AS participacion_pct\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_canal n ON n.canal_sk = v.canal_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\nGROUP BY n.nombre\nORDER BY (n.nombre::TEXT ILIKE '%%sin correspondencia%%' OR n.nombre::TEXT ILIKE '%%no informad%%' OR n.nombre::TEXT ILIKE '%%consumidor final%%'), ingreso_neto DESC NULLS LAST, canal\nLIMIT %(limite)s",
+        "parametros": {
+          "p_desde": "2025-01-01",
+          "p_hasta": "2025-12-31",
+          "limite": 1
+        },
+        "columnas": [
+          "canal",
+          "ingreso_neto",
+          "participacion_pct"
+        ],
+        "n_filas": 1,
+        "filas_muestra": [
+          [
+            "Mayorista B2B",
+            991784.36,
+            46.9
+          ]
+        ],
+        "duracion_ms": 17.42,
+        "error": null,
+        "lob_csv_bytes": 68
+      },
+      "consulta": {
+        "clase": "ConsultaRanking",
+        "ido": "0000000000000022",
+        "creado_en": "2026-10-29T11:00:03",
+        "codigo": "CQ-02",
+        "nombre": "Ranking por dimensión",
+        "operacion": "ranking",
+        "descripcion": "Métrica agrupada por dimensión, ordenada asc/desc, con límite y participación %",
+        "plantilla": "SELECT dim, métrica, participación ... GROUP BY dim ORDER BY métrica LIMIT n",
+        "version": 2,
+        "historial_versiones": [
+          [
+            1,
+            "2026-10-29T11:00:03",
+            "Versión inicial"
+          ],
+          [
+            2,
+            "2026-10-29T11:00:03",
+            "Se agrega desempate por nombre de miembro en el ORDER BY"
+          ]
+        ],
+        "fuentes_ido": [
+          "000000000000000e",
+          "000000000000000f",
+          "0000000000000010",
+          "0000000000000011",
+          "0000000000000012",
+          "0000000000000013"
+        ],
+        "ejecuciones": 2
+      }
+    },
+    {
+      "pregunta": {
+        "clase": "Pregunta",
+        "ido": "000000000000005b",
+        "creado_en": "2026-10-29T11:00:03",
+        "texto": "¿Cuál fue el mejor canal?",
+        "fecha": "2026-10-29T11:00:03",
+        "estado": "ACLARACION",
+        "historial_estados": [
+          [
+            "RECIBIDA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "INTERPRETADA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "ACLARACION",
+            "2026-10-29T11:00:03"
+          ]
+        ],
+        "sesion_ido": "000000000000002e",
+        "intencion_ido": "000000000000005d",
+        "respuesta_ido": "000000000000005e",
+        "es_seguimiento": false
+      },
+      "intencion": {
+        "clase": "Intencion",
+        "ido": "000000000000005d",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "ambigua",
+        "intencion": null,
+        "operacion": null,
+        "metrica": null,
+        "dimension": "canal",
+        "periodo": null,
+        "periodo_comparacion": null,
+        "filtros": [],
+        "orden": "desc",
+        "limite": null,
+        "desglose": null,
+        "origen": "reglas",
+        "dimension_texto": null,
+        "opciones": [
+          "ingreso_neto",
+          "margen_bruto",
+          "unidades",
+          "ticket_promedio"
+        ],
+        "faltantes": [],
+        "motivo": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio.",
+        "supuestos": []
+      },
+      "respuesta": {
+        "clase": "RespuestaAgente",
+        "ido": "000000000000005e",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "ACLARACION",
+        "resumen": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio. ¿Con qué criterio desea evaluarlo?",
+        "interpretacion": "",
+        "origen_interpretacion": "plantilla",
+        "metrica": "",
+        "regla_calculo": "",
+        "periodo": "",
+        "filtros": "",
+        "dimension": "",
+        "consulta": "",
+        "sql": "",
+        "parametros": {},
+        "fuentes_ido": [],
+        "fuentes": [],
+        "resultado_ido": null,
+        "advertencias": [],
+        "validaciones": [
+          {
+            "regla": "RV01",
+            "nombre": "Operación autorizada (sólo lectura)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "texto",
+            "mensaje": "Solicitud de sólo lectura"
+          },
+          {
+            "regla": "RV02",
+            "nombre": "Alcance del Data Mart",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Pregunta dentro del alcance"
+          },
+          {
+            "regla": "RV03",
+            "nombre": "Dimensión existente",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Dimensiones válidas"
+          },
+          {
+            "regla": "RV04",
+            "nombre": "Criterio explícito (ambigüedad)",
+            "aprobada": false,
+            "severidad": "bloqueante",
+            "momento": "intencion",
+            "mensaje": "La pregunta no indica el criterio de evaluación. Puede medirse por ingreso neto, margen bruto, cantidad vendida (unidades) o ticket promedio."
+          }
+        ],
+        "opciones": [
+          "ingreso_neto",
+          "margen_bruto",
+          "unidades",
+          "ticket_promedio"
+        ]
+      }
+    },
+    {
+      "pregunta": {
+        "clase": "Pregunta",
+        "ido": "0000000000000068",
+        "creado_en": "2026-10-29T11:00:03",
+        "texto": "¿Cuánto vendimos de Jardinería en 2025?",
+        "fecha": "2026-10-29T11:00:03",
+        "estado": "SIN_DATOS",
+        "historial_estados": [
+          [
+            "RECIBIDA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "INTERPRETADA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "SIN_DATOS",
+            "2026-10-29T11:00:03"
+          ]
+        ],
+        "sesion_ido": "000000000000002e",
+        "intencion_ido": "000000000000006a",
+        "respuesta_ido": "000000000000006b",
+        "es_seguimiento": false
+      },
+      "intencion": {
+        "clase": "Intencion",
+        "ido": "000000000000006a",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "consulta",
+        "intencion": "analizar_ventas",
+        "operacion": "total",
+        "metrica": "ingreso_neto",
+        "dimension": null,
+        "periodo": {
+          "desde": "2025-01-01",
+          "hasta": "2025-12-31",
+          "etiqueta": "año 2025",
+          "explicito": true
+        },
+        "periodo_comparacion": null,
+        "filtros": [
+          {
+            "dimension": "categoria",
+            "valores": [
+              "Jardinería"
+            ]
+          }
+        ],
+        "orden": "desc",
+        "limite": null,
+        "desglose": null,
+        "origen": "reglas",
+        "dimension_texto": null,
+        "opciones": [],
+        "faltantes": [],
+        "motivo": "",
+        "supuestos": []
+      },
+      "respuesta": {
+        "clase": "RespuestaAgente",
+        "ido": "000000000000006b",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "SIN_DATOS",
+        "resumen": "No hay registros en el Data Mart para ingreso neto con Categoría = Jardinería en año 2025. El resultado está vacío: no se reporta como cero porque no hubo ventas registradas que lo respalden.",
+        "interpretacion": "",
+        "origen_interpretacion": "plantilla",
+        "metrica": "Ingreso neto",
+        "regla_calculo": "SUM(cantidad × precio_unitario − descuento), sin impuestos, sólo tickets completados",
+        "periodo": "año 2025",
+        "filtros": "Categoría = Jardinería",
+        "dimension": "",
+        "consulta": "CQ-01 v1 (Total del periodo)",
+        "sql": "SELECT SUM(v.ingreso_neto) AS ingreso_neto, COUNT(*) AS lineas\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_producto p ON p.producto_sk = v.producto_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\n  AND p.categoria = ANY(%(f0)s)\nHAVING COUNT(*) > 0",
+        "parametros": {
+          "p_desde": "2025-01-01",
+          "p_hasta": "2025-12-31",
+          "f0": [
+            "Jardinería"
+          ]
+        },
+        "fuentes_ido": [
+          "000000000000000f",
+          "0000000000000010",
+          "000000000000000e"
+        ],
+        "fuentes": [
+          "dm.dim_fecha",
+          "dm.dim_producto",
+          "dm.fact_ventas"
+        ],
+        "resultado_ido": "000000000000006d",
+        "advertencias": [],
+        "validaciones": [
+          {
+            "regla": "RV01",
+            "nombre": "Operación autorizada (sólo lectura)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "texto",
+            "mensaje": "Solicitud de sólo lectura"
+          },
+          {
+            "regla": "RV02",
+            "nombre": "Alcance del Data Mart",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Pregunta dentro del alcance"
+          },
+          {
+            "regla": "RV03",
+            "nombre": "Dimensión existente",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Dimensiones válidas"
+          },
+          {
+            "regla": "RV04",
+            "nombre": "Criterio explícito (ambigüedad)",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Criterio explícito"
+          },
+          {
+            "regla": "RV05",
+            "nombre": "Valores de filtro existentes",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Valores de filtro verificados contra el Data Mart"
+          },
+          {
+            "regla": "RV06",
+            "nombre": "Periodo disponible",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "intencion",
+            "mensaje": "Periodo dentro del rango disponible (01-01-2025 a 30-09-2026)"
+          },
+          {
+            "regla": "RV07",
+            "nombre": "SQL seguro de sólo lectura",
+            "aprobada": true,
+            "severidad": "info",
+            "momento": "sql",
+            "mensaje": "SELECT sobre tablas autorizadas: dm.dim_fecha, dm.dim_producto, dm.fact_ventas"
+          },
+          {
+            "regla": "RV08",
+            "nombre": "Resultado con registros",
+            "aprobada": false,
+            "severidad": "bloqueante",
+            "momento": "resultado",
+            "mensaje": "La consulta no devolvió registros para los criterios indicados."
+          }
+        ],
+        "opciones": []
+      },
+      "resultado": {
+        "clase": "ResultadoConsulta",
+        "ido": "000000000000006d",
+        "creado_en": "2026-10-29T11:00:03",
+        "consulta_ido": "0000000000000023",
+        "sql": "SELECT SUM(v.ingreso_neto) AS ingreso_neto, COUNT(*) AS lineas\nFROM dm.fact_ventas v\nJOIN dm.dim_fecha f ON f.fecha_sk = v.fecha_sk\nJOIN dm.dim_producto p ON p.producto_sk = v.producto_sk\nWHERE f.fecha BETWEEN %(p_desde)s AND %(p_hasta)s\n  AND p.categoria = ANY(%(f0)s)\nHAVING COUNT(*) > 0",
+        "parametros": {
+          "p_desde": "2025-01-01",
+          "p_hasta": "2025-12-31",
+          "f0": [
+            "Jardinería"
+          ]
+        },
+        "columnas": [
+          "ingreso_neto",
+          "lineas"
+        ],
+        "n_filas": 0,
+        "filas_muestra": [],
+        "duracion_ms": 6.93,
+        "error": null,
+        "lob_csv_bytes": 0
+      },
+      "consulta": {
+        "clase": "ConsultaTotal",
+        "ido": "0000000000000023",
+        "creado_en": "2026-10-29T11:00:03",
+        "codigo": "CQ-01",
+        "nombre": "Total del periodo",
+        "operacion": "total",
+        "descripcion": "Valor agregado de una métrica para un periodo y filtros",
+        "plantilla": "SELECT métrica FROM fact JOIN dims WHERE periodo AND filtros",
+        "version": 1,
+        "historial_versiones": [
+          [
+            1,
+            "2026-10-29T11:00:03",
+            "Versión inicial"
+          ]
+        ],
+        "fuentes_ido": [
+          "000000000000000e",
+          "000000000000000f",
+          "0000000000000010",
+          "0000000000000011",
+          "0000000000000012",
+          "0000000000000013"
+        ],
+        "ejecuciones": 1
+      }
+    },
+    {
+      "pregunta": {
+        "clase": "Pregunta",
+        "ido": "000000000000007b",
+        "creado_en": "2026-10-29T11:00:03",
+        "texto": "Borra las ventas de enero de 2026",
+        "fecha": "2026-10-29T11:00:03",
+        "estado": "RECHAZADA",
+        "historial_estados": [
+          [
+            "RECIBIDA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "INTERPRETADA",
+            "2026-10-29T11:00:03"
+          ],
+          [
+            "RECHAZADA",
+            "2026-10-29T11:00:03"
+          ]
+        ],
+        "sesion_ido": "000000000000002e",
+        "intencion_ido": "000000000000007d",
+        "respuesta_ido": "000000000000007e",
+        "es_seguimiento": false
+      },
+      "intencion": {
+        "clase": "Intencion",
+        "ido": "000000000000007d",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "operacion_no_autorizada",
+        "intencion": null,
+        "operacion": null,
+        "metrica": null,
+        "dimension": null,
+        "periodo": null,
+        "periodo_comparacion": null,
+        "filtros": [],
+        "orden": "desc",
+        "limite": null,
+        "desglose": null,
+        "origen": "regla RV01",
+        "dimension_texto": null,
+        "opciones": [],
+        "faltantes": [],
+        "motivo": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+        "supuestos": []
+      },
+      "respuesta": {
+        "clase": "RespuestaAgente",
+        "ido": "000000000000007e",
+        "creado_en": "2026-10-29T11:00:03",
+        "tipo": "RECHAZO",
+        "resumen": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas.",
+        "interpretacion": "",
+        "origen_interpretacion": "plantilla",
+        "metrica": "",
+        "regla_calculo": "",
+        "periodo": "",
+        "filtros": "",
+        "dimension": "",
+        "consulta": "",
+        "sql": "",
+        "parametros": {},
+        "fuentes_ido": [],
+        "fuentes": [],
+        "resultado_ido": null,
+        "advertencias": [],
+        "validaciones": [
+          {
+            "regla": "RV01",
+            "nombre": "Operación autorizada (sólo lectura)",
+            "aprobada": false,
+            "severidad": "bloqueante",
+            "momento": "texto",
+            "mensaje": "Operación no autorizada (modificar o eliminar datos). El agente sólo realiza consultas de lectura sobre el Data Mart de ventas."
+          }
+        ],
+        "opciones": []
+      }
+    }
+  ]
+}

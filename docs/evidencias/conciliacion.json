@@ -1,0 +1,177 @@
+{
+  "conciliacion_sql": [
+    {
+      "control": "C1 Líneas válidas",
+      "valor_fuente": "97816",
+      "valor_dm": "97816",
+      "diferencia": "0",
+      "estado": "OK"
+    },
+    {
+      "control": "C2 Tickets (transacciones)",
+      "valor_fuente": "30462",
+      "valor_dm": "30462",
+      "diferencia": "0",
+      "estado": "OK"
+    },
+    {
+      "control": "C3 Unidades vendidas",
+      "valor_fuente": "506420",
+      "valor_dm": "506420",
+      "diferencia": "0",
+      "estado": "OK"
+    },
+    {
+      "control": "C4 Ingreso neto (USD)",
+      "valor_fuente": "3494922.06",
+      "valor_dm": "3494922.06",
+      "diferencia": "0.00",
+      "estado": "OK"
+    },
+    {
+      "control": "C5 Costo total (USD)",
+      "valor_fuente": "2739511.34",
+      "valor_dm": "2739511.34",
+      "diferencia": "0.00",
+      "estado": "OK"
+    },
+    {
+      "control": "C6 Cuadre de líneas: crudas = DM + anuladas + duplicadas + inválidas",
+      "valor_fuente": "99890",
+      "valor_dm": "99890",
+      "diferencia": "0",
+      "estado": "OK"
+    },
+    {
+      "control": "C7 Meses con diferencia de ingreso fuente vs DM",
+      "valor_fuente": "0",
+      "valor_dm": "0",
+      "diferencia": "0",
+      "estado": "OK"
+    }
+  ],
+  "integridad": [
+    {
+      "control": "I1 Hechos con fecha_sk inexistente",
+      "hallazgos": 0
+    },
+    {
+      "control": "I10 Reglas de cálculo incumplidas (bruto, neto, margen)",
+      "hallazgos": 0
+    },
+    {
+      "control": "I2 Hechos con producto_sk inexistente",
+      "hallazgos": 0
+    },
+    {
+      "control": "I3 Hechos con cliente_sk inexistente",
+      "hallazgos": 0
+    },
+    {
+      "control": "I4 Hechos con sucursal_sk inexistente",
+      "hallazgos": 0
+    },
+    {
+      "control": "I5 Hechos con canal_sk inexistente",
+      "hallazgos": 0
+    },
+    {
+      "control": "I6 Grano duplicado (ticket, línea) en el hecho",
+      "hallazgos": 0
+    },
+    {
+      "control": "I7 Clientes con != 1 versión actual (SCD2)",
+      "hallazgos": 0
+    },
+    {
+      "control": "I8 Versiones de cliente solapadas (SCD2)",
+      "hallazgos": 0
+    },
+    {
+      "control": "I9 Hechos fuera de la vigencia de su versión de cliente",
+      "hallazgos": 0
+    }
+  ],
+  "excepciones": [
+    {
+      "dimension": "Cliente",
+      "miembro": "Cliente sin correspondencia",
+      "lineas": "414",
+      "tickets": "129",
+      "ingreso_neto": "12243.73",
+      "pct_ingreso": "0.350"
+    },
+    {
+      "dimension": "Cliente",
+      "miembro": "Consumidor final (no informado)",
+      "lineas": "2252",
+      "tickets": "792",
+      "ingreso_neto": "50526.99",
+      "pct_ingreso": "1.446"
+    },
+    {
+      "dimension": "Producto",
+      "miembro": "Producto sin correspondencia",
+      "lineas": "202",
+      "tickets": "202",
+      "ingreso_neto": "7291.39",
+      "pct_ingreso": "0.209"
+    },
+    {
+      "dimension": "Rechazo ETL: LINEA_DUPLICADA",
+      "miembro": "LINEA_DUPLICADA",
+      "lineas": "384",
+      "tickets": "None",
+      "ingreso_neto": "None",
+      "pct_ingreso": "None"
+    },
+    {
+      "dimension": "Rechazo ETL: CANTIDAD_INVALIDA",
+      "miembro": "CANTIDAD_INVALIDA",
+      "lineas": "108",
+      "tickets": "None",
+      "ingreso_neto": "None",
+      "pct_ingreso": "None"
+    },
+    {
+      "dimension": "Rechazo ETL: TICKET_ANULADO",
+      "miembro": "TICKET_ANULADO",
+      "lineas": "495",
+      "tickets": "None",
+      "ingreso_neto": "None",
+      "pct_ingreso": "None"
+    }
+  ],
+  "conciliacion_independiente": [
+    {
+      "control": "lineas",
+      "csv": 97816,
+      "dm": 97816,
+      "estado": "OK"
+    },
+    {
+      "control": "tickets",
+      "csv": 30462,
+      "dm": 30462,
+      "estado": "OK"
+    },
+    {
+      "control": "unidades",
+      "csv": 506420,
+      "dm": 506420,
+      "estado": "OK"
+    },
+    {
+      "control": "ingreso_neto",
+      "csv": 3494922.06,
+      "dm": 3494922.06,
+      "estado": "OK"
+    },
+    {
+      "control": "costo",
+      "csv": 2739511.34,
+      "dm": 2739511.34,
+      "estado": "OK"
+    }
+  ]
+}
