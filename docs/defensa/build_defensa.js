@@ -265,16 +265,16 @@ s.addChart(pres.charts.BAR, [{ name: "Casos OK", labels: grupos.map(g => g[0]), 
   valGridLine: { style: "none" }, catGridLine: { style: "none" }, objectName: "grafico-pruebas" });
 s.addText("El valor esperado de cada caso se calcula con pandas directamente sobre los CSV, sin PostgreSQL ni código del agente. Un caso es OK sólo si el agente devuelve exactamente ese valor.",
   { x: 0.6, y: 5.25, w: 7.2, h: 1.2, fontSize: 14, color: C.text1, margin: 0, isTextBox: true, objectName: "metodo-pruebas" });
-tarjeta(s, 8.2, 1.45, 4.5, 2.4, "Revisión independiente", "Un revisor externo probó más de 120 preguntas; cada defecto hallado se corrigió y quedó como caso de regresión. Además, 35/35 pruebas unitarias.", C.accent3, "t-unit", 14);
-tarjeta(s, 8.2, 4.05, 4.5, 2.7, "Evidencias entregadas", bullets(["Pruebas.xlsx (matriz + reglas)", "evidencia_bdoo.md (sesión completa)", "conciliacion.json", "Bitácora de IA"]), C.accent2, "t-evid", 14);
-s.addNotes("Fernando (≈1 min). Destacar la independencia del valor esperado y la revisión externa: encontró, entre otros, que el ranking de clientes agrupaba por nombre (sumaba empresas distintas con la misma razón social). Se corrigió agrupando por cliente_id, y quedó la lección de que el valor esperado tampoco debe compartir supuestos con el código.");
+tarjeta(s, 8.2, 1.45, 4.5, 2.4, "Revisión independiente", "Un revisor externo probó más de 120 preguntas; cada defecto hallado se corrigió y quedó como caso de regresión. Además, 41/41 pruebas unitarias.", C.accent3, "t-unit", 14);
+tarjeta(s, 8.2, 4.05, 4.5, 2.7, "LLM real (OpenRouter)", "gpt-4o-mini solo acertó 17/34 de la matriz: inventaba periodos y canales. Anclado a lo escrito en la pregunta: 34/34, y 12/12 en preguntas nuevas.", C.accent2, "t-llm", 14);
+s.addNotes("Fernando (≈1 min). Destacar la independencia del valor esperado y la revisión externa: encontró, entre otros, que el ranking de clientes agrupaba por nombre (sumaba empresas distintas con la misma razón social). Se corrigió agrupando por cliente_id, y quedó la lección de que el valor esperado tampoco debe compartir supuestos con el código. Sobre el LLM: con respuestas reales de gpt-4o-mini en OpenRouter, el modelo solo inventó periodos («por mes» → últimos 12 meses) y los canales de «compare dos canales». Por eso el intérprete híbrido ancla su salida a lo escrito en la pregunta; lo que el LLM inventa se descarta y queda como supuesto visible. Salvedad honesta: el anclaje se ajustó después de ver esas fallas; antes de ajustar, en 12 preguntas nuevas el híbrido acertó 8.");
 
 // 13 ---------------------------------------------------------------- cierre
 s = nueva("PORTADA", "Cierre");
 s.addText("Limitaciones y próximos pasos", { placeholder: "title" });
 s.addText("Datos sintéticos · una dimensión por consulta · ZODB de un solo proceso · hecho sólo transaccional", { placeholder: "body" });
 s.addText(bullets(["Hecho de inventario (snapshot) con métricas semiaditivas", "Consultas de dos dimensiones y drill-down por jerarquías",
-  "ZEO para concurrencia multiproceso · carga incremental con SCD2 automatizado", "Regresión semántica del LLM con la matriz de pruebas"]),
+  "ZEO para concurrencia multiproceso · carga incremental con SCD2 automatizado", "Validar el LLM en vivo, pregunta por pregunta, en cada cambio de modelo"]),
   { x: 0.8, y: 5.0, w: 11.5, h: 1.9, fontSize: 16, color: C.background1, margin: 0, isTextBox: true, objectName: "mejoras" });
 s.addNotes("Fernando cierra (≈30 s) y abre las preguntas individuales.");
 
