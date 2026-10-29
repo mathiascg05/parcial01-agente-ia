@@ -1,0 +1,172 @@
+<html><head><meta charset='utf-8'><style>
+@page { size: Letter; }
+* { box-sizing: border-box; }
+body { font-family: 'Arial', 'Helvetica', sans-serif; font-size: 10.5pt; color: #1f2937; line-height: 1.45; }
+h1 { font-size: 17pt; color: #1F3864; border-bottom: 2px solid #1F3864; padding-bottom: 4px; margin-top: 26px; page-break-after: avoid; }
+h2 { font-size: 13pt; color: #1F3864; margin-top: 18px; page-break-after: avoid; }
+h3 { font-size: 11pt; color: #334155; margin-top: 12px; page-break-after: avoid; }
+p { margin: 6px 0; text-align: justify; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 12px; font-size: 9pt; page-break-inside: auto; }
+tr { page-break-inside: avoid; }
+th { background: #1F3864; color: #fff; text-align: left; padding: 5px 6px; }
+td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: top; }
+tr:nth-child(even) td { background: #f8fafc; }
+code, pre { font-family: 'Courier New', monospace; font-size: 8.4pt; }
+pre { background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 8px; white-space: pre-wrap; page-break-inside: avoid; }
+.caja { border-left: 4px solid #1F3864; background: #eef2ff; padding: 8px 12px; margin: 10px 0; page-break-inside: avoid; }
+.ok { color: #166534; font-weight: bold; } .falla { color: #991b1b; font-weight: bold; }
+figure { margin: 10px 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; border: 1px solid #e2e8f0; }
+figcaption { font-size: 9pt; color: #475569; margin-top: 4px; }
+.portada { height: 21.5cm; display: flex; flex-direction: column; justify-content: space-between; page-break-after: always; }
+.portada .top { font-size: 11pt; color: #475569; }
+.portada h1 { border: none; font-size: 26pt; margin: 0; line-height: 1.15; }
+.portada .sub { font-size: 14pt; color: #334155; margin-top: 10px; }
+.portada table td { border: none; padding: 3px 8px 3px 0; font-size: 11pt; background: none !important; }
+.toc li { margin: 2px 0; }
+.small { font-size: 8.8pt; color: #475569; }
+ li{margin:3px 0}</style></head><body><h1>Guía de defensa · Parcial 01 (uso interno del equipo)</h1>
+<p>La defensa vale <strong>40 %</strong> de la nota: 10 % es la ejecución en vivo, 7 % la defensa del Data Mart, 7 % la defensa de la BDOO y 6 % el dominio individual. El profesor puede preguntarle <strong>a cualquiera</strong> por <strong>cualquier</strong> parte, así que todos deben leer las secciones 1 a 5 de esta guía.</p>
+<h2>Reparto de la exposición (10 min)</h2>
+<table>
+<thead>
+<tr>
+<th>Láminas</th>
+<th>Quién</th>
+<th>Tiempo</th>
+<th>Mensaje que debe quedar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3 Portada, reto, arquitectura</td>
+<td>Mathias</td>
+<td>2:30</td>
+<td>Tres responsabilidades separadas: el Data Mart tiene la verdad, la BDOO la trazabilidad y el agente conecta ambos.</td>
+</tr>
+<tr>
+<td>4–5 Estrella y decisiones</td>
+<td>Mikel</td>
+<td>2:30</td>
+<td>El grano en una oración, la aditividad, las claves sustitutas y los miembros −1/−2.</td>
+</tr>
+<tr>
+<td>6–7 SCD2 y controles</td>
+<td>Leonardo</td>
+<td>2:00</td>
+<td>Con Tipo 1 el agente respondería «Frecuente», que es falso. La conciliación cuadra al centavo.</td>
+</tr>
+<tr>
+<td>8–9 BDOO</td>
+<td>Federico</td>
+<td>2:00</td>
+<td>Cada concepto de la clase P06 está implementado y demostrado.</td>
+</tr>
+<tr>
+<td>10, 12, 13 Agente, pruebas y cierre</td>
+<td>Fernando</td>
+<td>1:30</td>
+<td>El agente nunca inventa: tiene cuatro capas de seguridad. Pruebas 35/35 contra valores calculados por separado, más una revisión independiente.</td>
+</tr>
+<tr>
+<td>11 Demostración</td>
+<td>Mathias opera; cada uno explica su parte</td>
+<td>2:00</td>
+<td>Seguir el guion de la lámina 11.</td>
+</tr>
+</tbody>
+</table>
+<h2>Antes de entrar (checklist)</h2>
+<ol>
+<li>Correr <code>python scripts/setup_datamart.py</code>: debe terminar en <strong>TODO OK</strong>.</li>
+<li>Correr <code>python scripts/inicializar_bdoo.py</code>.</li>
+<li>Abrir <code>streamlit run app/streamlit_app.py</code> y hacer una pregunta de prueba.</li>
+<li>Si hay internet, dejar el modo <strong>auto</strong>. Si falla el LLM o no hay red, usar <strong>reglas</strong>, que da el mismo resultado en las preguntas del guion.</li>
+<li>Tener la terminal lista con <code>python -m agente.cli -p "…"</code> como plan B. Ojo: cierren Streamlit antes, porque ZODB admite un solo proceso.</li>
+<li>Subir la última versión del .zip a Canvas <strong>antes del viernes a las 5:00 p. m.</strong></li>
+</ol>
+<hr />
+<h2>1. Preguntas probables · Data Mart (Mikel y Leonardo)</h2>
+<p><strong>¿Cuál es el grano?</strong> Una fila por cada línea de producto de un ticket de venta completado.</p>
+<p><strong>¿Por qué ese grano y no el ticket?</strong> Es el más atómico. Con él se puede responder por producto y por categoría, y agregar hacia arriba. Con grano ticket no sabríamos qué productos se vendieron.</p>
+<p><strong>¿Cómo evitan duplicar ingresos?</strong> De cuatro formas:
+- La PK <code>(numero_ticket, linea_ticket)</code>.
+- El ETL deduplica la fuente (había 384 líneas repetidas).
+- Los tickets se cuentan con <code>COUNT(DISTINCT numero_ticket)</code>, nunca con <code>COUNT(*)</code>.
+- La conciliación C1–C7 lo comprueba.</p>
+<p><strong>Métricas aditivas, semiaditivas y no aditivas:</strong>
+- <strong>Aditivas:</strong> cantidad, monto bruto, descuento, ingreso neto, costo y margen.
+- <strong>No aditivas:</strong> margen %, ticket promedio, % de descuento, clientes activos y precio unitario.
+- <strong>Semiaditivas:</strong> no hay en un hecho transaccional. El ejemplo sería el inventario: se suma por producto, pero no a lo largo del tiempo.</p>
+<p><strong>¿Por qué no se promedia el margen %?</strong> Porque un canal pequeño pesaría igual que uno grande. Se calcula como <code>SUM(margen) / SUM(ingreso)</code>. Por eso la comparación entre canales usa <code>GROUPING SETS</code>, que recalcula el total del periodo.</p>
+<p><strong>¿Para qué sirven las claves sustitutas?</strong>
+- Independizan el DW de los códigos de la fuente.
+- Permiten varias versiones de un cliente (SCD2).
+- Permiten los miembros −1/−2.
+- Hacen los joins más rápidos.</p>
+<p><code>fecha_sk</code> es AAAAMMDD por la convención de Kimball.</p>
+<p><strong>¿Qué pasa con un producto que no existe en el catálogo?</strong> Va a <code>producto_sk = −2</code> («Sin correspondencia»). No se descarta, porque perderíamos ingreso: son 202 líneas, 0,21 % del ingreso. La regla RV09 advierte al usuario cuando aparece en un resultado.</p>
+<p><strong>¿Y los clientes sin identificar?</strong> Van a −1 («No informado»): 792 tickets de consumidor final.</p>
+<p><strong>¿SCD 1 o 2? (pregunta obligatoria)</strong> Tipo 2. Si se sobrescribiera, las compras de 2025 de los corporativos reclasificados contarían como «Frecuente». El agente respondería que Frecuente cayó −31,5 % y que Corporativo creció +5,5 %, cuando en realidad Corporativo cayó −20,6 %. Mostrar la consulta Q4-bis del .sql.</p>
+<p><strong>¿Cómo se carga el SCD2?</strong> Desde la bitácora del CRM (<code>oltp.cliente_segmento_historial</code>): una versión por tramo, con <code>fecha_inicio</code>, <code>fecha_fin</code> y <code>es_actual</code>. Cada venta se une con la versión vigente en su fecha (<code>BETWEEN fecha_inicio AND fecha_fin</code>). El control I9 verifica que ningún hecho quede fuera de vigencia, e I7/I8 que no haya solapes.</p>
+<p><strong>¿Qué diferencia hay entre oltp y dm?</strong> oltp es operacional: normalizado, con errores y sobrescribe. dm es analítico: estrella limpia, histórica y no volátil. El agente no puede leer oltp ni control (REVOKE + RV07).</p>
+<p><strong>¿Cómo concilian?</strong> Con la vista <code>control.v_conciliacion_estado</code>, que compara líneas, tickets, unidades, ingreso, costo, el cuadre de líneas crudas y la diferencia mes a mes. Además, <code>setup_datamart.py</code> recalcula los totales con pandas directo de los CSV.</p>
+<p><strong>Kimball o Inmon?</strong> Kimball (bottom-up): un Data Mart de ventas con dimensiones conformadas, reutilizables para un futuro Data Mart de inventario.</p>
+<h2>2. Preguntas probables · BDOO (Federico; todos deben poder responder lo básico)</h2>
+<p><strong>¿Por qué ZODB?</strong> Es una BDOO real: persiste objetos Python sin mapeo a tablas, asigna IDO y guarda las referencias entre objetos. Tiene herencia y polimorfismo transparentes, Blobs (LOB), transacciones ACID e historial de versiones.</p>
+<p><strong>¿Por qué no PostgreSQL objeto-relacional?</strong> Habría mezclado la BDOO con el Data Mart, y la rúbrica castiga confundir esas responsabilidades.</p>
+<p><strong>¿La BDOO duplica las dimensiones?</strong> No. Guarda objetos del agente: sesiones, preguntas, intenciones, consultas, resultados, respuestas, reglas y fuentes. Las cifras viven en el Data Mart. Lo único que se guarda del dato es el resultado de cada consulta como evidencia.</p>
+<p><strong>¿Qué es el IDO?</strong> El <code>_p_oid</code> que asigna ZODB. Es técnico, no tiene significado de negocio y no cambia. Se ve en la pestaña BDOO de la app.</p>
+<p><strong>Ejemplos concretos de herencia y polimorfismo:</strong>
+- <code>Usuario</code> es abstracta; <code>Gerente</code> y <code>Analista</code> implementan <code>nivel_detalle()</code> y <code>muestra_sql()</code> distinto (el analista ve el SQL).
+- <code>ConsultaAnalitica</code> tiene 5 subclases: el agente les envía <code>aplica_a()</code> a todas y <code>construir_sql()</code> a la elegida.
+- <code>ReglaValidacion</code> tiene 11 subclases con <code>validar()</code> propio.</p>
+<p>Es el mismo caso de Puerta/Ventana con «Cerrar» de la clase.</p>
+<p><strong>Encapsulamiento:</strong> los atributos son privados (<code>_estado</code>), solo hay propiedades de lectura y el estado cambia mediante métodos que validan. Ejemplo: <code>Pregunta.cambiar_estado()</code> no permite pasar de RECIBIDA a RESPONDIDA sin INTERPRETADA.</p>
+<p><strong>Composición vs. agregación:</strong>
+- <strong>Composición:</strong> Sesión ◆ Preguntas; Pregunta ◆ Intención y Respuesta; Respuesta ◆ Resultado. La parte no existe sin el todo.
+- <strong>Agregación:</strong> el agente ◇ el catálogo y las reglas; la Respuesta → FuenteDato es compartida.</p>
+<p><strong>Apuntadores suaves:</strong> ZODB guarda el OID del objeto referenciado y lo carga cuando se accede (<em>lazy</em>). Por eso dos respuestas apuntan al <em>mismo</em> objeto FuenteDato (<code>is</code> = True).</p>
+<p><strong>LOB y TDA:</strong>
+- <strong>LOB:</strong> <code>ResultadoConsulta</code> guarda el CSV completo en un Blob.
+- <strong>TDA:</strong> <code>DocumentoIdentidad.formato()</code> valida «V-…» igual que el TDA DATOS del ejemplo de Oracle. <code>Periodo</code> y <code>Filtro</code> también son TDA inmutables con validación.</p>
+<p><strong>Versionamiento:</strong> <code>ConsultaAnalitica.nueva_version(nota)</code> guarda el historial de forma explícita, y FileStorage conserva cada revisión (<code>db.history(oid)</code>). Está en el punto 6 de <code>docs/evidencias/evidencia_bdoo.md</code>.</p>
+<p><strong>¿Qué pasa si falla algo a mitad de una pregunta?</strong> La transacción hace <code>abort()</code> y no queda nada a medias. Ante un conflicto de concurrencia (<code>ConflictError</code>) se reintenta.</p>
+<p><strong>¿Qué guarda la memoria de la sesión?</strong> La última intención ejecutable. Por eso «¿y en 2025?» funciona.</p>
+<h2>3. Preguntas probables · Agente (Fernando y Mathias)</h2>
+<p><strong>¿El LLM escribe SQL?</strong> No. Solo devuelve un JSON con códigos del catálogo. El SQL sale de plantillas con listas blancas y los valores viajan como parámetros.</p>
+<p><strong>¿Y si el LLM se equivoca o inventa?</strong> Su JSON se valida (<code>construir_intencion</code> + RV02–RV06). Si menciona una cifra que no está en el resultado, la narrativa se descarta (RV11). Si falla, se usan las reglas.</p>
+<p><strong>Las cuatro capas de seguridad:</strong>
+1. RV01 sobre el texto.
+2. El LLM sin SQL.
+3. RV07 sobre el SQL final.
+4. El rol <code>agente_lector</code>: solo SELECT, READ ONLY y timeout de 5 s.</p>
+<p>Aunque alguien lograra saltar una capa, la base de datos sigue rechazando escrituras.</p>
+<p><strong>¿Cómo manejan una pregunta ambigua?</strong> Con una ACLARACION que propone criterios (ingreso, margen, unidades o ticket). No elige por el usuario.</p>
+<p><strong>¿Qué hacen con una pregunta sin periodo?</strong> Usan todo el rango y lo advierten de forma explícita.</p>
+<p><strong>¿Y si no hay registros?</strong> Responden SIN_DATOS: «el resultado está vacío; no se reporta como cero».</p>
+<p><strong>¿Cómo eligen los «últimos tres meses»?</strong> Sobre la fecha máxima del Data Mart (30-09-2026), no sobre la fecha de hoy. Son jul–sep 2026.</p>
+<p><strong>¿Cómo saben que las respuestas son correctas?</strong> La matriz de 35 casos compara contra valores calculados con pandas directamente sobre los CSV (<code>scripts/ejecutar_pruebas.py</code>). Además, un revisor independiente probó más de 120 preguntas. Encontró, por ejemplo, que el ranking de clientes agrupaba por nombre (había empresas distintas con la misma razón social). Se corrigió agrupando por <code>cliente_id</code>, y cada defecto quedó como caso de regresión (P25–P34).</p>
+<p><strong>¿Por qué el agente dice que «método de pago» no existe, si está en la fuente?</strong> Porque lo dejamos fuera del Data Mart a propósito: ninguna pregunta lo pide. El agente responde con lo que hay en el Data Mart y no inventa. Agregarlo sería una dimensión pequeña (junk dimension) sin cambiar el grano.</p>
+<p><strong>¿Por qué «¿Qué productos debemos eliminar del catálogo?» no se bloquea?</strong> RV01 distingue una <strong>orden</strong> («Borra las ventas…») de una <strong>pregunta</strong> de negocio que usa el mismo verbo. Las instrucciones SQL (DROP, DELETE FROM…) y las credenciales se bloquean siempre.</p>
+<p><strong>¿Qué pasa si comparo 2026 con 2025?</strong> 2026 solo tiene datos hasta septiembre, así que el agente compara ene–sep contra ene–sep y lo dice. Comparar un año parcial contra uno completo daría una caída falsa.</p>
+<h2>4. «Modifiquen algo en vivo» (dominio individual)</h2>
+<ul>
+<li><strong>Agregar una métrica</strong> (por ejemplo, precio promedio):</li>
+<li>En <code>agente/catalogo.py</code>, agregar a <code>METRICAS</code>: <code>Metrica("precio_promedio", "Precio promedio", "ROUND(SUM(v.monto_bruto)/NULLIF(SUM(v.cantidad),0),2)", "no aditiva", "usd", "SUM(monto_bruto)/SUM(cantidad)", ("monto_bruto","cantidad"), "analizar_ventas")</code>.</li>
+<li>En <code>agente/interpretes/reglas_nl.py</code>, agregar a <code>METRICAS_PATRONES</code>: <code>(r"precio promedio", "precio_promedio")</code> <strong>antes</strong> de la línea de <code>ingreso_neto</code>.</li>
+<li>Reiniciar la app.</li>
+<li><strong>Agregar una dimensión existente en la tabla</strong> (por ejemplo, semana): agregarla a <code>DIMENSIONES</code> (<code>"f", "semana_iso"</code>) y un patrón en <code>DIMENSIONES_PATRONES</code>.</li>
+<li><strong>Desactivar una regla:</strong> en la consola de Python, <code>agente.regla("RV09").activar(False)</code> dentro de una transacción. Se persiste porque es un objeto de la BDOO.</li>
+<li><strong>Ver la historia de un objeto:</strong> en la pestaña BDOO de la app, pegar el IDO de una consulta.</li>
+<li><strong>Explicar un SQL:</strong> abrir «Evidencia y trazabilidad» y leer FROM, JOIN, WHERE con parámetros, GROUP BY y ORDER BY con LIMIT.</li>
+</ul>
+<h2>5. Cifras para tener a mano</h2>
+<ul>
+<li>Fuente: 30.970 tickets y 99.890 líneas. Data Mart: 97.816 líneas y 30.462 tickets. Ingreso neto: USD 3.494.922,06.</li>
+<li>Rechazos: 495 tickets anulados, 384 líneas duplicadas y 108 con cantidad inválida.</li>
+<li>Clientes: 2.360 clientes y 2.736 versiones; 376 con cambio de segmento.</li>
+<li>Canal con mayor venta: Mayorista B2B (45 %). Sucursal con mayor ticket promedio: Chacao. Segmento que más cayó: Corporativo (−20,6 %).</li>
+<li>11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 35/35 unitarias.</li>
+<li>Los 10 primeros clientes suman ≈4,2 % del ingreso: la dependencia de pocos clientes es baja.</li>
+</ul></body></html>
