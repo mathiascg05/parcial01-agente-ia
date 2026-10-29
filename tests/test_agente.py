@@ -140,3 +140,53 @@ def test_numero_del_periodo_no_es_limite():
 def test_anio_parcial_se_alinea():
     i = construir_intencion(InterpreteReglas().interpretar("crecimiento de ventas de 2026 respecto a 2025", META), META, "r")
     assert (i.periodo.hasta, i.periodo_comparacion.hasta) == (date(2026, 9, 30), date(2025, 9, 30))
+
+
+# ---------------------------------------------------------------------------------------- anclaje del LLM
+# Casos reales: salidas de gpt-4o-mini (OpenRouter, 29-10-2026) grabadas en docs/evidencias/llm_openrouter/.
+from agente.interpretes.llm import anclar  # noqa: E402
+
+
+def _anclar(texto, llm):
+    return anclar(llm, InterpreteReglas().interpretar(texto, META), texto)
+
+
+def test_anclaje_descarta_periodo_inventado():
+    d, aj = _anclar("¿Cuál fue el ingreso neto por mes?", {"tipo": "consulta", "operacion": "tendencia",
+                    "metrica": "ingreso_neto", "dimension": "mes", "periodo": {"tipo": "ultimos_meses", "n": 12}})
+    assert d["periodo"] is None and aj
+
+
+def test_anclaje_descarta_miembros_inventados():
+    d, _ = _anclar("Compare el margen de dos canales durante los últimos tres meses disponibles.",
+                   {"tipo": "consulta", "operacion": "comparacion_miembros", "metrica": "margen_bruto", "dimension": "canal",
+                    "periodo": {"tipo": "ultimos_meses", "n": 3},
+                    "filtros": [{"dimension": "canal", "valores": ["App móvil", "Delivery WhatsApp"]}]})
+    assert d["tipo"] == "faltan_parametros"
+
+
+def test_anclaje_normaliza_esquema_y_toma_dimension_literal():
+    d, _ = _anclar("¿Qué categoría tiene el menor margen porcentual?",
+                   {"tipo": "ranking", "operacion": "ranking", "metrica": "margen_pct", "orden": "asc"})
+    assert (d["tipo"], d["operacion"], d["dimension"]) == ("consulta", "ranking", "categoria")
+
+
+def test_anclaje_reubica_valor_en_su_dimension():
+    d, _ = _anclar("¿Qué tanto descuento dimos en E-commerce web durante 2026?",
+                   {"tipo": "consulta", "operacion": "total", "metrica": "descuento_pct", "periodo": {"tipo": "anio", "anio": 2026},
+                    "filtros": [{"dimension": "tipo_canal", "valores": ["E-commerce web"]}]})
+    assert d["filtros"] == [{"dimension": "canal", "valores": ["E-commerce web"]}]
+
+
+def test_anclaje_respeta_al_llm_cuando_las_reglas_no_entienden():
+    texto = "¿Cómo le fue a Tecnología en julio de 2026 comparado con julio de 2025?"
+    llm = {"tipo": "consulta", "operacion": "comparacion_periodos", "metrica": "ingreso_neto",
+           "periodo": {"tipo": "mes", "anio": 2026, "numero": 7}, "periodo_comparacion": {"tipo": "mes", "anio": 2025, "numero": 7},
+           "filtros": [{"dimension": "categoria", "valores": ["Tecnología"]}]}
+    d, _ = _anclar(texto, llm)
+    assert d["periodo"] == llm["periodo"] and d["metrica"] == "ingreso_neto"
+
+
+def test_total_con_dimension_es_ranking():
+    i = construir_intencion({"tipo": "consulta", "operacion": "total", "metrica": "ingreso_neto", "dimension": "canal"}, META, "x")
+    assert i.operacion == "ranking"
