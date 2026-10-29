@@ -1,0 +1,6 @@
+canal_id,nombre,tipo_canal
+CAN01,Tienda física,Presencial
+CAN02,E-commerce web,Digital
+CAN03,App móvil,Digital
+CAN04,Delivery WhatsApp,Digital
+CAN05,Mayorista B2B,Corporativo

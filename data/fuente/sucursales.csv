@@ -1,0 +1,8 @@
+sucursal_id,nombre,ciudad,estado,region,fecha_apertura
+SUC01,Chacao,Caracas,Miranda,Capital,2016-05-02
+SUC02,La Candelaria,Caracas,Distrito Capital,Capital,2014-03-10
+SUC03,Valencia Norte,Valencia,Carabobo,Central,2017-09-01
+SUC04,Maracaibo Centro,Maracaibo,Zulia,Occidental,2015-01-15
+SUC05,Barquisimeto Este,Barquisimeto,Lara,Centroccidental,2019-06-03
+SUC06,Puerto Ordaz,Ciudad Guayana,Bolívar,Guayana,2018-11-05
+SUC07,Lechería,Lechería,Anzoátegui,Oriental,2026-03-02

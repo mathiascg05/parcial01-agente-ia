@@ -1,0 +1,2361 @@
+cliente_id,nombre,documento,tipo_cliente,ciudad,fecha_registro,segmento_actual
+C00001,Isabel Castillo,V-23459267,Natural,Maracaibo,2019-08-31,Minorista
+C00002,Valentina Bracho,V-27132125,Natural,Valencia,2022-04-04,Minorista
+C00003,Patricia Morales,V-9722462,Natural,Ciudad Guayana,2024-03-25,Minorista
+C00004,Andrés Rojas,V-6303836,Natural,Valencia,2022-01-27,Minorista
+C00005,Pedro Bracho,V-15262251,Natural,Valencia,2019-03-20,Minorista
+C00006,Paola Díaz,V-15423865,Natural,Caracas,2023-11-17,Minorista
+C00007,Gabriela Morales,V-24148096,Natural,Maracaibo,2020-05-16,Minorista
+C00008,Ricardo Silva,V-11844361,Natural,Caracas,2019-11-29,Minorista
+C00009,Valentina Martínez,V-31820602,Natural,Barquisimeto,2024-07-13,Minorista
+C00010,Alejandro Contreras,V-29977432,Natural,Caracas,2020-05-30,Minorista
+C00011,Valentina Díaz,V-31867069,Natural,Ciudad Guayana,2024-04-25,Minorista
+C00012,Gabriela Urdaneta,V-30574583,Natural,Maracaibo,2020-06-11,Minorista
+C00013,María Briceño,V-11027582,Natural,Valencia,2019-09-25,Minorista
+C00014,Héctor Silva,V-21209314,Natural,Lechería,2023-01-26,Minorista
+C00015,Sofía Castillo,V-17522985,Natural,Barquisimeto,2023-11-12,Minorista
+C00016,Gabriela Hernández,V-6754283,Natural,Barquisimeto,2019-09-06,Minorista
+C00017,Patricia García,V-11388493,Natural,Lechería,2021-02-12,Minorista
+C00018,Jesús Rodríguez,V-6948221,Natural,Caracas,2020-08-24,Minorista
+C00019,Gabriela Silva,V-14197308,Natural,Maracaibo,2021-04-26,Minorista
+C00020,Ana Pérez,V-21712129,Natural,Maracaibo,2022-10-02,Minorista
+C00021,Jorge Castillo,V-19761271,Natural,Ciudad Guayana,2020-06-10,Minorista
+C00022,Carolina Hernández,V-26145820,Natural,Ciudad Guayana,2024-03-18,Minorista
+C00023,Jorge Castillo,V-6088694,Natural,Barquisimeto,2020-11-18,Minorista
+C00024,Lucía Díaz,V-21994402,Natural,Valencia,2020-12-28,Minorista
+C00025,Jorge Castillo,V-23847102,Natural,Maracaibo,2021-10-10,Minorista
+C00026,Eduardo Rojas,V-29793020,Natural,Lechería,2022-07-23,Minorista
+C00027,Isabel Castillo,V-31424075,Natural,Barquisimeto,2022-11-07,Frecuente
+C00028,Carolina Ramírez,V-29769859,Natural,Valencia,2023-05-04,Minorista
+C00029,José Rojas,V-26776565,Natural,Lechería,2019-09-27,Minorista
+C00030,Sofía Silva,V-6034090,Natural,Maracaibo,2020-12-23,Minorista
+C00031,Isabel Silva,V-16309118,Natural,Maracaibo,2020-04-18,Minorista
+C00032,Isabel González,V-16959326,Natural,Valencia,2020-04-12,Minorista
+C00033,Sofía Contreras,V-25336939,Natural,Caracas,2020-08-26,Minorista
+C00034,Oscar Rojas,V-14013438,Natural,Barquisimeto,2022-08-21,Minorista
+C00035,Fernanda Colmenares,V-8950716,Natural,Valencia,2025-06-09,Minorista
+C00036,Sofía Briceño,V-15157077,Natural,Ciudad Guayana,2022-08-17,Minorista
+C00037,Andrés Bracho,V-20266279,Natural,Maracaibo,2024-12-31,Minorista
+C00038,Sofía García,V-22863853,Natural,Caracas,2020-01-02,Minorista
+C00039,Mariana Rojas,V-13371615,Natural,Caracas,2020-11-27,Minorista
+C00040,Ricardo Morales,V-11608154,Natural,Lechería,2022-09-04,Minorista
+C00041,Oscar Rodríguez,V-13035838,Natural,Caracas,2024-01-05,Minorista
+C00042,Jorge Vargas,V-16605458,Natural,Valencia,2019-02-28,Minorista
+C00043,Carlos Morales,V-9417495,Natural,Caracas,2022-05-01,Frecuente
+C00044,José Silva,V-6068081,Natural,Ciudad Guayana,2019-03-21,Minorista
+C00045,Eduardo Martínez,V-6570930,Natural,Barquisimeto,2019-11-17,Minorista
+C00046,Valentina Torres,V-12263492,Natural,Caracas,2024-04-22,Frecuente
+C00047,Lucía González,V-18070490,Natural,Barquisimeto,2023-11-07,Minorista
+C00048,Rafael Hernández,V-29826355,Natural,Ciudad Guayana,2020-07-31,Frecuente
+C00049,Ricardo Briceño,V-30680213,Natural,Lechería,2020-03-25,Minorista
+C00050,Elena Silva,V-26023478,Natural,Caracas,2022-10-23,Minorista
+C00051,Jesús Parra,V-25490254,Natural,Caracas,2024-11-18,Minorista
+C00052,Patricia Ramírez,V-7986715,Natural,Barquisimeto,2020-12-22,Minorista
+C00053,Ricardo Pérez,V-22104847,Natural,Barquisimeto,2023-06-18,Minorista
+C00054,Elena Colmenares,V-19676133,Natural,Caracas,2024-12-09,Minorista
+C00055,Gabriela Morales,V-17165407,Natural,Caracas,2020-05-20,Minorista
+C00056,Rafael Torres,V-28099987,Natural,Barquisimeto,2025-02-04,Minorista
+C00057,Carlos Mendoza,V-9940395,Natural,Caracas,2021-09-17,Frecuente
+C00058,Elena Colmenares,V-27439484,Natural,Caracas,2020-10-15,Minorista
+C00059,Héctor Díaz,V-17380221,Natural,Lechería,2021-08-27,Minorista
+C00060,Ana Medina,V-19479344,Natural,Lechería,2023-10-18,Minorista
+C00061,Ricardo Ramírez,V-11831486,Natural,Ciudad Guayana,2019-11-04,Minorista
+C00062,Paola Medina,V-8346934,Natural,Maracaibo,2020-12-10,Frecuente
+C00063,Rafael Parra,V-30044038,Natural,Caracas,2019-01-31,Minorista
+C00064,Manuel Silva,V-30314526,Natural,Maracaibo,2019-09-17,Minorista
+C00065,Carlos Castillo,V-18144040,Natural,Ciudad Guayana,2023-10-17,Minorista
+C00066,Manuel Briceño,V-16459949,Natural,Caracas,2023-11-28,Minorista
+C00067,Carlos Pérez,V-25365580,Natural,Barquisimeto,2020-05-03,Minorista
+C00068,Lucía Urdaneta,V-26666669,Natural,Barquisimeto,2022-09-04,Minorista
+C00069,Fernanda Morales,V-27642471,Natural,Lechería,2023-12-14,Minorista
+C00070,Mariana Díaz,V-29827435,Natural,Maracaibo,2023-10-27,Frecuente
+C00071,Manuel Colmenares,V-16805489,Natural,Caracas,2020-02-12,Frecuente
+C00072,Alejandro Castillo,V-9871543,Natural,Lechería,2023-12-21,Frecuente
+C00073,Manuel Mendoza,V-19011073,Natural,Caracas,2019-02-06,Minorista
+C00074,María Vargas,V-9052155,Natural,Barquisimeto,2024-11-11,Minorista
+C00075,Eduardo Sánchez,V-29805356,Natural,Caracas,2019-01-24,Minorista
+C00076,Manuel Rojas,V-15486551,Natural,Barquisimeto,2023-03-23,Minorista
+C00077,Mariana Silva,V-8903342,Natural,Caracas,2021-11-04,Frecuente
+C00078,Rafael Díaz,V-20348665,Natural,Caracas,2020-10-28,Minorista
+C00079,María García,V-24091239,Natural,Valencia,2023-03-19,Frecuente
+C00080,Manuel Ramírez,V-18927634,Natural,Ciudad Guayana,2023-07-14,Minorista
+C00081,Jesús Parra,V-12830586,Natural,Caracas,2025-05-16,Minorista
+C00082,Jesús Sánchez,V-29292757,Natural,Maracaibo,2024-10-17,Minorista
+C00083,Daniela Rodríguez,V-20445859,Natural,Barquisimeto,2022-08-23,Minorista
+C00084,Gabriela Bracho,V-30544816,Natural,Caracas,2020-05-24,Minorista
+C00085,Patricia Castillo,V-12585778,Natural,Lechería,2022-11-13,Minorista
+C00086,Eduardo Urdaneta,V-13140080,Natural,Lechería,2020-08-08,Frecuente
+C00087,Elena García,V-14565085,Natural,Lechería,2020-05-17,Frecuente
+C00088,Paola Torres,V-12196508,Natural,Valencia,2023-03-31,Minorista
+C00089,Andrés Mendoza,V-23794500,Natural,Caracas,2024-04-28,Minorista
+C00090,Patricia Martínez,V-15412730,Natural,Valencia,2023-12-28,Minorista
+C00091,Gabriela Martínez,V-6330814,Natural,Ciudad Guayana,2022-11-05,Minorista
+C00092,Jesús Silva,V-12772219,Natural,Ciudad Guayana,2022-06-01,Minorista
+C00093,José González,V-30707022,Natural,Valencia,2022-04-24,Minorista
+C00094,Sofía Contreras,V-8296874,Natural,Lechería,2025-04-10,Minorista
+C00095,Patricia Rojas,V-29663907,Natural,Ciudad Guayana,2022-02-10,Minorista
+C00096,Rafael Parra,V-30160570,Natural,Barquisimeto,2025-01-27,Minorista
+C00097,Alejandro Colmenares,V-9506969,Natural,Ciudad Guayana,2021-12-02,Minorista
+C00098,Lucía Rojas,V-30280008,Natural,Maracaibo,2023-02-22,Minorista
+C00099,Rafael González,V-6739327,Natural,Barquisimeto,2020-02-07,Minorista
+C00100,José García,V-31746084,Natural,Ciudad Guayana,2023-07-31,Minorista
+C00101,Patricia Medina,V-18020918,Natural,Lechería,2023-08-24,Minorista
+C00102,Lucía Parra,V-12515351,Natural,Maracaibo,2024-08-28,Minorista
+C00103,Gabriela Rojas,V-21839048,Natural,Lechería,2022-08-09,Minorista
+C00104,Mariana Martínez,V-25142196,Natural,Barquisimeto,2021-03-14,Frecuente
+C00105,Miguel Mendoza,V-21631596,Natural,Caracas,2024-04-19,Minorista
+C00106,Patricia Hernández,V-23868076,Natural,Barquisimeto,2023-05-16,Minorista
+C00107,Andrés Medina,V-28700629,Natural,Caracas,2022-02-05,Minorista
+C00108,Elena López,V-30923701,Natural,Maracaibo,2023-05-05,Minorista
+C00109,Sofía Torres,V-19371857,Natural,Caracas,2022-12-18,Minorista
+C00110,José Ramírez,V-8048631,Natural,Valencia,2023-04-12,Minorista
+C00111,Carolina Ramírez,V-26713071,Natural,Caracas,2021-10-01,Minorista
+C00112,Pedro Urdaneta,V-18603586,Natural,Valencia,2022-12-03,Minorista
+C00113,Patricia Salazar,V-28292218,Natural,Lechería,2019-09-07,Minorista
+C00114,Valentina Vargas,V-21237050,Natural,Caracas,2023-06-04,Minorista
+C00115,Patricia Salazar,V-19493028,Natural,Caracas,2023-06-28,Frecuente
+C00116,María González,V-14212240,Natural,Caracas,2023-12-30,Minorista
+C00117,Valentina Briceño,V-24626074,Natural,Maracaibo,2020-11-15,Minorista
+C00118,Carlos Parra,V-11736617,Natural,Valencia,2020-06-26,Minorista
+C00119,Ricardo Hernández,V-15856887,Natural,Barquisimeto,2024-01-29,Frecuente
+C00120,Paola Urdaneta,V-6153888,Natural,Caracas,2023-07-30,Minorista
+C00121,Alejandro Sánchez,V-23136395,Natural,Maracaibo,2019-05-20,Minorista
+C00122,Valentina Silva,V-16079031,Natural,Maracaibo,2019-10-03,Minorista
+C00123,Alejandro Ramírez,V-14067547,Natural,Lechería,2025-05-01,Minorista
+C00124,Jorge Urdaneta,V-22713374,Natural,Caracas,2019-04-14,Minorista
+C00125,Gabriela Castillo,V-21752793,Natural,Lechería,2019-03-28,Minorista
+C00126,Andrés González,V-20491873,Natural,Maracaibo,2021-12-05,Minorista
+C00127,Isabel Medina,V-25923967,Natural,Caracas,2022-11-13,Minorista
+C00128,Ana Ramírez,V-25504281,Natural,Caracas,2022-06-25,Frecuente
+C00129,Oscar Mendoza,V-22816137,Natural,Valencia,2019-12-28,Minorista
+C00130,Manuel Vargas,V-23337422,Natural,Valencia,2022-05-17,Minorista
+C00131,Isabel Parra,V-31222758,Natural,Caracas,2021-03-14,Minorista
+C00132,Ana Contreras,V-6354173,Natural,Caracas,2020-01-26,Minorista
+C00133,María Pérez,V-25022381,Natural,Caracas,2021-09-10,Minorista
+C00134,Lucía Salazar,V-10031437,Natural,Caracas,2021-04-20,Minorista
+C00135,Eduardo Vargas,V-30671673,Natural,Barquisimeto,2019-01-03,Minorista
+C00136,Jesús Silva,V-10141711,Natural,Maracaibo,2021-01-21,Minorista
+C00137,Andrea Medina,V-18568070,Natural,Ciudad Guayana,2019-04-19,Minorista
+C00138,Isabel Bracho,V-10983341,Natural,Lechería,2024-12-17,Minorista
+C00139,Manuel Díaz,V-27597319,Natural,Lechería,2023-04-07,Minorista
+C00140,Andrea Salazar,V-26576994,Natural,Lechería,2021-06-08,Minorista
+C00141,Lucía Pérez,V-29837683,Natural,Maracaibo,2022-12-26,Minorista
+C00142,Eduardo Sánchez,V-9787452,Natural,Valencia,2023-02-19,Minorista
+C00143,Carolina García,V-29248922,Natural,Barquisimeto,2021-04-23,Minorista
+C00144,Valentina Bracho,V-15204046,Natural,Caracas,2021-08-08,Minorista
+C00145,Carolina Pérez,V-22138237,Natural,Maracaibo,2020-03-25,Minorista
+C00146,Andrea Torres,V-29649046,Natural,Maracaibo,2024-04-13,Minorista
+C00147,Isabel Mendoza,V-11048383,Natural,Caracas,2023-01-21,Minorista
+C00148,Ana Parra,V-12553011,Natural,Barquisimeto,2020-07-03,Minorista
+C00149,María Colmenares,V-29442402,Natural,Barquisimeto,2021-07-09,Minorista
+C00150,Pedro García,V-20839920,Natural,Valencia,2019-11-17,Minorista
+C00151,Alejandro Contreras,V-16006369,Natural,Caracas,2023-05-31,Minorista
+C00152,Paola Rojas,V-9839496,Natural,Caracas,2021-06-16,Minorista
+C00153,Fernanda Ramírez,V-17855154,Natural,Lechería,2022-09-23,Frecuente
+C00154,Lucía Martínez,V-12970820,Natural,Maracaibo,2019-08-18,Minorista
+C00155,Elena Urdaneta,V-25090405,Natural,Maracaibo,2021-11-10,Minorista
+C00156,Ricardo Vargas,V-26457524,Natural,Valencia,2021-10-16,Minorista
+C00157,Andrés Silva,V-6918303,Natural,Valencia,2023-08-08,Minorista
+C00158,Carlos Mendoza,V-25371710,Natural,Caracas,2024-01-31,Minorista
+C00159,Ricardo Vargas,V-30763442,Natural,,2019-10-13,Frecuente
+C00160,María Colmenares,V-16563927,Natural,Ciudad Guayana,2021-10-06,Minorista
+C00161,Manuel Colmenares,V-11052584,Natural,Barquisimeto,2022-09-07,Minorista
+C00162,Héctor López,V-28037436,Natural,Barquisimeto,2025-05-30,Minorista
+C00163,Elena Medina,V-31467851,Natural,Ciudad Guayana,2020-04-07,Minorista
+C00164,José García,V-29354313,Natural,Valencia,2022-09-07,Minorista
+C00165,Sofía Silva,V-10954268,Natural,Caracas,2020-09-10,Minorista
+C00166,Sofía Briceño,V-20073240,Natural,Barquisimeto,2023-05-23,Minorista
+C00167,Rafael Pérez,V-18292203,Natural,Valencia,2021-06-26,Minorista
+C00168,Oscar Salazar,V-30900504,Natural,Caracas,2022-10-06,Minorista
+C00169,Sofía García,V-6034411,Natural,Barquisimeto,2019-07-31,Minorista
+C00170,Andrea Parra,V-26960337,Natural,,2022-04-26,Minorista
+C00171,María Torres,V-17818269,Natural,Ciudad Guayana,2024-09-11,Minorista
+C00172,Alejandro López,V-23102819,Natural,Caracas,2021-04-29,Minorista
+C00173,Carolina Parra,V-25640680,Natural,Ciudad Guayana,2023-05-23,Minorista
+C00174,Gabriela Ramírez,V-15747077,Natural,Valencia,2023-12-30,Minorista
+C00175,Jorge Medina,V-16249772,Natural,Lechería,2019-11-23,Minorista
+C00176,Sofía Medina,V-30598690,Natural,Caracas,2022-08-26,Minorista
+C00177,Valentina Hernández,V-20404659,Natural,Ciudad Guayana,2020-06-26,Minorista
+C00178,Ana Pérez,V-23501447,Natural,Lechería,2022-07-14,Frecuente
+C00179,Andrés Pérez,V-17209423,Natural,Barquisimeto,2022-07-27,Minorista
+C00180,María Colmenares,V-8664328,Natural,Barquisimeto,2020-11-11,Minorista
+C00181,Daniela Salazar,V-25627375,Natural,Valencia,2021-12-14,Minorista
+C00182,Alejandro González,V-8041915,Natural,Valencia,2019-04-18,Minorista
+C00183,Ana Urdaneta,V-29537004,Natural,Caracas,2023-04-15,Minorista
+C00184,Carolina Contreras,V-9206880,Natural,Valencia,2023-09-28,Frecuente
+C00185,Patricia Salazar,V-12767013,Natural,Lechería,2023-08-29,Minorista
+C00186,María Bracho,V-18073391,Natural,Lechería,2022-12-21,Minorista
+C00187,Gabriela Rojas,V-8261367,Natural,Caracas,2020-07-07,Frecuente
+C00188,Paola Castillo,V-28982033,Natural,Caracas,2024-03-09,Minorista
+C00189,Luis Medina,V-24749706,Natural,Caracas,2023-07-10,Minorista
+C00190,Valentina Díaz,V-12316487,Natural,Lechería,2022-04-21,Minorista
+C00191,Ana Sánchez,V-24830589,Natural,Caracas,2023-09-22,Minorista
+C00192,Mariana Parra,V-12954340,Natural,Ciudad Guayana,2021-03-16,Minorista
+C00193,Carlos Pérez,V-30360205,Natural,Caracas,2020-02-24,Minorista
+C00194,Patricia Torres,V-13046896,Natural,Caracas,2024-07-18,Minorista
+C00195,José Contreras,V-29442809,Natural,Barquisimeto,2024-06-06,Frecuente
+C00196,Miguel Parra,V-23092331,Natural,Caracas,2024-06-18,Minorista
+C00197,Andrés Morales,V-17543650,Natural,Barquisimeto,2019-08-09,Minorista
+C00198,Valentina Pérez,V-17280109,Natural,Lechería,2022-01-17,Minorista
+C00199,Patricia Castillo,V-19345522,Natural,Caracas,2019-05-13,Frecuente
+C00200,Andrés Urdaneta,V-15474544,Natural,Caracas,2024-09-01,Minorista
+C00201,Luis López,V-23395178,Natural,Caracas,2021-11-12,Minorista
+C00202,Jesús Parra,V-31310085,Natural,Lechería,2020-09-29,Frecuente
+C00203,Patricia Hernández,V-22074206,Natural,Valencia,2025-05-03,Minorista
+C00204,Daniela Parra,V-19870832,Natural,Maracaibo,2020-12-26,Minorista
+C00205,Daniela Mendoza,V-6760904,Natural,Maracaibo,2019-08-28,Minorista
+C00206,Mariana Bracho,V-29792019,Natural,Barquisimeto,2022-09-18,Frecuente
+C00207,Daniela Medina,V-13440213,Natural,Barquisimeto,2024-03-06,Minorista
+C00208,Lucía Díaz,V-17421298,Natural,Caracas,2021-02-25,Minorista
+C00209,Miguel García,V-11035492,Natural,Caracas,2023-05-31,Minorista
+C00210,Jesús Rodríguez,V-11664645,Natural,Caracas,2022-09-06,Frecuente
+C00211,Fernanda Rodríguez,V-11168945,Natural,Barquisimeto,2022-07-29,Minorista
+C00212,Lucía López,V-28338757,Natural,Ciudad Guayana,2025-02-14,Minorista
+C00213,Andrés Urdaneta,V-6401087,Natural,Caracas,2023-01-03,Frecuente
+C00214,Fernanda Rodríguez,V-16864366,Natural,Ciudad Guayana,2023-09-20,Frecuente
+C00215,José López,V-22235646,Natural,Valencia,2023-07-31,Minorista
+C00216,Paola Parra,V-19976881,Natural,Barquisimeto,2020-02-09,Minorista
+C00217,Patricia Briceño,V-19026846,Natural,Barquisimeto,2022-08-09,Minorista
+C00218,Isabel Colmenares,V-26111544,Natural,Barquisimeto,2022-06-08,Frecuente
+C00219,Ricardo Rodríguez,V-12725009,Natural,,2020-06-29,Frecuente
+C00220,Jorge Martínez,V-8786194,Natural,Barquisimeto,2022-08-24,Minorista
+C00221,Rafael Ramírez,V-29580810,Natural,Ciudad Guayana,2024-11-02,Minorista
+C00222,Valentina Parra,V-14807026,Natural,Valencia,2020-10-24,Minorista
+C00223,Valentina Contreras,V-16037699,Natural,Lechería,2019-01-23,Minorista
+C00224,Elena Rodríguez,V-12237798,Natural,Barquisimeto,2020-09-11,Minorista
+C00225,Valentina Medina,V-22073649,Natural,Valencia,2024-09-26,Minorista
+C00226,Andrea Torres,V-14006942,Natural,Lechería,2020-11-23,Minorista
+C00227,Isabel Parra,V-11752288,Natural,Ciudad Guayana,2023-10-13,Minorista
+C00228,Lucía Bracho,V-17206465,Natural,Lechería,2020-08-24,Minorista
+C00229,Isabel Urdaneta,V-13748453,Natural,Lechería,2020-01-07,Minorista
+C00230,Paola Vargas,V-14448889,Natural,Caracas,2021-12-29,Minorista
+C00231,Carolina Mendoza,V-25194328,Natural,Ciudad Guayana,2020-11-29,Minorista
+C00232,Daniela García,V-12759352,Natural,Ciudad Guayana,2022-11-02,Minorista
+C00233,Mariana Díaz,V-6086124,Natural,Barquisimeto,2025-05-02,Minorista
+C00234,Luis Díaz,V-6547123,Natural,Maracaibo,2021-02-22,Minorista
+C00235,Mariana Vargas,V-27921867,Natural,Caracas,2021-02-01,Minorista
+C00236,Ana Martínez,V-16217792,Natural,Maracaibo,2023-09-23,Minorista
+C00237,Mariana Briceño,V-12662383,Natural,Barquisimeto,2023-02-28,Minorista
+C00238,Andrea Hernández,V-15267902,Natural,Barquisimeto,2020-04-17,Minorista
+C00239,Rafael Martínez,V-21966842,Natural,Valencia,2023-11-11,Minorista
+C00240,Eduardo Briceño,V-8824852,Natural,Valencia,2022-02-05,Frecuente
+C00241,Elena Castillo,V-29625496,Natural,Ciudad Guayana,2025-01-20,Minorista
+C00242,Sofía Rojas,V-22658614,Natural,Barquisimeto,2024-02-11,Minorista
+C00243,Valentina González,V-26808608,Natural,Valencia,2024-07-16,Minorista
+C00244,Rafael Parra,V-12188001,Natural,Caracas,2020-01-24,Minorista
+C00245,Ricardo López,V-22136957,Natural,Ciudad Guayana,2019-12-11,Minorista
+C00246,Sofía Silva,V-20478956,Natural,Caracas,2023-11-18,Minorista
+C00247,Miguel González,V-22526546,Natural,Maracaibo,2021-03-13,Minorista
+C00248,Alejandro Díaz,V-8523304,Natural,Valencia,2020-10-18,Minorista
+C00249,Andrés Sánchez,V-30518762,Natural,Ciudad Guayana,2021-08-30,Minorista
+C00250,Carolina Rodríguez,V-12064943,Natural,Maracaibo,2023-01-18,Frecuente
+C00251,Andrea Urdaneta,V-20730128,Natural,Barquisimeto,2020-08-30,Minorista
+C00252,Ricardo Pérez,V-17420335,Natural,Ciudad Guayana,2019-08-18,Minorista
+C00253,Ricardo Medina,V-23772441,Natural,Ciudad Guayana,2022-03-12,Minorista
+C00254,Eduardo Ramírez,V-6664631,Natural,Maracaibo,2024-03-03,Frecuente
+C00255,Jesús Díaz,V-17379183,Natural,Valencia,2025-06-26,Minorista
+C00256,María Medina,V-28653583,Natural,Caracas,2024-04-14,Minorista
+C00257,Carolina Parra,V-11972430,Natural,Caracas,2024-01-09,Minorista
+C00258,Jesús Sánchez,V-10999776,Natural,Lechería,2021-07-29,Minorista
+C00259,Ricardo Morales,V-17203318,Natural,Caracas,2023-01-10,Minorista
+C00260,Carlos Sánchez,V-26963979,Natural,Caracas,2020-08-29,Minorista
+C00261,Pedro Hernández,V-28031864,Natural,Caracas,2024-12-12,Minorista
+C00262,Rafael Parra,V-8218713,Natural,Ciudad Guayana,2022-04-24,Minorista
+C00263,Paola Urdaneta,V-28660892,Natural,Barquisimeto,2023-06-06,Minorista
+C00264,Lucía Hernández,V-7305694,Natural,Maracaibo,2023-05-24,Minorista
+C00265,Fernanda Salazar,V-13066682,Natural,Barquisimeto,2022-04-12,Frecuente
+C00266,Héctor Silva,V-22958062,Natural,Caracas,2024-02-11,Minorista
+C00267,Daniela Silva,V-21411847,Natural,Maracaibo,2024-01-20,Minorista
+C00268,Gabriela Rojas,V-13116011,Natural,Ciudad Guayana,2020-10-05,Minorista
+C00269,Paola Salazar,V-16359937,Natural,Caracas,2021-03-09,Minorista
+C00270,Miguel Mendoza,V-26846378,Natural,Caracas,2020-12-17,Minorista
+C00271,Ana Mendoza,V-20209109,Natural,Maracaibo,2019-07-23,Frecuente
+C00272,Fernanda Medina,V-19907274,Natural,Lechería,2021-11-16,Minorista
+C00273,Carlos Medina,V-27303574,Natural,Valencia,2022-08-18,Minorista
+C00274,Héctor Silva,V-30824771,Natural,Caracas,2021-10-12,Minorista
+C00275,Pedro García,V-13488589,Natural,Lechería,2024-12-23,Minorista
+C00276,Andrea López,V-24850140,Natural,Ciudad Guayana,2022-09-03,Minorista
+C00277,Carolina Parra,V-12783069,Natural,Lechería,2020-01-01,Minorista
+C00278,Eduardo Vargas,V-13488094,Natural,Lechería,2024-05-15,Minorista
+C00279,Luis Medina,V-26378361,Natural,Ciudad Guayana,2025-01-20,Minorista
+C00280,Carolina Martínez,V-17015802,Natural,Caracas,2023-09-14,Minorista
+C00281,Patricia Bracho,V-21397841,Natural,Caracas,2021-03-04,Minorista
+C00282,Carlos Díaz,V-31906701,Natural,Barquisimeto,2025-02-24,Minorista
+C00283,Miguel Castillo,V-17902292,Natural,Valencia,2022-07-28,Minorista
+C00284,Lucía Parra,V-10370559,Natural,Barquisimeto,2023-06-03,Minorista
+C00285,Andrés Vargas,V-25150863,Natural,Ciudad Guayana,2021-08-08,Minorista
+C00286,Elena Torres,V-9585691,Natural,Maracaibo,2020-06-04,Minorista
+C00287,Héctor Ramírez,V-25897018,Natural,Ciudad Guayana,2024-10-16,Minorista
+C00288,Sofía Pérez,V-26159587,Natural,Caracas,2021-02-15,Minorista
+C00289,Jorge López,V-13412923,Natural,Caracas,2022-10-05,Minorista
+C00290,José Pérez,V-12708655,Natural,Valencia,2021-04-02,Frecuente
+C00291,Rafael Morales,V-22079459,Natural,Maracaibo,2021-04-30,Minorista
+C00292,María Rojas,V-31402663,Natural,Ciudad Guayana,2021-08-29,Minorista
+C00293,Ana González,V-15592152,Natural,Caracas,2019-10-14,Minorista
+C00294,Ricardo Sánchez,V-24459201,Natural,Caracas,2020-01-12,Minorista
+C00295,Luis Pérez,V-9955112,Natural,Maracaibo,2023-01-07,Minorista
+C00296,Alejandro Colmenares,V-10023282,Natural,,2023-11-06,Minorista
+C00297,Ana López,V-15527240,Natural,Barquisimeto,2022-12-14,Minorista
+C00298,Lucía Martínez,V-31117071,Natural,Caracas,2022-05-23,Minorista
+C00299,Miguel Contreras,V-7172757,Natural,Caracas,2019-08-14,Minorista
+C00300,Miguel Parra,V-17615131,Natural,Ciudad Guayana,2022-02-11,Minorista
+C00301,Valentina Parra,V-6204129,Natural,Ciudad Guayana,2019-08-17,Frecuente
+C00302,Paola Contreras,V-24522538,Natural,Valencia,2025-06-29,Minorista
+C00303,María Ramírez,V-7528448,Natural,Barquisimeto,2024-11-20,Minorista
+C00304,Alejandro Hernández,V-20287530,Natural,Barquisimeto,2023-09-03,Minorista
+C00305,Lucía Hernández,V-14653669,Natural,Caracas,2023-02-25,Minorista
+C00306,Miguel Martínez,V-22013126,Natural,Ciudad Guayana,2019-08-25,Minorista
+C00307,Carlos Pérez,V-6306154,Natural,Caracas,2020-09-13,Minorista
+C00308,Ana Silva,V-16046170,Natural,Maracaibo,2021-05-26,Minorista
+C00309,Eduardo Silva,V-28392758,Natural,Lechería,2022-01-11,Minorista
+C00310,Carolina Medina,V-11777568,Natural,Valencia,2021-09-26,Minorista
+C00311,Paola Parra,V-21088139,Natural,Valencia,2020-12-27,Minorista
+C00312,Valentina González,V-7612191,Natural,Valencia,2020-03-09,Minorista
+C00313,Valentina Contreras,V-21012687,Natural,Valencia,2024-02-06,Minorista
+C00314,María Rojas,V-25040882,Natural,Lechería,2021-04-02,Minorista
+C00315,Eduardo Contreras,V-8423648,Natural,Caracas,2023-01-09,Minorista
+C00316,Elena Ramírez,V-17337989,Natural,Lechería,2024-05-16,Minorista
+C00317,Gabriela Silva,V-31316778,Natural,Valencia,2021-05-04,Frecuente
+C00318,Andrés Bracho,V-11657008,Natural,Caracas,2022-02-12,Minorista
+C00319,Jesús Ramírez,V-7125967,Natural,Caracas,2020-07-11,Minorista
+C00320,Ana Salazar,V-9915415,Natural,Ciudad Guayana,2020-09-20,Minorista
+C00321,Miguel Colmenares,V-25121277,Natural,Ciudad Guayana,2024-12-12,Minorista
+C00322,Daniela Vargas,V-9238223,Natural,Caracas,2025-05-14,Minorista
+C00323,Andrea Castillo,V-11375765,Natural,Barquisimeto,2019-04-02,Minorista
+C00324,Valentina Colmenares,V-14116348,Natural,Lechería,2025-02-28,Minorista
+C00325,Miguel Pérez,V-11581346,Natural,Lechería,2023-10-30,Minorista
+C00326,Luis Rodríguez,V-20824371,Natural,Caracas,2025-03-30,Minorista
+C00327,Isabel Sánchez,V-15696682,Natural,Caracas,2020-07-24,Minorista
+C00328,Daniela Medina,V-10460129,Natural,Barquisimeto,2024-08-11,Minorista
+C00329,Carlos Rojas,V-15022010,Natural,Caracas,2020-10-15,Minorista
+C00330,José Sánchez,V-23228945,Natural,Barquisimeto,2024-09-21,Minorista
+C00331,Isabel Ramírez,V-15083734,Natural,Maracaibo,2021-06-10,Minorista
+C00332,Miguel López,V-7937663,Natural,Lechería,2023-08-13,Minorista
+C00333,Gabriela Vargas,V-25608488,Natural,Lechería,2021-01-11,Minorista
+C00334,José Sánchez,V-9921086,Natural,Lechería,2023-11-30,Frecuente
+C00335,Valentina Martínez,V-11294712,Natural,Ciudad Guayana,2022-11-29,Minorista
+C00336,Elena Urdaneta,V-13446414,Natural,Caracas,2022-04-22,Minorista
+C00337,Mariana Morales,V-30537004,Natural,Lechería,2019-05-05,Minorista
+C00338,Ana Salazar,V-30725536,Natural,Maracaibo,2020-09-15,Minorista
+C00339,Jorge Bracho,V-31187853,Natural,Valencia,2022-07-18,Minorista
+C00340,Héctor Morales,V-11705462,Natural,Maracaibo,2022-11-05,Minorista
+C00341,María Ramírez,V-8550522,Natural,Caracas,2021-08-16,Minorista
+C00342,Carolina Contreras,V-10283604,Natural,Ciudad Guayana,2020-08-22,Minorista
+C00343,Jesús Silva,V-13285143,Natural,Maracaibo,2024-09-02,Minorista
+C00344,Miguel Salazar,V-20144128,Natural,Barquisimeto,2023-12-08,Minorista
+C00345,Jesús Contreras,V-7834828,Natural,Maracaibo,2024-11-21,Minorista
+C00346,Fernanda Pérez,V-14339305,Natural,Ciudad Guayana,2019-07-03,Minorista
+C00347,Paola González,V-18594837,Natural,Valencia,2023-08-12,Minorista
+C00348,Carolina Martínez,V-15104583,Natural,Caracas,2022-09-10,Minorista
+C00349,Daniela González,V-11071713,Natural,Caracas,2020-07-10,Frecuente
+C00350,Rafael Parra,V-24534854,Natural,Caracas,2023-09-10,Minorista
+C00351,Andrea Sánchez,V-26404948,Natural,Lechería,2024-12-14,Minorista
+C00352,Miguel Briceño,V-27279573,Natural,Valencia,2019-09-14,Minorista
+C00353,Isabel Urdaneta,V-6856822,Natural,Ciudad Guayana,2021-01-01,Minorista
+C00354,Alejandro Castillo,V-24989540,Natural,Ciudad Guayana,2021-11-30,Minorista
+C00355,Alejandro Parra,V-14095064,Natural,Valencia,2021-03-06,Minorista
+C00356,Patricia Vargas,V-12103713,Natural,Ciudad Guayana,2024-12-25,Minorista
+C00357,Gabriela Vargas,V-18710138,Natural,Barquisimeto,2019-03-25,Frecuente
+C00358,Carlos Ramírez,V-26793320,Natural,Maracaibo,2021-11-02,Minorista
+C00359,Sofía Pérez,V-16648460,Natural,Valencia,2025-02-03,Frecuente
+C00360,Elena Contreras,V-20315995,Natural,Valencia,2020-07-13,Frecuente
+C00361,Jorge Rojas,V-26488727,Natural,Caracas,2020-12-06,Minorista
+C00362,Héctor Briceño,V-8113869,Natural,Barquisimeto,2023-10-27,Minorista
+C00363,Rafael Salazar,V-21432206,Natural,Maracaibo,2020-10-07,Minorista
+C00364,José Salazar,V-15049031,Natural,Barquisimeto,2021-01-01,Minorista
+C00365,María Hernández,V-13219552,Natural,Barquisimeto,2023-10-22,Minorista
+C00366,Daniela Díaz,V-24822418,Natural,Ciudad Guayana,2019-03-18,Minorista
+C00367,Mariana Rojas,V-21874886,Natural,Caracas,2021-01-07,Minorista
+C00368,Elena Urdaneta,V-26384546,Natural,Maracaibo,2022-06-18,Minorista
+C00369,Héctor Martínez,V-18888425,Natural,Valencia,2021-10-31,Minorista
+C00370,Andrea Torres,V-9641885,Natural,Caracas,2021-06-18,Minorista
+C00371,Luis Mendoza,V-20359466,Natural,Valencia,2020-02-04,Frecuente
+C00372,Mariana Hernández,V-8836010,Natural,Barquisimeto,2024-02-19,Minorista
+C00373,Eduardo Martínez,V-20363611,Natural,Barquisimeto,2020-03-03,Minorista
+C00374,Lucía Sánchez,V-27802178,Natural,Caracas,2020-09-07,Minorista
+C00375,María Hernández,V-9830362,Natural,Ciudad Guayana,2025-03-11,Minorista
+C00376,Daniela González,V-17211457,Natural,Lechería,2023-07-07,Minorista
+C00377,Gabriela Salazar,V-12097210,Natural,Caracas,2024-06-19,Frecuente
+C00378,Eduardo Díaz,V-30373879,Natural,Maracaibo,2022-08-30,Minorista
+C00379,Miguel Vargas,V-9133945,Natural,Ciudad Guayana,2024-06-29,Minorista
+C00380,Alejandro García,V-22130798,Natural,Caracas,2021-10-14,Minorista
+C00381,Luis Pérez,V-20902347,Natural,Caracas,2024-05-07,Minorista
+C00382,Miguel Castillo,V-17186983,Natural,Caracas,2025-04-14,Minorista
+C00383,Andrea Pérez,V-17512203,Natural,Barquisimeto,2021-03-06,Minorista
+C00384,Mariana Vargas,V-11637564,Natural,Caracas,2025-06-08,Minorista
+C00385,José Pérez,V-23462030,Natural,Valencia,2025-02-11,Minorista
+C00386,Héctor Pérez,V-31331737,Natural,Caracas,2020-01-13,Minorista
+C00387,Manuel García,V-30671348,Natural,Ciudad Guayana,2022-07-10,Minorista
+C00388,Andrés Sánchez,V-31652883,Natural,Caracas,2024-04-26,Minorista
+C00389,Patricia González,V-23207537,Natural,Valencia,2025-04-21,Minorista
+C00390,Mariana Ramírez,V-23319015,Natural,Caracas,2022-05-27,Minorista
+C00391,Daniela González,V-24405810,Natural,Lechería,2019-03-09,Minorista
+C00392,María Mendoza,V-20229670,Natural,Barquisimeto,2020-09-19,Minorista
+C00393,Andrea Rojas,V-26238730,Natural,Caracas,2019-08-17,Minorista
+C00394,Paola Sánchez,V-14600130,Natural,Maracaibo,2019-06-21,Minorista
+C00395,Sofía Castillo,V-9194221,Natural,Valencia,2025-06-09,Minorista
+C00396,Alejandro Salazar,V-10170765,Natural,Caracas,2022-12-15,Minorista
+C00397,Alejandro Bracho,V-31255277,Natural,Ciudad Guayana,2019-02-23,Minorista
+C00398,Rafael Salazar,V-20839376,Natural,Barquisimeto,2020-08-27,Frecuente
+C00399,Eduardo López,V-7918817,Natural,Caracas,2019-10-05,Minorista
+C00400,María Hernández,V-19911676,Natural,Barquisimeto,2019-12-06,Minorista
+C00401,Carlos Ramírez,V-22383956,Natural,Valencia,2021-11-25,Minorista
+C00402,Ana Mendoza,V-12224637,Natural,Maracaibo,2019-12-14,Minorista
+C00403,Jesús Contreras,V-21457191,Natural,Valencia,2024-01-28,Minorista
+C00404,Jesús Mendoza,V-12559041,Natural,Lechería,2022-07-26,Minorista
+C00405,Ana Sánchez,V-13207974,Natural,Valencia,2020-12-26,Minorista
+C00406,Fernanda Ramírez,V-9150243,Natural,Barquisimeto,2025-01-24,Minorista
+C00407,Mariana Silva,V-30474452,Natural,Maracaibo,2024-05-25,Minorista
+C00408,Mariana Rojas,V-13085039,Natural,Ciudad Guayana,2020-03-19,Minorista
+C00409,Ricardo Castillo,V-19797907,Natural,Caracas,2023-12-24,Minorista
+C00410,Elena Pérez,V-13973909,Natural,Barquisimeto,2023-07-24,Minorista
+C00411,Lucía Colmenares,V-17998004,Natural,Caracas,2021-11-13,Minorista
+C00412,Jorge García,V-23468270,Natural,Ciudad Guayana,2020-03-16,Minorista
+C00413,Valentina Rojas,V-28007480,Natural,Maracaibo,2021-03-02,Minorista
+C00414,Oscar González,V-8099515,Natural,Ciudad Guayana,2022-08-29,Minorista
+C00415,María Díaz,V-12701679,Natural,Valencia,2025-01-07,Frecuente
+C00416,Paola Parra,V-20882181,Natural,Ciudad Guayana,2022-02-11,Minorista
+C00417,Carolina Salazar,V-28221816,Natural,Caracas,2023-12-29,Minorista
+C00418,Gabriela Urdaneta,V-26904737,Natural,Lechería,2023-08-13,Minorista
+C00419,Luis Hernández,V-12333815,Natural,Caracas,2021-07-24,Minorista
+C00420,José Castillo,V-26391207,Natural,Lechería,2019-10-26,Minorista
+C00421,Eduardo Contreras,V-13726314,Natural,Lechería,2023-11-25,Minorista
+C00422,Pedro Rojas,V-21566405,Natural,Barquisimeto,2022-08-24,Frecuente
+C00423,Rafael García,V-14069069,Natural,Ciudad Guayana,2022-04-25,Frecuente
+C00424,Isabel Mendoza,V-8907705,Natural,Maracaibo,2019-02-18,Minorista
+C00425,Héctor López,V-11163220,Natural,Maracaibo,2023-12-15,Minorista
+C00426,Carolina Pérez,V-30467022,Natural,Lechería,2024-07-28,Frecuente
+C00427,Andrea Bracho,V-13558435,Natural,Lechería,2019-02-09,Minorista
+C00428,Isabel Morales,V-25979997,Natural,Barquisimeto,2024-05-18,Minorista
+C00429,Alejandro Urdaneta,V-10875932,Natural,Valencia,2022-04-17,Frecuente
+C00430,Ricardo Castillo,V-20183926,Natural,Maracaibo,2022-09-28,Minorista
+C00431,Miguel López,V-30788693,Natural,Barquisimeto,2021-04-10,Minorista
+C00432,Luis Martínez,V-11150167,Natural,Caracas,2019-03-22,Minorista
+C00433,Carlos Briceño,V-14311655,Natural,Maracaibo,2020-10-14,Minorista
+C00434,Elena Colmenares,V-20768117,Natural,Lechería,2021-06-18,Minorista
+C00435,Ana Colmenares,V-27222238,Natural,Caracas,2024-05-31,Minorista
+C00436,José Contreras,V-31398088,Natural,Caracas,2023-08-18,Minorista
+C00437,Carlos Rojas,V-8798602,Natural,Valencia,2024-09-27,Minorista
+C00438,Rafael Bracho,V-17907186,Natural,Ciudad Guayana,2020-07-21,Minorista
+C00439,Sofía González,V-14073626,Natural,Caracas,2021-08-07,Minorista
+C00440,Lucía Salazar,V-8354041,Natural,Caracas,2023-10-10,Minorista
+C00441,Rafael Bracho,V-26476660,Natural,Ciudad Guayana,2020-08-18,Frecuente
+C00442,Ricardo Rodríguez,V-29482811,Natural,Ciudad Guayana,2019-06-04,Minorista
+C00443,Carolina Hernández,V-11315280,Natural,Valencia,2024-02-26,Minorista
+C00444,Isabel Medina,V-19230986,Natural,Maracaibo,2025-02-07,Minorista
+C00445,Rafael Colmenares,V-12395291,Natural,Caracas,2021-03-30,Frecuente
+C00446,Patricia Morales,V-12880114,Natural,Caracas,2021-12-30,Frecuente
+C00447,Eduardo García,V-7527395,Natural,Caracas,2023-05-18,Minorista
+C00448,Mariana Urdaneta,V-30671526,Natural,Caracas,2020-09-01,Frecuente
+C00449,Oscar Medina,V-30536207,Natural,Caracas,2024-11-18,Minorista
+C00450,Andrea Mendoza,V-8818884,Natural,Valencia,2019-03-09,Minorista
+C00451,Rafael Díaz,V-11180716,Natural,Caracas,2020-09-03,Minorista
+C00452,Lucía Silva,V-17737179,Natural,Caracas,2023-02-17,Minorista
+C00453,Daniela Morales,V-23696267,Natural,Caracas,2023-06-04,Minorista
+C00454,Daniela Martínez,V-22783420,Natural,Barquisimeto,2020-06-28,Minorista
+C00455,Andrea Hernández,V-18897123,Natural,Maracaibo,2020-07-14,Minorista
+C00456,Elena Castillo,V-30150954,Natural,Maracaibo,2020-09-05,Minorista
+C00457,Luis Castillo,V-18735378,Natural,Lechería,2020-12-10,Minorista
+C00458,Pedro Morales,V-19174876,Natural,Ciudad Guayana,2024-10-15,Frecuente
+C00459,Jorge Castillo,V-12925576,Natural,Caracas,2024-04-12,Minorista
+C00460,Patricia Pérez,V-16529025,Natural,Ciudad Guayana,2019-09-18,Minorista
+C00461,Sofía Briceño,V-16816543,Natural,Ciudad Guayana,2024-03-24,Minorista
+C00462,Gabriela Pérez,V-11637497,Natural,Lechería,2025-05-03,Minorista
+C00463,Patricia Parra,V-29863743,Natural,Caracas,2024-10-25,Frecuente
+C00464,Héctor Rojas,V-11110989,Natural,Ciudad Guayana,2020-08-20,Minorista
+C00465,Héctor Morales,V-6929292,Natural,Maracaibo,2022-04-28,Frecuente
+C00466,Alejandro Parra,V-19192765,Natural,Ciudad Guayana,2023-09-01,Minorista
+C00467,Carolina Briceño,V-12678955,Natural,Maracaibo,2021-04-03,Minorista
+C00468,Jorge Rodríguez,V-12120407,Natural,Caracas,2024-05-08,Minorista
+C00469,Paola Morales,V-28909918,Natural,Caracas,2023-10-14,Minorista
+C00470,Manuel Medina,V-19004304,Natural,Ciudad Guayana,2022-07-31,Minorista
+C00471,Daniela Briceño,V-17520419,Natural,Valencia,2022-07-04,Minorista
+C00472,Elena Briceño,V-10146729,Natural,Ciudad Guayana,2024-06-19,Minorista
+C00473,Ricardo Díaz,V-8417440,Natural,Caracas,2020-06-13,Minorista
+C00474,Héctor Pérez,V-15527907,Natural,Barquisimeto,2020-11-06,Minorista
+C00475,Miguel Medina,V-7386978,Natural,Lechería,2024-04-11,Minorista
+C00476,Ricardo Pérez,V-11162428,Natural,,2019-09-11,Minorista
+C00477,Mariana Sánchez,V-13309675,Natural,Ciudad Guayana,2021-07-16,Minorista
+C00478,Oscar Colmenares,V-25946630,Natural,Caracas,2019-05-19,Minorista
+C00479,Mariana Contreras,V-18708260,Natural,Ciudad Guayana,2019-06-21,Minorista
+C00480,Oscar Parra,V-22830427,Natural,Caracas,2025-03-20,Minorista
+C00481,Ricardo Torres,V-12148880,Natural,Valencia,2024-12-26,Minorista
+C00482,Alejandro Parra,V-30669321,Natural,Maracaibo,2019-01-05,Minorista
+C00483,Fernanda Briceño,V-21721493,Natural,Caracas,2025-03-03,Minorista
+C00484,Ana Morales,V-9630267,Natural,Maracaibo,2023-01-25,Minorista
+C00485,Lucía Briceño,V-6551097,Natural,Valencia,2019-04-06,Minorista
+C00486,Mariana Medina,V-30611815,Natural,Maracaibo,2024-11-27,Minorista
+C00487,Paola Morales,V-16956814,Natural,Barquisimeto,2021-07-27,Minorista
+C00488,Miguel Rojas,V-20314058,Natural,,2022-02-24,Frecuente
+C00489,Mariana Urdaneta,V-26420227,Natural,Valencia,2024-02-13,Minorista
+C00490,Luis Hernández,V-23617544,Natural,Caracas,2024-10-15,Minorista
+C00491,Carolina Salazar,V-18388576,Natural,Caracas,2020-06-17,Minorista
+C00492,Ana López,V-8703602,Natural,Valencia,2025-04-25,Minorista
+C00493,Jorge González,V-9965735,Natural,Maracaibo,2024-05-11,Minorista
+C00494,Fernanda Medina,V-12766136,Natural,Caracas,2025-04-23,Minorista
+C00495,Jesús García,V-23074823,Natural,Valencia,2020-04-01,Minorista
+C00496,Elena Silva,V-27056775,Natural,Ciudad Guayana,2020-06-28,Minorista
+C00497,Alejandro Contreras,V-6386868,Natural,Valencia,2020-10-24,Minorista
+C00498,Rafael Briceño,V-9731361,Natural,Ciudad Guayana,2023-12-08,Minorista
+C00499,Héctor García,V-6199891,Natural,Ciudad Guayana,2022-07-08,Minorista
+C00500,José Rojas,V-26969319,Natural,Caracas,2023-01-11,Minorista
+C00501,Eduardo Torres,V-13705485,Natural,Lechería,2025-04-03,Minorista
+C00502,Ana Contreras,V-18062931,Natural,Valencia,2024-12-25,Minorista
+C00503,Elena Colmenares,V-15035349,Natural,Barquisimeto,2022-06-03,Minorista
+C00504,Carlos Briceño,V-19322654,Natural,Maracaibo,2021-11-01,Minorista
+C00505,Oscar Rojas,V-8001552,Natural,Lechería,2019-04-16,Frecuente
+C00506,Manuel Salazar,V-8281183,Natural,Lechería,2020-12-10,Minorista
+C00507,Valentina García,V-15507548,Natural,Ciudad Guayana,2024-03-27,Frecuente
+C00508,Luis Morales,V-12529071,Natural,Barquisimeto,2021-01-22,Minorista
+C00509,Carolina Díaz,V-7236417,Natural,Ciudad Guayana,2020-05-19,Minorista
+C00510,Carolina Pérez,V-10454349,Natural,Caracas,2019-06-24,Minorista
+C00511,Oscar Rodríguez,V-18820777,Natural,Caracas,2025-01-28,Minorista
+C00512,Fernanda González,V-29664347,Natural,Barquisimeto,2022-05-22,Minorista
+C00513,Jorge Mendoza,V-29433217,Natural,Barquisimeto,2020-11-07,Minorista
+C00514,Carlos Contreras,V-8186516,Natural,,2024-07-06,Frecuente
+C00515,Jesús Torres,V-14045844,Natural,Maracaibo,2024-09-25,Minorista
+C00516,Ana García,V-22078514,Natural,Maracaibo,2024-03-24,Minorista
+C00517,Sofía Rodríguez,V-26721250,Natural,Lechería,2023-03-18,Minorista
+C00518,Miguel Colmenares,V-18777632,Natural,Caracas,2024-02-08,Minorista
+C00519,Ricardo Silva,V-25564162,Natural,Ciudad Guayana,2023-07-30,Minorista
+C00520,María Hernández,V-20731930,Natural,Ciudad Guayana,2021-07-01,Minorista
+C00521,Carlos Ramírez,V-17821151,Natural,Lechería,2022-12-12,Minorista
+C00522,Manuel García,V-7111084,Natural,Barquisimeto,2019-10-18,Minorista
+C00523,Sofía Sánchez,V-20018423,Natural,Valencia,2019-05-12,Minorista
+C00524,Fernanda Díaz,V-12579512,Natural,Maracaibo,2019-01-05,Minorista
+C00525,Andrés Bracho,V-10217747,Natural,Barquisimeto,2020-02-29,Minorista
+C00526,Patricia Vargas,V-19179593,Natural,Barquisimeto,2021-01-30,Minorista
+C00527,Oscar Torres,V-27278934,Natural,Lechería,2021-03-31,Minorista
+C00528,Héctor Sánchez,V-18481048,Natural,Ciudad Guayana,2024-12-10,Minorista
+C00529,Andrea González,V-10439756,Natural,Lechería,2022-01-17,Minorista
+C00530,Jesús Colmenares,V-6154357,Natural,Barquisimeto,2023-10-19,Minorista
+C00531,Jesús Parra,V-19060415,Natural,Barquisimeto,2019-08-21,Minorista
+C00532,Jorge Contreras,V-6997888,Natural,Caracas,2025-03-04,Minorista
+C00533,Ana Rodríguez,V-6636404,Natural,Ciudad Guayana,2023-01-26,Minorista
+C00534,Jorge Mendoza,V-11391639,Natural,Maracaibo,2021-03-04,Minorista
+C00535,Daniela Martínez,V-20962386,Natural,Valencia,2023-05-07,Minorista
+C00536,Valentina Martínez,V-6401823,Natural,Barquisimeto,2023-07-27,Minorista
+C00537,Jorge Silva,V-22288106,Natural,Caracas,2021-01-20,Minorista
+C00538,Isabel Silva,V-24876526,Natural,Valencia,2019-11-05,Frecuente
+C00539,Sofía Bracho,V-30320867,Natural,Ciudad Guayana,2025-05-31,Minorista
+C00540,María Castillo,V-12168040,Natural,Valencia,2019-08-20,Minorista
+C00541,María Parra,V-25828710,Natural,Caracas,2023-03-10,Minorista
+C00542,María Colmenares,V-20208740,Natural,Barquisimeto,2022-05-20,Minorista
+C00543,María Castillo,V-18932866,Natural,Maracaibo,2025-05-14,Minorista
+C00544,Patricia Silva,V-6239999,Natural,Caracas,2025-01-27,Minorista
+C00545,Valentina Pérez,V-24974135,Natural,Lechería,2025-01-24,Minorista
+C00546,Jesús Urdaneta,V-27741784,Natural,Caracas,2023-06-20,Minorista
+C00547,Paola Díaz,V-26642052,Natural,Valencia,2021-06-20,Minorista
+C00548,Carlos Contreras,V-13156666,Natural,Maracaibo,2020-10-11,Minorista
+C00549,Gabriela Martínez,V-25743151,Natural,Barquisimeto,2020-12-25,Minorista
+C00550,Mariana Ramírez,V-13468166,Natural,Caracas,2023-01-24,Minorista
+C00551,Ricardo Rodríguez,V-17627890,Natural,Lechería,2023-10-03,Minorista
+C00552,Gabriela Colmenares,V-9533241,Natural,Ciudad Guayana,2022-05-26,Minorista
+C00553,Lucía Vargas,V-11114308,Natural,Lechería,2025-05-23,Minorista
+C00554,Jesús Díaz,V-27354074,Natural,Maracaibo,2019-06-21,Minorista
+C00555,Carolina Castillo,V-26358588,Natural,Caracas,2023-02-15,Minorista
+C00556,Paola García,V-18740471,Natural,Ciudad Guayana,2024-10-22,Minorista
+C00557,Valentina Briceño,V-11969848,Natural,Valencia,2019-04-10,Frecuente
+C00558,Andrea Colmenares,V-26020762,Natural,Caracas,2023-12-30,Minorista
+C00559,Oscar Díaz,V-18629464,Natural,Maracaibo,2024-11-14,Minorista
+C00560,Paola Mendoza,V-13300215,Natural,Caracas,2022-11-10,Minorista
+C00561,Valentina Hernández,V-11859804,Natural,Lechería,2023-04-28,Minorista
+C00562,José Sánchez,V-12189303,Natural,Ciudad Guayana,2024-01-01,Frecuente
+C00563,Ricardo Castillo,V-12475180,Natural,Barquisimeto,2021-03-18,Minorista
+C00564,Lucía Vargas,V-25045179,Natural,Maracaibo,2019-02-14,Minorista
+C00565,Pedro Bracho,V-15709242,Natural,Maracaibo,2021-01-30,Minorista
+C00566,Daniela García,V-25674100,Natural,Caracas,2019-01-07,Minorista
+C00567,Sofía Contreras,V-19325223,Natural,Caracas,2022-04-18,Minorista
+C00568,Isabel Medina,V-25975668,Natural,Caracas,2025-02-07,Minorista
+C00569,Elena Parra,V-13382075,Natural,Valencia,2022-02-18,Frecuente
+C00570,Ricardo Ramírez,V-26277842,Natural,Valencia,2022-12-10,Minorista
+C00571,Isabel Contreras,V-9526176,Natural,Barquisimeto,2025-05-03,Minorista
+C00572,Isabel Rojas,V-24684955,Natural,Caracas,2025-05-13,Minorista
+C00573,Ricardo Mendoza,V-11356204,Natural,Caracas,2023-12-25,Minorista
+C00574,Héctor Urdaneta,V-15141802,Natural,Barquisimeto,2019-04-29,Minorista
+C00575,Paola González,V-15129143,Natural,Valencia,2024-06-26,Minorista
+C00576,Paola Vargas,V-10570626,Natural,Valencia,2019-06-26,Minorista
+C00577,Gabriela Morales,V-29967314,Natural,Barquisimeto,2022-02-28,Minorista
+C00578,Pedro Castillo,V-11204323,Natural,Barquisimeto,2023-05-01,Minorista
+C00579,Elena Mendoza,V-11967648,Natural,Lechería,2019-07-12,Minorista
+C00580,Patricia Díaz,V-19538566,Natural,Caracas,2023-02-20,Minorista
+C00581,Patricia Morales,V-23796086,Natural,Maracaibo,2020-12-31,Minorista
+C00582,Andrés López,V-8727852,Natural,Caracas,2024-12-19,Minorista
+C00583,Elena Torres,V-21188312,Natural,Caracas,2024-08-01,Minorista
+C00584,Jorge Urdaneta,V-25358552,Natural,Valencia,2024-06-07,Minorista
+C00585,Luis García,V-27625316,Natural,Caracas,2021-02-24,Minorista
+C00586,Luis Briceño,V-30699909,Natural,Barquisimeto,2020-01-20,Frecuente
+C00587,Isabel Díaz,V-27540683,Natural,Caracas,2021-12-18,Minorista
+C00588,Alejandro Pérez,V-10477442,Natural,Lechería,2019-03-31,Minorista
+C00589,Andrea Contreras,V-10406987,Natural,Ciudad Guayana,2023-09-05,Frecuente
+C00590,Manuel Torres,V-20156381,Natural,Caracas,2022-07-29,Minorista
+C00591,Andrea Castillo,V-27382679,Natural,Barquisimeto,2021-07-12,Minorista
+C00592,Patricia Díaz,V-6150363,Natural,Lechería,2024-03-27,Minorista
+C00593,Ricardo Colmenares,V-12129778,Natural,Barquisimeto,2023-09-27,Minorista
+C00594,José Torres,V-23431130,Natural,Lechería,2022-02-11,Minorista
+C00595,Daniela López,V-6588494,Natural,Valencia,2021-09-05,Minorista
+C00596,José Colmenares,V-18330250,Natural,Barquisimeto,2021-01-09,Minorista
+C00597,Ricardo Silva,V-27598912,Natural,Valencia,2021-06-07,Minorista
+C00598,Rafael Torres,V-8137333,Natural,Caracas,2025-01-26,Frecuente
+C00599,Fernanda Salazar,V-8033523,Natural,Ciudad Guayana,2019-04-11,Frecuente
+C00600,Pedro Castillo,V-30369252,Natural,Barquisimeto,2019-02-11,Minorista
+C00601,Andrea Medina,V-10456076,Natural,Caracas,2024-05-25,Frecuente
+C00602,Rafael Rojas,V-25961127,Natural,Ciudad Guayana,2021-07-18,Minorista
+C00603,Rafael Medina,V-27319887,Natural,Valencia,2020-06-11,Minorista
+C00604,Jorge Sánchez,V-18821907,Natural,Barquisimeto,2024-01-19,Minorista
+C00605,Lucía Bracho,V-18040667,Natural,Ciudad Guayana,2021-10-11,Minorista
+C00606,Rafael Parra,V-14920299,Natural,Caracas,2019-09-27,Frecuente
+C00607,Jorge Martínez,V-31886208,Natural,Ciudad Guayana,2020-04-13,Minorista
+C00608,Andrés Medina,V-14304668,Natural,Lechería,2020-02-28,Minorista
+C00609,Oscar Salazar,V-11883122,Natural,Valencia,2019-02-17,Minorista
+C00610,Pedro Parra,V-17292490,Natural,Caracas,2022-12-13,Minorista
+C00611,Isabel Sánchez,V-31639688,Natural,Caracas,2023-01-27,Minorista
+C00612,Ricardo Martínez,V-18807978,Natural,Ciudad Guayana,2020-03-19,Minorista
+C00613,Daniela Mendoza,V-17461945,Natural,Barquisimeto,2020-07-21,Minorista
+C00614,Paola Silva,V-11963369,Natural,Caracas,2022-09-19,Minorista
+C00615,Sofía Martínez,V-19983564,Natural,Lechería,2019-12-01,Minorista
+C00616,Fernanda Urdaneta,V-27940095,Natural,Caracas,2021-02-21,Minorista
+C00617,Mariana Mendoza,V-24283086,Natural,Maracaibo,2021-06-04,Minorista
+C00618,Daniela Medina,V-22140889,Natural,Caracas,2023-10-26,Minorista
+C00619,Sofía Rojas,V-30131338,Natural,Barquisimeto,2020-10-31,Minorista
+C00620,Alejandro Urdaneta,V-26281413,Natural,Valencia,2019-06-29,Minorista
+C00621,Fernanda Martínez,V-6378331,Natural,Maracaibo,2019-07-15,Minorista
+C00622,Daniela Pérez,V-31633543,Natural,Caracas,2020-02-17,Minorista
+C00623,Alejandro Rojas,V-14115665,Natural,Maracaibo,2021-05-29,Minorista
+C00624,Patricia Colmenares,V-23778546,Natural,Lechería,2019-04-13,Minorista
+C00625,Fernanda Salazar,V-17270831,Natural,Caracas,2023-10-14,Minorista
+C00626,Lucía García,V-27209436,Natural,Ciudad Guayana,2020-10-31,Minorista
+C00627,Jorge González,V-20352761,Natural,Lechería,2025-05-09,Minorista
+C00628,Luis Sánchez,V-20791133,Natural,Caracas,2022-02-11,Minorista
+C00629,Gabriela Morales,V-20950535,Natural,Caracas,2019-04-01,Frecuente
+C00630,Alejandro García,V-23560293,Natural,Caracas,2023-10-16,Frecuente
+C00631,Héctor Pérez,V-10092180,Natural,Lechería,2019-05-21,Minorista
+C00632,Fernanda Morales,V-16152404,Natural,Lechería,2024-01-16,Minorista
+C00633,Jorge Rodríguez,V-11952726,Natural,Ciudad Guayana,2022-10-08,Frecuente
+C00634,Elena Pérez,V-28135330,Natural,Caracas,2022-01-29,Minorista
+C00635,Patricia Rodríguez,V-6639741,Natural,Lechería,2021-11-23,Minorista
+C00636,Andrea García,V-14569344,Natural,Valencia,2019-08-27,Minorista
+C00637,Jorge Salazar,V-11618751,Natural,Caracas,2020-09-06,Minorista
+C00638,Lucía Rojas,V-12227972,Natural,Valencia,2025-04-20,Minorista
+C00639,Héctor Hernández,V-11031591,Natural,Maracaibo,2022-05-03,Minorista
+C00640,Ana López,V-30735860,Natural,Maracaibo,2022-05-24,Minorista
+C00641,Andrés Salazar,V-31011510,Natural,Barquisimeto,2021-04-22,Minorista
+C00642,Andrés Urdaneta,V-10882088,Natural,Maracaibo,2021-08-16,Minorista
+C00643,José Colmenares,V-18061809,Natural,Ciudad Guayana,2023-11-20,Minorista
+C00644,Miguel Parra,V-21979777,Natural,Valencia,2024-12-21,Minorista
+C00645,Lucía Bracho,V-27678662,Natural,Caracas,2022-06-28,Minorista
+C00646,Ana Colmenares,V-19828107,Natural,Lechería,2022-12-20,Minorista
+C00647,Mariana Sánchez,V-29017387,Natural,Caracas,2020-06-14,Minorista
+C00648,Alejandro Morales,V-13964431,Natural,Lechería,2023-01-29,Minorista
+C00649,Mariana Briceño,V-15928069,Natural,Maracaibo,2019-09-29,Minorista
+C00650,Jesús Hernández,V-23991116,Natural,Caracas,2021-02-15,Minorista
+C00651,Manuel Martínez,V-20403911,Natural,Maracaibo,2023-10-02,Minorista
+C00652,Elena Díaz,V-23104365,Natural,Barquisimeto,2023-08-25,Minorista
+C00653,Carolina Morales,V-20449482,Natural,Maracaibo,2025-06-20,Minorista
+C00654,Carolina Castillo,V-7622314,Natural,Maracaibo,2024-01-06,Minorista
+C00655,Miguel Salazar,V-15692186,Natural,Caracas,2019-07-26,Minorista
+C00656,Héctor Díaz,V-30661740,Natural,Maracaibo,2022-06-21,Minorista
+C00657,Eduardo Martínez,V-10487585,Natural,Valencia,2025-05-30,Minorista
+C00658,Isabel González,V-13773781,Natural,Maracaibo,2021-10-29,Minorista
+C00659,Isabel Morales,V-18210729,Natural,Lechería,2020-12-11,Frecuente
+C00660,Luis Rodríguez,V-6638231,Natural,Lechería,2020-09-25,Minorista
+C00661,Manuel Castillo,V-10157349,Natural,Maracaibo,2020-12-04,Minorista
+C00662,Luis Torres,V-9403079,Natural,Lechería,2025-03-27,Minorista
+C00663,Rafael Díaz,V-30212233,Natural,Ciudad Guayana,2020-05-29,Minorista
+C00664,Jesús López,V-23965568,Natural,Lechería,2023-07-17,Minorista
+C00665,Mariana Colmenares,V-10928246,Natural,Caracas,2024-12-24,Minorista
+C00666,Eduardo Salazar,V-14636245,Natural,Barquisimeto,2025-04-21,Minorista
+C00667,María Mendoza,V-7023208,Natural,Caracas,2019-11-22,Minorista
+C00668,Rafael Contreras,V-24524198,Natural,Caracas,2021-07-29,Minorista
+C00669,Jorge Rojas,V-19098773,Natural,Lechería,2023-07-29,Minorista
+C00670,Gabriela Briceño,V-28943372,Natural,Ciudad Guayana,2023-03-17,Minorista
+C00671,Mariana Colmenares,V-21618593,Natural,Ciudad Guayana,2019-02-01,Minorista
+C00672,Andrés Pérez,V-13280980,Natural,Caracas,2021-03-17,Frecuente
+C00673,Jesús González,V-11924700,Natural,Caracas,2020-06-13,Minorista
+C00674,Fernanda Rodríguez,V-10319032,Natural,Maracaibo,2022-08-14,Minorista
+C00675,Andrea Sánchez,V-15630849,Natural,Maracaibo,2022-08-04,Minorista
+C00676,Ana Hernández,V-23986369,Natural,Lechería,2024-04-19,Minorista
+C00677,Carlos Medina,V-23131326,Natural,Maracaibo,2021-09-10,Frecuente
+C00678,Valentina Bracho,V-30168778,Natural,Lechería,2024-04-26,Minorista
+C00679,María Ramírez,V-30360431,Natural,Barquisimeto,2020-08-26,Frecuente
+C00680,Pedro Mendoza,V-13317106,Natural,Valencia,2022-05-25,Frecuente
+C00681,Valentina Colmenares,V-13950529,Natural,Lechería,2021-11-09,Minorista
+C00682,Valentina Salazar,V-13415921,Natural,Caracas,2022-07-31,Minorista
+C00683,Paola Briceño,V-18589892,Natural,Barquisimeto,2021-01-10,Minorista
+C00684,Sofía Torres,V-8922332,Natural,Lechería,2024-11-03,Frecuente
+C00685,Pedro Díaz,V-18728680,Natural,Barquisimeto,2022-09-10,Minorista
+C00686,Patricia Ramírez,V-26439702,Natural,Valencia,2020-11-23,Minorista
+C00687,Oscar García,V-30879805,Natural,Barquisimeto,2021-05-21,Minorista
+C00688,Héctor Vargas,V-16599078,Natural,Caracas,2020-06-29,Minorista
+C00689,Oscar Rojas,V-12866755,Natural,Ciudad Guayana,2024-07-07,Minorista
+C00690,Manuel Bracho,V-7010866,Natural,Caracas,2023-08-25,Minorista
+C00691,Isabel Silva,V-19119771,Natural,Ciudad Guayana,2025-04-13,Minorista
+C00692,Valentina Ramírez,V-25002493,Natural,Maracaibo,2024-08-20,Minorista
+C00693,Oscar Medina,V-8408136,Natural,Caracas,2021-10-16,Minorista
+C00694,Eduardo Rodríguez,V-21473120,Natural,Maracaibo,2025-03-08,Frecuente
+C00695,Elena González,V-24376807,Natural,Lechería,2022-12-07,Minorista
+C00696,Ricardo Castillo,V-30468951,Natural,Maracaibo,2019-07-03,Frecuente
+C00697,Gabriela Briceño,V-29313868,Natural,Lechería,2020-07-24,Minorista
+C00698,Paola García,V-16605270,Natural,Maracaibo,2022-02-13,Minorista
+C00699,Andrés Mendoza,V-8690597,Natural,Ciudad Guayana,2022-12-21,Minorista
+C00700,Rafael Urdaneta,V-18876536,Natural,Lechería,2020-08-08,Minorista
+C00701,Manuel Torres,V-30877199,Natural,Maracaibo,2024-09-11,Minorista
+C00702,Andrea Torres,V-13341515,Natural,Maracaibo,2025-01-08,Minorista
+C00703,Isabel Urdaneta,V-9913432,Natural,Valencia,2021-02-18,Minorista
+C00704,Jorge Rodríguez,V-10267521,Natural,Barquisimeto,2021-05-09,Minorista
+C00705,Andrés Silva,V-7657601,Natural,Maracaibo,2023-04-28,Minorista
+C00706,Carlos García,V-17677356,Natural,Maracaibo,2024-11-21,Minorista
+C00707,Paola Mendoza,V-9831869,Natural,Ciudad Guayana,2022-12-10,Minorista
+C00708,Valentina Sánchez,V-16143758,Natural,Lechería,2020-05-13,Minorista
+C00709,José González,V-7522493,Natural,Valencia,2025-02-07,Minorista
+C00710,Daniela García,V-11389298,Natural,Barquisimeto,2023-08-13,Minorista
+C00711,Daniela García,V-20802639,Natural,Maracaibo,2024-08-01,Minorista
+C00712,Andrea Contreras,V-13308241,Natural,Barquisimeto,2021-01-31,Minorista
+C00713,Jesús Parra,V-23725923,Natural,Lechería,2024-04-28,Minorista
+C00714,Rafael Vargas,V-7542010,Natural,Maracaibo,2023-05-07,Minorista
+C00715,Carlos Morales,V-26552794,Natural,Caracas,2020-03-04,Minorista
+C00716,Fernanda Salazar,V-26909579,Natural,Maracaibo,2020-01-01,Minorista
+C00717,Rafael Contreras,V-21429284,Natural,Lechería,2022-01-20,Frecuente
+C00718,Carolina Torres,V-29916467,Natural,Ciudad Guayana,2019-05-02,Minorista
+C00719,Fernanda García,V-19967244,Natural,Barquisimeto,2021-02-06,Minorista
+C00720,Héctor García,V-16467944,Natural,Valencia,2024-10-31,Minorista
+C00721,María Parra,V-15253923,Natural,Barquisimeto,2023-07-05,Minorista
+C00722,Valentina Torres,V-26933226,Natural,Ciudad Guayana,2023-09-14,Minorista
+C00723,Carolina Salazar,V-13634330,Natural,Ciudad Guayana,2024-06-04,Minorista
+C00724,María Briceño,V-6374682,Natural,Barquisimeto,2024-03-25,Minorista
+C00725,Miguel Mendoza,V-20586775,Natural,Barquisimeto,2023-09-05,Minorista
+C00726,Carolina Rodríguez,V-12569020,Natural,Valencia,2021-08-07,Minorista
+C00727,Luis Contreras,V-28863976,Natural,Lechería,2020-11-17,Minorista
+C00728,María Medina,V-8760333,Natural,Caracas,2020-06-28,Minorista
+C00729,Sofía Pérez,V-26697364,Natural,Caracas,2024-01-08,Minorista
+C00730,Alejandro Briceño,V-12811755,Natural,Ciudad Guayana,2019-05-30,Minorista
+C00731,Elena Mendoza,V-31186047,Natural,Lechería,2022-12-17,Minorista
+C00732,Ricardo Castillo,V-16677034,Natural,Ciudad Guayana,2024-08-23,Minorista
+C00733,Manuel Morales,V-27548650,Natural,Barquisimeto,2019-06-15,Frecuente
+C00734,Miguel Parra,V-26447452,Natural,Caracas,2022-11-22,Minorista
+C00735,Paola Parra,V-9975572,Natural,Ciudad Guayana,2021-07-07,Minorista
+C00736,Daniela Castillo,V-10175463,Natural,Maracaibo,2023-10-21,Frecuente
+C00737,Luis Urdaneta,V-19277987,Natural,Lechería,2024-09-06,Minorista
+C00738,Luis Briceño,V-7889419,Natural,Valencia,2020-05-29,Minorista
+C00739,Elena García,V-20984027,Natural,Valencia,2022-02-20,Minorista
+C00740,Eduardo Bracho,V-24526796,Natural,Caracas,2020-07-29,Minorista
+C00741,Luis Urdaneta,V-28999255,Natural,Caracas,2022-10-03,Minorista
+C00742,Manuel Urdaneta,V-16493330,Natural,Caracas,2020-05-06,Minorista
+C00743,Gabriela González,V-19480022,Natural,Lechería,2023-09-27,Frecuente
+C00744,Jesús Colmenares,V-18524970,Natural,Valencia,2022-09-30,Minorista
+C00745,Valentina García,V-13000543,Natural,Caracas,2024-08-30,Frecuente
+C00746,Sofía Silva,V-29570278,Natural,Maracaibo,2020-12-25,Minorista
+C00747,Ana Contreras,V-27665117,Natural,Maracaibo,2022-08-22,Minorista
+C00748,Andrea Pérez,V-8043059,Natural,Lechería,2019-02-24,Minorista
+C00749,Jesús Ramírez,V-22597557,Natural,Caracas,2021-02-19,Minorista
+C00750,Patricia Pérez,V-24291806,Natural,Maracaibo,2024-11-16,Minorista
+C00751,Patricia Martínez,V-23691521,Natural,Lechería,2019-08-04,Frecuente
+C00752,Fernanda Pérez,V-19416556,Natural,Barquisimeto,2023-12-09,Minorista
+C00753,Rafael Ramírez,V-31923284,Natural,Valencia,2023-01-15,Minorista
+C00754,Eduardo Contreras,V-6971445,Natural,Ciudad Guayana,2023-10-10,Minorista
+C00755,Héctor Díaz,V-10216605,Natural,Valencia,2019-12-13,Minorista
+C00756,Gabriela Silva,V-15767432,Natural,Valencia,2019-03-19,Minorista
+C00757,Ricardo Parra,V-12352903,Natural,Valencia,2019-05-05,Minorista
+C00758,Sofía Medina,V-18431445,Natural,Caracas,2024-04-17,Minorista
+C00759,Andrés Rojas,V-13580537,Natural,Lechería,2021-10-28,Minorista
+C00760,Fernanda Urdaneta,V-7534160,Natural,Maracaibo,2023-06-28,Minorista
+C00761,Alejandro Bracho,V-28214140,Natural,,2020-10-25,Frecuente
+C00762,Eduardo Ramírez,V-29197136,Natural,Maracaibo,2024-10-25,Minorista
+C00763,Andrés Urdaneta,V-25151679,Natural,Caracas,2024-06-09,Minorista
+C00764,Luis Medina,V-21106390,Natural,Maracaibo,2023-10-04,Frecuente
+C00765,Andrés Briceño,V-18987971,Natural,Caracas,2023-02-01,Minorista
+C00766,Eduardo Hernández,V-29604955,Natural,Lechería,2021-08-19,Minorista
+C00767,Carlos Vargas,V-13040835,Natural,Caracas,2021-07-20,Minorista
+C00768,Mariana Mendoza,V-9744914,Natural,Maracaibo,2022-05-22,Minorista
+C00769,Alejandro Hernández,V-20218304,Natural,Caracas,2021-06-23,Minorista
+C00770,Luis Salazar,V-23234798,Natural,Valencia,2022-03-16,Minorista
+C00771,Paola Sánchez,V-16889256,Natural,Caracas,2024-07-04,Minorista
+C00772,Gabriela Contreras,V-27072380,Natural,Caracas,2022-02-28,Minorista
+C00773,Gabriela Ramírez,V-6725013,Natural,Lechería,2021-08-11,Minorista
+C00774,José Silva,V-24078299,Natural,Maracaibo,2020-03-17,Minorista
+C00775,Fernanda Sánchez,V-8334634,Natural,Barquisimeto,2019-08-02,Minorista
+C00776,Valentina Rodríguez,V-16057828,Natural,Barquisimeto,2021-08-30,Minorista
+C00777,Carolina Sánchez,V-13049520,Natural,Caracas,2022-10-02,Minorista
+C00778,Manuel Briceño,V-6684561,Natural,Maracaibo,2019-03-22,Minorista
+C00779,Ana Díaz,V-14855817,Natural,Maracaibo,2024-11-02,Minorista
+C00780,Ana Vargas,V-10020861,Natural,Valencia,2025-02-21,Minorista
+C00781,Andrés Mendoza,V-23769195,Natural,Barquisimeto,2022-04-02,Minorista
+C00782,Andrés Medina,V-9663916,Natural,Barquisimeto,2021-06-16,Minorista
+C00783,Luis Vargas,V-17541090,Natural,Valencia,2025-05-11,Minorista
+C00784,Lucía Pérez,V-9608212,Natural,Valencia,2019-12-02,Minorista
+C00785,Jesús Sánchez,V-15286259,Natural,Ciudad Guayana,2021-12-26,Minorista
+C00786,Paola Salazar,V-9882035,Natural,Caracas,2021-01-20,Minorista
+C00787,Carlos Contreras,V-11957216,Natural,Maracaibo,2023-02-23,Minorista
+C00788,Miguel López,V-29059206,Natural,Maracaibo,2022-05-13,Minorista
+C00789,Mariana García,V-24144528,Natural,Ciudad Guayana,2020-02-23,Minorista
+C00790,Andrés Salazar,V-26638032,Natural,Caracas,2019-03-26,Minorista
+C00791,Lucía Briceño,V-11037198,Natural,Valencia,2022-08-12,Minorista
+C00792,Carolina Colmenares,V-13240056,Natural,Caracas,2022-02-22,Frecuente
+C00793,Andrés Colmenares,V-30714175,Natural,Ciudad Guayana,2021-12-10,Minorista
+C00794,Patricia Sánchez,V-16928328,Natural,,2021-11-28,Frecuente
+C00795,Miguel Vargas,V-12709252,Natural,Maracaibo,2021-05-01,Minorista
+C00796,Elena Díaz,V-6446070,Natural,Barquisimeto,2025-05-13,Minorista
+C00797,Mariana López,V-24134494,Natural,Valencia,2022-01-16,Frecuente
+C00798,Carlos Briceño,V-13675362,Natural,Lechería,2023-04-06,Minorista
+C00799,Jorge Salazar,V-16789246,Natural,Caracas,2019-08-31,Minorista
+C00800,Isabel Mendoza,V-30254917,Natural,Caracas,2020-09-02,Minorista
+C00801,Rafael Pérez,V-7689336,Natural,Ciudad Guayana,2022-08-27,Minorista
+C00802,Lucía Morales,V-14181612,Natural,Maracaibo,2024-05-09,Frecuente
+C00803,Oscar Hernández,V-22546220,Natural,Caracas,2021-02-08,Minorista
+C00804,Fernanda Silva,V-13310166,Natural,Maracaibo,2019-06-07,Minorista
+C00805,Andrés Ramírez,V-25765899,Natural,Ciudad Guayana,2023-11-14,Frecuente
+C00806,Valentina Díaz,V-18042211,Natural,Caracas,2022-09-17,Minorista
+C00807,Fernanda García,V-28403962,Natural,Lechería,2024-04-22,Minorista
+C00808,Carolina Salazar,V-14948970,Natural,Caracas,2020-05-18,Minorista
+C00809,Fernanda Castillo,V-12904249,Natural,Maracaibo,2019-10-17,Minorista
+C00810,María Vargas,V-23520463,Natural,Caracas,2020-09-02,Minorista
+C00811,Paola Bracho,V-9205460,Natural,Maracaibo,2019-08-12,Minorista
+C00812,Eduardo Rojas,V-8102772,Natural,Maracaibo,2025-02-04,Minorista
+C00813,Lucía Medina,V-28732776,Natural,Valencia,2019-08-23,Minorista
+C00814,Elena Colmenares,V-15430444,Natural,Ciudad Guayana,2022-02-20,Minorista
+C00815,Oscar Medina,V-21316346,Natural,Caracas,2021-06-29,Minorista
+C00816,Jorge Colmenares,V-30411024,Natural,Ciudad Guayana,2023-10-01,Minorista
+C00817,Ricardo Vargas,V-21377845,Natural,Lechería,2020-03-29,Minorista
+C00818,Pedro Salazar,V-16988262,Natural,Valencia,2024-09-28,Minorista
+C00819,Ricardo Contreras,V-28808014,Natural,Barquisimeto,2020-12-22,Minorista
+C00820,Héctor Rojas,V-28938765,Natural,Caracas,2021-12-21,Minorista
+C00821,Isabel Morales,V-10822236,Natural,Valencia,2021-05-03,Minorista
+C00822,Rafael Vargas,V-19565813,Natural,Caracas,2022-09-08,Minorista
+C00823,Andrés Morales,V-22739196,Natural,Maracaibo,2022-02-03,Minorista
+C00824,Ana Contreras,V-14868511,Natural,Valencia,2024-01-03,Minorista
+C00825,Manuel Salazar,V-31987035,Natural,Maracaibo,2021-08-31,Minorista
+C00826,Fernanda López,V-15860094,Natural,Ciudad Guayana,2023-10-27,Minorista
+C00827,Patricia Salazar,V-15685325,Natural,Caracas,2021-07-25,Minorista
+C00828,María Sánchez,V-6855291,Natural,Barquisimeto,2019-01-09,Minorista
+C00829,José Vargas,V-15864546,Natural,Valencia,2024-03-17,Minorista
+C00830,Eduardo Díaz,V-18119037,Natural,Ciudad Guayana,2022-04-15,Minorista
+C00831,Pedro Silva,V-24301020,Natural,Lechería,2022-03-21,Minorista
+C00832,Jorge Colmenares,V-24649778,Natural,Barquisimeto,2023-06-19,Frecuente
+C00833,Sofía Silva,V-17818318,Natural,Maracaibo,2022-05-31,Minorista
+C00834,María Martínez,V-27866787,Natural,Ciudad Guayana,2020-04-02,Minorista
+C00835,Jesús Morales,V-20046349,Natural,Caracas,2022-01-17,Minorista
+C00836,Andrea Ramírez,V-23895873,Natural,Valencia,2020-09-26,Minorista
+C00837,Elena Vargas,V-19397288,Natural,Caracas,2020-01-09,Minorista
+C00838,Miguel Sánchez,V-19257138,Natural,Lechería,2020-03-02,Minorista
+C00839,José López,V-11404197,Natural,Valencia,2023-08-18,Minorista
+C00840,Luis Salazar,V-27169549,Natural,Lechería,2023-07-08,Minorista
+C00841,Carlos Vargas,V-13228150,Natural,Ciudad Guayana,2019-08-10,Minorista
+C00842,Jorge Bracho,V-31376350,Natural,Maracaibo,2025-03-02,Minorista
+C00843,Andrés Rodríguez,V-26571242,Natural,Valencia,2020-10-25,Frecuente
+C00844,José Colmenares,V-25925852,Natural,Lechería,2022-06-03,Minorista
+C00845,Luis Parra,V-12473549,Natural,Ciudad Guayana,2020-02-02,Minorista
+C00846,Mariana Mendoza,V-12980594,Natural,Valencia,2024-08-15,Minorista
+C00847,Lucía Pérez,V-14200923,Natural,Maracaibo,2019-09-14,Minorista
+C00848,Lucía Parra,V-9619323,Natural,Caracas,2024-12-05,Frecuente
+C00849,Pedro Parra,V-21856924,Natural,Caracas,2024-01-21,Minorista
+C00850,Ana García,V-7139376,Natural,Barquisimeto,2021-08-08,Minorista
+C00851,Pedro Martínez,V-25085322,Natural,Caracas,2022-08-15,Minorista
+C00852,Manuel García,V-22641257,Natural,Valencia,2021-06-29,Minorista
+C00853,Alejandro Pérez,V-30296721,Natural,Barquisimeto,2020-09-17,Minorista
+C00854,Isabel Vargas,V-29691318,Natural,Maracaibo,2020-06-12,Minorista
+C00855,Oscar Parra,V-12475005,Natural,Valencia,2021-10-13,Minorista
+C00856,Ana Briceño,V-19330276,Natural,Barquisimeto,2022-06-23,Minorista
+C00857,Paola Hernández,V-22384333,Natural,Caracas,2019-12-27,Frecuente
+C00858,Sofía Briceño,V-13395873,Natural,Barquisimeto,2025-05-08,Minorista
+C00859,Andrés López,V-22137010,Natural,Valencia,2024-01-31,Frecuente
+C00860,Jesús García,V-7723349,Natural,Lechería,2025-02-03,Minorista
+C00861,Eduardo Mendoza,V-11251983,Natural,Caracas,2024-05-16,Frecuente
+C00862,José García,V-19678364,Natural,Caracas,2021-07-09,Minorista
+C00863,Alejandro Colmenares,V-13683104,Natural,Lechería,2022-11-15,Minorista
+C00864,Miguel Torres,V-22719815,Natural,Caracas,2025-06-10,Minorista
+C00865,Jesús Morales,V-29335495,Natural,Caracas,2022-03-01,Frecuente
+C00866,Alejandro Medina,V-9202858,Natural,Ciudad Guayana,2025-03-21,Minorista
+C00867,Jesús Vargas,V-20770284,Natural,Valencia,2021-01-19,Frecuente
+C00868,Elena Pérez,V-16963728,Natural,Caracas,2019-08-04,Minorista
+C00869,Valentina Briceño,V-15757362,Natural,Valencia,2023-07-10,Minorista
+C00870,Andrés Urdaneta,V-25424768,Natural,Caracas,2021-04-03,Minorista
+C00871,Lucía Hernández,V-10293736,Natural,Barquisimeto,2023-04-10,Frecuente
+C00872,Eduardo Díaz,V-23869419,Natural,Lechería,2020-10-19,Minorista
+C00873,Carlos González,V-18716032,Natural,Caracas,2020-08-31,Minorista
+C00874,Paola López,V-14905944,Natural,Lechería,2024-09-15,Minorista
+C00875,Daniela Contreras,V-13681519,Natural,Valencia,2022-02-09,Minorista
+C00876,Ana González,V-29404241,Natural,Caracas,2024-09-21,Minorista
+C00877,Luis Sánchez,V-15264824,Natural,Lechería,2023-03-05,Minorista
+C00878,Sofía Sánchez,V-20691024,Natural,Maracaibo,2019-10-18,Minorista
+C00879,Valentina Silva,V-20223633,Natural,Caracas,2023-05-08,Minorista
+C00880,Carolina Silva,V-13265585,Natural,Ciudad Guayana,2024-09-17,Minorista
+C00881,Sofía Medina,V-6272171,Natural,Maracaibo,2021-03-22,Minorista
+C00882,Alejandro Vargas,V-7805571,Natural,Maracaibo,2023-05-03,Minorista
+C00883,María Salazar,V-17129362,Natural,Valencia,2024-08-15,Minorista
+C00884,Andrea Morales,V-26368191,Natural,Ciudad Guayana,2021-09-02,Minorista
+C00885,Andrés Castillo,V-18111157,Natural,Caracas,2019-04-07,Minorista
+C00886,Paola Bracho,V-11022102,Natural,Lechería,2022-03-24,Minorista
+C00887,Mariana González,V-20584328,Natural,Caracas,2024-02-21,Minorista
+C00888,Jesús Silva,V-7932037,Natural,Lechería,2021-03-26,Minorista
+C00889,Jorge Morales,V-6244389,Natural,Caracas,2022-06-26,Minorista
+C00890,Carlos Briceño,V-18951377,Natural,Lechería,2023-01-24,Minorista
+C00891,Eduardo Mendoza,V-13119320,Natural,Ciudad Guayana,2019-03-13,Minorista
+C00892,Eduardo Vargas,V-27178219,Natural,Valencia,2025-06-13,Minorista
+C00893,José Torres,V-7745057,Natural,Ciudad Guayana,2021-08-02,Minorista
+C00894,Manuel Medina,V-26402466,Natural,Lechería,2024-06-22,Minorista
+C00895,Pedro Urdaneta,V-14899024,Natural,Lechería,2024-09-27,Minorista
+C00896,Jorge Pérez,V-25619924,Natural,Ciudad Guayana,2024-02-25,Minorista
+C00897,Manuel González,V-6161412,Natural,,2019-11-01,Minorista
+C00898,María Silva,V-12874714,Natural,Maracaibo,2022-08-04,Minorista
+C00899,Carolina Mendoza,V-12439829,Natural,Barquisimeto,2022-05-08,Frecuente
+C00900,Patricia Mendoza,V-30020659,Natural,Maracaibo,2024-09-26,Minorista
+C00901,María Colmenares,V-16768214,Natural,Maracaibo,2024-04-17,Minorista
+C00902,Sofía Martínez,V-9067735,Natural,Caracas,2020-11-19,Minorista
+C00903,Alejandro Vargas,V-11229478,Natural,Caracas,2023-05-24,Minorista
+C00904,Luis Colmenares,V-29993297,Natural,Lechería,2024-06-14,Minorista
+C00905,Isabel Mendoza,V-24084483,Natural,Valencia,2020-12-29,Minorista
+C00906,Luis Mendoza,V-9328079,Natural,Caracas,2020-11-29,Minorista
+C00907,Jesús Salazar,V-24627397,Natural,Maracaibo,2024-12-28,Minorista
+C00908,Daniela Hernández,V-23427057,Natural,Valencia,2019-10-05,Minorista
+C00909,Gabriela Hernández,V-19437725,Natural,Maracaibo,2023-12-15,Minorista
+C00910,Alejandro Medina,V-25145845,Natural,,2021-10-24,Minorista
+C00911,Luis Rojas,V-18090285,Natural,Lechería,2022-12-29,Minorista
+C00912,Jorge Colmenares,V-7957748,Natural,,2025-05-22,Minorista
+C00913,Mariana Salazar,V-16747792,Natural,Caracas,2021-02-16,Minorista
+C00914,Manuel Martínez,V-21436482,Natural,,2022-05-03,Minorista
+C00915,Jesús Silva,V-17845342,Natural,Maracaibo,2022-09-21,Minorista
+C00916,Daniela Colmenares,V-16580974,Natural,Caracas,2020-01-04,Minorista
+C00917,Oscar Pérez,V-15188873,Natural,Ciudad Guayana,2019-05-19,Minorista
+C00918,Luis Hernández,V-20087955,Natural,Valencia,2022-02-20,Minorista
+C00919,Paola Martínez,V-29731421,Natural,Maracaibo,2024-03-09,Minorista
+C00920,Jesús Salazar,V-8902015,Natural,Caracas,2025-03-23,Minorista
+C00921,María García,V-17700167,Natural,Maracaibo,2022-03-30,Minorista
+C00922,Eduardo Castillo,V-14016005,Natural,Barquisimeto,2024-04-02,Minorista
+C00923,Sofía Rojas,V-10216079,Natural,Lechería,2024-04-21,Minorista
+C00924,Héctor Briceño,V-8805113,Natural,Barquisimeto,2024-12-08,Minorista
+C00925,Daniela Sánchez,V-23862865,Natural,Maracaibo,2024-02-14,Minorista
+C00926,Alejandro Colmenares,V-28628883,Natural,Caracas,2024-12-28,Minorista
+C00927,Lucía Torres,V-19462580,Natural,Valencia,2020-09-23,Minorista
+C00928,Elena Colmenares,V-26951012,Natural,Caracas,2020-07-12,Minorista
+C00929,María Díaz,V-16150016,Natural,Barquisimeto,2023-08-01,Minorista
+C00930,Carolina Parra,V-29391033,Natural,Caracas,2021-10-13,Minorista
+C00931,Andrea Pérez,V-20367746,Natural,Lechería,2022-07-27,Minorista
+C00932,Patricia Contreras,V-26673132,Natural,Ciudad Guayana,2022-06-22,Minorista
+C00933,Oscar Vargas,V-14846475,Natural,Caracas,2021-07-13,Minorista
+C00934,Fernanda González,V-13604250,Natural,Ciudad Guayana,2021-07-29,Minorista
+C00935,Rafael García,V-23737639,Natural,Lechería,2022-03-05,Minorista
+C00936,Daniela Medina,V-16954532,Natural,Barquisimeto,2022-08-16,Minorista
+C00937,Patricia Mendoza,V-24696475,Natural,Lechería,2021-08-20,Minorista
+C00938,Luis Sánchez,V-8302088,Natural,Lechería,2022-09-22,Minorista
+C00939,Paola Torres,V-18976636,Natural,Ciudad Guayana,2023-10-30,Minorista
+C00940,Valentina Martínez,V-19682796,Natural,Ciudad Guayana,2022-02-18,Minorista
+C00941,Mariana García,V-6541949,Natural,Barquisimeto,2021-04-27,Minorista
+C00942,Pedro Vargas,V-9372524,Natural,Valencia,2022-01-03,Frecuente
+C00943,Lucía García,V-7440135,Natural,Caracas,2019-03-04,Minorista
+C00944,Jesús López,V-28403980,Natural,Lechería,2020-09-01,Minorista
+C00945,Jesús Castillo,V-17246588,Natural,Caracas,2023-11-20,Minorista
+C00946,Jesús Sánchez,V-24216755,Natural,Valencia,2023-03-15,Frecuente
+C00947,Mariana Rojas,V-18891711,Natural,Caracas,2021-10-03,Minorista
+C00948,Luis Rojas,V-25586029,Natural,Barquisimeto,2020-04-25,Minorista
+C00949,Daniela Salazar,V-30688567,Natural,Caracas,2023-04-20,Minorista
+C00950,Luis Vargas,V-12991682,Natural,Caracas,2024-10-09,Frecuente
+C00951,Pedro Parra,V-29242746,Natural,Caracas,2024-01-18,Minorista
+C00952,Miguel González,V-26364725,Natural,Caracas,2022-07-28,Frecuente
+C00953,Pedro Rodríguez,V-15800211,Natural,Ciudad Guayana,2019-08-15,Minorista
+C00954,Eduardo Vargas,V-12800597,Natural,Maracaibo,2024-08-06,Minorista
+C00955,Paola Salazar,V-21022743,Natural,Lechería,2024-03-27,Minorista
+C00956,Alejandro Hernández,V-7521334,Natural,Caracas,2019-07-07,Minorista
+C00957,Ricardo Ramírez,V-7359326,Natural,Valencia,2022-06-06,Minorista
+C00958,Héctor Mendoza,V-17474948,Natural,Ciudad Guayana,2024-09-18,Minorista
+C00959,Fernanda Rojas,V-25860305,Natural,Valencia,2019-06-27,Minorista
+C00960,Isabel Pérez,V-17656232,Natural,Valencia,2021-12-31,Minorista
+C00961,Jorge Medina,V-18435344,Natural,Caracas,2021-07-09,Minorista
+C00962,Eduardo Sánchez,V-26463878,Natural,Barquisimeto,2023-11-18,Minorista
+C00963,Oscar Martínez,V-13117903,Natural,Caracas,2019-08-23,Minorista
+C00964,Patricia Mendoza,V-10807141,Natural,Valencia,2024-02-10,Minorista
+C00965,José Parra,V-13064385,Natural,Caracas,2019-09-18,Minorista
+C00966,Eduardo Martínez,V-8850441,Natural,Barquisimeto,2019-09-17,Minorista
+C00967,Paola Silva,V-29156341,Natural,Barquisimeto,2021-10-25,Minorista
+C00968,Jorge Martínez,V-29734531,Natural,Barquisimeto,2020-01-07,Minorista
+C00969,Ana Ramírez,V-7569563,Natural,Caracas,2025-05-05,Frecuente
+C00970,Ana Rodríguez,V-9969441,Natural,Valencia,2019-01-17,Minorista
+C00971,Miguel Briceño,V-9734468,Natural,Caracas,2021-05-12,Minorista
+C00972,Elena Vargas,V-26852130,Natural,Lechería,2020-01-12,Minorista
+C00973,Héctor Contreras,V-17372590,Natural,,2022-10-22,Minorista
+C00974,Carolina Medina,V-8222231,Natural,Lechería,2020-01-17,Minorista
+C00975,Manuel Torres,V-10868502,Natural,Maracaibo,2020-07-19,Minorista
+C00976,Pedro Pérez,V-14922606,Natural,Barquisimeto,2022-06-27,Minorista
+C00977,Andrés Ramírez,V-27978983,Natural,Barquisimeto,2023-11-18,Minorista
+C00978,Rafael Bracho,V-29950264,Natural,Lechería,2024-12-30,Frecuente
+C00979,Ana Salazar,V-26425670,Natural,Valencia,2019-12-01,Minorista
+C00980,Oscar Rodríguez,V-31224607,Natural,Lechería,2020-12-31,Minorista
+C00981,Carolina Sánchez,V-22308334,Natural,Barquisimeto,2021-04-12,Minorista
+C00982,Isabel Bracho,V-13716901,Natural,Caracas,2019-04-07,Minorista
+C00983,Carlos Díaz,V-26216727,Natural,Caracas,2021-02-10,Minorista
+C00984,Rafael Mendoza,V-17883418,Natural,Ciudad Guayana,2021-04-13,Minorista
+C00985,Ana Torres,V-10547469,Natural,Ciudad Guayana,2023-12-18,Minorista
+C00986,Ricardo Martínez,V-23962359,Natural,Barquisimeto,2024-03-07,Minorista
+C00987,Fernanda Medina,V-29398403,Natural,Caracas,2019-03-22,Minorista
+C00988,Lucía López,V-17590202,Natural,Maracaibo,2020-03-26,Minorista
+C00989,Carolina Díaz,V-25522871,Natural,Lechería,2022-05-20,Minorista
+C00990,Carolina Salazar,V-31163038,Natural,Ciudad Guayana,2019-01-29,Minorista
+C00991,Pedro González,V-18261975,Natural,Valencia,2021-09-12,Minorista
+C00992,Luis Rojas,V-26097218,Natural,Caracas,2020-04-13,Minorista
+C00993,Lucía Ramírez,V-25499446,Natural,Caracas,2020-10-13,Minorista
+C00994,Jorge Díaz,V-10966646,Natural,Maracaibo,2024-12-09,Minorista
+C00995,José Vargas,V-26289310,Natural,Caracas,2019-06-17,Minorista
+C00996,María Sánchez,V-6578335,Natural,Barquisimeto,2023-08-30,Minorista
+C00997,Jorge López,V-21172679,Natural,Valencia,2019-07-13,Minorista
+C00998,Sofía Pérez,V-27194120,Natural,Caracas,2021-04-11,Minorista
+C00999,María Contreras,V-23008803,Natural,Valencia,2024-06-10,Frecuente
+C01000,Daniela Martínez,V-24123534,Natural,Caracas,2025-01-30,Minorista
+C01001,Ricardo Silva,V-20758544,Natural,Lechería,2022-01-17,Minorista
+C01002,Daniela Bracho,V-6098728,Natural,Caracas,2023-09-15,Minorista
+C01003,Isabel Sánchez,V-21565491,Natural,Ciudad Guayana,2023-08-30,Minorista
+C01004,Ana Díaz,V-28463208,Natural,Lechería,2024-02-28,Frecuente
+C01005,Mariana Contreras,V-23302019,Natural,Caracas,2022-09-11,Minorista
+C01006,José Ramírez,V-29952874,Natural,Barquisimeto,2022-04-20,Minorista
+C01007,Miguel Castillo,V-16460837,Natural,Maracaibo,2021-03-31,Minorista
+C01008,Daniela Ramírez,V-10053490,Natural,Caracas,2025-03-02,Minorista
+C01009,Manuel Rodríguez,V-24676221,Natural,Maracaibo,2020-01-08,Minorista
+C01010,Fernanda Bracho,V-8973763,Natural,Maracaibo,2019-03-06,Minorista
+C01011,Andrea Medina,V-18892140,Natural,Lechería,2023-10-25,Minorista
+C01012,Oscar Pérez,V-25130485,Natural,Barquisimeto,2024-03-31,Minorista
+C01013,Lucía Ramírez,V-6019082,Natural,Barquisimeto,2023-12-01,Minorista
+C01014,Pedro Sánchez,V-10829509,Natural,Valencia,2024-03-05,Minorista
+C01015,Andrés González,V-12139066,Natural,Barquisimeto,2025-06-26,Minorista
+C01016,Pedro Sánchez,V-21024207,Natural,Caracas,2023-10-29,Minorista
+C01017,Gabriela Ramírez,V-12996422,Natural,Maracaibo,2022-11-07,Frecuente
+C01018,Daniela Sánchez,V-12389657,Natural,Barquisimeto,2021-07-02,Minorista
+C01019,María Rojas,V-21031887,Natural,Maracaibo,2022-06-25,Minorista
+C01020,Andrés Mendoza,V-6014339,Natural,Ciudad Guayana,2023-09-28,Minorista
+C01021,Paola Martínez,V-30191142,Natural,Caracas,2023-04-08,Frecuente
+C01022,Andrea Vargas,V-29138735,Natural,Barquisimeto,2019-12-27,Minorista
+C01023,Eduardo Morales,V-12171121,Natural,Barquisimeto,2020-07-24,Frecuente
+C01024,Miguel Rodríguez,V-29790769,Natural,Maracaibo,2022-11-23,Minorista
+C01025,Mariana García,V-16501551,Natural,Ciudad Guayana,2021-11-06,Minorista
+C01026,José Parra,V-13997169,Natural,Caracas,2021-11-27,Frecuente
+C01027,Ricardo Sánchez,V-6930216,Natural,Maracaibo,2025-04-16,Minorista
+C01028,Sofía Torres,V-20333932,Natural,Valencia,2021-12-30,Minorista
+C01029,Gabriela González,V-24096300,Natural,Ciudad Guayana,2021-10-09,Minorista
+C01030,José Vargas,V-9222165,Natural,Valencia,2025-01-19,Minorista
+C01031,Alejandro García,V-31266646,Natural,Valencia,2020-08-27,Minorista
+C01032,Andrés Morales,V-9891260,Natural,Caracas,2025-04-26,Minorista
+C01033,Pedro Castillo,V-22317415,Natural,Maracaibo,2021-07-12,Minorista
+C01034,Andrés Briceño,V-19095551,Natural,Caracas,2022-02-12,Minorista
+C01035,Lucía Martínez,V-22856228,Natural,Barquisimeto,2020-07-07,Minorista
+C01036,Ana Díaz,V-12489392,Natural,Valencia,2024-09-22,Minorista
+C01037,Oscar Medina,V-20661379,Natural,Valencia,2023-10-16,Minorista
+C01038,José González,V-22069476,Natural,Caracas,2021-08-29,Minorista
+C01039,Alejandro Rodríguez,V-30948509,Natural,Ciudad Guayana,2024-01-28,Minorista
+C01040,Oscar Sánchez,V-14035623,Natural,Lechería,2024-12-18,Minorista
+C01041,Patricia Rodríguez,V-23485929,Natural,Valencia,2020-08-31,Minorista
+C01042,Ricardo Martínez,V-31715824,Natural,Caracas,2024-05-20,Minorista
+C01043,María Contreras,V-24279039,Natural,Valencia,2020-10-23,Minorista
+C01044,Valentina Rodríguez,V-30229537,Natural,Ciudad Guayana,2022-06-10,Minorista
+C01045,Eduardo Rojas,V-17316524,Natural,Caracas,2022-06-05,Minorista
+C01046,Miguel González,V-8102239,Natural,Caracas,2025-05-07,Minorista
+C01047,José Torres,V-14134230,Natural,Valencia,2022-02-28,Minorista
+C01048,Gabriela Bracho,V-29457707,Natural,Ciudad Guayana,2024-04-18,Frecuente
+C01049,Paola Medina,V-13978956,Natural,Valencia,2022-07-31,Minorista
+C01050,Jesús Castillo,V-6643383,Natural,Caracas,2019-05-14,Minorista
+C01051,Daniela Medina,V-11310963,Natural,Caracas,2021-09-18,Minorista
+C01052,Pedro López,V-9197930,Natural,Maracaibo,2022-09-25,Minorista
+C01053,Gabriela García,V-21761541,Natural,Lechería,2023-02-28,Minorista
+C01054,Sofía Rodríguez,V-30865471,Natural,Caracas,2020-01-13,Minorista
+C01055,Patricia Medina,V-20219832,Natural,Caracas,2025-02-11,Minorista
+C01056,José García,V-21165729,Natural,Valencia,2021-10-19,Minorista
+C01057,Carolina González,V-22096579,Natural,Caracas,2022-01-21,Minorista
+C01058,Luis Castillo,V-14146179,Natural,Ciudad Guayana,2021-05-23,Minorista
+C01059,Lucía Contreras,V-6413410,Natural,Valencia,2023-11-21,Minorista
+C01060,Pedro Vargas,V-9094867,Natural,Caracas,2019-09-09,Minorista
+C01061,María Vargas,V-27099375,Natural,Lechería,2020-06-25,Frecuente
+C01062,Carolina Bracho,V-24557628,Natural,Maracaibo,2019-09-07,Frecuente
+C01063,Miguel Parra,V-24193827,Natural,Valencia,2021-10-11,Frecuente
+C01064,José Bracho,V-18199837,Natural,Valencia,2021-08-14,Minorista
+C01065,Isabel Rojas,V-28920225,Natural,Lechería,2019-06-29,Minorista
+C01066,Gabriela Salazar,V-13849629,Natural,Valencia,2021-09-07,Minorista
+C01067,Ana Castillo,V-28113203,Natural,Ciudad Guayana,2019-05-21,Minorista
+C01068,Daniela Morales,V-12619669,Natural,Caracas,2021-12-27,Minorista
+C01069,Mariana Medina,V-13712498,Natural,Caracas,2023-01-09,Minorista
+C01070,Fernanda González,V-31419361,Natural,Ciudad Guayana,2025-05-07,Minorista
+C01071,Jesús Medina,V-18458974,Natural,Maracaibo,2020-07-05,Frecuente
+C01072,Alejandro Díaz,V-10616988,Natural,Caracas,2022-08-29,Minorista
+C01073,Lucía Urdaneta,V-26487238,Natural,Caracas,2021-06-23,Minorista
+C01074,Eduardo Rodríguez,V-8589515,Natural,Valencia,2020-01-15,Frecuente
+C01075,Ana Bracho,V-11442233,Natural,Caracas,2022-04-01,Minorista
+C01076,Eduardo Salazar,V-24817990,Natural,Barquisimeto,2021-01-18,Frecuente
+C01077,Daniela Castillo,V-18528614,Natural,Maracaibo,2024-05-16,Minorista
+C01078,Patricia Morales,V-24835920,Natural,Lechería,2025-06-20,Minorista
+C01079,Manuel Pérez,V-14153606,Natural,Lechería,2024-10-21,Minorista
+C01080,Rafael Rodríguez,V-19520594,Natural,Barquisimeto,2024-02-13,Minorista
+C01081,Ana Mendoza,V-24176117,Natural,Maracaibo,2019-07-16,Minorista
+C01082,Andrés Urdaneta,V-7477059,Natural,Valencia,2024-07-28,Minorista
+C01083,Valentina Pérez,V-14650200,Natural,Caracas,2023-09-10,Minorista
+C01084,Jesús Hernández,V-6130271,Natural,Lechería,2021-08-01,Minorista
+C01085,Alejandro Parra,V-11129774,Natural,Ciudad Guayana,2019-06-14,Minorista
+C01086,Valentina Hernández,V-9149268,Natural,Maracaibo,2022-10-02,Minorista
+C01087,José García,V-13307658,Natural,Ciudad Guayana,2020-08-30,Minorista
+C01088,Elena Vargas,V-17696111,Natural,Caracas,2025-06-24,Minorista
+C01089,Pedro Pérez,V-30728440,Natural,Ciudad Guayana,2019-09-15,Minorista
+C01090,Pedro Colmenares,V-25753748,Natural,Caracas,2024-08-19,Minorista
+C01091,Jesús Martínez,V-19068273,Natural,Ciudad Guayana,2021-10-11,Minorista
+C01092,Elena Martínez,V-30090608,Natural,Caracas,2021-03-22,Minorista
+C01093,María Briceño,V-18677683,Natural,Maracaibo,2025-04-27,Minorista
+C01094,Manuel Bracho,V-27318569,Natural,Lechería,2024-08-05,Frecuente
+C01095,Isabel Castillo,V-19325812,Natural,Ciudad Guayana,2020-04-20,Minorista
+C01096,Andrea Rojas,V-25927638,Natural,Maracaibo,2019-01-04,Minorista
+C01097,José García,V-24503240,Natural,Valencia,2025-05-31,Minorista
+C01098,Ricardo González,V-20297888,Natural,Maracaibo,2022-07-09,Minorista
+C01099,Fernanda Urdaneta,V-31704564,Natural,Caracas,2021-03-05,Minorista
+C01100,Ana Martínez,V-23779533,Natural,Barquisimeto,2022-12-27,Minorista
+C01101,Eduardo Díaz,V-24215496,Natural,Maracaibo,2021-12-19,Minorista
+C01102,Manuel Bracho,V-27230785,Natural,Caracas,2022-03-22,Minorista
+C01103,Carlos Vargas,V-17092922,Natural,Ciudad Guayana,2019-11-15,Minorista
+C01104,Miguel Castillo,V-13997741,Natural,Ciudad Guayana,2024-01-20,Minorista
+C01105,Miguel Díaz,V-20524872,Natural,Lechería,2024-12-29,Minorista
+C01106,José Vargas,V-13774850,Natural,Caracas,2020-04-23,Minorista
+C01107,José Sánchez,V-8678966,Natural,Caracas,2022-12-29,Minorista
+C01108,Daniela Contreras,V-12856696,Natural,Caracas,2022-08-30,Minorista
+C01109,Valentina Medina,V-23696057,Natural,Lechería,2023-12-05,Frecuente
+C01110,Fernanda Sánchez,V-21604057,Natural,Caracas,2024-04-17,Frecuente
+C01111,Jesús Pérez,V-19062525,Natural,Valencia,2023-09-07,Minorista
+C01112,Sofía Ramírez,V-19095415,Natural,Ciudad Guayana,2022-10-09,Minorista
+C01113,Patricia González,V-27287702,Natural,Ciudad Guayana,2025-01-12,Minorista
+C01114,Eduardo Rojas,V-29604579,Natural,Caracas,2023-02-08,Minorista
+C01115,Elena Díaz,V-24347114,Natural,Caracas,2020-10-05,Minorista
+C01116,Luis Contreras,V-23689702,Natural,Lechería,2023-07-17,Frecuente
+C01117,Carlos Díaz,V-22734276,Natural,Caracas,2020-03-30,Minorista
+C01118,Jesús Mendoza,V-26913755,Natural,Lechería,2022-01-12,Minorista
+C01119,Ricardo Ramírez,V-16923769,Natural,Caracas,2019-10-03,Minorista
+C01120,Oscar Martínez,V-9953068,Natural,Barquisimeto,2021-05-10,Minorista
+C01121,Carlos Rojas,V-27262938,Natural,Ciudad Guayana,2021-06-21,Minorista
+C01122,Mariana Rojas,V-10615261,Natural,Barquisimeto,2021-04-10,Minorista
+C01123,Sofía Morales,V-20937643,Natural,Maracaibo,2021-08-23,Minorista
+C01124,Alejandro Contreras,V-27785226,Natural,Ciudad Guayana,2025-01-05,Minorista
+C01125,Oscar Pérez,V-24292730,Natural,Valencia,2020-10-03,Minorista
+C01126,Lucía Martínez,V-27681374,Natural,Maracaibo,2024-09-14,Minorista
+C01127,Mariana Pérez,V-28307154,Natural,Caracas,2020-10-13,Minorista
+C01128,María Ramírez,V-14836362,Natural,Barquisimeto,2023-01-15,Minorista
+C01129,Héctor Ramírez,V-7087992,Natural,Lechería,2024-06-12,Minorista
+C01130,Elena Martínez,V-30936683,Natural,,2023-08-10,Frecuente
+C01131,Pedro Morales,V-7152244,Natural,Caracas,2024-04-30,Minorista
+C01132,Carolina Salazar,V-31041299,Natural,Maracaibo,2021-12-28,Minorista
+C01133,Elena López,V-31956989,Natural,Barquisimeto,2020-01-01,Minorista
+C01134,Carolina Parra,V-15959856,Natural,Maracaibo,2025-04-19,Minorista
+C01135,Miguel Martínez,V-10765732,Natural,Ciudad Guayana,2019-03-06,Minorista
+C01136,Elena Briceño,V-11572052,Natural,Ciudad Guayana,2021-08-22,Minorista
+C01137,Andrea García,V-25278692,Natural,Valencia,2020-04-23,Minorista
+C01138,Paola Ramírez,V-19294278,Natural,Caracas,2021-11-24,Minorista
+C01139,Carolina Morales,V-19534556,Natural,Caracas,2020-02-01,Minorista
+C01140,Carolina Torres,V-18642331,Natural,Ciudad Guayana,2024-07-25,Minorista
+C01141,Mariana Hernández,V-14553145,Natural,Caracas,2021-12-26,Minorista
+C01142,Patricia Colmenares,V-8535919,Natural,Caracas,2021-08-26,Minorista
+C01143,Ricardo Díaz,V-12184314,Natural,Caracas,2025-04-05,Minorista
+C01144,Andrés Pérez,V-21479778,Natural,Caracas,2019-06-25,Frecuente
+C01145,Patricia Sánchez,V-26654403,Natural,Valencia,2021-11-05,Minorista
+C01146,José Salazar,V-21843102,Natural,Lechería,2024-11-16,Minorista
+C01147,Andrea López,V-13721755,Natural,Barquisimeto,2023-04-03,Minorista
+C01148,Sofía López,V-27967370,Natural,Maracaibo,2025-04-30,Minorista
+C01149,Alejandro Rodríguez,V-17451077,Natural,Barquisimeto,2024-07-29,Frecuente
+C01150,Luis Ramírez,V-11266481,Natural,Valencia,2023-10-06,Minorista
+C01151,Sofía García,V-30262556,Natural,Maracaibo,2024-03-06,Frecuente
+C01152,Ana Castillo,V-10294237,Natural,Caracas,2024-02-26,Frecuente
+C01153,Pedro Rodríguez,V-16504334,Natural,Lechería,2020-07-18,Frecuente
+C01154,Fernanda Urdaneta,V-31975912,Natural,Caracas,2020-01-29,Frecuente
+C01155,Pedro Urdaneta,V-22943845,Natural,Maracaibo,2022-04-16,Premium
+C01156,Patricia Martínez,V-15348278,Natural,Lechería,2021-06-05,Frecuente
+C01157,Ana Pérez,V-26427816,Natural,Valencia,2019-10-29,Frecuente
+C01158,Andrea Pérez,V-30402286,Natural,Lechería,2020-02-23,Minorista
+C01159,Jorge Colmenares,V-17019809,Natural,Caracas,2022-10-28,Frecuente
+C01160,Sofía Contreras,V-17285388,Natural,Barquisimeto,2019-05-26,Frecuente
+C01161,Alejandro Rojas,V-11334944,Natural,Maracaibo,2023-02-07,Frecuente
+C01162,Oscar Vargas,V-30859332,Natural,Lechería,2024-11-03,Frecuente
+C01163,Eduardo Salazar,V-29762808,Natural,Maracaibo,2025-04-16,Frecuente
+C01164,Gabriela Briceño,V-21434849,Natural,Valencia,2024-04-06,Frecuente
+C01165,Fernanda Contreras,V-21584924,Natural,Caracas,2022-02-07,Frecuente
+C01166,Andrés Morales,V-29480490,Natural,Lechería,2019-08-26,Minorista
+C01167,Mariana Parra,V-28527347,Natural,Barquisimeto,2023-12-27,Frecuente
+C01168,Pedro Urdaneta,V-17175522,Natural,Barquisimeto,2024-03-24,Frecuente
+C01169,Oscar Vargas,V-28836976,Natural,Maracaibo,2019-09-16,Frecuente
+C01170,Andrés Martínez,V-15510587,Natural,Lechería,2023-12-09,Premium
+C01171,Mariana Salazar,V-13445647,Natural,Maracaibo,2020-03-21,Frecuente
+C01172,Rafael Hernández,V-10725561,Natural,Caracas,2022-08-16,Premium
+C01173,Jesús Salazar,V-11465734,Natural,Ciudad Guayana,2024-06-13,Frecuente
+C01174,Héctor Pérez,V-23869286,Natural,Valencia,2023-01-21,Frecuente
+C01175,Isabel Bracho,V-27784851,Natural,Lechería,2022-10-23,Minorista
+C01176,José Silva,V-17621783,Natural,Ciudad Guayana,2024-07-26,Frecuente
+C01177,Eduardo Parra,V-13082938,Natural,Lechería,2019-03-19,Frecuente
+C01178,Luis Urdaneta,V-22226582,Natural,Lechería,2022-01-10,Frecuente
+C01179,Mariana Medina,V-22798977,Natural,Maracaibo,2019-02-15,Frecuente
+C01180,Oscar Vargas,V-23947071,Natural,Maracaibo,2022-11-13,Frecuente
+C01181,Héctor Díaz,V-20386591,Natural,Maracaibo,2024-02-14,Minorista
+C01182,Oscar Rojas,V-14448549,Natural,Barquisimeto,2020-11-27,Frecuente
+C01183,Lucía Castillo,V-27263308,Natural,Ciudad Guayana,2024-11-26,Frecuente
+C01184,Fernanda Parra,V-16676439,Natural,Lechería,2022-10-17,Frecuente
+C01185,Miguel Parra,V-15847323,Natural,Caracas,2019-03-25,Frecuente
+C01186,Luis Bracho,V-21063327,Natural,Caracas,2020-08-13,Frecuente
+C01187,Jesús Briceño,V-28228524,Natural,Caracas,2025-04-05,Minorista
+C01188,Fernanda Martínez,V-24361815,Natural,Barquisimeto,2020-01-15,Frecuente
+C01189,Gabriela Vargas,V-25916486,Natural,Lechería,2023-05-23,Frecuente
+C01190,Jesús Castillo,V-27361513,Natural,Barquisimeto,2019-06-14,Frecuente
+C01191,Paola González,V-22347089,Natural,Caracas,2021-12-23,Premium
+C01192,Gabriela Castillo,V-27945114,Natural,Lechería,2019-11-12,Frecuente
+C01193,Oscar Rodríguez,V-20601859,Natural,Barquisimeto,2019-04-11,Frecuente
+C01194,Carolina Martínez,V-10835017,Natural,Ciudad Guayana,2020-02-02,Premium
+C01195,Carlos Mendoza,V-17347600,Natural,Caracas,2020-07-14,Frecuente
+C01196,Ana Salazar,V-29962359,Natural,Barquisimeto,2022-03-29,Frecuente
+C01197,Rafael Ramírez,V-23821858,Natural,Maracaibo,2024-08-19,Frecuente
+C01198,Lucía Parra,V-19196064,Natural,Valencia,2019-02-04,Premium
+C01199,Miguel Hernández,V-10143603,Natural,Caracas,2020-03-12,Frecuente
+C01200,Miguel Medina,V-17129864,Natural,Caracas,2023-05-12,Frecuente
+C01201,Fernanda Salazar,V-27265749,Natural,Caracas,2022-05-17,Premium
+C01202,Isabel Briceño,V-6537377,Natural,Lechería,2023-07-16,Frecuente
+C01203,Valentina Castillo,V-13436009,Natural,Maracaibo,2024-11-12,Frecuente
+C01204,Andrés Medina,V-26158160,Natural,Caracas,2022-10-03,Minorista
+C01205,Valentina Morales,V-7326505,Natural,Lechería,2020-06-28,Frecuente
+C01206,José García,V-9747174,Natural,Caracas,2020-01-11,Frecuente
+C01207,Gabriela Ramírez,V-14849609,Natural,Caracas,2019-04-01,Frecuente
+C01208,Alejandro Medina,V-9334958,Natural,Caracas,2025-01-21,Premium
+C01209,Manuel Torres,V-25364662,Natural,Maracaibo,2023-02-28,Premium
+C01210,Elena Salazar,V-13582038,Natural,Lechería,2019-01-15,Frecuente
+C01211,Isabel Ramírez,V-14327976,Natural,Caracas,2020-06-21,Frecuente
+C01212,Miguel Morales,V-11836380,Natural,Lechería,2021-09-24,Frecuente
+C01213,Andrea López,V-13884500,Natural,Barquisimeto,2019-10-22,Frecuente
+C01214,Eduardo Pérez,V-22545321,Natural,Caracas,2019-03-23,Frecuente
+C01215,Miguel Vargas,V-7813594,Natural,Maracaibo,2021-05-28,Frecuente
+C01216,Alejandro Parra,V-19955523,Natural,Caracas,2022-01-30,Frecuente
+C01217,Andrea Sánchez,V-9662671,Natural,Lechería,2020-03-27,Frecuente
+C01218,Gabriela Hernández,V-25672472,Natural,Caracas,2019-11-08,Minorista
+C01219,Andrés García,V-6335789,Natural,Valencia,2022-04-24,Frecuente
+C01220,Luis Silva,V-13614397,Natural,Ciudad Guayana,2024-04-19,Frecuente
+C01221,Ricardo Ramírez,V-10380265,Natural,Caracas,2024-03-09,Frecuente
+C01222,Andrés Martínez,V-27100909,Natural,Maracaibo,2021-09-21,Premium
+C01223,Carlos Contreras,V-28420347,Natural,Valencia,2020-07-18,Premium
+C01224,Héctor Torres,V-22928863,Natural,Caracas,2022-09-02,Frecuente
+C01225,Héctor Sánchez,V-15311182,Natural,Maracaibo,2019-12-09,Frecuente
+C01226,Andrea Colmenares,V-18468140,Natural,Valencia,2025-01-30,Frecuente
+C01227,Elena Urdaneta,V-14534743,Natural,Caracas,2025-02-10,Frecuente
+C01228,Oscar Sánchez,V-11239602,Natural,Valencia,2025-03-28,Frecuente
+C01229,Daniela Vargas,V-13990289,Natural,Valencia,2021-11-19,Frecuente
+C01230,Oscar Morales,V-20114639,Natural,Caracas,2021-04-01,Frecuente
+C01231,Lucía Parra,V-29852453,Natural,Caracas,2020-12-22,Frecuente
+C01232,Manuel Medina,V-19422622,Natural,Barquisimeto,2023-03-15,Frecuente
+C01233,Héctor Urdaneta,V-26927497,Natural,Barquisimeto,2024-10-01,Frecuente
+C01234,Oscar Martínez,V-29356254,Natural,Lechería,2023-07-14,Frecuente
+C01235,Andrea López,V-23190513,Natural,Ciudad Guayana,2021-07-31,Frecuente
+C01236,Sofía Martínez,V-14274382,Natural,Ciudad Guayana,2019-01-26,Frecuente
+C01237,Elena Castillo,V-7513957,Natural,Barquisimeto,2025-01-21,Frecuente
+C01238,Oscar Hernández,V-24240503,Natural,Caracas,2021-10-22,Frecuente
+C01239,Pedro Medina,V-12673633,Natural,Caracas,2022-05-04,Frecuente
+C01240,José Rodríguez,V-10913661,Natural,Barquisimeto,2020-06-25,Frecuente
+C01241,Oscar Martínez,V-6080161,Natural,Caracas,2024-03-24,Frecuente
+C01242,Elena Mendoza,V-26813457,Natural,Maracaibo,2021-05-07,Frecuente
+C01243,Manuel Salazar,V-28392720,Natural,Lechería,2019-12-08,Frecuente
+C01244,José Parra,V-12862219,Natural,Maracaibo,2019-05-30,Frecuente
+C01245,Jorge Morales,V-6925358,Natural,Valencia,2019-09-17,Premium
+C01246,Rafael Urdaneta,V-17299360,Natural,Caracas,2020-07-26,Frecuente
+C01247,María Bracho,V-15326204,Natural,Caracas,2022-10-27,Frecuente
+C01248,Jorge Torres,V-21670468,Natural,Lechería,2023-01-14,Frecuente
+C01249,Héctor Castillo,V-16110675,Natural,Lechería,2024-05-13,Premium
+C01250,Lucía Pérez,V-29256947,Natural,Ciudad Guayana,2022-06-09,Frecuente
+C01251,Luis Rojas,V-9367525,Natural,Caracas,2024-08-17,Frecuente
+C01252,Valentina Martínez,V-26896001,Natural,Caracas,2021-07-13,Frecuente
+C01253,Manuel Morales,V-7471776,Natural,Ciudad Guayana,2023-07-26,Frecuente
+C01254,Ricardo Torres,V-22668442,Natural,Lechería,2021-10-13,Frecuente
+C01255,Rafael Castillo,V-26984852,Natural,Caracas,2023-01-27,Frecuente
+C01256,Jorge Morales,V-21370877,Natural,Caracas,2020-08-16,Frecuente
+C01257,Pedro González,V-16278270,Natural,Lechería,2020-06-11,Frecuente
+C01258,Isabel Pérez,V-14696997,Natural,Caracas,2021-07-18,Frecuente
+C01259,Fernanda Torres,V-25183375,Natural,Barquisimeto,2021-04-20,Frecuente
+C01260,Héctor Silva,V-18905751,Natural,Barquisimeto,2020-09-12,Premium
+C01261,Valentina Urdaneta,V-29282536,Natural,Caracas,2019-07-26,Frecuente
+C01262,María Mendoza,V-18492660,Natural,Lechería,2021-07-23,Frecuente
+C01263,Isabel Rodríguez,V-10439360,Natural,Barquisimeto,2019-10-03,Frecuente
+C01264,Carolina Castillo,V-8289820,Natural,Lechería,2025-02-27,Frecuente
+C01265,Paola Torres,V-31002190,Natural,Caracas,2019-07-21,Premium
+C01266,Carolina Rodríguez,V-31749076,Natural,Lechería,2020-01-03,Frecuente
+C01267,Ana Sánchez,V-12307287,Natural,Lechería,2019-06-05,Frecuente
+C01268,Lucía Morales,V-18781059,Natural,Ciudad Guayana,2023-03-08,Frecuente
+C01269,Carolina García,V-27376272,Natural,Caracas,2021-01-11,Frecuente
+C01270,Elena Bracho,V-15545533,Natural,,2024-09-02,Premium
+C01271,Miguel Salazar,V-30849632,Natural,Ciudad Guayana,2021-09-13,Frecuente
+C01272,Alejandro Martínez,V-31185485,Natural,Maracaibo,2023-11-04,Frecuente
+C01273,Valentina Sánchez,V-21899031,Natural,Caracas,2023-06-04,Frecuente
+C01274,Jorge Silva,V-31041093,Natural,Caracas,2023-03-31,Minorista
+C01275,Miguel Salazar,V-18153883,Natural,Ciudad Guayana,2022-07-20,Frecuente
+C01276,Fernanda Pérez,V-10487593,Natural,Valencia,2021-10-11,Frecuente
+C01277,Fernanda Martínez,V-6028444,Natural,Caracas,2023-01-27,Frecuente
+C01278,Oscar Morales,V-17034650,Natural,Valencia,2025-06-15,Frecuente
+C01279,Daniela Rodríguez,V-24416175,Natural,Barquisimeto,2023-11-08,Minorista
+C01280,Isabel Bracho,V-25400271,Natural,Ciudad Guayana,2021-03-08,Premium
+C01281,José Mendoza,V-13891102,Natural,Lechería,2020-03-30,Premium
+C01282,Sofía Rojas,V-6595318,Natural,Caracas,2019-11-28,Frecuente
+C01283,Oscar Bracho,V-8059798,Natural,Barquisimeto,2019-01-12,Frecuente
+C01284,María Torres,V-10833416,Natural,Caracas,2023-07-25,Frecuente
+C01285,Luis Díaz,V-31692465,Natural,Ciudad Guayana,2020-01-08,Frecuente
+C01286,Luis Díaz,V-13511383,Natural,Caracas,2019-10-05,Frecuente
+C01287,Eduardo López,V-17601674,Natural,Caracas,2024-01-15,Frecuente
+C01288,Eduardo Vargas,V-28416671,Natural,Ciudad Guayana,2021-12-27,Minorista
+C01289,José Rojas,V-31650695,Natural,Maracaibo,2021-08-30,Frecuente
+C01290,José Salazar,V-7792006,Natural,Valencia,2025-02-12,Frecuente
+C01291,Daniela López,V-25804545,Natural,Maracaibo,2025-03-30,Frecuente
+C01292,Luis Medina,V-14339964,Natural,Maracaibo,2025-05-17,Premium
+C01293,Lucía Rojas,V-21535324,Natural,Caracas,2024-08-04,Frecuente
+C01294,Fernanda Rojas,V-15942533,Natural,Caracas,2021-12-04,Frecuente
+C01295,Sofía Parra,V-16113732,Natural,Valencia,2022-09-07,Frecuente
+C01296,Manuel Urdaneta,V-28184798,Natural,Valencia,2019-02-09,Frecuente
+C01297,Héctor Vargas,V-27954189,Natural,Caracas,2019-05-08,Frecuente
+C01298,Rafael Vargas,V-16926387,Natural,Caracas,2021-10-21,Premium
+C01299,Pedro Mendoza,V-27111272,Natural,Caracas,2019-09-08,Frecuente
+C01300,José Castillo,V-20439272,Natural,Ciudad Guayana,2020-09-20,Premium
+C01301,Oscar Contreras,V-7301257,Natural,Caracas,2025-05-27,Frecuente
+C01302,Fernanda Morales,V-10497017,Natural,Caracas,2023-11-24,Frecuente
+C01303,Paola Díaz,V-22438086,Natural,Caracas,2022-10-31,Frecuente
+C01304,Andrea Urdaneta,V-14624931,Natural,Valencia,2020-03-03,Frecuente
+C01305,Gabriela Salazar,V-18733468,Natural,Lechería,2021-09-18,Frecuente
+C01306,Andrea Pérez,V-22830773,Natural,Caracas,2023-10-13,Frecuente
+C01307,Jorge Ramírez,V-24581481,Natural,Barquisimeto,2024-12-14,Frecuente
+C01308,Mariana Hernández,V-20843095,Natural,Caracas,2023-07-15,Frecuente
+C01309,Valentina Sánchez,V-26575757,Natural,Maracaibo,2024-03-01,Frecuente
+C01310,Luis Briceño,V-19353773,Natural,Caracas,2023-12-24,Frecuente
+C01311,Ana Castillo,V-25664496,Natural,Caracas,2020-11-23,Frecuente
+C01312,María Contreras,V-8052293,Natural,Caracas,2024-11-01,Frecuente
+C01313,Carlos López,V-17596073,Natural,Caracas,2022-08-03,Frecuente
+C01314,Elena Salazar,V-30083445,Natural,Ciudad Guayana,2022-06-27,Frecuente
+C01315,Eduardo Medina,V-22086490,Natural,Caracas,2023-04-22,Premium
+C01316,Gabriela Contreras,V-29110674,Natural,Ciudad Guayana,2021-03-18,Frecuente
+C01317,Andrea Pérez,V-7880536,Natural,Lechería,2022-02-07,Premium
+C01318,Eduardo Castillo,V-16000772,Natural,Maracaibo,2020-09-01,Frecuente
+C01319,Andrés Colmenares,V-8875471,Natural,Valencia,2024-10-26,Frecuente
+C01320,Andrea López,V-22845293,Natural,Ciudad Guayana,2024-03-05,Premium
+C01321,Lucía Hernández,V-21112871,Natural,Caracas,2019-04-06,Frecuente
+C01322,Patricia Torres,V-12913432,Natural,Lechería,2024-04-14,Frecuente
+C01323,Sofía Pérez,V-10623090,Natural,Maracaibo,2019-12-25,Frecuente
+C01324,Patricia Mendoza,V-29572417,Natural,Maracaibo,2020-02-10,Frecuente
+C01325,Rafael Contreras,V-6236648,Natural,Lechería,2023-02-14,Premium
+C01326,Ana Sánchez,V-12953668,Natural,Caracas,2021-11-05,Premium
+C01327,Carolina Parra,V-26270132,Natural,Barquisimeto,2020-10-30,Frecuente
+C01328,Patricia Parra,V-17612522,Natural,Barquisimeto,2020-05-31,Frecuente
+C01329,Daniela Vargas,V-21296327,Natural,Caracas,2021-04-09,Frecuente
+C01330,Eduardo Briceño,V-11058011,Natural,Lechería,2022-10-24,Frecuente
+C01331,Manuel Rojas,V-12695940,Natural,Caracas,2023-09-18,Frecuente
+C01332,Rafael Mendoza,V-28276898,Natural,Ciudad Guayana,2024-09-28,Frecuente
+C01333,Pedro Urdaneta,V-14669541,Natural,Valencia,2023-06-29,Frecuente
+C01334,María Vargas,V-26834220,Natural,Caracas,2019-12-05,Frecuente
+C01335,Andrea Parra,V-21383513,Natural,Barquisimeto,2021-02-15,Premium
+C01336,Ana Urdaneta,V-21916839,Natural,Barquisimeto,2022-05-31,Premium
+C01337,Jesús Vargas,V-8592355,Natural,Ciudad Guayana,2022-04-12,Frecuente
+C01338,Patricia González,V-6485679,Natural,Barquisimeto,2024-07-28,Frecuente
+C01339,Valentina Parra,V-13286948,Natural,Lechería,2023-01-10,Frecuente
+C01340,José Contreras,V-19659999,Natural,Valencia,2024-05-02,Frecuente
+C01341,Daniela Rodríguez,V-17247284,Natural,Lechería,2019-03-10,Premium
+C01342,Héctor Díaz,V-8817127,Natural,Barquisimeto,2021-08-17,Frecuente
+C01343,Paola Pérez,V-26588351,Natural,Ciudad Guayana,2021-03-10,Frecuente
+C01344,Lucía Pérez,V-20917503,Natural,Caracas,2021-04-13,Frecuente
+C01345,Ana González,V-7851421,Natural,Maracaibo,2021-09-12,Frecuente
+C01346,Gabriela Briceño,V-10034814,Natural,Maracaibo,2025-04-19,Frecuente
+C01347,Sofía Sánchez,V-29067979,Natural,Maracaibo,2024-07-23,Frecuente
+C01348,Eduardo Torres,V-21471643,Natural,Caracas,2022-10-26,Frecuente
+C01349,Miguel García,V-7671161,Natural,Ciudad Guayana,2025-05-13,Premium
+C01350,Luis Urdaneta,V-18064824,Natural,Maracaibo,2021-03-21,Frecuente
+C01351,Patricia Ramírez,V-10176303,Natural,Lechería,2020-05-12,Frecuente
+C01352,Jorge Rojas,V-11985076,Natural,Barquisimeto,2021-05-22,Frecuente
+C01353,Mariana Bracho,V-16078244,Natural,Barquisimeto,2021-07-03,Premium
+C01354,Isabel Rodríguez,V-29857219,Natural,Caracas,2024-05-26,Frecuente
+C01355,Manuel García,V-7431222,Natural,Ciudad Guayana,2020-05-20,Premium
+C01356,Elena Parra,V-18359670,Natural,Valencia,2023-02-11,Frecuente
+C01357,Andrea Vargas,V-17732885,Natural,Caracas,2023-05-05,Frecuente
+C01358,Gabriela Vargas,V-13424307,Natural,Ciudad Guayana,2020-07-15,Frecuente
+C01359,Alejandro López,V-15662094,Natural,Maracaibo,2024-12-08,Frecuente
+C01360,Carolina Urdaneta,V-13075788,Natural,Lechería,2023-01-15,Frecuente
+C01361,Carolina Bracho,V-22564694,Natural,Caracas,2020-10-05,Frecuente
+C01362,Eduardo Hernández,V-22564365,Natural,Barquisimeto,2020-10-02,Premium
+C01363,Jorge Parra,V-21455113,Natural,Barquisimeto,2019-11-21,Frecuente
+C01364,Rafael González,V-20417220,Natural,Caracas,2022-09-14,Frecuente
+C01365,Valentina Martínez,V-21225520,Natural,Caracas,2019-05-05,Minorista
+C01366,Valentina Contreras,V-8110827,Natural,Barquisimeto,2024-03-16,Frecuente
+C01367,Ricardo García,V-30176226,Natural,Barquisimeto,2020-11-18,Frecuente
+C01368,Manuel Rojas,V-26911355,Natural,Valencia,2024-12-16,Frecuente
+C01369,Elena López,V-28075224,Natural,Caracas,2019-09-20,Frecuente
+C01370,Jorge Hernández,V-26107772,Natural,Barquisimeto,2020-04-27,Minorista
+C01371,Sofía Parra,V-19567574,Natural,Lechería,2021-10-19,Frecuente
+C01372,Ricardo Torres,V-12625836,Natural,Lechería,2022-02-24,Frecuente
+C01373,Carolina Medina,V-13709864,Natural,Valencia,2021-05-07,Frecuente
+C01374,Carlos Parra,V-30971692,Natural,Caracas,2020-09-01,Premium
+C01375,Eduardo Parra,V-21527532,Natural,Caracas,2021-01-16,Frecuente
+C01376,Andrés González,V-17281551,Natural,Barquisimeto,2024-04-13,Premium
+C01377,Alejandro Medina,V-23598861,Natural,Barquisimeto,2025-03-30,Frecuente
+C01378,María Mendoza,V-6531267,Natural,Ciudad Guayana,2023-08-20,Frecuente
+C01379,Héctor Pérez,V-21945806,Natural,Ciudad Guayana,2020-03-04,Frecuente
+C01380,Lucía Díaz,V-17925274,Natural,Barquisimeto,2022-09-12,Frecuente
+C01381,Daniela Briceño,V-25039825,Natural,Ciudad Guayana,2022-03-29,Frecuente
+C01382,Héctor García,V-24860206,Natural,Barquisimeto,2023-07-23,Minorista
+C01383,Andrés Contreras,V-13562617,Natural,Caracas,2020-07-28,Frecuente
+C01384,Pedro García,V-10264759,Natural,Caracas,2019-07-15,Frecuente
+C01385,Elena Briceño,V-24511917,Natural,Caracas,2022-11-14,Premium
+C01386,Héctor Medina,V-14731858,Natural,Lechería,2022-07-11,Frecuente
+C01387,Ana Briceño,V-16180853,Natural,Caracas,2021-12-26,Frecuente
+C01388,Héctor Vargas,V-28547360,Natural,Valencia,2022-09-01,Frecuente
+C01389,Fernanda Colmenares,V-9310365,Natural,Ciudad Guayana,2020-07-28,Frecuente
+C01390,Ricardo Martínez,V-27780291,Natural,Caracas,2023-12-07,Frecuente
+C01391,Andrés Rojas,V-23243066,Natural,Ciudad Guayana,2022-05-23,Premium
+C01392,Sofía Parra,V-27374116,Natural,Ciudad Guayana,2020-07-04,Frecuente
+C01393,Eduardo López,V-21651103,Natural,Maracaibo,2021-06-21,Frecuente
+C01394,Rafael Pérez,V-24589994,Natural,Barquisimeto,2023-04-09,Frecuente
+C01395,Daniela Parra,V-15311122,Natural,Valencia,2019-10-20,Frecuente
+C01396,Patricia Bracho,V-22008649,Natural,Barquisimeto,2020-05-02,Frecuente
+C01397,Eduardo Ramírez,V-23636811,Natural,Maracaibo,2019-02-26,Frecuente
+C01398,José López,V-24333563,Natural,,2019-03-09,Frecuente
+C01399,Andrés Hernández,V-9653786,Natural,Barquisimeto,2022-11-03,Premium
+C01400,Mariana Colmenares,V-29683978,Natural,Ciudad Guayana,2024-06-14,Frecuente
+C01401,Luis González,V-26658750,Natural,Barquisimeto,2022-04-05,Frecuente
+C01402,María Urdaneta,V-8477235,Natural,Lechería,2020-01-21,Frecuente
+C01403,Paola Ramírez,V-9150006,Natural,Caracas,2022-12-14,Frecuente
+C01404,Manuel García,V-27284349,Natural,Lechería,2020-03-03,Frecuente
+C01405,Eduardo Hernández,V-11580341,Natural,Caracas,2024-07-02,Frecuente
+C01406,María Mendoza,V-14310425,Natural,Ciudad Guayana,2024-08-15,Frecuente
+C01407,Isabel Salazar,V-8978127,Natural,Lechería,2024-02-13,Frecuente
+C01408,Mariana Vargas,V-27153231,Natural,Caracas,2022-03-16,Frecuente
+C01409,Héctor González,V-14790188,Natural,Caracas,2025-03-07,Frecuente
+C01410,Jesús Salazar,V-17960763,Natural,Lechería,2020-10-18,Frecuente
+C01411,Andrés Rojas,V-11992796,Natural,Barquisimeto,2019-10-23,Premium
+C01412,Ricardo Bracho,V-17809828,Natural,Valencia,2021-12-03,Frecuente
+C01413,Andrés García,V-15161344,Natural,Ciudad Guayana,2024-10-12,Premium
+C01414,Elena Mendoza,V-25997595,Natural,Maracaibo,2021-04-22,Minorista
+C01415,María González,V-28931267,Natural,Lechería,2020-08-31,Frecuente
+C01416,Isabel Castillo,V-7836804,Natural,Valencia,2020-07-18,Frecuente
+C01417,Patricia Contreras,V-20054696,Natural,Barquisimeto,2024-10-14,Frecuente
+C01418,Alejandro Pérez,V-24097302,Natural,Lechería,2021-01-16,Frecuente
+C01419,Manuel Mendoza,V-14982680,Natural,Caracas,2021-01-11,Frecuente
+C01420,Daniela González,V-25078682,Natural,Valencia,2023-10-27,Frecuente
+C01421,Ana Martínez,V-25759004,Natural,Maracaibo,2021-03-02,Frecuente
+C01422,Carlos Bracho,V-27027141,Natural,Maracaibo,2024-05-23,Premium
+C01423,Manuel Sánchez,V-17814333,Natural,Maracaibo,2019-07-08,Frecuente
+C01424,Paola Contreras,V-30122623,Natural,Caracas,2019-11-27,Frecuente
+C01425,Carolina Contreras,V-24221627,Natural,Caracas,2022-07-14,Frecuente
+C01426,Paola Díaz,V-31685785,Natural,Maracaibo,2019-05-18,Frecuente
+C01427,Andrés Salazar,V-10939971,Natural,Barquisimeto,2024-09-13,Frecuente
+C01428,Andrés Castillo,V-28115182,Natural,Valencia,2022-12-27,Frecuente
+C01429,Elena Salazar,V-23059664,Natural,Valencia,2021-03-23,Frecuente
+C01430,Fernanda Pérez,V-16015541,Natural,Barquisimeto,2023-03-26,Frecuente
+C01431,Andrea García,V-10872739,Natural,Ciudad Guayana,2021-12-29,Minorista
+C01432,María Bracho,V-25580940,Natural,Barquisimeto,2024-12-25,Frecuente
+C01433,Elena Mendoza,V-11245315,Natural,Valencia,2024-07-19,Frecuente
+C01434,Carlos Díaz,V-25203714,Natural,Maracaibo,2019-11-05,Frecuente
+C01435,Paola Mendoza,V-6313060,Natural,Barquisimeto,2023-05-29,Frecuente
+C01436,Isabel Pérez,V-25054898,Natural,Ciudad Guayana,2023-10-15,Premium
+C01437,Carolina Parra,V-6788068,Natural,Valencia,2021-08-28,Frecuente
+C01438,María Briceño,V-26242433,Natural,Caracas,2023-07-28,Frecuente
+C01439,Manuel Torres,V-23387541,Natural,Caracas,2023-10-27,Frecuente
+C01440,Eduardo García,V-23403222,Natural,Ciudad Guayana,2019-03-18,Frecuente
+C01441,Miguel Medina,V-20613725,Natural,Valencia,2022-04-20,Frecuente
+C01442,Gabriela Parra,V-23411374,Natural,Caracas,2020-02-16,Frecuente
+C01443,José Bracho,V-18974800,Natural,Barquisimeto,2021-08-12,Premium
+C01444,Daniela Martínez,V-31433920,Natural,Maracaibo,2025-03-10,Frecuente
+C01445,Elena Rodríguez,V-26916072,Natural,Lechería,2020-10-13,Frecuente
+C01446,Alejandro Colmenares,V-22947134,Natural,Barquisimeto,2023-09-01,Frecuente
+C01447,Pedro Contreras,V-13788836,Natural,Caracas,2023-08-01,Frecuente
+C01448,Sofía Díaz,V-18530512,Natural,Lechería,2021-02-02,Frecuente
+C01449,Sofía Martínez,V-10058122,Natural,Lechería,2021-02-23,Frecuente
+C01450,Alejandro Colmenares,V-15782481,Natural,Caracas,2025-05-11,Premium
+C01451,Miguel Sánchez,V-21831788,Natural,Ciudad Guayana,2023-07-19,Frecuente
+C01452,José Hernández,V-20908555,Natural,Caracas,2020-08-22,Frecuente
+C01453,Ricardo López,V-26634815,Natural,Caracas,2024-04-15,Frecuente
+C01454,Andrea Pérez,V-7870029,Natural,Valencia,2025-03-10,Premium
+C01455,Ricardo Medina,V-7535200,Natural,Ciudad Guayana,2023-10-04,Frecuente
+C01456,Ana Salazar,V-27426552,Natural,Valencia,2022-03-09,Premium
+C01457,Alejandro Rodríguez,V-26268966,Natural,Valencia,2022-07-12,Premium
+C01458,Elena Morales,V-28901998,Natural,Valencia,2021-06-25,Frecuente
+C01459,Luis Colmenares,V-17150433,Natural,Caracas,2024-07-19,Premium
+C01460,Eduardo Morales,V-27001896,Natural,Ciudad Guayana,2020-03-10,Frecuente
+C01461,María González,V-29450194,Natural,Lechería,2020-09-27,Frecuente
+C01462,Lucía Mendoza,V-29911660,Natural,Caracas,2021-10-30,Frecuente
+C01463,Jorge López,V-9883809,Natural,Ciudad Guayana,2025-03-30,Premium
+C01464,Eduardo Silva,V-18143142,Natural,Ciudad Guayana,2021-12-09,Frecuente
+C01465,María Colmenares,V-29328172,Natural,Caracas,2020-10-10,Premium
+C01466,Daniela González,V-24795930,Natural,Ciudad Guayana,2023-07-12,Premium
+C01467,Fernanda Díaz,V-18228058,Natural,Maracaibo,2020-06-26,Minorista
+C01468,Andrea Contreras,V-11375070,Natural,Caracas,2022-09-01,Frecuente
+C01469,Elena Rojas,V-28772000,Natural,Ciudad Guayana,2019-08-02,Premium
+C01470,Manuel Castillo,V-21670635,Natural,Valencia,2020-10-27,Frecuente
+C01471,Alejandro Torres,V-13246620,Natural,Barquisimeto,2020-12-11,Frecuente
+C01472,Rafael Castillo,V-7973998,Natural,Valencia,2023-10-12,Premium
+C01473,Patricia González,V-15456196,Natural,Caracas,2025-02-08,Minorista
+C01474,Carlos González,V-30438763,Natural,Caracas,2024-04-15,Frecuente
+C01475,Manuel Contreras,V-18777325,Natural,Caracas,2020-02-10,Frecuente
+C01476,Jorge Medina,V-29346567,Natural,Maracaibo,2021-10-13,Frecuente
+C01477,Sofía Hernández,V-23160590,Natural,Lechería,2024-11-20,Frecuente
+C01478,Isabel García,V-20020493,Natural,Barquisimeto,2021-03-19,Frecuente
+C01479,Fernanda Martínez,V-21279176,Natural,Barquisimeto,2024-09-11,Frecuente
+C01480,Miguel Mendoza,V-19710541,Natural,Barquisimeto,2025-04-23,Frecuente
+C01481,Héctor Castillo,V-15879305,Natural,Ciudad Guayana,2020-09-14,Minorista
+C01482,Manuel Mendoza,V-6883900,Natural,Lechería,2020-07-12,Frecuente
+C01483,Patricia López,V-12412530,Natural,Caracas,2025-05-31,Frecuente
+C01484,Héctor Rodríguez,V-22480024,Natural,Caracas,2023-10-06,Frecuente
+C01485,Alejandro Parra,V-18069618,Natural,Barquisimeto,2025-03-31,Premium
+C01486,José Silva,V-9422960,Natural,Barquisimeto,2021-12-20,Frecuente
+C01487,Lucía Hernández,V-26983168,Natural,Caracas,2020-12-14,Frecuente
+C01488,Elena Hernández,V-23193247,Natural,Valencia,2019-03-29,Frecuente
+C01489,Mariana García,V-27136410,Natural,Maracaibo,2020-09-21,Premium
+C01490,Andrea Castillo,V-21415067,Natural,Maracaibo,2023-06-26,Frecuente
+C01491,María Martínez,V-23156650,Natural,Barquisimeto,2024-10-14,Frecuente
+C01492,Jesús Medina,V-15936914,Natural,Lechería,2019-11-13,Frecuente
+C01493,Luis Pérez,V-11584153,Natural,Ciudad Guayana,2021-09-10,Frecuente
+C01494,Ana Salazar,V-18375824,Natural,Valencia,2020-02-18,Frecuente
+C01495,Isabel Sánchez,V-14610352,Natural,Maracaibo,2021-08-14,Frecuente
+C01496,Paola Bracho,V-14618422,Natural,,2025-03-29,Frecuente
+C01497,Jorge Parra,V-23042186,Natural,Ciudad Guayana,2021-07-04,Frecuente
+C01498,Daniela Silva,V-12198048,Natural,Caracas,2024-03-07,Frecuente
+C01499,Manuel Parra,V-20817476,Natural,Lechería,2021-09-21,Frecuente
+C01500,Rafael Bracho,V-20594004,Natural,Ciudad Guayana,2020-05-24,Frecuente
+C01501,Andrea Mendoza,V-9396427,Natural,Caracas,2019-12-17,Frecuente
+C01502,Alejandro Pérez,V-14166254,Natural,Barquisimeto,2021-01-05,Premium
+C01503,Rafael Castillo,V-11931714,Natural,Barquisimeto,2019-06-19,Premium
+C01504,Fernanda Hernández,V-26825211,Natural,Caracas,2023-05-30,Frecuente
+C01505,Ricardo Díaz,V-17535087,Natural,Maracaibo,2020-05-06,Frecuente
+C01506,Oscar Medina,V-11150266,Natural,Valencia,2022-10-02,Premium
+C01507,Carolina Martínez,V-29276569,Natural,Ciudad Guayana,2022-07-26,Frecuente
+C01508,Ricardo Contreras,V-27012992,Natural,Ciudad Guayana,2024-08-21,Frecuente
+C01509,Fernanda Torres,V-31907314,Natural,Caracas,2021-01-20,Frecuente
+C01510,Isabel Contreras,V-7249606,Natural,Barquisimeto,2021-09-21,Frecuente
+C01511,José Torres,V-10383048,Natural,Ciudad Guayana,2023-10-06,Frecuente
+C01512,Héctor Torres,V-26699794,Natural,Lechería,2022-07-27,Frecuente
+C01513,Sofía Morales,V-9145510,Natural,Barquisimeto,2023-07-26,Frecuente
+C01514,Valentina Pérez,V-8625929,Natural,Valencia,2022-06-25,Frecuente
+C01515,Carlos Martínez,V-10446115,Natural,Valencia,2024-07-27,Premium
+C01516,Manuel Vargas,V-20516123,Natural,Lechería,2021-04-04,Frecuente
+C01517,Manuel López,V-30980904,Natural,Lechería,2020-12-27,Frecuente
+C01518,Miguel Medina,V-7518923,Natural,Valencia,2022-04-04,Premium
+C01519,Daniela Rojas,V-10836713,Natural,Barquisimeto,2022-09-11,Frecuente
+C01520,Ricardo Castillo,V-27509063,Natural,Maracaibo,2023-11-07,Frecuente
+C01521,Manuel Castillo,V-12489234,Natural,Ciudad Guayana,2022-05-26,Frecuente
+C01522,Daniela García,V-14795774,Natural,Lechería,2022-05-21,Premium
+C01523,Oscar Mendoza,V-10171987,Natural,Ciudad Guayana,2021-04-30,Frecuente
+C01524,Eduardo Castillo,V-26951343,Natural,Caracas,2024-09-26,Minorista
+C01525,Andrés Pérez,V-16696372,Natural,Valencia,2021-05-06,Frecuente
+C01526,Gabriela Sánchez,V-15468676,Natural,Caracas,2024-02-26,Premium
+C01527,Paola González,V-15074164,Natural,Barquisimeto,2020-09-10,Frecuente
+C01528,Miguel García,V-13909881,Natural,,2024-02-04,Frecuente
+C01529,Pedro Morales,V-11748594,Natural,Caracas,2020-10-12,Frecuente
+C01530,Eduardo Silva,V-30186000,Natural,Caracas,2024-11-13,Frecuente
+C01531,Elena Rojas,V-26919585,Natural,Lechería,2023-01-24,Frecuente
+C01532,Lucía Ramírez,V-27913187,Natural,Maracaibo,2019-07-15,Frecuente
+C01533,Ana Castillo,V-10434330,Natural,Ciudad Guayana,2022-06-29,Frecuente
+C01534,Elena Salazar,V-14978589,Natural,Valencia,2022-09-08,Frecuente
+C01535,Carolina Briceño,V-25448385,Natural,Maracaibo,2023-06-12,Premium
+C01536,Sofía Bracho,V-11923024,Natural,Caracas,2022-10-24,Frecuente
+C01537,Eduardo Parra,V-8770247,Natural,Valencia,2023-06-25,Frecuente
+C01538,Daniela Silva,V-15051486,Natural,Caracas,2024-05-27,Frecuente
+C01539,Eduardo Urdaneta,V-21189204,Natural,Ciudad Guayana,2024-09-07,Frecuente
+C01540,Patricia Colmenares,V-26614730,Natural,Caracas,2024-12-23,Frecuente
+C01541,Rafael Bracho,V-18155720,Natural,Valencia,2020-03-10,Frecuente
+C01542,Valentina Parra,V-17160098,Natural,Caracas,2020-08-22,Premium
+C01543,Andrea Sánchez,V-13232449,Natural,Lechería,2022-12-17,Frecuente
+C01544,Pedro Medina,V-23069728,Natural,Barquisimeto,2020-02-02,Premium
+C01545,Miguel Colmenares,V-30480545,Natural,Maracaibo,2019-06-08,Frecuente
+C01546,Valentina Parra,V-13968233,Natural,Barquisimeto,2024-01-11,Premium
+C01547,Elena Ramírez,V-11690783,Natural,Caracas,2022-02-26,Frecuente
+C01548,Eduardo Contreras,V-21078432,Natural,Ciudad Guayana,2024-08-02,Premium
+C01549,Jorge Parra,V-13420699,Natural,Ciudad Guayana,2021-08-26,Premium
+C01550,Patricia Contreras,V-22214605,Natural,Barquisimeto,2022-02-18,Premium
+C01551,Jesús Vargas,V-29154279,Natural,Caracas,2020-02-19,Frecuente
+C01552,Fernanda Bracho,V-20161255,Natural,Caracas,2020-11-15,Frecuente
+C01553,Pedro Urdaneta,V-31074574,Natural,Ciudad Guayana,2021-02-21,Frecuente
+C01554,Sofía Pérez,V-8719658,Natural,Caracas,2025-03-06,Frecuente
+C01555,Sofía Rodríguez,V-15725017,Natural,Barquisimeto,2023-06-23,Minorista
+C01556,María Parra,V-24954428,Natural,Ciudad Guayana,2023-11-22,Frecuente
+C01557,Manuel López,V-16021881,Natural,Caracas,2021-05-16,Frecuente
+C01558,Fernanda García,V-6657963,Natural,Barquisimeto,2020-05-03,Frecuente
+C01559,Ricardo Torres,V-9129762,Natural,Caracas,2022-04-24,Frecuente
+C01560,María Briceño,V-18309114,Natural,Maracaibo,2022-08-17,Frecuente
+C01561,Alejandro Pérez,V-22257473,Natural,Caracas,2024-12-22,Frecuente
+C01562,Daniela Díaz,V-27206620,Natural,Barquisimeto,2025-04-14,Frecuente
+C01563,Mariana González,V-28944772,Natural,Caracas,2020-03-21,Frecuente
+C01564,Lucía Rojas,V-19053692,Natural,Barquisimeto,2021-03-15,Frecuente
+C01565,Paola Rodríguez,V-25989055,Natural,Barquisimeto,2021-03-27,Frecuente
+C01566,Jesús García,V-28664589,Natural,Valencia,2021-03-31,Premium
+C01567,Miguel Salazar,V-29762013,Natural,Barquisimeto,2021-09-21,Premium
+C01568,Valentina Martínez,V-10845643,Natural,Caracas,2022-06-17,Frecuente
+C01569,Jorge Rodríguez,V-27608926,Natural,Caracas,2021-06-04,Frecuente
+C01570,Mariana Salazar,V-9285381,Natural,Lechería,2020-06-05,Premium
+C01571,Paola Castillo,V-28712223,Natural,Valencia,2020-12-28,Frecuente
+C01572,Andrés Colmenares,V-30466154,Natural,Valencia,2020-08-17,Frecuente
+C01573,Patricia López,V-18305186,Natural,Ciudad Guayana,2021-02-26,Frecuente
+C01574,Elena Mendoza,V-10792221,Natural,Barquisimeto,2021-05-10,Frecuente
+C01575,Carlos Vargas,V-26759125,Natural,Ciudad Guayana,2020-08-19,Frecuente
+C01576,Lucía Martínez,V-14082787,Natural,Maracaibo,2020-05-02,Frecuente
+C01577,Mariana González,V-18574218,Natural,Caracas,2020-04-01,Frecuente
+C01578,Ana Sánchez,V-12784491,Natural,Caracas,2021-01-23,Frecuente
+C01579,Lucía Silva,V-12946226,Natural,Maracaibo,2021-08-13,Frecuente
+C01580,Lucía Silva,V-7564142,Natural,Valencia,2022-08-13,Frecuente
+C01581,Gabriela López,V-16085934,Natural,Valencia,2022-10-02,Frecuente
+C01582,María Vargas,V-24813644,Natural,Caracas,2023-09-07,Frecuente
+C01583,Andrea Torres,V-24991784,Natural,Lechería,2020-02-07,Frecuente
+C01584,Patricia Hernández,V-23937140,Natural,Caracas,2022-01-27,Premium
+C01585,Rafael Urdaneta,V-23868359,Natural,Maracaibo,2019-01-28,Frecuente
+C01586,Sofía Bracho,V-17205160,Natural,Maracaibo,2019-02-23,Frecuente
+C01587,Andrea Hernández,V-16939153,Natural,Maracaibo,2020-04-29,Frecuente
+C01588,Daniela Martínez,V-20255070,Natural,Maracaibo,2022-06-29,Frecuente
+C01589,Paola Castillo,V-28960932,Natural,Caracas,2020-05-31,Premium
+C01590,Jesús Briceño,V-20239381,Natural,Lechería,2020-12-24,Frecuente
+C01591,Ana García,V-27949461,Natural,Valencia,2025-02-17,Frecuente
+C01592,Miguel Torres,V-8197191,Natural,Caracas,2022-05-17,Frecuente
+C01593,Mariana Silva,V-12386089,Natural,Valencia,2022-12-17,Frecuente
+C01594,Paola Silva,V-15573498,Natural,Barquisimeto,2022-07-05,Frecuente
+C01595,Carolina Vargas,V-27127109,Natural,Valencia,2023-12-01,Frecuente
+C01596,Miguel Contreras,V-31494685,Natural,Barquisimeto,2022-02-03,Frecuente
+C01597,Elena Morales,V-19527467,Natural,Caracas,2019-12-04,Frecuente
+C01598,Rafael García,V-10826117,Natural,Valencia,2019-11-12,Frecuente
+C01599,José Hernández,V-14521163,Natural,Valencia,2023-04-12,Premium
+C01600,María Mendoza,V-16020164,Natural,Maracaibo,2020-05-28,Frecuente
+C01601,Oscar González,V-8820538,Natural,Ciudad Guayana,2020-12-06,Frecuente
+C01602,Patricia Morales,V-30422361,Natural,Barquisimeto,2021-07-02,Frecuente
+C01603,Carlos Díaz,V-27018575,Natural,Barquisimeto,2023-11-27,Premium
+C01604,Sofía Urdaneta,V-12268199,Natural,Valencia,2021-10-29,Frecuente
+C01605,Carolina López,V-30383669,Natural,Barquisimeto,2024-02-06,Frecuente
+C01606,Gabriela Castillo,V-20596289,Natural,Ciudad Guayana,2025-04-11,Frecuente
+C01607,Paola Díaz,V-7221142,Natural,Caracas,2025-06-03,Frecuente
+C01608,Fernanda Martínez,V-12655222,Natural,Maracaibo,2020-04-19,Frecuente
+C01609,Manuel Contreras,V-10043848,Natural,Ciudad Guayana,2019-08-13,Frecuente
+C01610,María Morales,V-15139353,Natural,Lechería,2022-01-29,Premium
+C01611,Sofía Parra,V-13576929,Natural,Maracaibo,2023-10-02,Frecuente
+C01612,José Urdaneta,V-28120628,Natural,Maracaibo,2023-04-03,Frecuente
+C01613,Miguel Silva,V-28359423,Natural,Ciudad Guayana,2020-12-03,Frecuente
+C01614,Jorge Briceño,V-8140922,Natural,Ciudad Guayana,2022-10-30,Frecuente
+C01615,Alejandro García,V-11960657,Natural,Barquisimeto,2020-11-20,Frecuente
+C01616,Miguel Vargas,V-30462740,Natural,Caracas,2022-10-02,Frecuente
+C01617,Jorge García,V-14679902,Natural,Caracas,2024-05-31,Frecuente
+C01618,Jesús Díaz,V-29961662,Natural,Ciudad Guayana,2020-08-27,Frecuente
+C01619,Carlos Rodríguez,V-17824289,Natural,Ciudad Guayana,2025-06-04,Premium
+C01620,Fernanda Bracho,V-19227456,Natural,Ciudad Guayana,2021-10-03,Frecuente
+C01621,Manuel Medina,V-31199973,Natural,Ciudad Guayana,2024-02-28,Minorista
+C01622,Pedro González,V-25392065,Natural,Ciudad Guayana,2025-02-06,Frecuente
+C01623,Carlos Morales,V-15720507,Natural,Barquisimeto,2021-05-31,Premium
+C01624,Rafael Briceño,V-22252360,Natural,Barquisimeto,2025-02-16,Frecuente
+C01625,Carolina Rodríguez,V-27066101,Natural,Barquisimeto,2025-02-26,Frecuente
+C01626,Ricardo Rojas,V-15411797,Natural,Caracas,2020-08-06,Frecuente
+C01627,Daniela Castillo,V-20482793,Natural,Maracaibo,2025-06-20,Frecuente
+C01628,Paola Sánchez,V-6277591,Natural,Barquisimeto,2023-09-16,Minorista
+C01629,Alejandro Mendoza,V-23751498,Natural,Caracas,2020-01-13,Frecuente
+C01630,Gabriela Salazar,V-30426797,Natural,Ciudad Guayana,2024-12-09,Frecuente
+C01631,Alejandro Ramírez,V-22747592,Natural,Valencia,2022-03-20,Frecuente
+C01632,Luis Torres,V-27928530,Natural,Ciudad Guayana,2020-09-05,Frecuente
+C01633,Pedro Vargas,V-23694055,Natural,Barquisimeto,2019-02-24,Frecuente
+C01634,Fernanda Sánchez,V-17594920,Natural,Ciudad Guayana,2024-09-17,Frecuente
+C01635,Sofía Colmenares,V-26670038,Natural,Ciudad Guayana,2022-04-26,Frecuente
+C01636,Miguel Silva,V-9663105,Natural,Barquisimeto,2025-04-16,Minorista
+C01637,Isabel González,V-18042169,Natural,Barquisimeto,2022-08-19,Frecuente
+C01638,Daniela Parra,V-22866450,Natural,Barquisimeto,2020-05-24,Frecuente
+C01639,Carolina Martínez,V-26323572,Natural,Lechería,2019-02-20,Frecuente
+C01640,Pedro García,V-7604893,Natural,Caracas,2024-11-29,Frecuente
+C01641,Andrés Díaz,V-23188358,Natural,Valencia,2021-10-30,Frecuente
+C01642,Ricardo Pérez,V-17910524,Natural,Caracas,2020-11-11,Frecuente
+C01643,Jorge Parra,V-25571754,Natural,Maracaibo,2022-06-05,Premium
+C01644,Rafael Vargas,V-16759946,Natural,Caracas,2023-11-20,Frecuente
+C01645,Lucía Ramírez,V-16312188,Natural,Caracas,2025-05-27,Frecuente
+C01646,Lucía Morales,V-20074778,Natural,Maracaibo,2023-08-25,Frecuente
+C01647,Valentina Mendoza,V-29824690,Natural,Caracas,2023-08-05,Frecuente
+C01648,Carolina Bracho,V-11272115,Natural,Caracas,2024-01-20,Frecuente
+C01649,Pedro Torres,V-24093095,Natural,Barquisimeto,2021-03-24,Premium
+C01650,Mariana Sánchez,V-28713910,Natural,Maracaibo,2023-10-06,Frecuente
+C01651,Rafael Mendoza,V-31859762,Natural,Caracas,2023-02-28,Frecuente
+C01652,Alejandro Contreras,V-8515308,Natural,Valencia,2023-11-16,Frecuente
+C01653,Jorge Colmenares,V-15448400,Natural,Valencia,2020-07-16,Frecuente
+C01654,Eduardo Urdaneta,V-16933723,Natural,Caracas,2021-09-28,Frecuente
+C01655,Pedro Hernández,V-17033615,Natural,Barquisimeto,2023-08-31,Frecuente
+C01656,Pedro Sánchez,V-19477130,Natural,Ciudad Guayana,2024-11-27,Frecuente
+C01657,Gabriela Colmenares,V-30229182,Natural,Lechería,2022-02-12,Minorista
+C01658,Valentina Torres,V-20331359,Natural,Caracas,2020-09-01,Frecuente
+C01659,Miguel Colmenares,V-30041149,Natural,Caracas,2023-05-01,Frecuente
+C01660,Alejandro Colmenares,V-27326477,Natural,Caracas,2021-02-10,Frecuente
+C01661,Héctor Salazar,V-10570343,Natural,Caracas,2022-10-29,Frecuente
+C01662,Carlos Mendoza,V-6803309,Natural,Valencia,2021-11-20,Frecuente
+C01663,José Castillo,V-24683205,Natural,Lechería,2023-08-05,Minorista
+C01664,Mariana González,V-12959095,Natural,Caracas,2023-06-21,Frecuente
+C01665,Jesús Pérez,V-9119464,Natural,Lechería,2021-01-30,Frecuente
+C01666,Andrea Salazar,V-28316422,Natural,Valencia,2023-01-10,Frecuente
+C01667,Héctor González,V-25528701,Natural,Caracas,2024-04-25,Frecuente
+C01668,Ana Salazar,V-25365674,Natural,Caracas,2023-04-30,Frecuente
+C01669,Jesús Torres,V-17304893,Natural,Ciudad Guayana,2022-11-13,Frecuente
+C01670,Daniela Vargas,V-12960563,Natural,Ciudad Guayana,2024-03-20,Frecuente
+C01671,Mariana Parra,V-23822803,Natural,Barquisimeto,2021-05-07,Frecuente
+C01672,Rafael Vargas,V-14691309,Natural,Valencia,2020-05-20,Frecuente
+C01673,Lucía González,V-24976586,Natural,Lechería,2025-05-11,Minorista
+C01674,Patricia Castillo,V-27926976,Natural,Lechería,2022-07-04,Premium
+C01675,Ana Torres,V-17351801,Natural,Caracas,2023-02-09,Frecuente
+C01676,Manuel Rojas,V-18397798,Natural,Maracaibo,2023-06-04,Frecuente
+C01677,Mariana Pérez,V-6656786,Natural,Maracaibo,2025-03-14,Premium
+C01678,Carolina Morales,V-14553345,Natural,Barquisimeto,2020-04-05,Minorista
+C01679,Andrés Morales,V-31393494,Natural,Barquisimeto,2019-05-02,Frecuente
+C01680,Miguel Pérez,V-31098061,Natural,Valencia,2020-05-24,Frecuente
+C01681,Paola Sánchez,V-18553154,Natural,Ciudad Guayana,2022-07-08,Premium
+C01682,María Díaz,V-9552517,Natural,Lechería,2023-04-04,Frecuente
+C01683,Alejandro López,V-12085310,Natural,Caracas,2025-02-28,Minorista
+C01684,Mariana Sánchez,V-29761209,Natural,Maracaibo,2021-05-02,Frecuente
+C01685,Ricardo Urdaneta,V-24318673,Natural,Barquisimeto,2019-08-19,Premium
+C01686,Alejandro Mendoza,V-24197080,Natural,Lechería,2023-12-23,Premium
+C01687,Mariana Morales,V-28215705,Natural,Ciudad Guayana,2022-12-01,Frecuente
+C01688,Andrés Bracho,V-22782114,Natural,Caracas,2021-02-19,Premium
+C01689,Luis Medina,V-24059379,Natural,Maracaibo,2019-09-25,Frecuente
+C01690,Manuel Mendoza,V-8538483,Natural,Lechería,2019-12-17,Frecuente
+C01691,Carolina Pérez,V-29433583,Natural,Maracaibo,2022-11-01,Frecuente
+C01692,Oscar Urdaneta,V-13694821,Natural,Valencia,2023-03-24,Frecuente
+C01693,Luis Parra,V-25695880,Natural,Barquisimeto,2024-10-22,Frecuente
+C01694,Miguel Vargas,V-26274766,Natural,Barquisimeto,2020-02-12,Frecuente
+C01695,Alejandro Ramírez,V-25672122,Natural,Maracaibo,2022-12-05,Frecuente
+C01696,Sofía Rojas,V-28676890,Natural,Caracas,2025-06-06,Premium
+C01697,María Rojas,V-15881094,Natural,Ciudad Guayana,2022-10-15,Frecuente
+C01698,Gabriela Pérez,V-21650971,Natural,Barquisimeto,2020-10-31,Premium
+C01699,Carolina Sánchez,V-23984077,Natural,Valencia,2019-08-22,Frecuente
+C01700,Andrea Rodríguez,V-6030728,Natural,Caracas,2022-02-09,Frecuente
+C01701,Carlos Torres,V-15290127,Natural,Valencia,2024-04-27,Frecuente
+C01702,José Torres,V-31385744,Natural,Barquisimeto,2025-03-01,Frecuente
+C01703,Paola Ramírez,V-19600830,Natural,Lechería,2023-06-02,Frecuente
+C01704,Ricardo Colmenares,V-13105419,Natural,Ciudad Guayana,2022-11-18,Minorista
+C01705,Miguel García,V-21842077,Natural,Caracas,2024-12-28,Premium
+C01706,Ricardo Salazar,V-16263001,Natural,Lechería,2021-08-20,Frecuente
+C01707,Jesús Mendoza,V-29908973,Natural,Barquisimeto,2019-08-20,Frecuente
+C01708,Isabel Martínez,V-25839711,Natural,Valencia,2023-10-01,Frecuente
+C01709,Jesús Hernández,V-24416176,Natural,Maracaibo,2021-09-19,Frecuente
+C01710,Carlos Rodríguez,V-18570117,Natural,Caracas,2022-10-12,Frecuente
+C01711,Ana González,V-7753931,Natural,Ciudad Guayana,2019-07-13,Frecuente
+C01712,Elena Sánchez,V-31970611,Natural,Barquisimeto,2023-05-16,Frecuente
+C01713,Paola Mendoza,V-30893013,Natural,Caracas,2019-10-28,Frecuente
+C01714,Sofía Vargas,V-20637458,Natural,Barquisimeto,2021-05-14,Frecuente
+C01715,Elena Urdaneta,V-14076357,Natural,Lechería,2022-09-27,Frecuente
+C01716,Alejandro Sánchez,V-29501056,Natural,Lechería,2021-03-31,Frecuente
+C01717,Pedro López,V-20383336,Natural,Lechería,2023-02-13,Frecuente
+C01718,Mariana Castillo,V-28977555,Natural,Lechería,2022-07-02,Frecuente
+C01719,Oscar Ramírez,V-17934058,Natural,Valencia,2025-04-09,Frecuente
+C01720,Patricia González,V-27552584,Natural,Barquisimeto,2022-06-05,Minorista
+C01721,Valentina Castillo,V-18954950,Natural,Valencia,2022-12-04,Frecuente
+C01722,Lucía Ramírez,V-10581952,Natural,Ciudad Guayana,2021-06-08,Premium
+C01723,Luis Pérez,V-28884477,Natural,Lechería,2021-03-18,Frecuente
+C01724,Luis Salazar,V-22381464,Natural,Lechería,2023-02-19,Frecuente
+C01725,María Rodríguez,V-7172184,Natural,Valencia,2023-09-26,Frecuente
+C01726,Andrés Torres,V-27970140,Natural,Valencia,2024-11-10,Frecuente
+C01727,Oscar Hernández,V-15013144,Natural,Barquisimeto,2021-02-04,Premium
+C01728,Mariana Contreras,V-21248323,Natural,Lechería,2022-02-03,Premium
+C01729,Patricia García,V-18245963,Natural,Valencia,2023-08-03,Frecuente
+C01730,Carlos Martínez,V-18810695,Natural,Lechería,2020-02-26,Frecuente
+C01731,Carolina Sánchez,V-7216110,Natural,Valencia,2023-11-09,Frecuente
+C01732,Valentina Urdaneta,V-16884398,Natural,Lechería,2023-06-06,Frecuente
+C01733,Jorge Díaz,V-7300520,Natural,Valencia,2021-02-19,Frecuente
+C01734,Héctor Rojas,V-11919575,Natural,Lechería,2022-06-11,Frecuente
+C01735,Rafael Rojas,V-7670535,Natural,Maracaibo,2023-12-23,Premium
+C01736,Ana Rodríguez,V-14271905,Natural,Valencia,2022-08-04,Frecuente
+C01737,Luis Hernández,V-18141227,Natural,Lechería,2024-01-15,Frecuente
+C01738,Andrea Briceño,V-16847460,Natural,Ciudad Guayana,2023-11-09,Premium
+C01739,Daniela Castillo,V-26228696,Natural,Ciudad Guayana,2023-02-20,Frecuente
+C01740,Daniela Pérez,V-20748530,Natural,Maracaibo,2024-12-19,Frecuente
+C01741,Patricia Urdaneta,V-26507700,Natural,Maracaibo,2023-02-11,Frecuente
+C01742,María Morales,V-30627813,Natural,Caracas,2024-10-02,Frecuente
+C01743,Carlos López,V-16613281,Natural,Maracaibo,2022-11-07,Premium
+C01744,Valentina Bracho,V-29050082,Natural,Caracas,2021-08-20,Frecuente
+C01745,Oscar González,V-12424975,Natural,Caracas,2021-04-15,Frecuente
+C01746,Andrés Castillo,V-12941520,Natural,Maracaibo,2021-05-02,Frecuente
+C01747,Daniela Morales,V-24633458,Natural,Valencia,2020-07-08,Frecuente
+C01748,Andrea Silva,V-18965215,Natural,Barquisimeto,2021-11-03,Frecuente
+C01749,Manuel López,V-28889908,Natural,Valencia,2020-03-21,Frecuente
+C01750,Rafael Silva,V-26188495,Natural,Caracas,2019-09-07,Premium
+C01751,Ana Sánchez,V-29579861,Natural,Caracas,2020-09-04,Premium
+C01752,Valentina González,V-6600429,Natural,Lechería,2020-10-18,Frecuente
+C01753,Mariana Salazar,V-30238878,Natural,Maracaibo,2020-08-25,Premium
+C01754,Patricia Hernández,V-6032937,Natural,Lechería,2022-11-19,Minorista
+C01755,Carolina Medina,V-17783528,Natural,Caracas,2022-07-07,Premium
+C01756,Daniela Vargas,V-31111060,Natural,Lechería,2021-04-18,Frecuente
+C01757,Sofía Pérez,V-11157403,Natural,Valencia,2024-11-03,Frecuente
+C01758,Sofía Parra,V-7242928,Natural,Ciudad Guayana,2020-08-21,Frecuente
+C01759,Miguel Pérez,V-12701392,Natural,Valencia,2022-04-30,Premium
+C01760,Manuel Briceño,V-21268895,Natural,Barquisimeto,2021-12-19,Frecuente
+C01761,Oscar Urdaneta,V-15240062,Natural,Maracaibo,2022-07-26,Minorista
+C01762,Elena Sánchez,V-7763565,Natural,Maracaibo,2022-08-06,Frecuente
+C01763,Manuel Hernández,V-30176560,Natural,Caracas,2019-01-22,Frecuente
+C01764,Jesús González,V-10574267,Natural,Lechería,2023-09-09,Frecuente
+C01765,José Silva,V-11584946,Natural,Maracaibo,2024-07-09,Frecuente
+C01766,Elena Martínez,V-29412153,Natural,Ciudad Guayana,2019-03-06,Frecuente
+C01767,Ana González,V-24300301,Natural,Caracas,2021-02-07,Frecuente
+C01768,José Hernández,V-23461048,Natural,Lechería,2019-03-18,Frecuente
+C01769,Daniela Urdaneta,V-27382264,Natural,Ciudad Guayana,2019-05-29,Frecuente
+C01770,Andrea Ramírez,V-15648648,Natural,Caracas,2023-07-30,Frecuente
+C01771,Andrea González,V-27117165,Natural,Valencia,2024-05-28,Frecuente
+C01772,Héctor Medina,V-14582415,Natural,Ciudad Guayana,2022-01-29,Frecuente
+C01773,Jesús García,V-16415377,Natural,Lechería,2024-11-22,Frecuente
+C01774,Manuel García,V-10565306,Natural,Maracaibo,2020-08-25,Frecuente
+C01775,Miguel Ramírez,V-30451589,Natural,Lechería,2022-06-14,Frecuente
+C01776,Luis Parra,V-25255321,Natural,Caracas,2023-08-15,Frecuente
+C01777,Andrés Briceño,V-20780706,Natural,Caracas,2024-03-24,Frecuente
+C01778,Elena Pérez,V-7272769,Natural,Ciudad Guayana,2020-03-25,Frecuente
+C01779,Ricardo Sánchez,V-15816229,Natural,Ciudad Guayana,2019-05-22,Frecuente
+C01780,Ricardo González,V-27615389,Natural,Maracaibo,2023-08-06,Frecuente
+C01781,Fernanda Silva,V-27326083,Natural,Caracas,2022-08-02,Frecuente
+C01782,Rafael Bracho,V-20698707,Natural,Barquisimeto,2024-04-25,Frecuente
+C01783,Fernanda López,V-22433826,Natural,Ciudad Guayana,2023-12-02,Frecuente
+C01784,Paola Urdaneta,V-10083144,Natural,Caracas,2022-10-01,Frecuente
+C01785,Valentina Ramírez,V-7366187,Natural,Lechería,2021-11-30,Frecuente
+C01786,Miguel Castillo,V-30238582,Natural,Ciudad Guayana,2021-02-11,Frecuente
+C01787,María Rodríguez,V-29504064,Natural,Lechería,2020-01-10,Frecuente
+C01788,Patricia Pérez,V-26334408,Natural,Ciudad Guayana,2019-07-06,Minorista
+C01789,Eduardo Bracho,V-8930455,Natural,Valencia,2020-10-02,Premium
+C01790,Jorge Salazar,V-23719374,Natural,Caracas,2020-03-23,Frecuente
+C01791,Elena López,V-30949566,Natural,Lechería,2021-02-23,Frecuente
+C01792,Eduardo Ramírez,V-9266803,Natural,Lechería,2022-12-09,Frecuente
+C01793,Andrés Castillo,V-27883826,Natural,Valencia,2024-01-27,Frecuente
+C01794,Miguel Bracho,V-22713963,Natural,Barquisimeto,2020-12-18,Frecuente
+C01795,Jesús Silva,V-30267136,Natural,Lechería,2023-06-05,Frecuente
+C01796,Valentina Bracho,V-12365551,Natural,Maracaibo,2022-12-10,Frecuente
+C01797,Gabriela García,V-23237565,Natural,Lechería,2020-04-21,Frecuente
+C01798,Jorge Rojas,V-28925672,Natural,Lechería,2024-04-12,Frecuente
+C01799,Ana Morales,V-30637626,Natural,Maracaibo,2019-09-09,Frecuente
+C01800,Andrés Medina,V-17036178,Natural,Caracas,2019-04-18,Premium
+C01801,Andrea Pérez,V-25629845,Natural,Maracaibo,2025-05-20,Frecuente
+C01802,Elena Rojas,V-24491691,Natural,Valencia,2023-12-06,Frecuente
+C01803,Patricia Bracho,V-16542312,Natural,Caracas,2019-10-28,Frecuente
+C01804,Carolina Rodríguez,V-16774876,Natural,Maracaibo,2024-05-30,Frecuente
+C01805,Luis Contreras,V-21090980,Natural,Caracas,2024-10-14,Frecuente
+C01806,Carlos Sánchez,V-14183809,Natural,Valencia,2022-07-17,Frecuente
+C01807,Carolina Salazar,V-23192766,Natural,Valencia,2025-02-24,Frecuente
+C01808,Paola Castillo,V-8414633,Natural,Maracaibo,2020-06-04,Frecuente
+C01809,Jorge Ramírez,V-21257746,Natural,Valencia,2021-12-24,Frecuente
+C01810,Miguel Urdaneta,V-11547726,Natural,Caracas,2019-12-29,Frecuente
+C01811,Paola Sánchez,V-28168155,Natural,Lechería,2019-09-28,Frecuente
+C01812,Alejandro Silva,V-16050162,Natural,Caracas,2022-12-21,Frecuente
+C01813,Manuel Martínez,V-7994318,Natural,Ciudad Guayana,2021-04-10,Frecuente
+C01814,Oscar Briceño,V-10978921,Natural,Ciudad Guayana,2021-11-18,Frecuente
+C01815,Paola Parra,V-8854435,Natural,Maracaibo,2022-04-26,Frecuente
+C01816,Eduardo Mendoza,V-21605918,Natural,Ciudad Guayana,2024-07-09,Frecuente
+C01817,Miguel López,V-22871653,Natural,Ciudad Guayana,2024-05-07,Premium
+C01818,Daniela Rodríguez,V-16047902,Natural,Barquisimeto,2021-01-14,Premium
+C01819,Rafael López,V-13955120,Natural,Lechería,2022-09-26,Frecuente
+C01820,Alejandro Contreras,V-30031407,Natural,Lechería,2019-12-13,Minorista
+C01821,Andrea Medina,V-15036787,Natural,Barquisimeto,2019-01-11,Minorista
+C01822,Eduardo Pérez,V-21290562,Natural,Barquisimeto,2019-05-05,Frecuente
+C01823,Andrés López,V-10312435,Natural,Caracas,2025-01-20,Frecuente
+C01824,Eduardo Pérez,V-10557698,Natural,Maracaibo,2024-01-26,Premium
+C01825,Patricia Díaz,V-18387390,Natural,Caracas,2024-03-18,Frecuente
+C01826,Eduardo Ramírez,V-25524248,Natural,Valencia,2024-08-10,Premium
+C01827,Alejandro Morales,V-21785275,Natural,Barquisimeto,2023-12-29,Frecuente
+C01828,Isabel Hernández,V-15043062,Natural,Caracas,2023-03-16,Frecuente
+C01829,Paola Salazar,V-30157933,Natural,Caracas,2020-10-20,Frecuente
+C01830,Patricia Ramírez,V-20781757,Natural,Barquisimeto,2024-12-06,Frecuente
+C01831,Héctor Sánchez,V-21004685,Natural,Maracaibo,2020-09-10,Frecuente
+C01832,Manuel Ramírez,V-29671822,Natural,Caracas,2023-04-08,Frecuente
+C01833,Lucía Bracho,V-28626931,Natural,Ciudad Guayana,2021-07-31,Premium
+C01834,Lucía Urdaneta,V-18124229,Natural,Ciudad Guayana,2021-08-01,Frecuente
+C01835,Ana Mendoza,V-7620793,Natural,Caracas,2020-06-01,Frecuente
+C01836,María López,V-22455317,Natural,Caracas,2024-02-15,Frecuente
+C01837,Oscar Morales,V-28697288,Natural,Barquisimeto,2021-11-24,Frecuente
+C01838,Valentina Ramírez,V-10415048,Natural,Caracas,2020-11-26,Frecuente
+C01839,Héctor Ramírez,V-7155006,Natural,Caracas,2025-03-03,Frecuente
+C01840,Jorge Mendoza,V-18489601,Natural,Caracas,2020-08-07,Frecuente
+C01841,Eduardo Morales,V-28102690,Natural,Maracaibo,2020-01-18,Premium
+C01842,Luis Torres,V-11827190,Natural,Lechería,2020-12-03,Frecuente
+C01843,Eduardo Rodríguez,V-24676802,Natural,Valencia,2022-04-17,Frecuente
+C01844,Ricardo Urdaneta,V-8074446,Natural,Maracaibo,2025-03-07,Frecuente
+C01845,Jesús Hernández,V-11366461,Natural,Caracas,2021-12-20,Frecuente
+C01846,Andrés Medina,V-10727500,Natural,Lechería,2019-11-14,Frecuente
+C01847,Gabriela Rodríguez,V-21428244,Natural,Caracas,2024-02-14,Premium
+C01848,Alejandro Briceño,V-15174212,Natural,Caracas,2021-08-02,Frecuente
+C01849,Alejandro Díaz,V-15885432,Natural,Valencia,2023-04-18,Frecuente
+C01850,Mariana Briceño,V-29721546,Natural,Valencia,2019-04-14,Frecuente
+C01851,Elena Medina,V-11496709,Natural,Maracaibo,2024-12-31,Premium
+C01852,Alejandro Mendoza,V-6656194,Natural,Caracas,2019-09-14,Premium
+C01853,Lucía González,V-15480659,Natural,Caracas,2019-09-22,Premium
+C01854,Elena Briceño,V-26208490,Natural,Maracaibo,2021-07-09,Premium
+C01855,María Rodríguez,V-31780432,Natural,Maracaibo,2020-05-29,Premium
+C01856,Pedro González,V-14024622,Natural,Valencia,2022-12-14,Premium
+C01857,Valentina Torres,V-19294108,Natural,Barquisimeto,2023-02-18,Premium
+C01858,Pedro Rojas,V-19087355,Natural,Caracas,2022-11-26,Premium
+C01859,José Torres,V-13130637,Natural,Ciudad Guayana,2022-07-26,Premium
+C01860,Jesús Medina,V-17908959,Natural,Valencia,2024-08-13,Premium
+C01861,Mariana Medina,V-18031496,Natural,Caracas,2021-12-04,Frecuente
+C01862,Ana Mendoza,V-18262638,Natural,Valencia,2019-04-05,Premium
+C01863,Ana Vargas,V-16662268,Natural,Caracas,2024-10-17,Premium
+C01864,Mariana Díaz,V-16443306,Natural,Lechería,2019-08-31,Premium
+C01865,Jesús Parra,V-9219676,Natural,Caracas,2020-02-03,Premium
+C01866,Sofía Rojas,V-26555046,Natural,Caracas,2022-01-10,Premium
+C01867,Oscar Hernández,V-28767696,Natural,Lechería,2020-05-25,Premium
+C01868,Patricia García,V-22359071,Natural,Maracaibo,2020-01-21,Frecuente
+C01869,Carolina Bracho,V-20015836,Natural,Valencia,2019-10-14,Premium
+C01870,Carlos Contreras,V-27956663,Natural,Ciudad Guayana,2019-05-16,Premium
+C01871,Jorge Contreras,V-14285236,Natural,Ciudad Guayana,2022-09-05,Premium
+C01872,Andrés Ramírez,V-27681367,Natural,Caracas,2024-08-26,Frecuente
+C01873,Héctor Torres,V-29808527,Natural,Ciudad Guayana,2023-01-06,Premium
+C01874,Daniela Salazar,V-11568878,Natural,Lechería,2023-12-30,Premium
+C01875,Andrea Rojas,V-10821467,Natural,Maracaibo,2019-08-09,Premium
+C01876,José Parra,V-7768859,Natural,Valencia,2021-08-23,Premium
+C01877,Ana Briceño,V-6969514,Natural,Lechería,2021-11-20,Premium
+C01878,Carlos Vargas,V-22446652,Natural,Lechería,2020-06-04,Frecuente
+C01879,Carolina Parra,V-21961252,Natural,Barquisimeto,2019-12-22,Premium
+C01880,Jesús Salazar,V-29978571,Natural,Maracaibo,2025-06-05,Frecuente
+C01881,Sofía Vargas,V-28327688,Natural,Barquisimeto,2024-11-25,Premium
+C01882,Eduardo Colmenares,V-29500218,Natural,Maracaibo,2025-03-07,Frecuente
+C01883,Andrés Salazar,V-7683781,Natural,Caracas,2019-03-11,Premium
+C01884,Rafael Martínez,V-8138680,Natural,Lechería,2020-05-10,Premium
+C01885,Patricia Morales,V-21627430,Natural,Ciudad Guayana,2024-11-25,Premium
+C01886,María López,V-6391091,Natural,Barquisimeto,2024-02-11,Premium
+C01887,Jorge González,V-6964376,Natural,Barquisimeto,2023-04-30,Premium
+C01888,Carolina Martínez,V-13361044,Natural,Lechería,2021-11-19,Premium
+C01889,Gabriela Medina,V-16024711,Natural,Caracas,2024-11-20,Premium
+C01890,Patricia Hernández,V-25136511,Natural,Maracaibo,2021-11-15,Premium
+C01891,Valentina Rojas,V-20054627,Natural,Ciudad Guayana,2021-12-18,Premium
+C01892,Valentina Hernández,V-23813277,Natural,Valencia,2023-11-26,Premium
+C01893,Carlos Rojas,V-28659013,Natural,Valencia,2020-05-08,Premium
+C01894,Manuel Morales,V-14063018,Natural,Barquisimeto,2020-09-19,Premium
+C01895,Oscar Martínez,V-30974899,Natural,Valencia,2021-12-06,Premium
+C01896,Pedro Pérez,V-23093382,Natural,Barquisimeto,2025-04-17,Premium
+C01897,Alejandro Castillo,V-27033119,Natural,Lechería,2019-06-28,Premium
+C01898,Gabriela Morales,V-21680175,Natural,Caracas,2025-06-13,Premium
+C01899,Elena Ramírez,V-7451679,Natural,Maracaibo,2022-01-08,Premium
+C01900,Elena Contreras,V-21328076,Natural,Barquisimeto,2019-02-09,Premium
+C01901,Carlos Urdaneta,V-21728620,Natural,Maracaibo,2020-04-30,Premium
+C01902,Andrés Rodríguez,V-28220199,Natural,Caracas,2022-06-15,Premium
+C01903,Gabriela Salazar,V-18999605,Natural,Valencia,2022-06-02,Premium
+C01904,Oscar Medina,V-29503457,Natural,Valencia,2020-09-12,Premium
+C01905,Daniela Pérez,V-6576934,Natural,Barquisimeto,2021-03-05,Premium
+C01906,Héctor Martínez,V-29610358,Natural,Caracas,2024-07-28,Premium
+C01907,Valentina Torres,V-23019308,Natural,Lechería,2019-11-05,Premium
+C01908,Gabriela Rojas,V-19596433,Natural,Ciudad Guayana,2024-09-24,Premium
+C01909,Jesús Pérez,V-29727284,Natural,Ciudad Guayana,2022-02-24,Premium
+C01910,Pedro Martínez,V-27777243,Natural,Caracas,2023-11-02,Premium
+C01911,Manuel Salazar,V-9056801,Natural,Barquisimeto,2019-06-03,Premium
+C01912,Oscar Salazar,V-30138075,Natural,Ciudad Guayana,2020-03-05,Premium
+C01913,Jorge Rojas,V-24272528,Natural,Caracas,2021-12-09,Frecuente
+C01914,Mariana Díaz,V-13331935,Natural,Barquisimeto,2020-11-04,Premium
+C01915,Jorge Silva,V-31515948,Natural,Ciudad Guayana,2022-03-01,Premium
+C01916,Miguel Díaz,V-11931109,Natural,Caracas,2023-02-13,Premium
+C01917,Andrés Ramírez,V-9576681,Natural,Lechería,2020-02-16,Frecuente
+C01918,Carolina Contreras,V-9380853,Natural,Caracas,2024-05-21,Premium
+C01919,Pedro García,V-6210140,Natural,Caracas,2024-08-17,Premium
+C01920,Eduardo Mendoza,V-30948493,Natural,Maracaibo,2021-01-24,Premium
+C01921,Eduardo Silva,V-6894416,Natural,Ciudad Guayana,2024-07-10,Premium
+C01922,José Vargas,V-18151376,Natural,Ciudad Guayana,2022-02-26,Premium
+C01923,Lucía López,V-10719384,Natural,Caracas,2019-01-11,Premium
+C01924,Alejandro Silva,V-6364931,Natural,Barquisimeto,2024-03-31,Premium
+C01925,Oscar Pérez,V-7850044,Natural,Lechería,2025-03-16,Premium
+C01926,Alejandro Hernández,V-27635079,Natural,Ciudad Guayana,2019-10-19,Premium
+C01927,Héctor Díaz,V-13908859,Natural,Maracaibo,2023-04-28,Premium
+C01928,Ana Torres,V-19502091,Natural,Caracas,2024-10-12,Premium
+C01929,Rafael Rojas,V-8026614,Natural,Maracaibo,2023-07-05,Premium
+C01930,Mariana Medina,V-11823075,Natural,Valencia,2025-05-11,Premium
+C01931,Sofía Pérez,V-22667296,Natural,Caracas,2022-04-15,Premium
+C01932,Daniela Rojas,V-19128568,Natural,Ciudad Guayana,2021-10-24,Premium
+C01933,Miguel Morales,V-17603154,Natural,Caracas,2019-09-17,Frecuente
+C01934,Luis Pérez,V-16284199,Natural,Maracaibo,2021-03-10,Premium
+C01935,Oscar Silva,V-24186632,Natural,Caracas,2021-08-31,Premium
+C01936,Carolina Urdaneta,V-28935534,Natural,Maracaibo,2023-03-12,Premium
+C01937,Jorge Urdaneta,V-9075976,Natural,Lechería,2021-06-30,Premium
+C01938,Patricia Colmenares,V-14750164,Natural,Caracas,2022-10-23,Premium
+C01939,Daniela Colmenares,V-26219214,Natural,Caracas,2020-09-25,Premium
+C01940,María Díaz,V-23838755,Natural,Maracaibo,2019-07-27,Premium
+C01941,Miguel Martínez,V-6004354,Natural,Caracas,2024-03-12,Premium
+C01942,Patricia Castillo,V-27458737,Natural,Lechería,2020-05-13,Frecuente
+C01943,Andrés Sánchez,V-9199470,Natural,Valencia,2021-12-16,Frecuente
+C01944,María Salazar,V-6978944,Natural,Caracas,2024-12-09,Frecuente
+C01945,Paola Salazar,V-18025843,Natural,Barquisimeto,2023-07-28,Premium
+C01946,Eduardo Morales,V-11061698,Natural,Barquisimeto,2020-05-02,Premium
+C01947,Isabel López,V-22710819,Natural,Lechería,2023-11-09,Premium
+C01948,Pedro Silva,V-29474603,Natural,,2020-05-28,Premium
+C01949,Miguel Parra,V-31806254,Natural,Lechería,2019-01-17,Premium
+C01950,Fernanda Pérez,V-9171473,Natural,Lechería,2024-12-11,Premium
+C01951,José Silva,V-12582751,Natural,Caracas,2024-09-17,Premium
+C01952,Andrea Contreras,V-28245588,Natural,Lechería,2023-05-30,Premium
+C01953,Fernanda Pérez,V-18038241,Natural,Maracaibo,2020-07-08,Premium
+C01954,Gabriela Silva,V-27460258,Natural,Caracas,2021-01-01,Premium
+C01955,Paola Torres,V-9952114,Natural,Caracas,2022-06-20,Premium
+C01956,Carolina Torres,V-23950800,Natural,Barquisimeto,2019-03-29,Premium
+C01957,Andrés Pérez,V-17933809,Natural,Caracas,2024-01-24,Premium
+C01958,Ana Ramírez,V-10850806,Natural,Barquisimeto,2024-12-04,Premium
+C01959,Elena Sánchez,V-7471998,Natural,Caracas,2024-10-03,Premium
+C01960,Gabriela Martínez,V-7203376,Natural,Caracas,2019-12-30,Premium
+C01961,María Sánchez,V-16703813,Natural,Caracas,2019-11-09,Premium
+C01962,Jesús Morales,V-14805791,Natural,Caracas,2019-02-15,Premium
+C01963,Miguel Pérez,V-30446101,Natural,Caracas,2019-06-17,Premium
+C01964,Mariana Silva,V-7700083,Natural,,2024-07-27,Premium
+C01965,Daniela Salazar,V-21817384,Natural,Ciudad Guayana,2019-09-18,Premium
+C01966,Jesús Silva,V-24829287,Natural,Valencia,2022-04-01,Premium
+C01967,Lucía Colmenares,V-10731025,Natural,Valencia,2022-02-18,Premium
+C01968,Rafael Mendoza,V-13100964,Natural,Maracaibo,2021-06-05,Premium
+C01969,Carlos Mendoza,V-6559175,Natural,Lechería,2019-07-15,Premium
+C01970,Miguel Parra,V-8455725,Natural,Ciudad Guayana,2023-03-21,Premium
+C01971,Isabel Castillo,V-8655916,Natural,Caracas,2019-09-28,Premium
+C01972,Isabel Sánchez,V-29112483,Natural,Barquisimeto,2019-03-29,Premium
+C01973,Héctor Contreras,V-8675890,Natural,Maracaibo,2024-02-21,Premium
+C01974,María Silva,V-20959181,Natural,Lechería,2020-12-04,Frecuente
+C01975,Jorge Pérez,V-10340114,Natural,Lechería,2020-06-06,Premium
+C01976,José Sánchez,V-15045562,Natural,Lechería,2025-01-08,Premium
+C01977,Valentina Martínez,V-26662873,Natural,Barquisimeto,2020-02-05,Premium
+C01978,Luis Contreras,V-21348248,Natural,Caracas,2024-12-18,Frecuente
+C01979,Rafael Salazar,V-18640308,Natural,Caracas,2024-04-12,Premium
+C01980,Ricardo Silva,V-10338700,Natural,Maracaibo,2022-04-15,Premium
+C01981,Héctor Silva,V-25170620,Natural,Caracas,2021-09-27,Premium
+C01982,Isabel Salazar,V-25807760,Natural,Maracaibo,2023-11-02,Premium
+C01983,Daniela Torres,V-11629094,Natural,Valencia,2023-08-11,Premium
+C01984,Eduardo Rojas,V-31988121,Natural,Valencia,2025-02-18,Premium
+C01985,Fernanda Ramírez,V-22810185,Natural,Lechería,2020-03-25,Premium
+C01986,Isabel Contreras,V-14318616,Natural,Ciudad Guayana,2023-11-06,Premium
+C01987,María García,V-27380218,Natural,Ciudad Guayana,2024-08-05,Premium
+C01988,Rafael Torres,V-11771068,Natural,Lechería,2023-11-02,Premium
+C01989,Héctor Castillo,V-10585766,Natural,Caracas,2022-10-09,Premium
+C01990,Valentina González,V-27024320,Natural,Ciudad Guayana,2025-02-28,Premium
+C01991,Alejandro Parra,V-20936599,Natural,Caracas,2022-03-27,Frecuente
+C01992,Fernanda Bracho,V-23436754,Natural,Barquisimeto,2019-07-05,Premium
+C01993,Ricardo Silva,V-25626679,Natural,Ciudad Guayana,2023-07-07,Premium
+C01994,Elena Briceño,V-23732339,Natural,Caracas,2022-06-21,Premium
+C01995,Carlos Salazar,V-29361082,Natural,Ciudad Guayana,2019-04-27,Premium
+C01996,Isabel López,V-10331970,Natural,Caracas,2020-11-01,Premium
+C01997,Sofía Contreras,V-28491879,Natural,Caracas,2021-04-18,Premium
+C01998,Paola Salazar,V-29233151,Natural,,2019-12-12,Premium
+C01999,Ana Martínez,V-25324197,Natural,Caracas,2023-06-06,Frecuente
+C02000,Luis Vargas,V-14077808,Natural,Lechería,2023-07-05,Premium
+C02001,Manuel Colmenares,V-13721141,Natural,Barquisimeto,2022-12-07,Frecuente
+C02002,José Silva,V-24253041,Natural,Barquisimeto,2023-06-04,Premium
+C02003,Mariana Hernández,V-20032048,Natural,Maracaibo,2019-01-30,Frecuente
+C02004,Patricia Mendoza,V-8726736,Natural,Maracaibo,2022-08-31,Premium
+C02005,Manuel Mendoza,V-26259757,Natural,Caracas,2021-11-30,Premium
+C02006,Alejandro Pérez,V-8436587,Natural,Lechería,2019-10-16,Premium
+C02007,Carolina Mendoza,V-30294482,Natural,Barquisimeto,2019-05-25,Premium
+C02008,Ana Silva,V-25428957,Natural,Maracaibo,2019-12-24,Premium
+C02009,Jesús García,V-29139908,Natural,Barquisimeto,2022-02-10,Premium
+C02010,Pedro Morales,V-22157616,Natural,Valencia,2020-10-16,Premium
+C02011,Ana García,V-13582788,Natural,Valencia,2022-09-04,Frecuente
+C02012,Oscar Rojas,V-28225410,Natural,Caracas,2021-11-09,Premium
+C02013,Lucía Parra,V-6700426,Natural,Valencia,2024-04-03,Premium
+C02014,Luis Torres,V-13977618,Natural,Valencia,2021-03-25,Premium
+C02015,Jesús Martínez,V-17131952,Natural,Valencia,2021-04-09,Premium
+C02016,Miguel Medina,V-27204647,Natural,Valencia,2020-09-28,Premium
+C02017,Andrea Martínez,V-6957546,Natural,Caracas,2022-09-23,Premium
+C02018,Rafael Hernández,V-18822167,Natural,Ciudad Guayana,2021-01-24,Premium
+C02019,Héctor Sánchez,V-15913632,Natural,Ciudad Guayana,2024-12-19,Premium
+C02020,Elena Castillo,V-30929713,Natural,Barquisimeto,2020-09-27,Premium
+C02021,Paola Medina,V-30843983,Natural,Caracas,2020-12-19,Premium
+C02022,Jesús Parra,V-17865955,Natural,Maracaibo,2025-06-05,Premium
+C02023,Jorge Rodríguez,V-12955478,Natural,Caracas,2025-04-07,Premium
+C02024,Carolina Urdaneta,V-17331506,Natural,Ciudad Guayana,2024-11-23,Premium
+C02025,Oscar González,V-8299326,Natural,Caracas,2025-01-05,Premium
+C02026,Eduardo Hernández,V-11512114,Natural,Lechería,2023-10-16,Premium
+C02027,José Díaz,V-29220461,Natural,Caracas,2022-06-23,Premium
+C02028,José Rojas,V-8156380,Natural,Maracaibo,2024-08-29,Premium
+C02029,Rafael Parra,V-11811075,Natural,Caracas,2024-07-18,Premium
+C02030,Carlos Mendoza,V-11159574,Natural,Ciudad Guayana,2024-10-05,Premium
+C02031,Ricardo Parra,V-7564857,Natural,Barquisimeto,2024-03-05,Premium
+C02032,Manuel Hernández,V-17771290,Natural,Maracaibo,2025-06-11,Premium
+C02033,Rafael Martínez,V-26819401,Natural,Caracas,2023-11-09,Premium
+C02034,Lucía Parra,V-22032020,Natural,Maracaibo,2024-03-29,Premium
+C02035,Elena Torres,V-26995170,Natural,Ciudad Guayana,2022-06-14,Premium
+C02036,Oscar Contreras,V-26235843,Natural,Caracas,2021-03-09,Premium
+C02037,Paola Vargas,V-12586127,Natural,Ciudad Guayana,2022-06-25,Premium
+C02038,Andrea Castillo,V-17132777,Natural,Caracas,2025-04-18,Premium
+C02039,Gabriela Colmenares,V-21915331,Natural,Maracaibo,2025-01-01,Premium
+C02040,Isabel Urdaneta,V-13378238,Natural,Caracas,2021-10-26,Premium
+C02041,Héctor Castillo,V-8281636,Natural,Caracas,2019-09-01,Premium
+C02042,Rafael Urdaneta,V-28678809,Natural,Valencia,2023-10-04,Premium
+C02043,Oscar Briceño,V-11282246,Natural,Caracas,2021-07-12,Premium
+C02044,Patricia López,V-20141109,Natural,Caracas,2020-04-03,Premium
+C02045,Manuel García,V-7835558,Natural,Lechería,2020-03-09,Premium
+C02046,Andrea Martínez,V-14659167,Natural,Caracas,2022-12-11,Premium
+C02047,Gabriela Ramírez,V-31232014,Natural,Maracaibo,2024-12-02,Premium
+C02048,Ana Bracho,V-20209756,Natural,Lechería,2024-04-12,Premium
+C02049,Héctor Rodríguez,V-24492585,Natural,Ciudad Guayana,2021-03-31,Premium
+C02050,José Bracho,V-17658786,Natural,Lechería,2023-02-10,Premium
+C02051,Valentina Urdaneta,V-16890655,Natural,Maracaibo,2024-06-27,Premium
+C02052,Patricia Rodríguez,V-16162885,Natural,Caracas,2020-05-28,Premium
+C02053,Ana Mendoza,V-16157359,Natural,Barquisimeto,2019-06-01,Premium
+C02054,Manuel Briceño,V-9120899,Natural,Lechería,2022-06-11,Premium
+C02055,Carolina Torres,V-10204906,Natural,Caracas,2019-06-24,Premium
+C02056,Eduardo Díaz,V-30821569,Natural,Valencia,2024-07-20,Premium
+C02057,Ana Sánchez,V-10852057,Natural,Maracaibo,2022-12-26,Premium
+C02058,Rafael López,V-28238420,Natural,Barquisimeto,2024-07-26,Premium
+C02059,Alejandro Silva,V-19484407,Natural,Ciudad Guayana,2022-02-04,Premium
+C02060,Jesús López,V-12741215,Natural,Lechería,2024-09-09,Premium
+C02061,Sofía Parra,V-15959177,Natural,Lechería,2023-12-02,Premium
+C02062,Sofía Briceño,V-28977592,Natural,Ciudad Guayana,2024-04-10,Premium
+C02063,Sofía García,V-23870439,Natural,Valencia,2019-07-02,Premium
+C02064,Paola Rodríguez,V-27732686,Natural,Maracaibo,2021-12-29,Premium
+C02065,Isabel Medina,V-31983203,Natural,Caracas,2025-04-09,Premium
+C02066,Fernanda Castillo,V-28022738,Natural,Barquisimeto,2020-02-21,Premium
+C02067,Elena Díaz,V-15530803,Natural,Barquisimeto,2020-01-22,Premium
+C02068,Gabriela Bracho,V-25722339,Natural,Valencia,2022-10-06,Premium
+C02069,Gabriela González,V-7329773,Natural,Lechería,2020-02-05,Premium
+C02070,Ana Ramírez,V-11465067,Natural,Caracas,2021-10-17,Premium
+C02071,Paola González,V-31005828,Natural,Ciudad Guayana,2020-11-01,Premium
+C02072,Paola Mendoza,V-6632590,Natural,Lechería,2019-05-18,Premium
+C02073,Manuel Rojas,V-29536320,Natural,Caracas,2024-01-20,Premium
+C02074,Gabriela Silva,V-7524945,Natural,Valencia,2019-06-17,Premium
+C02075,Pedro Hernández,V-15250059,Natural,Ciudad Guayana,2022-03-03,Premium
+C02076,Ana Sánchez,V-24573295,Natural,Caracas,2019-10-17,Premium
+C02077,Jorge Colmenares,V-8298190,Natural,Caracas,2019-04-27,Premium
+C02078,Patricia López,V-11577420,Natural,Valencia,2019-08-08,Premium
+C02079,Lucía Briceño,V-19309200,Natural,Caracas,2024-04-19,Premium
+C02080,Ana Sánchez,V-10231207,Natural,Valencia,2020-10-17,Premium
+C02081,Carolina Contreras,V-14255972,Natural,Maracaibo,2025-04-17,Premium
+C02082,Fernanda Rodríguez,V-25172434,Natural,Maracaibo,2022-07-22,Premium
+C02083,Carolina Silva,V-24583859,Natural,Maracaibo,2021-01-17,Premium
+C02084,Isabel Díaz,V-30496062,Natural,Barquisimeto,2025-04-24,Premium
+C02085,María Torres,V-9128953,Natural,Barquisimeto,2022-01-08,Premium
+C02086,Manuel Rodríguez,V-19281865,Natural,Maracaibo,2024-01-26,Premium
+C02087,Andrés Sánchez,V-7889681,Natural,Caracas,2019-04-25,Premium
+C02088,Patricia Sánchez,V-30169179,Natural,Lechería,2024-03-22,Premium
+C02089,Rafael Sánchez,V-19370752,Natural,Caracas,2024-07-02,Premium
+C02090,Oscar Contreras,V-8605373,Natural,Maracaibo,2023-08-30,Premium
+C02091,Andrés Castillo,V-11514248,Natural,Lechería,2021-08-03,Premium
+C02092,Daniela Martínez,V-16316670,Natural,Lechería,2025-02-12,Premium
+C02093,Paola Díaz,V-14365503,Natural,Ciudad Guayana,2020-08-17,Frecuente
+C02094,Rafael Torres,V-18999399,Natural,Maracaibo,2025-03-21,Frecuente
+C02095,Carolina Mendoza,V-16457745,Natural,Caracas,2025-03-07,Premium
+C02096,Pedro Vargas,V-11882436,Natural,Caracas,2020-09-25,Premium
+C02097,Miguel Mendoza,V-15628609,Natural,Lechería,2021-07-21,Premium
+C02098,Paola Díaz,V-26763521,Natural,Caracas,2024-01-08,Frecuente
+C02099,Manuel González,V-23950172,Natural,Valencia,2020-12-18,Premium
+C02100,Pedro Rojas,V-20221662,Natural,Ciudad Guayana,2020-08-15,Premium
+C02101,Alejandro Bracho,V-21830657,Natural,Caracas,2021-01-17,Premium
+C02102,Rafael Silva,V-7243159,Natural,Maracaibo,2024-01-24,Premium
+C02103,Daniela Rodríguez,V-22999117,Natural,Maracaibo,2025-02-11,Premium
+C02104,Daniela Martínez,V-31065848,Natural,Caracas,2019-09-03,Premium
+C02105,Rafael Mendoza,V-10158641,Natural,Caracas,2019-05-29,Premium
+C02106,Andrea Mendoza,V-24701081,Natural,Valencia,2020-04-12,Frecuente
+C02107,Eduardo López,V-17741665,Natural,Barquisimeto,2020-05-08,Premium
+C02108,Andrea Díaz,V-29620824,Natural,Lechería,2022-04-20,Premium
+C02109,Miguel Silva,V-30702620,Natural,Lechería,2022-06-26,Premium
+C02110,Manuel López,V-28570956,Natural,Caracas,2019-11-18,Premium
+C02111,Manuel Rodríguez,V-12840261,Natural,Barquisimeto,2019-08-23,Premium
+C02112,Valentina Bracho,V-29678385,Natural,Ciudad Guayana,2020-07-20,Premium
+C02113,Eduardo Bracho,V-15179983,Natural,Ciudad Guayana,2023-07-16,Premium
+C02114,Mariana Ramírez,V-8207134,Natural,Barquisimeto,2021-12-17,Premium
+C02115,Jesús Urdaneta,V-14335221,Natural,Ciudad Guayana,2022-12-13,Premium
+C02116,Isabel Mendoza,V-13571640,Natural,Valencia,2019-08-26,Premium
+C02117,Ana Bracho,V-27668843,Natural,Caracas,2019-08-09,Frecuente
+C02118,Daniela Contreras,V-17048983,Natural,Maracaibo,2023-04-05,Premium
+C02119,Sofía Parra,V-16851000,Natural,Caracas,2020-02-01,Premium
+C02120,Lucía Vargas,V-20745847,Natural,Ciudad Guayana,2020-10-23,Frecuente
+C02121,José Mendoza,V-21871512,Natural,Caracas,2020-02-19,Premium
+C02122,Carolina López,V-14488231,Natural,Ciudad Guayana,2024-12-16,Premium
+C02123,Andrea Ramírez,V-23684462,Natural,Valencia,2019-11-07,Premium
+C02124,Daniela Díaz,V-18470633,Natural,Ciudad Guayana,2019-08-02,Premium
+C02125,Patricia Medina,V-21570687,Natural,Caracas,2022-02-16,Premium
+C02126,Elena Colmenares,V-11516877,Natural,Maracaibo,2024-06-11,Premium
+C02127,Sofía Castillo,V-16792511,Natural,Lechería,2020-09-04,Premium
+C02128,Carlos Morales,V-8897955,Natural,Maracaibo,2023-07-15,Premium
+C02129,Lucía Vargas,V-22680016,Natural,Barquisimeto,2021-04-01,Premium
+C02130,Carlos López,V-23941285,Natural,Caracas,2021-06-30,Premium
+C02131,Andrea Hernández,V-12256937,Natural,Maracaibo,2025-01-11,Premium
+C02132,Ricardo López,V-17406453,Natural,Lechería,2024-09-06,Premium
+C02133,Sofía Ramírez,V-30342488,Natural,Caracas,2025-04-10,Frecuente
+C02134,Isabel Rodríguez,V-19589173,Natural,Valencia,2022-04-06,Premium
+C02135,Daniela Sánchez,V-15976799,Natural,Caracas,2025-01-05,Premium
+C02136,Manuel Briceño,V-16375122,Natural,Lechería,2020-07-24,Premium
+C02137,Andrea Martínez,V-17295724,Natural,Caracas,2021-09-18,Premium
+C02138,Oscar Silva,V-11812509,Natural,Barquisimeto,2020-10-21,Premium
+C02139,Ricardo Torres,V-22082775,Natural,Caracas,2021-04-11,Premium
+C02140,Paola Silva,V-26274174,Natural,Lechería,2021-02-17,Premium
+C02141,Andrea González,V-19341923,Natural,Lechería,2020-03-28,Premium
+C02142,Ricardo Martínez,V-29129409,Natural,Caracas,2019-08-01,Premium
+C02143,Manuel Briceño,V-7878202,Natural,Caracas,2020-10-25,Premium
+C02144,Lucía Bracho,V-15565711,Natural,Maracaibo,2020-01-25,Premium
+C02145,Isabel Vargas,V-31552411,Natural,Maracaibo,2019-08-18,Premium
+C02146,Jesús Pérez,V-26408642,Natural,Ciudad Guayana,2024-03-20,Premium
+C02147,Valentina Ramírez,V-26148032,Natural,Caracas,2024-03-27,Premium
+C02148,Fernanda Colmenares,V-31508999,Natural,Barquisimeto,2024-04-01,Frecuente
+C02149,Isabel Torres,V-29879823,Natural,Ciudad Guayana,2023-06-17,Premium
+C02150,Pedro Colmenares,V-15417108,Natural,Barquisimeto,2020-05-16,Premium
+C02151,Distribuidora Sabana C.A.,J-49872525-7,Jurídico,Barquisimeto,2021-04-04,Corporativo
+C02152,Corporación Moriche C.A.,J-48935594-6,Jurídico,Ciudad Guayana,2022-04-06,Corporativo
+C02153,Suministros Guaraira C.A.,J-40052767-6,Jurídico,Barquisimeto,2024-07-19,Corporativo
+C02154,Bodegón Guaraira C.A.,J-33362701-5,Jurídico,Lechería,2019-06-11,Frecuente
+C02155,Suministros Araguaney C.A.,J-46863294-7,Jurídico,Barquisimeto,2023-03-10,Corporativo
+C02156,Suministros Moriche C.A.,J-48447191-0,Jurídico,Lechería,2023-01-13,Corporativo
+C02157,Corporación Tepuy C.A.,J-32850377-8,Jurídico,Valencia,2020-06-17,Frecuente
+C02158,Suministros La Guaira C.A.,J-31869478-7,Jurídico,Caracas,2024-10-09,Corporativo
+C02159,Distribuidora Sabana C.A.,J-33657910-9,Jurídico,Maracaibo,2020-04-21,Frecuente
+C02160,Inversiones Moriche C.A.,J-33677918-0,Jurídico,Maracaibo,2020-05-31,Corporativo
+C02161,Suministros El Ávila C.A.,J-33942263-4,Jurídico,Caracas,2022-04-09,Corporativo
+C02162,Grupo Paraguaná C.A.,J-45878101-1,Jurídico,Lechería,2020-08-30,Frecuente
+C02163,Comercial Orinoco C.A.,J-50328936-9,Jurídico,Valencia,2019-07-15,Frecuente
+C02164,Corporación Canaima C.A.,J-49893561-9,Jurídico,Caracas,2021-07-02,Frecuente
+C02165,Comercial Moriche C.A.,J-35076061-0,Jurídico,Lechería,2024-09-24,Frecuente
+C02166,Distribuidora Los Andes C.A.,J-46985009-0,Jurídico,Valencia,2020-12-12,Frecuente
+C02167,Comercial La Guaira C.A.,J-44012991-0,Jurídico,Lechería,2024-01-21,Corporativo
+C02168,Distribuidora Araguaney C.A.,J-49895051-3,Jurídico,Barquisimeto,2019-08-17,Frecuente
+C02169,Grupo Paraguaná C.A.,J-35444386-8,Jurídico,Barquisimeto,2019-10-21,Corporativo
+C02170,Inversiones Mérida C.A.,J-34495431-5,Jurídico,Caracas,2025-03-06,Frecuente
+C02171,Grupo Guaraira C.A.,J-44269165-0,Jurídico,Barquisimeto,2019-03-09,Corporativo
+C02172,Bodegón El Samán C.A.,J-50969585-0,Jurídico,Caracas,2024-09-11,Corporativo
+C02173,Grupo El Ávila C.A.,J-49062866-4,Jurídico,Caracas,2025-01-21,Corporativo
+C02174,Comercial Tepuy C.A.,J-41312069-1,Jurídico,Lechería,2022-06-22,Corporativo
+C02175,Comercial Tepuy C.A.,J-41614738-5,Jurídico,Barquisimeto,2021-01-08,Corporativo
+C02176,Suministros Canaima C.A.,J-30422009-3,Jurídico,Maracaibo,2024-09-20,Corporativo
+C02177,Comercial Sabana C.A.,J-48279611-4,Jurídico,Maracaibo,2020-11-17,Corporativo
+C02178,Comercial El Samán C.A.,J-47676676-5,Jurídico,Caracas,2023-09-14,Corporativo
+C02179,Corporación Orinoco C.A.,J-32244202-3,Jurídico,Barquisimeto,2024-05-26,Corporativo
+C02180,Corporación Canaima C.A.,J-30038351-1,Jurídico,Valencia,2023-06-19,Corporativo
+C02181,Bodegón Tepuy C.A.,J-50267278-8,Jurídico,Valencia,2019-12-26,Corporativo
+C02182,Comercial Orinoco C.A.,J-45148102-3,Jurídico,Maracaibo,2021-03-14,Corporativo
+C02183,Corporación Canaima C.A.,J-34083730-5,Jurídico,Maracaibo,2020-11-30,Corporativo
+C02184,Inversiones Moriche C.A.,J-37629553-2,Jurídico,Ciudad Guayana,2023-03-06,Corporativo
+C02185,Bodegón El Samán C.A.,J-40446303-7,Jurídico,Barquisimeto,2022-07-16,Corporativo
+C02186,Bodegón Sabana C.A.,J-45611570-9,Jurídico,Caracas,2022-05-08,Corporativo
+C02187,Corporación Tepuy C.A.,J-33129962-5,Jurídico,Ciudad Guayana,2019-06-13,Corporativo
+C02188,Grupo Guaraira C.A.,J-49240161-6,Jurídico,Caracas,2020-10-17,Corporativo
+C02189,Grupo Araguaney C.A.,J-45483916-1,Jurídico,Barquisimeto,2022-06-12,Frecuente
+C02190,Comercial Tepuy C.A.,J-33923937-6,Jurídico,Caracas,2024-10-13,Frecuente
+C02191,Inversiones La Guaira C.A.,J-46969685-4,Jurídico,Barquisimeto,2023-09-20,Frecuente
+C02192,Inversiones Mérida C.A.,J-32906669-9,Jurídico,Ciudad Guayana,2024-05-17,Corporativo
+C02193,Grupo Araguaney C.A.,J-35086425-8,Jurídico,Barquisimeto,2024-12-09,Frecuente
+C02194,Bodegón La Guaira C.A.,J-48534558-0,Jurídico,Lechería,2023-01-25,Corporativo
+C02195,Comercial El Samán C.A.,J-45736164-9,Jurídico,,2019-05-01,Corporativo
+C02196,Suministros El Ávila C.A.,J-47898391-6,Jurídico,Valencia,2024-09-17,Corporativo
+C02197,Comercial Del Lago C.A.,J-37533146-5,Jurídico,Maracaibo,2023-04-19,Corporativo
+C02198,Inversiones Sabana C.A.,J-42852288-8,Jurídico,Ciudad Guayana,2023-02-04,Corporativo
+C02199,Inversiones La Guaira C.A.,J-47015790-2,Jurídico,Valencia,2025-01-16,Corporativo
+C02200,Comercial Los Andes C.A.,J-44214172-5,Jurídico,Valencia,2019-04-10,Frecuente
+C02201,Corporación El Samán C.A.,J-38523690-6,Jurídico,Caracas,2020-08-08,Corporativo
+C02202,Bodegón Los Andes C.A.,J-47156507-5,Jurídico,Barquisimeto,2023-10-26,Corporativo
+C02203,Distribuidora El Samán C.A.,J-31730902-1,Jurídico,Caracas,2024-06-18,Frecuente
+C02204,Corporación Araguaney C.A.,J-37709821-8,Jurídico,Lechería,2019-10-13,Corporativo
+C02205,Suministros El Samán C.A.,J-36702547-6,Jurídico,Barquisimeto,2019-06-24,Corporativo
+C02206,Comercial El Ávila C.A.,J-30944649-1,Jurídico,Maracaibo,2024-11-11,Corporativo
+C02207,Grupo El Samán C.A.,J-50207973-7,Jurídico,Barquisimeto,2019-02-11,Frecuente
+C02208,Distribuidora Paraguaná C.A.,J-31008752-2,Jurídico,Barquisimeto,2021-02-21,Corporativo
+C02209,Inversiones Del Lago C.A.,J-37532059-8,Jurídico,Caracas,2020-11-01,Corporativo
+C02210,Suministros Moriche C.A.,J-35425193-9,Jurídico,Ciudad Guayana,2025-03-24,Corporativo
+C02211,Suministros Canaima C.A.,J-46478272-6,Jurídico,Maracaibo,2024-12-30,Frecuente
+C02212,Distribuidora Paraguaná C.A.,J-33707781-4,Jurídico,,2025-03-31,Corporativo
+C02213,Bodegón Guaraira C.A.,J-47789482-2,Jurídico,Maracaibo,2024-02-19,Frecuente
+C02214,Comercial Mérida C.A.,J-37398769-4,Jurídico,Barquisimeto,2021-02-21,Corporativo
+C02215,Suministros Canaima C.A.,J-42407360-2,Jurídico,Lechería,2020-07-19,Frecuente
+C02216,Inversiones El Samán C.A.,J-44919162-9,Jurídico,Ciudad Guayana,2020-08-13,Corporativo
+C02217,Grupo Los Andes C.A.,J-43691062-4,Jurídico,Caracas,2024-07-18,Frecuente
+C02218,Inversiones Araguaney C.A.,J-35120993-2,Jurídico,Barquisimeto,2021-06-19,Corporativo
+C02219,Suministros Caribe C.A.,J-44705002-0,Jurídico,Caracas,2020-09-19,Corporativo
+C02220,Suministros Sabana C.A.,J-38254816-0,Jurídico,Ciudad Guayana,2021-08-09,Corporativo
+C02221,Bodegón Paraguaná C.A.,J-38304557-9,Jurídico,Maracaibo,2019-12-10,Corporativo
+C02222,Corporación El Samán C.A.,J-44539007-2,Jurídico,Caracas,2024-02-29,Corporativo
+C02223,Inversiones La Guaira C.A.,J-35508067-3,Jurídico,Caracas,2019-11-15,Frecuente
+C02224,Distribuidora Orinoco C.A.,J-34709266-8,Jurídico,Lechería,2021-03-24,Corporativo
+C02225,Corporación Sabana C.A.,J-32455056-4,Jurídico,Caracas,2023-01-04,Corporativo
+C02226,Distribuidora Sabana C.A.,J-45956392-5,Jurídico,Caracas,2021-11-09,Corporativo
+C02227,Bodegón Los Andes C.A.,J-33980532-3,Jurídico,Maracaibo,2020-11-20,Frecuente
+C02228,Comercial Caribe C.A.,J-36043930-5,Jurídico,Caracas,2021-10-05,Corporativo
+C02229,Comercial Moriche C.A.,J-36287977-4,Jurídico,Caracas,2022-12-07,Corporativo
+C02230,Comercial Araguaney C.A.,J-34924535-0,Jurídico,Barquisimeto,2024-06-30,Corporativo
+C02231,Comercial Moriche C.A.,J-48701911-2,Jurídico,Lechería,2025-06-28,Corporativo
+C02232,Bodegón Canaima C.A.,J-30395231-6,Jurídico,Ciudad Guayana,2022-03-16,Frecuente
+C02233,Grupo El Samán C.A.,J-47768999-0,Jurídico,Maracaibo,2019-11-28,Frecuente
+C02234,Suministros Canaima C.A.,J-39434201-4,Jurídico,Lechería,2024-09-18,Frecuente
+C02235,Distribuidora Sabana C.A.,J-41051637-4,Jurídico,Valencia,2024-10-08,Frecuente
+C02236,Corporación El Samán C.A.,J-42807474-2,Jurídico,Lechería,2023-02-26,Frecuente
+C02237,Comercial Guaraira C.A.,J-47483966-2,Jurídico,Valencia,2025-04-15,Frecuente
+C02238,Corporación Guaraira C.A.,J-49209803-7,Jurídico,Lechería,2019-03-18,Corporativo
+C02239,Inversiones La Guaira C.A.,J-37649697-8,Jurídico,Maracaibo,2020-09-16,Corporativo
+C02240,Corporación Paraguaná C.A.,J-40763125-1,Jurídico,Barquisimeto,2024-06-15,Corporativo
+C02241,Grupo Canaima C.A.,J-45559203-4,Jurídico,Barquisimeto,2021-04-27,Corporativo
+C02242,Distribuidora Orinoco C.A.,J-42630994-6,Jurídico,Maracaibo,2020-10-03,Corporativo
+C02243,Bodegón Tepuy C.A.,J-35910162-7,Jurídico,Lechería,2021-05-22,Corporativo
+C02244,Grupo La Guaira C.A.,J-42285218-2,Jurídico,Lechería,2019-07-24,Frecuente
+C02245,Corporación Araguaney C.A.,J-43390652-3,Jurídico,Lechería,2021-06-29,Corporativo
+C02246,Bodegón Canaima C.A.,J-31794822-5,Jurídico,Lechería,2023-03-06,Frecuente
+C02247,Corporación Orinoco C.A.,J-40727670-8,Jurídico,Valencia,2022-04-08,Frecuente
+C02248,Corporación El Samán C.A.,J-45135857-9,Jurídico,Valencia,2022-11-19,Corporativo
+C02249,Suministros Guaraira C.A.,J-48906334-3,Jurídico,Caracas,2023-06-24,Corporativo
+C02250,Comercial Guaraira C.A.,J-33462394-8,Jurídico,Caracas,2024-12-17,Corporativo
+C02251,Corporación Sabana C.A.,J-44775454-8,Jurídico,Valencia,2022-03-15,Frecuente
+C02252,Suministros Canaima C.A.,J-38445800-7,Jurídico,Maracaibo,2019-11-01,Frecuente
+C02253,Inversiones Caribe C.A.,J-42140022-4,Jurídico,Ciudad Guayana,2025-02-18,Corporativo
+C02254,Comercial Moriche C.A.,J-34695458-2,Jurídico,Caracas,2023-07-29,Frecuente
+C02255,Grupo La Guaira C.A.,J-32010698-5,Jurídico,Caracas,2019-02-25,Frecuente
+C02256,Inversiones La Guaira C.A.,J-33514519-6,Jurídico,Ciudad Guayana,2020-04-20,Corporativo
+C02257,Grupo Guaraira C.A.,J-35327861-2,Jurídico,Valencia,2020-02-05,Corporativo
+C02258,Suministros Orinoco C.A.,J-41541797-1,Jurídico,Valencia,2023-03-26,Frecuente
+C02259,Inversiones Guaraira C.A.,J-49078303-4,Jurídico,Lechería,2020-12-18,Corporativo
+C02260,Distribuidora Araguaney C.A.,J-47393276-5,Jurídico,Ciudad Guayana,2023-04-05,Corporativo
+C02261,Corporación Del Lago C.A.,J-46962268-1,Jurídico,Ciudad Guayana,2023-02-19,Corporativo
+C02262,Distribuidora Orinoco C.A.,J-37561776-3,Jurídico,Lechería,2023-10-11,Corporativo
+C02263,Inversiones Araguaney C.A.,J-39368345-1,Jurídico,Ciudad Guayana,2023-08-19,Corporativo
+C02264,Grupo Paraguaná C.A.,J-37458353-4,Jurídico,Barquisimeto,2019-10-05,Corporativo
+C02265,Distribuidora La Guaira C.A.,J-31320814-3,Jurídico,Ciudad Guayana,2024-04-12,Frecuente
+C02266,Bodegón Sabana C.A.,J-49966833-3,Jurídico,,2024-12-27,Frecuente
+C02267,Distribuidora Canaima C.A.,J-36682487-7,Jurídico,Valencia,2024-12-25,Frecuente
+C02268,Distribuidora Paraguaná C.A.,J-50201489-3,Jurídico,Caracas,2022-03-07,Corporativo
+C02269,Corporación Sabana C.A.,J-34724279-5,Jurídico,Caracas,2019-04-08,Corporativo
+C02270,Grupo Caribe C.A.,J-48437924-5,Jurídico,Caracas,2020-12-22,Frecuente
+C02271,Corporación El Samán C.A.,J-33137562-4,Jurídico,Caracas,2024-02-18,Corporativo
+C02272,Suministros Paraguaná C.A.,J-46506218-4,Jurídico,Caracas,2025-05-25,Corporativo
+C02273,Bodegón Sabana C.A.,J-44181095-0,Jurídico,Lechería,2021-05-19,Frecuente
+C02274,Grupo La Guaira C.A.,J-39600106-0,Jurídico,Caracas,2025-04-12,Corporativo
+C02275,Corporación Araguaney C.A.,J-45993062-0,Jurídico,Caracas,2022-05-17,Corporativo
+C02276,Bodegón El Ávila C.A.,J-39283180-3,Jurídico,Lechería,2025-05-28,Frecuente
+C02277,Inversiones Del Lago C.A.,J-36102097-8,Jurídico,Caracas,2022-04-08,Corporativo
+C02278,Corporación Araguaney C.A.,J-37032190-4,Jurídico,Lechería,2020-03-10,Corporativo
+C02279,Suministros Mérida C.A.,J-33285825-1,Jurídico,Caracas,2021-10-03,Corporativo
+C02280,Comercial Del Lago C.A.,J-31748125-2,Jurídico,Caracas,2022-04-26,Corporativo
+C02281,Grupo Moriche C.A.,J-43389864-3,Jurídico,Valencia,2020-02-10,Frecuente
+C02282,Distribuidora Araguaney C.A.,J-41204866-0,Jurídico,Maracaibo,2021-05-23,Corporativo
+C02283,Distribuidora Sabana C.A.,J-40127392-6,Jurídico,Caracas,2022-01-31,Corporativo
+C02284,Comercial Del Lago C.A.,J-48930209-9,Jurídico,Caracas,2019-02-20,Frecuente
+C02285,Distribuidora Paraguaná C.A.,J-33088600-3,Jurídico,Barquisimeto,2024-05-11,Frecuente
+C02286,Inversiones Moriche C.A.,J-49459582-7,Jurídico,Maracaibo,2019-09-09,Frecuente
+C02287,Inversiones Mérida C.A.,J-47893585-1,Jurídico,Maracaibo,2021-04-09,Corporativo
+C02288,Comercial La Guaira C.A.,J-31471982-8,Jurídico,Valencia,2020-01-15,Frecuente
+C02289,Distribuidora El Samán C.A.,J-44095345-6,Jurídico,Caracas,2022-06-26,Corporativo
+C02290,Inversiones Orinoco C.A.,J-30719115-4,Jurídico,Barquisimeto,2021-04-14,Corporativo
+C02291,Corporación Tepuy C.A.,J-40225949-3,Jurídico,Barquisimeto,2020-02-02,Corporativo
+C02292,Bodegón Sabana C.A.,J-37112860-8,Jurídico,Lechería,2019-07-31,Frecuente
+C02293,Suministros Araguaney C.A.,J-40566955-4,Jurídico,Ciudad Guayana,2025-03-13,Corporativo
+C02294,Corporación Araguaney C.A.,J-35528082-5,Jurídico,Caracas,2020-10-23,Corporativo
+C02295,Corporación Caribe C.A.,J-41836261-9,Jurídico,Caracas,2019-03-13,Corporativo
+C02296,Bodegón Guaraira C.A.,J-34365999-7,Jurídico,Lechería,2023-10-07,Frecuente
+C02297,Distribuidora La Guaira C.A.,J-32653316-7,Jurídico,Caracas,2020-11-26,Frecuente
+C02298,Comercial Orinoco C.A.,J-50247795-6,Jurídico,Lechería,2020-02-01,Corporativo
+C02299,Corporación El Ávila C.A.,J-34610577-2,Jurídico,Caracas,2020-02-21,Frecuente
+C02300,Inversiones Caribe C.A.,J-45134010-7,Jurídico,Barquisimeto,2021-11-14,Corporativo
+C02301,Inversiones Canaima C.A.,J-46577103-1,Jurídico,Maracaibo,2023-01-14,Frecuente
+C02302,Suministros Moriche C.A.,J-39094117-3,Jurídico,Maracaibo,2020-04-15,Frecuente
+C02303,Inversiones El Ávila C.A.,J-40042627-0,Jurídico,Caracas,2024-07-04,Corporativo
+C02304,Grupo Orinoco C.A.,J-32671284-0,Jurídico,Ciudad Guayana,2022-09-01,Corporativo
+C02305,Bodegón Tepuy C.A.,J-46885636-4,Jurídico,Ciudad Guayana,2023-01-25,Corporativo
+C02306,Suministros La Guaira C.A.,J-33547198-1,Jurídico,Caracas,2020-12-17,Corporativo
+C02307,Grupo Los Andes C.A.,J-38654126-1,Jurídico,Ciudad Guayana,2019-09-24,Corporativo
+C02308,Distribuidora Mérida C.A.,J-50658416-1,Jurídico,Maracaibo,2025-04-30,Corporativo
+C02309,Bodegón El Ávila C.A.,J-50517924-3,Jurídico,Valencia,2023-02-28,Corporativo
+C02310,Suministros Tepuy C.A.,J-38030796-8,Jurídico,Valencia,2020-03-11,Frecuente
+C02311,Distribuidora Moriche C.A.,J-32673596-7,Jurídico,Caracas,2022-10-15,Corporativo
+C02312,Comercial Sabana C.A.,J-39938303-9,Jurídico,Caracas,2021-07-20,Corporativo
+C02313,Distribuidora Araguaney C.A.,J-43764577-7,Jurídico,Lechería,2024-11-19,Frecuente
+C02314,Distribuidora Caribe C.A.,J-30865717-8,Jurídico,Lechería,2024-04-22,Corporativo
+C02315,Inversiones Los Andes C.A.,J-43333623-5,Jurídico,Lechería,2020-07-29,Frecuente
+C02316,Bodegón Orinoco C.A.,J-40668917-8,Jurídico,Caracas,2024-12-27,Corporativo
+C02317,Bodegón Tepuy C.A.,J-47622740-5,Jurídico,Caracas,2020-10-12,Corporativo
+C02318,Bodegón Sabana C.A.,J-47210380-1,Jurídico,Caracas,2019-11-13,Frecuente
+C02319,Grupo Guaraira C.A.,J-48327585-7,Jurídico,Ciudad Guayana,2020-12-29,Frecuente
+C02320,Bodegón Sabana C.A.,J-49652096-1,Jurídico,Valencia,2022-01-05,Corporativo
+C02321,Bodegón Del Lago C.A.,J-33538663-5,Jurídico,Caracas,2020-08-29,Corporativo
+C02322,Comercial Paraguaná C.A.,J-45244295-8,Jurídico,Barquisimeto,2021-12-25,Corporativo
+C02323,Inversiones Moriche C.A.,J-36199868-9,Jurídico,Lechería,2025-06-20,Corporativo
+C02324,Distribuidora Moriche C.A.,J-32689419-8,Jurídico,Maracaibo,2020-07-29,Corporativo
+C02325,Comercial Guaraira C.A.,J-43178863-9,Jurídico,Caracas,2024-12-31,Corporativo
+C02326,Inversiones Moriche C.A.,J-50073712-9,Jurídico,Lechería,2021-04-08,Frecuente
+C02327,Grupo Araguaney C.A.,J-43278130-9,Jurídico,Ciudad Guayana,2024-09-04,Corporativo
+C02328,Corporación Mérida C.A.,J-42073152-4,Jurídico,Caracas,2023-08-20,Corporativo
+C02329,Comercial Tepuy C.A.,J-43085360-5,Jurídico,Barquisimeto,2024-09-07,Corporativo
+C02330,Bodegón Sabana C.A.,J-39013878-1,Jurídico,Valencia,2025-04-04,Frecuente
+C02331,Corporación Orinoco C.A.,J-49033269-7,Jurídico,Caracas,2024-08-20,Corporativo
+C02332,Comercial Los Andes C.A.,J-46890199-4,Jurídico,Caracas,2021-08-03,Corporativo
+C02333,Inversiones Orinoco C.A.,J-41485839-6,Jurídico,Maracaibo,2019-01-11,Corporativo
+C02334,Comercial La Guaira C.A.,J-43613473-0,Jurídico,Ciudad Guayana,2025-06-12,Corporativo
+C02335,Inversiones La Guaira C.A.,J-46196394-3,Jurídico,Barquisimeto,2020-08-15,Corporativo
+C02336,Corporación Orinoco C.A.,J-46278188-1,Jurídico,Valencia,2023-10-14,Corporativo
+C02337,Bodegón El Ávila C.A.,J-38805800-4,Jurídico,Caracas,2024-03-26,Frecuente
+C02338,Comercial Los Andes C.A.,J-34465475-9,Jurídico,Caracas,2021-08-23,Corporativo
+C02339,Distribuidora El Samán C.A.,J-47067173-2,Jurídico,Ciudad Guayana,2021-08-17,Frecuente
+C02340,Corporación Mérida C.A.,J-47446242-6,Jurídico,Barquisimeto,2024-07-02,Corporativo
+C02341,Distribuidora Canaima C.A.,J-43824869-7,Jurídico,Lechería,2021-07-12,Frecuente
+C02342,Grupo El Samán C.A.,J-34716897-0,Jurídico,Caracas,2020-10-08,Corporativo
+C02343,Bodegón Los Andes C.A.,J-36789278-0,Jurídico,Caracas,2020-03-11,Corporativo
+C02344,Bodegón Del Lago C.A.,J-42989454-7,Jurídico,Maracaibo,2019-06-12,Frecuente
+C02345,Corporación Paraguaná C.A.,J-44118123-6,Jurídico,Caracas,2021-06-03,Corporativo
+C02346,Distribuidora Del Lago C.A.,J-33538983-9,Jurídico,Barquisimeto,2022-04-26,Corporativo
+C02347,Distribuidora Tepuy C.A.,J-47685535-1,Jurídico,Barquisimeto,2021-02-20,Frecuente
+C02348,Suministros Caribe C.A.,J-47117660-8,Jurídico,Ciudad Guayana,2019-04-08,Corporativo
+C02349,Comercial Moriche C.A.,J-50168043-9,Jurídico,Barquisimeto,2019-07-28,Corporativo
+C02350,Corporación Guaraira C.A.,J-44136863-4,Jurídico,Maracaibo,2020-08-14,Frecuente
+C02351,Bodegón Tepuy C.A.,J-36898323-7,Jurídico,Maracaibo,2021-12-20,Corporativo
+C02352,Distribuidora Moriche C.A.,J-49591462-7,Jurídico,Barquisimeto,2022-08-02,Frecuente
+C02353,Inversiones Paraguaná C.A.,J-45629157-5,Jurídico,Caracas,2024-07-29,Frecuente
+C02354,Bodegón Araguaney C.A.,J-33323169-0,Jurídico,Maracaibo,2024-02-13,Frecuente
+C02355,Bodegón Sabana C.A.,J-30350858-5,Jurídico,Lechería,2021-08-27,Corporativo
+C02356,Distribuidora Guaraira C.A.,J-41550836-1,Jurídico,Lechería,2020-09-16,Corporativo
+C02357,Inversiones Tepuy C.A.,J-48379093-0,Jurídico,Barquisimeto,2019-12-22,Corporativo
+C02358,Comercial Sabana C.A.,J-34139216-7,Jurídico,Lechería,2021-09-13,Corporativo
+C02359,Bodegón Sabana C.A.,J-47127550-1,Jurídico,Valencia,2022-12-08,Frecuente
+C02360,Corporación La Guaira C.A.,J-37686667-0,Jurídico,Maracaibo,2024-04-24,Corporativo

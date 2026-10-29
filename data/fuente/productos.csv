@@ -1,0 +1,76 @@
+producto_id,sku,nombre,categoria,subcategoria,marca,precio_lista,costo_estandar,fecha_lanzamiento,activo
+P0001,ALI-00001,Harina de maíz 1kg La Sabanera,Alimentos,Granos y harinas,La Sabanera,1.22,0.94,2020-01-01,S
+P0002,ALI-00002,Arroz blanco 1kg Doña Clara,Alimentos,,Doña Clara,1.53,1.24,2020-01-01,S
+P0003,ALI-00003,Caraotas negras 500g Campo Llano,Alimentos,Granos y harinas,Campo Llano,1.82,1.39,2020-01-01,S
+P0004,ALI-00004,Pasta corta 1kg Doña Clara,Alimentos,Granos y harinas,Doña Clara,1.58,1.28,2020-01-01,S
+P0005,ALI-00005,Atún en aceite 140g Doña Clara,Alimentos,Enlatados,Doña Clara,2.45,1.88,2020-01-01,S
+P0006,ALI-00006,Sardinas 170g Doña Clara,Alimentos,Enlatados,Doña Clara,1.33,1.10,2020-01-01,S
+P0007,ALI-00007,Maíz dulce 300g Campo Llano,Alimentos,Enlatados,Campo Llano,1.86,1.44,2020-01-01,S
+P0008,ALI-00008,Queso blanco 500g Doña Clara,Alimentos,Lácteos,Doña Clara,4.19,3.45,2020-01-01,S
+P0009,ALI-00009,Leche en polvo 900g Doña Clara,Alimentos,Lácteos,Doña Clara,10.24,7.94,2020-01-01,S
+P0010,ALI-00010,Mantequilla 250g Doña Clara,Alimentos,Lácteos,Doña Clara,3.19,2.48,2020-01-01,S
+P0011,ALI-00011,Galletas de soda La Sabanera,Alimentos,Snacks,La Sabanera,1.35,1.10,2020-01-01,S
+P0012,ALI-00012,Tostones de plátano Doña Clara,Alimentos,Snacks,Doña Clara,1.81,1.45,2020-01-01,S
+P0013,ALI-00013,Chocolate 100g Doña Clara,Alimentos,Snacks,Doña Clara,2.36,1.87,2020-01-01,S
+P0014,BEB-00014,Refresco cola 2L Río Caura,Bebidas,Refrescos,Río Caura,2.18,1.58,2020-01-01,S
+P0015,BEB-00015,Refresco naranja 1.5L Frescolandia,Bebidas,,Frescolandia,1.99,1.41,2020-01-01,S
+P0016,BEB-00016,Malta 355ml pack 6 Río Caura,Bebidas,Refrescos,Río Caura,5.28,3.96,2020-01-01,S
+P0017,BEB-00017,Jugo de naranja 1L Frescolandia,Bebidas,Jugos,Frescolandia,2.76,2.14,2020-01-01,S
+P0018,BEB-00018,Néctar de durazno 1L Frescolandia,Bebidas,Jugos,Frescolandia,2.30,1.60,2020-01-01,S
+P0019,BEB-00019,Agua mineral 5L Frescolandia,Bebidas,Agua,Frescolandia,2.89,2.02,2020-01-01,S
+P0020,BEB-00020,Agua saborizada 600ml Cumbre Andina,Bebidas,Agua,Cumbre Andina,1.18,0.83,2020-01-01,S
+P0021,BEB-00021,Café molido 500g Río Caura,Bebidas,Café y té,Río Caura,6.84,5.25,2020-01-01,S
+P0022,BEB-00022,Té verde 25 sobres Frescolandia,Bebidas,Café y té,Frescolandia,3.00,2.31,2020-01-01,S
+P0023,LIM-00023,Detergente en polvo 2kg Hogar Limpio,Limpieza,Detergentes,Hogar Limpio,7.91,5.48,2020-01-01,S
+P0024,LIM-00024,Lavaplatos líquido 750ml Hogar Limpio,Limpieza,Detergentes,Hogar Limpio,3.37,2.29,2020-01-01,S
+P0025,LIM-00025,Cloro 1L Hogar Limpio,Limpieza,Desinfectantes,Hogar Limpio,1.62,1.06,2020-01-01,S
+P0026,LIM-00026,Desinfectante lavanda 1L Brillo Total,Limpieza,Desinfectantes,Brillo Total,2.80,1.80,2020-01-01,S
+P0027,LIM-00027,Papel higiénico 12 rollos Brillo Total,Limpieza,Papel,Brillo Total,7.86,5.18,2020-01-01,S
+P0028,LIM-00028,Servilletas 200u Hogar Limpio,Limpieza,Papel,Hogar Limpio,2.43,1.68,2020-01-01,S
+P0029,CUI-00029,Jabón de baño pack 3 Piel Serena,Cuidado personal,Higiene,Piel Serena,3.68,2.08,2020-01-01,S
+P0030,CUI-00030,Crema dental 100ml Natural Ávila,Cuidado personal,Higiene,Natural Ávila,2.45,1.60,2020-01-01,S
+P0031,CUI-00031,Desodorante roll-on Natural Ávila,Cuidado personal,Higiene,Natural Ávila,4.62,2.84,2020-01-01,S
+P0032,CUI-00032,Champú 400ml Piel Serena,Cuidado personal,Cuidado del cabello,Piel Serena,6.29,3.62,2020-01-01,S
+P0033,CUI-00033,Acondicionador 400ml Piel Serena,Cuidado personal,Cuidado del cabello,Piel Serena,6.06,3.67,2020-01-01,S
+P0034,CUI-00034,Protector solar FPS50 Piel Serena,Cuidado personal,Cosmética,Piel Serena,13.22,7.85,2020-01-01,S
+P0035,CUI-00035,Crema hidratante 200ml Aloe Caribe,Cuidado personal,Cosmética,Aloe Caribe,9.13,5.91,2020-01-01,S
+P0036,ELE-00036,Licuadora 600W Kalor,Electrodomésticos,Cocina,Kalor,45.89,37.49,2020-01-01,S
+P0037,ELE-00037,Cafetera 12 tazas Hogarix,Electrodomésticos,Cocina,Hogarix,34.36,27.86,2020-01-01,S
+P0038,ELE-00038,Freidora de aire 4L Kalor,Electrodomésticos,Cocina,Kalor,80.88,71.00,2020-01-01,S
+P0039,ELE-00039,Microondas 20L Kalor,Electrodomésticos,Cocina,Kalor,103.91,86.54,2020-01-01,S
+P0040,ELE-00040,Ventilador de pie 18in Kalor,Electrodomésticos,Climatización,Kalor,45.08,38.21,2020-01-01,S
+P0041,ELE-00041,Aire acondicionado 12000BTU Kalor,Electrodomésticos,Climatización,Kalor,352.27,306.14,2020-01-01,S
+P0042,ELE-00042,Lavadora 12kg Hogarix,Electrodomésticos,Lavado,Hogarix,391.76,344.63,2020-01-01,S
+P0043,ELE-00043,Plancha a vapor VentiMax,Electrodomésticos,Lavado,VentiMax,30.13,24.71,2020-01-01,S
+P0044,TEC-00044,Teléfono inteligente 128GB Orinoco Digital,Tecnología,Telefonía,Orinoco Digital,222.17,188.82,2020-01-01,S
+P0045,TEC-00045,Teléfono básico Pixelia,Tecnología,Telefonía,Pixelia,32.73,29.63,2020-01-01,S
+P0046,TEC-00046,Laptop 15in 8GB Orinoco Digital,Tecnología,,Orinoco Digital,540.41,454.49,2020-01-01,S
+P0047,TEC-00047,Tableta 10in Pixelia,Tecnología,Computación,Pixelia,180.88,159.70,2020-01-01,S
+P0048,TEC-00048,Monitor 24in NovaTek,Tecnología,Computación,NovaTek,155.03,142.45,2020-01-01,S
+P0049,TEC-00049,Audífonos inalámbricos Orinoco Digital,Tecnología,Accesorios,Orinoco Digital,33.60,29.71,2020-01-01,S
+P0050,TEC-00050,Cargador rápido 20W Pixelia,Tecnología,Accesorios,Pixelia,13.82,12.20,2020-01-01,S
+P0051,TEC-00051,Mouse inalámbrico Pixelia,Tecnología,Accesorios,Pixelia,13.13,11.18,2020-01-01,S
+P0052,TEC-00052,Memoria USB 64GB Orinoco Digital,Tecnología,Accesorios,Orinoco Digital,9.01,7.79,2020-01-01,S
+P0053,HOG-00053,Juego de ollas 5 piezas Casa Ávila,Hogar,Cocina y mesa,Casa Ávila,52.77,31.96,2020-01-01,S
+P0054,HOG-00054,Vajilla 16 piezas Tepuy Home,Hogar,Cocina y mesa,Tepuy Home,41.65,25.22,2020-01-01,S
+P0055,HOG-00055,Juego de cubiertos Casa Ávila,Hogar,Cocina y mesa,Casa Ávila,21.55,14.01,2020-01-01,S
+P0056,HOG-00056,Cojín decorativo Tepuy Home,Hogar,Decoración,Tepuy Home,8.98,6.22,2020-01-01,S
+P0057,HOG-00057,Lámpara de mesa Casa Ávila,Hogar,Decoración,Casa Ávila,22.85,14.22,2020-01-01,S
+P0058,HOG-00058,Caja organizadora 30L Casa Ávila,Hogar,Organización,Casa Ávila,9.93,6.87,2020-01-01,S
+P0059,HOG-00059,Repisa flotante Tepuy Home,Hogar,Organización,Tepuy Home,15.59,10.42,2020-01-01,S
+P0060,FER-00060,Taladro percutor Fuerte Llanero,Ferretería,Herramientas,Fuerte Llanero,58.85,42.38,2020-01-01,S
+P0061,FER-00061,Juego de destornilladores Fuerte Llanero,Ferretería,Herramientas,Fuerte Llanero,13.89,10.11,2020-01-01,S
+P0062,FER-00062,Martillo de uña TecnoObra,Ferretería,Herramientas,TecnoObra,8.43,5.83,2020-01-01,S
+P0063,FER-00063,Bombillo LED 12W pack 4 TecnoObra,Ferretería,Electricidad,TecnoObra,6.94,4.95,2020-01-01,S
+P0064,FER-00064,Extensión eléctrica 5m TecnoObra,Ferretería,Electricidad,TecnoObra,6.85,4.74,2020-01-01,S
+P0065,FER-00065,Pintura de caucho galón Fuerte Llanero,Ferretería,Pinturas,Fuerte Llanero,26.12,18.18,2020-01-01,S
+P0066,FER-00066,Brocha 3in TecnoObra,Ferretería,Pinturas,TecnoObra,3.07,2.05,2020-01-01,S
+P0067,PAP-00067,Cuaderno universitario Pluma Andina,Papelería,Escolar,Pluma Andina,2.40,1.34,2020-01-01,S
+P0068,PAP-00068,Caja de colores 24 Pluma Andina,Papelería,Escolar,Pluma Andina,4.37,2.56,2020-01-01,S
+P0069,PAP-00069,Morral escolar Pluma Andina,Papelería,Escolar,Pluma Andina,16.02,9.84,2020-01-01,S
+P0070,PAP-00070,Resma carta 500h Pluma Andina,Papelería,Oficina,Pluma Andina,6.63,4.13,2020-01-01,S
+P0071,PAP-00071,Bolígrafos pack 12 Pluma Andina,Papelería,Oficina,Pluma Andina,4.11,2.40,2020-01-01,S
+P0072,JAR-00072,Suculenta en maceta Verde Caribe,Jardinería,Plantas,Verde Caribe,5.78,3.65,2026-04-01,S
+P0073,JAR-00073,Tierra abonada 5kg Verde Caribe,Jardinería,Plantas,Verde Caribe,7.14,4.71,2026-04-01,S
+P0074,JAR-00074,Manguera 15m Verde Caribe,Jardinería,,Verde Caribe,19.70,13.18,2026-04-01,S
+P0075,JAR-00075,Tijera de podar Verde Caribe,Jardinería,Herramientas de jardín,Verde Caribe,13.21,8.36,2026-04-01,S
