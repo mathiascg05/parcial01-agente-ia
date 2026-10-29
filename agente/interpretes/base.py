@@ -161,6 +161,9 @@ def construir_intencion(datos: dict, meta, origen: str) -> Intencion:
         operacion = "total"
     if operacion == "tendencia" and dimension and not DIMENSIONES[dimension].temporal:
         operacion = "ranking"
+    if operacion == "total" and dimension:
+        # "Ventas por canal" pedida como total: un total no se agrupa; con dimensión es un desglose.
+        operacion = "tendencia" if DIMENSIONES[dimension].temporal else "ranking"
 
     periodo = resolver_periodo(datos.get("periodo"), meta, supuestos)
     periodo_comp = None
