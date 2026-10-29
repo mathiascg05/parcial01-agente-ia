@@ -1,0 +1,371 @@
+{
+ "modelo": "openai/gpt-4o-mini",
+ "proveedor": "OpenRouter (chat web, cuenta del equipo)",
+ "fecha": "2026-10-29",
+ "modo": "lote: el prompt de sistema del agente + N preguntas, una respuesta JSON por id",
+ "prompt": "v1 (reglas 1-10)",
+ "respuestas_llm": {
+  "P01": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "ingreso_neto",
+   "dimension": "mes",
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 12
+   },
+   "orden": "desc"
+  },
+  "P02": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "dimension": "categoria",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "desc",
+   "limite": 5
+  },
+  "P03": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ticket_promedio",
+   "dimension": "sucursal",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "desc",
+   "limite": 1
+  },
+  "P04": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "unidades",
+   "dimension": "segmento"
+  },
+  "P05": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "monto_bruto",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "desc",
+   "limite": 1
+  },
+  "P06": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "metrica": "margen_bruto",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 3
+   },
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "App móvil",
+      "Delivery WhatsApp"
+     ]
+    }
+   ],
+   "desglose": "mes"
+  },
+  "P07": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "metrica": "margen_bruto",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 3
+   },
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "Tienda física",
+      "Mayorista B2B"
+     ]
+    }
+   ],
+   "desglose": "mes"
+  },
+  "P08": {
+   "tipo": "ambigua",
+   "opciones": [
+    "ingreso_neto",
+    "margen_bruto",
+    "unidades",
+    "ticket_promedio"
+   ]
+  },
+  "P09": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "unidades",
+   "dimension": "producto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2026,
+    "numero": 2
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Bebidas"
+     ]
+    }
+   ],
+   "orden": "desc",
+   "limite": 1
+  },
+  "P10": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "dimension": "cliente",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "desc",
+   "limite": 10
+  },
+  "P11": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "descuento_pct",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "todo"
+   }
+  },
+  "P12": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_pct",
+   "dimension": "producto",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "asc"
+  },
+  "P13": {
+   "tipo": "ambigua",
+   "opciones": [
+    "ingreso_neto",
+    "margen_bruto",
+    "unidades",
+    "ticket_promedio"
+   ]
+  },
+  "P14": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "dimension": "region",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "desc"
+  },
+  "P15": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P16": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P17": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2026,
+    "numero": 1
+   },
+   "periodo_comparacion": {
+    "tipo": "trimestre",
+    "anio": 2025,
+    "numero": 1
+   }
+  },
+  "P18": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "metrica": "margen_bruto",
+   "dimension": "categoria",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Hogar",
+      "Tecnología"
+     ]
+    }
+   ]
+  },
+  "P19": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "unidades",
+   "dimension": "subcategoria",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Jardinería"
+     ]
+    }
+   ]
+  },
+  "P20": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P21": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P22": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "Instagram"
+     ]
+    }
+   ]
+  },
+  "P23a": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "orden": "desc",
+   "limite": 1
+  },
+  "P24": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P25": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "unidades",
+   "dimension": "segmento"
+  },
+  "P26": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "transacciones",
+   "dimension": "mes",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   }
+  },
+  "P27": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2026,
+    "numero": 1
+   },
+   "periodo_comparacion": {
+    "tipo": "trimestre",
+    "anio": 2025,
+    "numero": 1
+   }
+  },
+  "P28": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "monto_bruto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "periodo_comparacion": {
+    "tipo": "anio",
+    "anio": 2025
+   }
+  },
+  "P29": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "metrica": "ingreso_neto",
+   "dimension": "sucursal",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "filtros": [
+    {
+     "dimension": "sucursal",
+     "valores": [
+      "Chacao",
+      "Lechería"
+     ]
+    }
+   ]
+  },
+  "P30": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_pct",
+   "dimension": "categoria",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "asc",
+   "limite": 1
+  },
+  "P31": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "monto_bruto",
+   "periodo": {
+    "tipo": "semestre",
+    "anio": 2026,
+    "numero": 2
+   }
+  },
+  "P32": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P33": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "dimension": "producto",
+   "periodo": {
+    "tipo": "todo"
+   },
+   "orden": "asc"
+  }
+ },
+ "nota": "La salida se cortó por el límite de tokens antes de P34; P34 no se evaluó en esta corrida."
+}

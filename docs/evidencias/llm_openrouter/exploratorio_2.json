@@ -1,0 +1,286 @@
+{
+ "modelo": "openai/gpt-4o-mini",
+ "proveedor": "OpenRouter (chat web, cuenta del equipo)",
+ "fecha": "2026-10-29",
+ "modo": "lote: el prompt de sistema del agente + N preguntas, una respuesta JSON por id",
+ "prompt": "v2",
+ "nota": "Segundo conjunto nuevo, escrito antes de ver resultados. El resultado ANTES de los ajustes que motivó se informa en el informe/bitácora.",
+ "preguntas": {
+  "F01": {
+   "pregunta": "¿Cuánto facturamos en el tercer trimestre de 2025?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "ingreso_neto",
+    "periodo": "T3-2025"
+   }
+  },
+  "F02": {
+   "pregunta": "¿Cuáles fueron las 3 sucursales con menos transacciones en 2026?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "transacciones",
+    "dimension": "sucursal",
+    "orden": "asc",
+    "limite": 3,
+    "periodo": "2026"
+   }
+  },
+  "F03": {
+   "pregunta": "Evolución mensual del margen porcentual de Electrodomésticos en 2026",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "margen_pct",
+    "dimension": "mes",
+    "filtros": {
+     "categoria": [
+      "Electrodomésticos"
+     ]
+    },
+    "periodo": "2026"
+   }
+  },
+  "F04": {
+   "pregunta": "¿Qué marca de Bebidas vendió más unidades?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "unidades",
+    "dimension": "marca",
+    "filtros": {
+     "categoria": [
+      "Bebidas"
+     ]
+    }
+   }
+  },
+  "F05": {
+   "pregunta": "Compara el ticket promedio de App móvil contra E-commerce web",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "ticket_promedio",
+    "dimension": "canal",
+    "filtros": {
+     "canal": [
+      "App móvil",
+      "E-commerce web"
+     ]
+    }
+   }
+  },
+  "F06": {
+   "pregunta": "¿Cuál fue el descuento total en la región Occidental durante el primer semestre de 2026?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "descuento",
+    "filtros": {
+     "region": [
+      "Occidental"
+     ]
+    },
+    "periodo": "primer semestre 2026"
+   }
+  },
+  "F07": {
+   "pregunta": "¿Los fines de semana se vende más que entre semana?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": [
+     "ingreso_neto",
+     "unidades"
+    ],
+    "dimension": "tipo_dia"
+   }
+  },
+  "F08": {
+   "pregunta": "¿Qué estado tuvo más clientes activos en agosto de 2026?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "clientes_activos",
+    "dimension": "estado",
+    "periodo": "agosto 2026"
+   }
+  },
+  "F09": {
+   "pregunta": "Elimina los clientes duplicados",
+   "esperado": {
+    "respuesta": "RECHAZO"
+   }
+  },
+  "F10": {
+   "pregunta": "¿Cuánto ganamos con el producto Café molido 500g Río Caura en 2025?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": [
+     "ingreso_neto",
+     "margen_bruto"
+    ],
+    "filtros": {
+     "producto": [
+      "Café molido 500g Río Caura"
+     ]
+    },
+    "periodo": "2025"
+   }
+  },
+  "F11": {
+   "pregunta": "¿Cuál es la marca más rentable?",
+   "esperado": {
+    "respuesta": [
+     "RESPUESTA",
+     "ACLARACION"
+    ],
+    "metrica": [
+     "margen_bruto",
+     "margen_pct"
+    ],
+    "dimension": "marca"
+   }
+  },
+  "F12": {
+   "pregunta": "¿Cuántas devoluciones hubo en 2026?",
+   "esperado": {
+    "respuesta": "RECHAZO"
+   }
+  }
+ },
+ "respuestas_llm": {
+  "F01": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2025,
+    "numero": 3
+   }
+  },
+  "F02": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "transacciones",
+   "dimension": "sucursal",
+   "orden": "asc",
+   "limite": 3,
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   }
+  },
+  "F03": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "margen_pct",
+   "dimension": "mes",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Electrodomésticos"
+     ]
+    }
+   ]
+  },
+  "F04": {
+   "tipo": "ambigua",
+   "opciones": [
+    "unidades",
+    "ingreso_neto",
+    "ticket_promedio"
+   ],
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Bebidas"
+     ]
+    }
+   ]
+  },
+  "F05": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "metrica": "ticket_promedio",
+   "dimension": "tipo_canal",
+   "filtros": [
+    {
+     "dimension": "tipo_canal",
+     "valores": [
+      "Digital",
+      "Presencial"
+     ]
+    }
+   ]
+  },
+  "F06": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "descuento",
+   "periodo": {
+    "tipo": "semestre",
+    "anio": 2026,
+    "numero": 1
+   },
+   "filtros": [
+    {
+     "dimension": "region",
+     "valores": [
+      "Occidental"
+     ]
+    }
+   ]
+  },
+  "F07": {
+   "tipo": "ambigua",
+   "opciones": [
+    "ingreso_neto",
+    "transacciones",
+    "unidades"
+   ]
+  },
+  "F08": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "clientes_activos",
+   "periodo": {
+    "tipo": "mes",
+    "anio": 2026,
+    "numero": 8
+   },
+   "filtros": []
+  },
+  "F09": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "F10": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "filtros": [
+    {
+     "dimension": "producto",
+     "valores": [
+      "Café molido 500g Río Caura"
+     ]
+    }
+   ]
+  },
+  "F11": {
+   "tipo": "ambigua",
+   "opciones": [
+    "margen_bruto",
+    "ingreso_neto",
+    "unidades"
+   ]
+  },
+  "F12": {
+   "tipo": "fuera_de_alcance"
+  }
+ }
+}

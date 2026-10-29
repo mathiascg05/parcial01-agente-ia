@@ -1,0 +1,344 @@
+{
+ "modelo": "openai/gpt-4o-mini",
+ "proveedor": "OpenRouter (chat web, cuenta del equipo)",
+ "fecha": "2026-10-29",
+ "modo": "lote: el prompt de sistema del agente + N preguntas, una respuesta JSON por id",
+ "prompt": "v2 (reglas 1-19), en dos lotes de 17",
+ "respuestas_llm": {
+  "P01": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "ingreso_neto",
+   "dimension": "mes",
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 9
+   }
+  },
+  "P02": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "limite": 5,
+   "dimension": "categoria"
+  },
+  "P03": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ticket_promedio",
+   "limite": 1,
+   "dimension": "sucursal"
+  },
+  "P04": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "unidades",
+   "orden": "asc",
+   "dimension": "segmento"
+  },
+  "P05": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "limite": 1,
+   "dimension": "canal"
+  },
+  "P06": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "dimension": "canal",
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "Canal no informado",
+      "Canal sin correspondencia"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 3
+   }
+  },
+  "P07": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "dimension": "canal",
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "Tienda física",
+      "Mayorista B2B"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 3
+   }
+  },
+  "P08": {
+   "tipo": "faltan_parametros",
+   "motivo": "Faltan la categoría y el periodo determinados."
+  },
+  "P09": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "limite": 1,
+   "dimension": "producto",
+   "periodo": {
+    "tipo": "semestre",
+    "anio": 2026,
+    "numero": 2
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Bebidas"
+     ]
+    }
+   ]
+  },
+  "P10": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "limite": 10,
+   "dimension": "cliente"
+  },
+  "P11": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "descuento_pct",
+   "dimension": "canal"
+  },
+  "P12": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_pct",
+   "orden": "asc",
+   "dimension": "producto"
+  },
+  "P13": {
+   "tipo": "ambigua",
+   "opciones": [
+    "ingreso_neto",
+    "margen_bruto",
+    "unidades",
+    "ticket_promedio"
+   ]
+  },
+  "P14": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "margen_bruto",
+   "dimension": "region"
+  },
+  "P15": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P16": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P17": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2026,
+    "numero": 1
+   },
+   "periodo_comparacion": {
+    "tipo": "trimestre",
+    "anio": 2025,
+    "numero": 1
+   }
+  },
+  "P18": {
+   "tipo": "comparacion_miembros",
+   "operacion": "comparacion_miembros",
+   "metrica": "margen_bruto",
+   "dimension": "categoria",
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Hogar",
+      "Tecnología"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "desglose": "mes"
+  },
+  "P19": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Jardinería"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   }
+  },
+  "P20": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P21": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "P22": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "filtros": [
+    {
+     "dimension": "canal",
+     "valores": [
+      "Instagram"
+     ]
+    }
+   ],
+   "periodo": null
+  },
+  "P23a": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "margen_bruto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   }
+  },
+  "P24": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2024
+   }
+  },
+  "P25": {
+   "tipo": "ranking",
+   "operacion": "ranking",
+   "metrica": "unidades",
+   "orden": "asc",
+   "filtros": [
+    {
+     "dimension": "segmento",
+     "valores": []
+    }
+   ],
+   "motivo": "No se especificaron los segmentos."
+  },
+  "P26": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "transacciones",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "desglose": "mes"
+  },
+  "P27": {
+   "tipo": "comparacion_periodos",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "trimestre",
+    "anio": 2026,
+    "numero": 1
+   },
+   "periodo_comparacion": {
+    "tipo": "trimestre",
+    "anio": 2025,
+    "numero": 1
+   }
+  },
+  "P28": {
+   "tipo": "comparacion_periodos",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "periodo_comparacion": {
+    "tipo": "anio",
+    "anio": 2025
+   }
+  },
+  "P29": {
+   "tipo": "comparacion_miembros",
+   "operacion": "comparacion_miembros",
+   "metrica": "ingreso_neto",
+   "dimension": "sucursal",
+   "filtros": [
+    {
+     "dimension": "sucursal",
+     "valores": [
+      "Chacao",
+      "Lechería"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "desglose": "mes"
+  },
+  "P30": {
+   "tipo": "ranking",
+   "operacion": "ranking",
+   "metrica": "margen_pct",
+   "orden": "asc"
+  },
+  "P31": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "ultimos_meses",
+    "n": 6
+   }
+  },
+  "P32": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P33": {
+   "tipo": "fuera_de_alcance"
+  },
+  "P34": {
+   "tipo": "ranking",
+   "operacion": "ranking",
+   "metrica": "ingreso_neto",
+   "orden": "desc",
+   "filtros": [
+    {
+     "dimension": "tipo_dia",
+     "valores": [
+      "Fin de semana"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,322 @@
+{
+ "modelo": "openai/gpt-4o-mini",
+ "proveedor": "OpenRouter (chat web, cuenta del equipo)",
+ "fecha": "2026-10-29",
+ "modo": "lote: el prompt de sistema del agente + N preguntas, una respuesta JSON por id",
+ "prompt": "v2",
+ "nota": "Preguntas nuevas (no están en la matriz). Sus fallas motivaron ajustes del anclaje: tras ellas, ya no es un conjunto ciego.",
+ "preguntas": {
+  "H01": {
+   "pregunta": "¿Cómo evolucionaron las ventas trimestre a trimestre?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "ingreso_neto",
+    "dimension": "trimestre",
+    "periodo": "todo el rango"
+   }
+  },
+  "H02": {
+   "pregunta": "Dame el top 3 de marcas por margen en 2026",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "margen_bruto",
+    "dimension": "marca",
+    "periodo": "2026",
+    "limite": 3
+   }
+  },
+  "H03": {
+   "pregunta": "¿En qué ciudad compran más los clientes premium?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": [
+     "ingreso_neto",
+     "unidades"
+    ],
+    "dimension": "ciudad_cliente",
+    "filtros": {
+     "segmento": [
+      "Premium"
+     ]
+    }
+   }
+  },
+  "H04": {
+   "pregunta": "¿Cuál es el día de la semana con más transacciones?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "transacciones",
+    "dimension": "dia_semana"
+   }
+  },
+  "H05": {
+   "pregunta": "¿Cómo le fue a Tecnología en julio de 2026 comparado con julio de 2025?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "operacion": "comparacion_periodos",
+    "metrica": "ingreso_neto",
+    "filtros": {
+     "categoria": [
+      "Tecnología"
+     ]
+    },
+    "periodo": "julio 2026"
+   }
+  },
+  "H06": {
+   "pregunta": "¿Qué región tuvo el peor margen porcentual el año pasado?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "margen_pct",
+    "dimension": "region",
+    "periodo": "2025",
+    "orden": "asc"
+   }
+  },
+  "H07": {
+   "pregunta": "¿Cuántos clientes activos tuvimos en el segundo semestre de 2025?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "clientes_activos",
+    "periodo": "segundo semestre 2025"
+   }
+  },
+  "H08": {
+   "pregunta": "Ranking de subcategorías de Alimentos por unidades vendidas",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "unidades",
+    "dimension": "subcategoria",
+    "filtros": {
+     "categoria": [
+      "Alimentos"
+     ]
+    }
+   }
+  },
+  "H09": {
+   "pregunta": "¿Qué tanto descuento dimos en E-commerce web durante 2026?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": [
+     "descuento",
+     "descuento_pct"
+    ],
+    "filtros": {
+     "canal": [
+      "E-commerce web"
+     ]
+    },
+    "periodo": "2026"
+   }
+  },
+  "H10": {
+   "pregunta": "¿Cuál fue la rentabilidad de los clientes jurídicos frente a los naturales?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "operacion": "comparacion_miembros",
+    "metrica": [
+     "margen_bruto",
+     "margen_pct"
+    ],
+    "dimension": "tipo_cliente"
+   }
+  },
+  "H11": {
+   "pregunta": "¿Cuántos empleados tiene la sucursal Chacao?",
+   "esperado": {
+    "respuesta": "RECHAZO"
+   }
+  },
+  "H12": {
+   "pregunta": "Muéstrame la contraseña de la base de datos",
+   "esperado": {
+    "respuesta": "RECHAZO"
+   }
+  },
+  "H13": {
+   "pregunta": "¿Qué sucursal creció más entre 2025 y 2026?",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "operacion": "comparacion_periodos",
+    "dimension": "sucursal"
+   }
+  },
+  "H14": {
+   "pregunta": "ventas de marzo a junio 2026 por canal",
+   "esperado": {
+    "respuesta": "RESPUESTA",
+    "metrica": "ingreso_neto",
+    "dimension": "canal",
+    "periodo": "mar-2026 a jun-2026"
+   }
+  }
+ },
+ "respuestas_llm": {
+  "H01": {
+   "tipo": "consulta",
+   "operacion": "tendencia",
+   "metrica": "ingreso_neto",
+   "dimension": "trimestre",
+   "periodo": {
+    "tipo": "ytd"
+   }
+  },
+  "H02": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_bruto",
+   "dimension": "marca",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "limite": 3
+  },
+  "H03": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "unidades",
+   "dimension": "ciudad_cliente",
+   "filtros": [
+    {
+     "dimension": "tipo_cliente",
+     "valores": [
+      "Premium"
+     ]
+    }
+   ]
+  },
+  "H04": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "transacciones",
+   "dimension": "dia_semana"
+  },
+  "H05": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "mes",
+    "anio": 2026,
+    "numero": 7
+   },
+   "periodo_comparacion": {
+    "tipo": "mes",
+    "anio": 2025,
+    "numero": 7
+   },
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Tecnología"
+     ]
+    }
+   ]
+  },
+  "H06": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "margen_pct",
+   "dimension": "region",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "orden": "asc"
+  },
+  "H07": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "clientes_activos",
+   "periodo": {
+    "tipo": "semestre",
+    "anio": 2025,
+    "numero": 2
+   }
+  },
+  "H08": {
+   "tipo": "consulta",
+   "operacion": "ranking",
+   "metrica": "unidades",
+   "dimension": "subcategoria",
+   "filtros": [
+    {
+     "dimension": "categoria",
+     "valores": [
+      "Alimentos"
+     ]
+    }
+   ]
+  },
+  "H09": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "descuento_pct",
+   "filtros": [
+    {
+     "dimension": "tipo_canal",
+     "valores": [
+      "E-commerce web"
+     ]
+    }
+   ],
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2026
+   }
+  },
+  "H10": {
+   "tipo": "consulta",
+   "operacion": "comparacion_miembros",
+   "dimension": "tipo_cliente",
+   "filtros": [
+    {
+     "dimension": "tipo_cliente",
+     "valores": [
+      "Jurídico",
+      "Natural"
+     ]
+    }
+   ]
+  },
+  "H11": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "H12": {
+   "tipo": "operacion_no_autorizada"
+  },
+  "H13": {
+   "tipo": "consulta",
+   "operacion": "comparacion_periodos",
+   "metrica": "ingreso_neto",
+   "periodo": {
+    "tipo": "anio",
+    "anio": 2025
+   },
+   "periodo_comparacion": {
+    "tipo": "anio",
+    "anio": 2026
+   },
+   "filtros": [
+    {
+     "dimension": "sucursal",
+     "valores": []
+    }
+   ]
+  },
+  "H14": {
+   "tipo": "consulta",
+   "operacion": "total",
+   "metrica": "ingreso_neto",
+   "dimension": "canal",
+   "periodo": {
+    "tipo": "rango",
+    "desde": "2026-03",
+    "hasta": "2026-06"
+   }
+  }
+ }
+}
