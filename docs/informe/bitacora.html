@@ -1,0 +1,155 @@
+<html><head><meta charset="utf-8"><style>
+@page { size: Letter; }
+* { box-sizing: border-box; }
+body { font-family: 'Arial', 'Helvetica', sans-serif; font-size: 10.5pt; color: #1f2937; line-height: 1.45; }
+h1 { font-size: 17pt; color: #1F3864; border-bottom: 2px solid #1F3864; padding-bottom: 4px; margin-top: 26px; page-break-after: avoid; }
+h2 { font-size: 13pt; color: #1F3864; margin-top: 18px; page-break-after: avoid; }
+h3 { font-size: 11pt; color: #334155; margin-top: 12px; page-break-after: avoid; }
+p { margin: 6px 0; text-align: justify; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0 12px; font-size: 9pt; page-break-inside: auto; }
+tr { page-break-inside: avoid; }
+th { background: #1F3864; color: #fff; text-align: left; padding: 5px 6px; }
+td { border: 1px solid #cbd5e1; padding: 4px 6px; vertical-align: top; }
+tr:nth-child(even) td { background: #f8fafc; }
+code, pre { font-family: 'Courier New', monospace; font-size: 8.4pt; }
+pre { background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 4px; padding: 8px; white-space: pre-wrap; page-break-inside: avoid; }
+.caja { border-left: 4px solid #1F3864; background: #eef2ff; padding: 8px 12px; margin: 10px 0; page-break-inside: avoid; }
+.ok { color: #166534; font-weight: bold; } .falla { color: #991b1b; font-weight: bold; }
+figure { margin: 10px 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; border: 1px solid #e2e8f0; }
+figcaption { font-size: 9pt; color: #475569; margin-top: 4px; }
+.portada { height: 21.5cm; display: flex; flex-direction: column; justify-content: space-between; page-break-after: always; }
+.portada .top { font-size: 11pt; color: #475569; }
+.portada h1 { border: none; font-size: 26pt; margin: 0; line-height: 1.15; }
+.portada .sub { font-size: 14pt; color: #334155; margin-top: 10px; }
+.portada table td { border: none; padding: 3px 8px 3px 0; font-size: 11pt; background: none !important; }
+.toc li { margin: 2px 0; }
+.small { font-size: 8.8pt; color: #475569; }
+
+    .ent { border: 1px solid #cbd5e1; border-radius: 6px; margin: 10px 0 14px; page-break-inside: avoid; }
+    .ent .cab { background: #1F3864; color: #fff; padding: 6px 10px; font-weight: bold; border-radius: 6px 6px 0 0; }
+    .ent .cab span { float: right; font-weight: normal; }
+    .ent table { margin: 0; } .ent td.k { width: 24%; font-weight: bold; background: #f1f5f9 !important; }
+    </style></head><body>
+    <h1 style="margin-top:0">Bitácora de uso de IA · Parcial 01</h1>
+    <p><b>Equipo 02</b> · Mathias Carstens, Mikel Muñoz, Leonardo Reyes, Federico Celis, Fernando Álvarez · Tópicos Especiales para la Gestión de Datos · Prof. Armen Djenanian</p>
+    <div class="caja">La IA se usó como <b>asistente de desarrollo</b> (Claude) y como <b>componente del producto</b> (LLM vía OpenRouter
+    dentro del agente). Ningún resultado de la IA se aceptó sin una validación técnica verificable: ejecución en PostgreSQL,
+    conciliación independiente con pandas, pruebas unitarias, matriz de pruebas y revisión visual. Las entradas registran también
+    los resultados que se modificaron o rechazaron. Pendiente del equipo: registrar una entrada al probar el modo LLM con la
+    API key real de OpenRouter (python scripts/ejecutar_pruebas.py --modo auto).</div>
+    <h2>Resumen de decisiones</h2><table><thead><tr><th style="width:8%">#</th><th>Componente</th><th style="width:26%">Decisión</th></tr></thead>
+    <tbody><tr><td>1</td><td>Planificación</td><td>Aceptar</td></tr><tr><td>2</td><td>Dataset (fuente operacional)</td><td>Modificar</td></tr><tr><td>3</td><td>Dataset / SCD2</td><td>Modificar</td></tr><tr><td>4</td><td>Data Mart (sql/Datamart.sql)</td><td>Aceptar</td></tr><tr><td>5</td><td>Decisión SCD</td><td>Aceptar</td></tr><tr><td>6</td><td>BDOO (agente/bdoo/)</td><td>Modificar</td></tr><tr><td>7</td><td>Intérprete por reglas</td><td>Modificar</td></tr><tr><td>8</td><td>Intérprete LLM (OpenRouter) y regla RV11</td><td>Aceptar con reserva</td></tr><tr><td>9</td><td>Seguridad</td><td>Aceptar</td></tr><tr><td>10</td><td>Pruebas (Pruebas.xlsx)</td><td>Modificar</td></tr><tr><td>11</td><td>Diagramas</td><td>Rechazar (arquitectura)</td></tr><tr><td>12</td><td>Informe técnico y bitácora</td><td>Aceptar con revisión del equipo</td></tr><tr><td>13</td><td>Agente en ejecución (uso de IA dentro del producto)</td><td>Aceptar</td></tr><tr><td>14</td><td>Revisión independiente del agente</td><td>Modificar</td></tr></tbody></table>
+    <h2>Entradas</h2><div class="ent"><div class="cab">Entrada 1 · Planificación
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>«Vamos a diseñar y ejecutar un plan para realizar esta asignatura. Dame todas las dudas que tengas al respecto» (adjuntos: enunciado del Parcial 01 y anuncio de Canvas con fechas).</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Lista de 14 dudas priorizadas (dataset, motor de la BDOO, motor del Data Mart, LLM, equipo, reparto, interfaz, SCD, preguntas adicionales, fecha de la presentación) con una propuesta por defecto para cada una.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Planificación</td></tr>
+        <tr><td class="k">Validación técnica</td><td>El equipo contrastó las dudas con el enunciado (secciones 4–11) y con las presentaciones P04 (DW) y P06 (BDOO) del docente.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Respondimos: el docente no dio dataset (crear uno propio), usar OpenRouter como LLM, mismo equipo de proyecto.</td></tr></table></div><div class="ent"><div class="cab">Entrada 2 · Dataset (fuente operacional)
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>«No dio un dataset, supongo que podemos crear nosotros nuestro propio dataset con la estructura conveniente y apropiada. Te mando presentaciones del profesor. Para el LLM podemos usar OpenRouter… haz todo el plan tú para ejecutarlo desde acá»</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Generador determinista data/generar_dataset.py (semilla fija) de una empresa ficticia con errores de calidad sembrados.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Dataset (fuente operacional)</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Se revisaron con pandas las distribuciones por mes, categoría, canal y sucursal. Hallazgos: Tecnología dominaba el ingreso porque el canal mayorista compraba entre 6 y 48 laptops por línea, y los precios por rango de categoría producían casos absurdos (un mouse más caro que una laptop).</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se corrigieron las cantidades mayoristas por tipo de producto y se fijó un precio de referencia por producto (±12 % por marca), para que las conclusiones de negocio fueran verosímiles.</td></tr></table></div><div class="ent"><div class="cab">Entrada 3 · Dataset / SCD2
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Ejecución del script SQL sobre el dataset generado.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código) + PostgreSQL 16</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>La carga falló: la restricción CHECK ck_cliente_vigencia rechazó una versión de cliente con fecha_fin &lt; fecha_inicio.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Dataset / SCD2</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Se rastreó al generador: algunas reclasificaciones de segmento caían antes de la fecha de alta del cliente.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se exigió que la reclasificación ocurra al menos 30 días después del alta. La restricción del modelo funcionó como control de calidad y se mantiene.</td></tr></table></div><div class="ent"><div class="cab">Entrada 4 · Data Mart (sql/Datamart.sql)
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Construir el Data Mart: esquema estrella, grano, claves sustitutas, desconocidos, SCD, ETL, rol de solo lectura, controles y consultas parametrizadas.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Script SQL único e idempotente: esquemas oltp/dm/control, 5 dimensiones + hecho, miembros −1/−2, SCD2, ETL, rechazos, rol agente_lector, 3 vistas de control y 10 consultas PREPARE.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Data Mart (sql/Datamart.sql)</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Ejecución completa en PostgreSQL 16: conciliación 7/7 OK, integridad 10/10 con 0 hallazgos y conciliación independiente con pandas sobre los CSV 5/5 OK (ingreso neto idéntico al centavo).</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Los controles demuestran que no hay pérdida ni duplicación de ingresos, cantidades ni tickets.</td></tr></table></div><div class="ent"><div class="cab">Entrada 5 · Decisión SCD
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Justificar SCD Tipo 1 vs Tipo 2 para el segmento del cliente y su efecto en el agente.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Recomendación de SCD Tipo 2 y una consulta Q4-bis que simula el Tipo 1 usando el segmento actual.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Decisión SCD</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Se compararon ambas respuestas sobre el Data Mart: con Tipo 2 el segmento que más cae es Corporativo (−20,6 %); con Tipo 1 sería Frecuente (−31,5 %) y Corporativo parecería crecer (+5,5 %).</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>La evidencia numérica muestra que el Tipo 1 llevaría al agente a una conclusión falsa.</td></tr></table></div><div class="ent"><div class="cab">Entrada 6 · BDOO (agente/bdoo/)
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Implementar las 10 clases mínimas como objetos persistentes, con herencia, encapsulamiento, polimorfismo, composición y persistencia, siguiendo los conceptos de la clase P06.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código) + ZODB</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Modelo ZODB con 10 clases base, 18 subclases, TDA con validación (equivalente al TDA DATOS/RIF de Oracle), Blob como LOB y versionamiento.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>BDOO (agente/bdoo/)</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Pruebas unitarias (clases abstractas, máquina de estados, TDA) y evidencia generada tras cerrar y reabrir la base. Hallazgo: los IDO salían vacíos porque ZODB los asigna al confirmar la transacción.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se agregó un savepoint antes de mostrar los objetos, para que los IDO estén disponibles en la respuesta.</td></tr></table></div><div class="ent"><div class="cab">Entrada 7 · Intérprete por reglas
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Intérprete en español que funcione sin internet como respaldo del LLM.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Parser por reglas (métricas, periodos, dimensiones, valores, ambigüedad, parámetros faltantes, seguimiento).</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Intérprete por reglas</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Se probó con más de 50 preguntas. Errores detectados: (a) «¿cuáles son los canales… del segmento Premium?» devolvía límite 1 por la palabra «el segmento»; (b) «¿cómo evolucionó…?» se tomaba como comparación de periodos; (c) «canal Instagram» se ignoraba en silencio y devolvía el total; (d) «vendimos» no se reconocía como venta.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se corrigieron los cuatro casos. El (c) era el más grave porque la respuesta parecía válida: ahora el valor llega a la regla RV05, que pide aclaración y lista los valores válidos.</td></tr></table></div><div class="ent"><div class="cab">Entrada 8 · Intérprete LLM (OpenRouter) y regla RV11
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Integrar OpenRouter sin que el LLM pueda inventar cifras ni generar SQL.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>El LLM sólo devuelve un JSON con códigos del catálogo; la narrativa se acepta sólo si todas sus cifras están en el resultado (RV11).</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Intérprete LLM (OpenRouter) y regla RV11</td></tr>
+        <tr><td class="k">Validación técnica</td><td>El entorno de desarrollo no tenía acceso a openrouter.ai, así que se probó con respuestas simuladas: JSON válido, JSON inválido (cae a reglas), valor de filtro inexistente, dimensión inexistente, narrativa con cifras inventadas (rechazada) y narrativa respaldada (aceptada).</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar con reserva</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Falta la prueba con la API key real del equipo (ver entrada 14).</td></tr></table></div><div class="ent"><div class="cab">Entrada 9 · Seguridad
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Impedir acceso a tablas no autorizadas, instrucciones destructivas y campos inexistentes.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Defensa en cuatro capas: RV01 (texto), listas blancas + parámetros, RV07 (SQL) y rol de solo lectura.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Seguridad</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Pytest con intentos de inyección (DROP, DELETE, comentarios, pg_sleep, oltp.*, control.*, valor malicioso como filtro): todos bloqueados o tratados como parámetro.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Cumple la sección 6.2 del enunciado aunque se use SQL dinámico.</td></tr></table></div><div class="ent"><div class="cab">Entrada 10 · Pruebas (Pruebas.xlsx)
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Matriz de pruebas con los casos obligatorios de la sección 7.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>25 casos ejecutados automáticamente (scripts/ejecutar_pruebas.py), con el valor esperado calculado por separado con pandas.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Pruebas (Pruebas.xlsx)</td></tr>
+        <tr><td class="k">Validación técnica</td><td>25/25 OK en la primera versión. La revisión independiente (entrada 14) mostró que P10 compartía un error con el agente: ambos agrupaban clientes por nombre.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se corrigió P10 y se amplió la matriz a 35 casos (P25–P34 son regresiones de la revisión).</td></tr></table></div><div class="ent"><div class="cab">Entrada 11 · Diagramas
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Diagramas de estrella, de clases y de arquitectura.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código) + Mermaid</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Diagramas Mermaid de estrella y de clases (legibles); el de arquitectura salió ilegible por el cruce de flechas.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Diagramas</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Revisión visual de cada imagen.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Rechazar (arquitectura)</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Se rehízo a mano el diagrama de arquitectura como SVG. Los otros dos se aceptaron.</td></tr></table></div><div class="ent"><div class="cab">Entrada 12 · Informe técnico y bitácora
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>(misma sesión) Redactar el informe técnico a partir de las evidencias reales.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Generador docs/informe/build_informe.py que toma las cifras de los JSON de evidencia (no se transcriben a mano).</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Informe técnico y bitácora</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Revisión visual página por página del PDF. Se corrigió la portada, que se desbordaba a una segunda página.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar con revisión del equipo</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Cada integrante debe leer la sección de su componente antes de la defensa.</td></tr></table></div><div class="ent"><div class="cab">Entrada 13 · Agente en ejecución (uso de IA dentro del producto)
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>Prompt de sistema en agente/interpretes/llm.py: catálogo de métricas y dimensiones, valores válidos, rango de fechas y 10 reglas de interpretación; salida JSON obligatoria.</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>OpenRouter · modelo configurable (por defecto openai/gpt-4o-mini, temperatura 0)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Intención estructurada y una interpretación gerencial breve.</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Agente en ejecución (uso de IA dentro del producto)</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Automática en cada pregunta: construir_intencion() + RV02–RV06 sobre la intención y RV11 sobre la narrativa.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Aceptar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Si el LLM falla, el intérprete por reglas garantiza el funcionamiento.</td></tr></table></div><div class="ent"><div class="cab">Entrada 14 · Revisión independiente del agente
+        <span>29-10-2026</span></div><table>
+        <tr><td class="k">Prompt utilizado</td><td>Encargo a un agente revisor de Claude que no participó en la construcción: «Revisa como el profesor más exigente: verifica cada requisito del enunciado, prueba el agente con unas 40 preguntas variadas en español (paráfrasis, periodos, comparaciones, fuera de alcance, operaciones no autorizadas), contrasta cifras con SQL o pandas y lista los defectos».</td></tr>
+        <tr><td class="k">Herramienta empleada</td><td>Claude (Anthropic) · modelo Claude Opus 5.5 · app Claude (asistente de desarrollo con ejecución de código) (agente revisor independiente)</td></tr>
+        <tr><td class="k">Resultado obtenido</td><td>Más de 120 preguntas probadas. Defectos graves: ranking de clientes agrupado por nombre (sumaba empresas distintas), división entera en variaciones de unidades y tickets, periodos mal leídos («T1 2026», «último semestre», «enero a marzo»), año parcial comparado contra año completo, preguntas fuera de alcance respondidas con cifras («tickets anulados», «proyección»), miembros «Sin correspondencia» encabezando rankings y la regla RV01 bloqueando preguntas de negocio («¿qué productos debemos eliminar del catálogo?»).</td></tr>
+        <tr><td class="k">Componente afectado</td><td>Revisión independiente del agente</td></tr>
+        <tr><td class="k">Validación técnica</td><td>Cada defecto se reprodujo y se verificó contra SQL o pandas. Se agregó una prueba de regresión para cada uno (P25–P34 y 6 pruebas unitarias). En la segunda pasada (unas 75 preguntas nuevas, 7 cifras verificadas con pandas) aparecieron otros defectos: clientes nombrados en la pregunta, seguimientos («¿y por canal?», «¿y en los tres meses anteriores?», «¿y el segundo?»), «frente al de 2025» y verbos como «facturamos». También se corrigieron.</td></tr>
+        <tr><td class="k">Decisión</td><td><b>Modificar</b></td></tr>
+        <tr><td class="k">Justificación</td><td>Los defectos producían respuestas incorrectas con apariencia confiable, que es el peor caso para un agente gerencial. La matriz pasó de 25 a 35 casos, todos correctos.</td></tr></table></div></body></html>
