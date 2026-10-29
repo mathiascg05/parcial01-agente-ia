@@ -34,9 +34,9 @@ Pregunta ─► RV01 (texto) ─► Intérprete (LLM OpenRouter │ reglas) ─�
 | `agente/redactor.py` | Respuesta gerencial y formato de las cifras. |
 | `app/streamlit_app.py` | Interfaz web: chat, evidencia, explorador de la BDOO y catálogo. |
 | `agente/cli.py` | Interfaz de consola. |
-| `scripts/` | `setup_datamart.py`, `inicializar_bdoo.py`, `ejecutar_pruebas.py`, `evidencia_bdoo.py`. |
+| `scripts/` | `setup_datamart.py`, `inicializar_bdoo.py`, `ejecutar_pruebas.py`, `evidencia_bdoo.py`, `validar_llm.py`. |
 | `tests/` | Pruebas unitarias con pytest. |
-| `docs/` | Diagramas, evidencias (conciliación, BDOO, pruebas) y guía de defensa. |
+| `docs/` | Diagramas, evidencias (conciliación, BDOO, pruebas, validación del LLM con respuestas reales de OpenRouter) y guía de defensa. |
 
 ## Instalación y ejecución (unos 10 minutos)
 
@@ -63,9 +63,12 @@ python -m agente.cli -p "¿Qué canal concentra el mayor valor de ventas?"   # c
 pytest -q                                              # unitarias
 python scripts/ejecutar_pruebas.py --equipo XX         # matriz -> entregables/EquipoXX_Pruebas.xlsx
 python scripts/evidencia_bdoo.py                       # evidencia -> docs/evidencias/evidencia_bdoo.md
+python scripts/validar_llm.py                          # LLM real grabado -> docs/evidencias/validacion_llm.md
 ```
 
 **LLM:** sin `OPENROUTER_API_KEY` el agente funciona igual con el intérprete por reglas, que es determinista y no necesita internet. Con la clave, el modo `auto` usa el LLM para interpretar y para redactar la interpretación gerencial. Si el LLM falla o menciona cifras que no están en el resultado, el agente vuelve a las reglas o a la plantilla (regla RV11). El modelo se cambia con `OPENROUTER_MODEL`.
+
+**Anclaje del LLM:** en la validación con respuestas reales de `openai/gpt-4o-mini` (OpenRouter, 29-10-2026), el LLM solo inventó periodos y miembros y confundió dimensiones. Por eso el intérprete híbrido contrasta su JSON con la lectura literal de la pregunta (`anclar()` en `agente/interpretes/llm.py`): lo que no esté escrito en la pregunta ni en el contexto de la sesión se descarta y queda como supuesto visible. Resultados y salvedades en `docs/evidencias/validacion_llm.md`; con la clave en `.env`, `python scripts/ejecutar_pruebas.py --modo auto` repite la matriz llamando al LLM pregunta por pregunta.
 
 **Nota sobre ZODB:** FileStorage admite **un solo proceso**. Si Streamlit está abierto, el CLI no puede abrir la misma base. Ciérrelo o use otro archivo (`ZODB_PATH=...`). Los scripts de pruebas y de evidencia usan su propio archivo cuando la base principal está ocupada.
 
