@@ -108,7 +108,7 @@ Es el mismo caso de Puerta/Ventana con «Cerrar» de la clase.
 
 **¿Entonces el 100 % del híbrido es real?** Es real sobre esas preguntas, pero no es una medida ciega: el anclaje se ajustó después de ver las fallas. La medida limpia es el segundo grupo de preguntas nuevas, escrito antes de ver resultados: antes de ajustar, reglas 11/12, LLM solo 7/12 e híbrido 8/12. Lo importante es que se complementan: el LLM entendió frases que las reglas no («¿Cuánto ganamos con el producto…?») y las reglas corrigieron lo que el LLM inventó.
 
-**¿Lo probaron con la API key, pregunta por pregunta?** Sí, el 30-10 con la key del equipo: 32/35. En dos casos el LLM pidió un periodo que no hacía falta, y en el seguimiento «¿y en 2026?» se perdió la marca de pregunta de seguimiento (la cifra era correcta). Se ajustó el anclaje y se agregaron pruebas para esos casos.
+**¿Lo probaron con la API key, pregunta por pregunta?** Sí, el 30-10 con la key del equipo: 32/35. En dos casos el LLM pidió un periodo que no hacía falta, y en el seguimiento «¿y en 2026?» se perdió la marca de pregunta de seguimiento (la cifra era correcta). Se ajustó el anclaje, se agregaron pruebas para esos casos y la segunda corrida en vivo dio **35/35**. Si preguntan por qué el Excel oficial usa reglas: el LLM no es determinista, así que la matriz reproducible va con reglas y la corrida en vivo es evidencia complementaria (`docs/evidencias/capturas/matriz_en_vivo_35de35.png`).
 
 **Las cuatro capas de seguridad:**
 1. RV01 sobre el texto.
@@ -151,5 +151,5 @@ Aunque alguien lograra saltar una capa, la base de datos sigue rechazando escrit
 - Rechazos: 495 tickets anulados, 384 líneas duplicadas y 108 con cantidad inválida.
 - Clientes: 2.360 clientes y 2.736 versiones; 376 con cambio de segmento.
 - Canal con mayor venta: Mayorista B2B (45 %). Sucursal con mayor ticket promedio: Chacao. Segmento que más cayó: Corporativo (−20,6 %).
-- 11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 43/43 unitarias. LLM real (gpt-4o-mini): solo 17/34; con anclaje 34/34.
+- 11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 43/43 unitarias. LLM real (gpt-4o-mini): solo 17/34; con anclaje 34/34; matriz en vivo con la key: 35/35.
 - Los 10 primeros clientes suman ≈4,2 % del ingreso: la dependencia de pocos clientes es baja.
