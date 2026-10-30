@@ -21,4 +21,12 @@ LLM (`openai/gpt-4o-mini`) **una vez por pregunta**, con el contexto de la sesi�
 - En los seguimientos se conserva la marca de la lectura literal.
 
 Se agregaron dos pruebas unitarias con estos casos, y una simulación de la matriz completa con estas tres respuestas da 35/35.
-La verificación final es repetir el comando anterior después de `git pull`.
+
+## Segunda ejecución en vivo, con el código corregido
+
+Mismo día, después de `git pull`, mismo comando y misma key: **35/35**. Captura de la terminal:
+`docs/evidencias/capturas/matriz_en_vivo_35de35.png`.
+
+Como el LLM no es determinista, otra corrida podría interpretar alguna pregunta de otra forma. Por eso la matriz
+reproducible del entregable (`Equipo02_Pruebas.xlsx`) se ejecuta con el intérprete por reglas, y esta corrida en vivo
+se presenta como evidencia complementaria.
