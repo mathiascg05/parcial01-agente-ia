@@ -190,3 +190,20 @@ def test_anclaje_respeta_al_llm_cuando_las_reglas_no_entienden():
 def test_total_con_dimension_es_ranking():
     i = construir_intencion({"tipo": "consulta", "operacion": "total", "metrica": "ingreso_neto", "dimension": "canal"}, META, "x")
     assert i.operacion == "ranking"
+
+
+# Fallas de la ejecución en vivo con OpenRouter (30-10-2026, una llamada por pregunta): 32/35 antes del ajuste.
+def test_anclaje_llm_pide_periodo_innecesario():
+    for texto in ("¿Qué segmento de clientes redujo más su volumen de compra?",
+                  "Compara el ingreso neto de Chacao y La Candelaria en 2025"):
+        d, aj = _anclar(texto, {"tipo": "faltan_parametros", "motivo": "Se requiere un periodo específico."})
+        assert d["tipo"] == "consulta" and aj
+
+
+def test_anclaje_conserva_marca_de_seguimiento():
+    previa = construir_intencion(InterpreteReglas().interpretar("¿Cuál fue el margen bruto en 2025?", META), META, "r")
+    ctx = {"ultima_intencion": previa}
+    literal = InterpreteReglas().interpretar("¿y en 2026?", META, ctx)
+    d, _ = anclar({"tipo": "consulta", "operacion": "total", "metrica": "margen_bruto",
+                   "periodo": {"tipo": "anio", "anio": 2026}}, literal, "¿y en 2026?", ctx)
+    assert any("seguimiento" in s for s in d["supuestos"])
