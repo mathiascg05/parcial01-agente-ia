@@ -373,7 +373,7 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     h.append(f"""<h1>8. Resultados de pruebas</h1><p>La matriz completa está en <code>Equipo{e(equipo)}_Pruebas.xlsx</code>. El resultado
     esperado de cada caso numérico se calcula <b>independientemente</b> con pandas sobre los CSV de la fuente (sin PostgreSQL ni
     código del agente); el caso es OK sólo si el agente devuelve exactamente ese valor. Resultado: <b class="ok">{n_ok}/{len(pruebas)} OK</b>.
-    Además, 41 pruebas unitarias (pytest) cubren TDA, máquina de estados, polimorfismo, seguridad SQL, intérprete y anclaje del LLM.</p>
+    Además, 43 pruebas unitarias (pytest) cubren TDA, máquina de estados, polimorfismo, seguridad SQL, intérprete y anclaje del LLM.</p>
     <div class="caja"><b>Revisión independiente.</b> Antes de la entrega, un revisor que no participó en la construcción probó el
     agente con más de 120 preguntas parafraseadas. Encontró defectos que la primera matriz (25 casos) no cubría: el ranking de
     clientes agrupaba por nombre (y el valor esperado de P10 repetía el mismo supuesto), había división entera en las variaciones
@@ -405,9 +405,13 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     escrito antes de ver resultados: <b>antes</b> de los ajustes que motivó, el resultado fue reglas 11/12, LLM solo 7/12 e
     híbrido 8/12. También muestra que los dos intérpretes se complementan: el LLM resolvió frases que las reglas no entendían
     («¿Cuánto ganamos con el producto…?», «¿Cómo le fue a Tecnología en julio de 2026 comparado con julio de 2025?», «¿Qué
-    sucursal creció más entre 2025 y 2026?») y las reglas corrigieron lo que el LLM inventó. Las preguntas se enviaron en lote y
-    no una por una, como hace el agente; la evaluación con llamadas reales por pregunta (<code>--modo auto</code> con la API key)
-    queda como verificación del equipo.</p>""")
+    sucursal creció más entre 2025 y 2026?») y las reglas corrigieron lo que el LLM inventó. Las preguntas de la tabla se enviaron
+    en lote.</p>
+    <p><b>Ejecución en vivo.</b> El 30-10-2026 el equipo corrió la matriz con su API key (<code>--modo auto</code>), con una llamada
+    al LLM por pregunta, como en uso real: <b>32/35</b>. En P04 y P29 el LLM pidió un periodo que no hacía falta, y en el
+    seguimiento P23b la cifra fue correcta pero se perdió la marca de «pregunta de seguimiento». Se ajustó el anclaje para esos
+    dos patrones (detalle en <code>docs/evidencias/llm_openrouter/matriz_en_vivo_2026-10-30.md</code>), con dos pruebas
+    unitarias nuevas y una simulación de la matriz con esas respuestas reales que da 35/35.</p>""")
     h.append("<h2>8.2 Matriz de pruebas</h2>")
     h.append(tabla(["ID", "Tipo de caso", "Pregunta", "Obtenido (resumen)", "Estado"],
                    [[p["id"], e(p["categoria"]), e(p["pregunta"]), e(p["obtenido"][:260]), f"<span class='ok'>{p['estado']}</span>"

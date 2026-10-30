@@ -161,6 +161,19 @@ ENTRADAS = [
                       "visible. Salvedades: las reglas del anclaje se escribieron después de ver las fallas, así que esos 100 % no "
                       "son una medida ciega, y las preguntas se enviaron en lote, no una por una como hace el agente. También se "
                       "corrigió un defecto del agente que apareció aquí: un «total» con dimensión mostraba sólo la primera fila."},
+    {"n": 16, "fecha": "30-10-2026", "componente": "Matriz de pruebas en vivo con la API key del equipo",
+     "prompt": "python scripts/ejecutar_pruebas.py --modo auto --equipo 02 en la computadora del equipo, con la key parcial1 de "
+               "OpenRouter: el agente llama a openai/gpt-4o-mini una vez por pregunta, con el contexto de la sesión.",
+     "herramienta": "OpenRouter · openai/gpt-4o-mini + " + CLAUDE + " para el diagnóstico",
+     "resultado": "32/35. P04 y P29: el LLM pidió un periodo que no hacía falta (en P29 el periodo, 2025, estaba en la pregunta) y "
+                  "el agente pidió aclaración. P23b («¿y en 2026?»): la cifra fue correcta, pero se perdió la marca de pregunta "
+                  "de seguimiento.",
+     "validacion": "Se revisó la intención detectada y las reglas activadas de cada falla (docs/evidencias/pruebas.json). Detalle en "
+                   "docs/evidencias/llm_openrouter/matriz_en_vivo_2026-10-30.md. Tras el ajuste: dos pruebas unitarias nuevas "
+                   "(43/43) y una simulación de la matriz con esas tres respuestas reales da 35/35.",
+     "decision": "Modificar",
+     "justificacion": "Si el LLM pide parámetros que la lectura literal sí encuentra, se usa la lectura literal y queda el supuesto "
+                      "visible. En los seguimientos se conserva la marca. Falta repetir la corrida en vivo con el código corregido."},
 ]
 
 
