@@ -410,8 +410,11 @@ Resumen: {e(p0['respuesta']['resumen'].replace('**', ''))}</pre>""")
     <p><b>Ejecución en vivo.</b> El 30-10-2026 el equipo corrió la matriz con su API key (<code>--modo auto</code>), con una llamada
     al LLM por pregunta, como en uso real: <b>32/35</b>. En P04 y P29 el LLM pidió un periodo que no hacía falta, y en el
     seguimiento P23b la cifra fue correcta pero se perdió la marca de «pregunta de seguimiento». Se ajustó el anclaje para esos
-    dos patrones (detalle en <code>docs/evidencias/llm_openrouter/matriz_en_vivo_2026-10-30.md</code>), con dos pruebas
-    unitarias nuevas y una simulación de la matriz con esas respuestas reales que da 35/35.</p>""")
+    dos patrones (detalle en <code>docs/evidencias/llm_openrouter/matriz_en_vivo_2026-10-30.md</code>) y se agregaron dos pruebas
+    unitarias. Al repetir la corrida en vivo con el código corregido, el resultado fue <b class="ok">35/35</b>. Como el LLM no es
+    determinista, la matriz oficial (<code>Pruebas.xlsx</code>) se ejecuta con el intérprete por reglas, que es reproducible, y la
+    corrida en vivo queda como evidencia complementaria.</p>""")
+    h.append(img("../evidencias/capturas/matriz_en_vivo_35de35.png", "Matriz de pruebas en vivo con OpenRouter (gpt-4o-mini, una llamada por pregunta): 35/35.", "78%"))
     h.append("<h2>8.2 Matriz de pruebas</h2>")
     h.append(tabla(["ID", "Tipo de caso", "Pregunta", "Obtenido (resumen)", "Estado"],
                    [[p["id"], e(p["categoria"]), e(p["pregunta"]), e(p["obtenido"][:260]), f"<span class='ok'>{p['estado']}</span>"

@@ -173,7 +173,8 @@ ENTRADAS = [
                    "(43/43) y una simulación de la matriz con esas tres respuestas reales da 35/35.",
      "decision": "Modificar",
      "justificacion": "Si el LLM pide parámetros que la lectura literal sí encuentra, se usa la lectura literal y queda el supuesto "
-                      "visible. En los seguimientos se conserva la marca. Falta repetir la corrida en vivo con el código corregido."},
+                      "visible. En los seguimientos se conserva la marca. Al repetir la corrida en vivo con el código corregido "
+                      "(mismo día, misma key) el resultado fue 35/35 (captura en docs/evidencias/capturas/matriz_en_vivo_35de35.png)."},
 ]
 
 
@@ -205,8 +206,7 @@ def main():
     <div class="caja">La IA se usó como <b>asistente de desarrollo</b> (Claude) y como <b>componente del producto</b> (LLM vía OpenRouter
     dentro del agente). Ningún resultado de la IA se aceptó sin una validación técnica verificable: ejecución en PostgreSQL,
     conciliación independiente con pandas, pruebas unitarias, matriz de pruebas y revisión visual. Las entradas registran también
-    los resultados que se modificaron o rechazaron. Pendiente del equipo: ejecutar el agente con la API key en su .env
-    (python scripts/ejecutar_pruebas.py --modo auto), que llama al LLM pregunta por pregunta, y registrar el resultado.</div>
+    los resultados que se modificaron o rechazaron.</div>
     <h2>Resumen de decisiones</h2><table><thead><tr><th style="width:8%">#</th><th>Componente</th><th style="width:26%">Decisión</th></tr></thead>
     <tbody>{resumen}</tbody></table>
     <h2>Entradas</h2>{''.join(filas)}</body></html>"""
