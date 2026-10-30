@@ -137,6 +137,7 @@ figcaption { font-size: 9pt; color: #475569; margin-top: 4px; }
 <p><strong>¿El LLM escribe SQL?</strong> No. Solo devuelve un JSON con códigos del catálogo. El SQL sale de plantillas con listas blancas y los valores viajan como parámetros.</p>
 <p><strong>¿Y si el LLM se equivoca o inventa?</strong> Lo comprobamos con el LLM real: enviamos las preguntas a gpt-4o-mini en OpenRouter con el mismo prompt del agente. Solo, acertó 17 de 34 casos de la matriz: inventó periodos («ingreso neto por mes» → últimos 12 meses), inventó los canales de «compare dos canales» y confundió dimensiones («E-commerce web» como tipo de canal). Por eso el intérprete híbrido <strong>ancla</strong> su salida a lo escrito en la pregunta: fechas, valores y sentido del orden que no estén en el texto se descartan y quedan como supuesto visible. Con el anclaje: 34/34, y 12/12 en preguntas nuevas. Además, su JSON se valida (<code>construir_intencion</code> + RV02–RV06), la narrativa se descarta si cita una cifra que no está en el resultado (RV11) y, si el LLM falla, se usan las reglas. Evidencia: <code>docs/evidencias/validacion_llm.md</code> (se reproduce con <code>python scripts/validar_llm.py</code>).</p>
 <p><strong>¿Entonces el 100 % del híbrido es real?</strong> Es real sobre esas preguntas, pero no es una medida ciega: el anclaje se ajustó después de ver las fallas. La medida limpia es el segundo grupo de preguntas nuevas, escrito antes de ver resultados: antes de ajustar, reglas 11/12, LLM solo 7/12 e híbrido 8/12. Lo importante es que se complementan: el LLM entendió frases que las reglas no («¿Cuánto ganamos con el producto…?») y las reglas corrigieron lo que el LLM inventó.</p>
+<p><strong>¿Lo probaron con la API key, pregunta por pregunta?</strong> Sí, el 30-10 con la key del equipo: 32/35. En dos casos el LLM pidió un periodo que no hacía falta, y en el seguimiento «¿y en 2026?» se perdió la marca de pregunta de seguimiento (la cifra era correcta). Se ajustó el anclaje y se agregaron pruebas para esos casos.</p>
 <p><strong>Las cuatro capas de seguridad:</strong>
 1. RV01 sobre el texto.
 2. El LLM sin SQL.
@@ -168,6 +169,6 @@ figcaption { font-size: 9pt; color: #475569; margin-top: 4px; }
 <li>Rechazos: 495 tickets anulados, 384 líneas duplicadas y 108 con cantidad inválida.</li>
 <li>Clientes: 2.360 clientes y 2.736 versiones; 376 con cambio de segmento.</li>
 <li>Canal con mayor venta: Mayorista B2B (45 %). Sucursal con mayor ticket promedio: Chacao. Segmento que más cayó: Corporativo (−20,6 %).</li>
-<li>11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 41/41 unitarias. LLM real (gpt-4o-mini): solo 17/34; con anclaje 34/34.</li>
+<li>11 reglas, 5 consultas del catálogo, 10 clases base y 18 subclases. Pruebas: 35/35 en la matriz y 43/43 unitarias. LLM real (gpt-4o-mini): solo 17/34; con anclaje 34/34.</li>
 <li>Los 10 primeros clientes suman ≈4,2 % del ingreso: la dependencia de pocos clientes es baja.</li>
 </ul></body></html>
