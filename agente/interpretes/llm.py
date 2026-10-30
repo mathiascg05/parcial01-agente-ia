@@ -223,6 +223,12 @@ def anclar(llm: dict, literal: dict, texto: str, contexto: dict | None = None) -
         ajustes.append(f"El LLM marcó la pregunta como fuera de alcance, pero nombra elementos del catálogo; "
                        f"se usó la lectura literal ({t_lit}).")
         return _con_supuestos(literal, ajustes), ajustes
+    if t_llm == "faltan_parametros" and reconocida:
+        # Prueba en vivo (30-10-2026): el LLM pidió un periodo en «¿qué segmento redujo más…?» y en «Compara Chacao y
+        # Lechería en 2025» (que sí lo trae). La lectura literal resuelve la pregunta con los valores por defecto del
+        # agente, que quedan como supuestos visibles; los parámetros realmente faltantes los detectan las reglas.
+        ajustes.append("El LLM pidió más parámetros, pero la pregunta se puede responder; se usó la lectura literal.")
+        return _con_supuestos(literal, ajustes), ajustes
     if t_llm == "operacion_no_autorizada" and t_lit in ("dimension_inexistente", "fuera_de_alcance"):
         ajustes.append(f"El LLM la marcó como operación no autorizada; la lectura literal es {t_lit}.")
         return _con_supuestos(literal, ajustes), ajustes
@@ -343,6 +349,14 @@ def anclar(llm: dict, literal: dict, texto: str, contexto: dict | None = None) -
     if datos.get("operacion") == "ranking" and not datos.get("dimension"):
         datos["operacion"] = literal.get("operacion") or "total"
         datos["dimension"] = literal.get("dimension")
+
+    # 8. Pregunta de seguimiento («¿y en 2026?»): se conserva la marca de la lectura literal, que el agente usa
+    #    para avisar al usuario y para registrar la Pregunta como seguimiento en la BDOO.
+    previos = list(datos.get("supuestos") or [])
+    for s in literal.get("supuestos") or []:
+        if "seguimiento" in s and s not in previos:
+            previos.append(s)
+    datos["supuestos"] = previos
     return _con_supuestos(datos, ajustes), ajustes
 
 
